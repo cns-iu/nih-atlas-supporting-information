@@ -34,7 +34,7 @@ This repository documents data, scripts and analysis products of a scientometric
 
 ```
 
-## [Co-authorship Network](https://cns-iu.github.io/nih-atlas-supporting-information/)
+## [Co-authorship Network](https://cns-iu.github.io/nih-atlas-supporting-information/#co-authorship-network)
 
 ### HTAN
 
