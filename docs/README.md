@@ -38,15 +38,15 @@ This repository documents data, scripts and analysis products of a scientometric
 
 ### HTAN
 
-![HTAN co-authorship network](outputs/figures/networks/v0.2/HTAN_coauthorship-bp_combined_vis-filtered-temporal/htan-coauthorship_network-fltr=2pubs_2ew+degree1-vis=color_role+size_ann_pub_count-temporal-gif.gif)
+![HTAN co-authorship network](https://raw.githubusercontent.com/cns-iu/nih-atlas-supporting-information/main/outputs/figures/networks/v0.2/HTAN_coauthorship-bp_combined_vis-filtered-temporal/htan-coauthorship_network-fltr=2pubs_2ew+degree1-vis=color_role+size_ann_pub_count-temporal-gif.gif)
 
 ### HuBMAP
 
-![HuBMAP co-authorship network](outputs/figures/networks/v0.2/HuBMAP_coauthorship-bp_combined_vis-filtered-temporal/hubmap-coauthorship_network-fltr=2pubs_2ew+degree1-vis=color_role+size_ann_pub_count-temporal-gif.gif)
+![HuBMAP co-authorship network](https://raw.githubusercontent.com/cns-iu/nih-atlas-supporting-information/main/outputs/figures/networks/v0.2/HuBMAP_coauthorship-bp_combined_vis-filtered-temporal/hubmap-coauthorship_network-fltr=2pubs_2ew+degree1-vis=color_role+size_ann_pub_count-temporal-gif.gif)
 
 ### SenNet
 
-![SenNet co-authorship network](outputs/figures/networks/v0.2/SenNet_coauthorship-bp_combined_vis-filtered-temporal/sennet-coauthorship_network-fltr=2pubs_2ew+degree1-vis=color_role+size_ann_pub_count-temporal.gif)
+![SenNet co-authorship network](https://raw.githubusercontent.com/cns-iu/nih-atlas-supporting-information/main/outputs/figures/networks/v0.2/SenNet_coauthorship-bp_combined_vis-filtered-temporal/sennet-coauthorship_network-fltr=2pubs_2ew+degree1-vis=color_role+size_ann_pub_count-temporal.gif)
 
 ## Data Sources
 
