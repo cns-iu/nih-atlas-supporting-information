@@ -28,8 +28,7 @@ This repository documents data, scripts and analysis products of a scientometric
 │   ├── data_analysis/         # Main analysis notebooks
 ├── outputs/
 │   ├── figures/
-│   ├── tables/
-│   └── reports/
+│   └── tables/
 └── docs/                       # Documentation and codebooks
 
 ```
