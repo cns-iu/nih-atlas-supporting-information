@@ -1,0 +1,767 @@
+---
+title: "NIH Mapping Programs (NIH MAP) Principal Investigator Validation"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 1
+    number_sections: true
+    df_print: paged
+    fig_caption: true
+    code_folding: hide
+---
+
+```{css, echo=FALSE}
+.figure-caption { font-size: 0.88em; color: #555; font-style: italic; }
+h1.title        { font-size: 1.9em; font-weight: 700; }
+h2              { border-bottom: 2px solid #dee2e6; padding-bottom: 4px; }
+.note-box {
+  background: #f8f9fa;
+  border-left: 4px solid #4a90d9;
+  padding: 10px 16px;
+  margin: 12px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.92em;
+}
+.warn-box {
+  background: #fff8e1;
+  border-left: 4px solid #f0a500;
+  padding: 10px 16px;
+  margin: 12px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.92em;
+}
+```
+
+```{r packages, message=FALSE, warning=FALSE, include=FALSE}
+# Core data manipulation
+library(dplyr)
+library(tidyr)
+library(magrittr)
+library(stringr)
+library(purrr)
+library(readr)
+library(data.table)
+library(forcats)
+
+# Tables & display
+library(knitr)
+library(kableExtra)
+library(DT)
+
+# Visualization
+library(ggplot2)
+library(ggrepel)
+library(scales)
+library(patchwork)
+
+# Path management — anchors all relative paths to the project root (.Rproj / .git),
+# resolving the knitr working-directory issue without needing source().
+library(here)
+```
+
+```{r global-options, include=FALSE}
+knitr::opts_chunk$set(
+  echo       = TRUE,
+  message    = FALSE,
+  warning    = FALSE,
+  fig.align  = "center",
+  fig.width  = 9,
+  fig.height = 5,
+  fig.path = here::here("outputs/figures/NIH_map-PI_analysis-"),
+  dpi        = 300          # publication-quality output
+)
+
+# ── Shared colour palette (consistent across all figures) ──────────────────
+consortium_colours <- c(
+  HuBMAP = "#6D99D5",
+  HTAN   = "#008042",
+  SenNet = "#9964A8"
+)
+
+# ── ggplot2 theme for publication figures ──────────────────────────────────
+theme_atlas <- function(base_size = 12) {
+  theme_classic(base_size = base_size) +
+    theme(
+      plot.title         = element_text(face = "bold", size = base_size + 1),
+      plot.subtitle      = element_text(colour = "#555555", size = base_size - 1),
+      axis.text          = element_text(colour = "black"),
+      legend.position    = "right",
+      strip.background   = element_rect(fill = "#f0f0f0", colour = NA),
+      strip.text         = element_text(face = "bold"),
+      panel.grid.major.y = element_line(colour = "#eeeeee"),
+      plot.caption       = element_text(colour = "#888888", size = 9, hjust = 0)
+    )
+}
+
+theme_set(theme_atlas())
+```
+
+# Introduction
+
+This document provides a validated roster of the Principal Investigators (PIs) associated
+with three National Institutes of Health (NIH) biomedical mapping programs:
+
+- **[Human BioMolecular Atlas Program (HuBMAP)](https://hubmapconsortium.org/)** — mapping the human body at single-cell resolution
+- **[Human Tumor Atlas Network (HTAN)](https://humantumoratlas.org/)** — building a 3-D atlas of cancer transitions
+- **[Cellular Senescence Network (SenNet)](https://sennetconsortium.org/)** — characterizing the role of cellular senescence in human health
+
+The validation analysis serves four primary objectives:
+
+1. **Identify PIs** recorded across all three consortia in the NIH Reporter awards data.
+2. **Quantify project and award engagement** per PI — including PIs who hold awards across
+   multiple mapping programs.
+3. **Assess publication productivity**, flagging highly productive PIs and those who have
+   not yet generated publications linked to their awards.
+4. **Map consortium division affiliations** (e.g., DCC, TMC, HTA, PCA) for each PI.
+
+The results of this analysis, which describes the composition and productivity of each program's investigator pool, will be shared with NIH program officers and consortium staff as part of the data validation process.
+
+```{r load-awards, include=FALSE}
+# 1. Awards (integrated file covering all three consortia)
+# File location: DATA/processed/
+awards <- 
+  read.csv(here("data", "processed","NIHReporter-map_consortia-awards-clean.csv"),
+           header=T, colClasses = c(serial_number="character"))
+
+awards %>% count(project_id) %>% print()
+```
+
+```{r load-division-metadata, include=FALSE}
+# 2. Division metadata
+# Provides linkages between mapping programs, project numbers,
+# core project numbers, and organisational divisions (DCC, TMC, HTA, PCA …).
+# This is the primary bridge between awards and consortium structure.
+# File location: data/metadata/
+division_meta <- fread(here("data", "metadata",
+                            "NIH-map_consortia_awards-division-metadata.csv"))
+
+# Data table of showing the count of Consortium Division Core Projects
+division_meta %>% 
+  mutate(value=1) %>%
+  dcast(project_id+division_type+division~value, fun.aggregate = sum) %>%
+  arrange(project_id, division_type) %>%
+  rename("Consortium" = "project_id",
+         "Division Type" = "division_type",
+         "Division" = "division",
+         "Core Projects" = '1')
+```
+
+```{r load-publications-indices, include=FALSE}
+# 3. Prepared Consortia Publication Index
+# Loads in original linkages across core project numbers and PMID associated
+# with each NIH map consortia.
+htan_pub_index <- 
+  read.csv(here::here("data", "publications",
+        "NIHReporter-HTAN-publications-20260205.csv")) %>%
+  select(PMID) %>%
+  rename("pmid"="PMID") %>%
+  mutate(project_id = "HTAN")
+hubmap_pub_index <-
+  read.csv(here::here("data", "publications",
+        "NIHReporter-HuBMAP-publications-20260205.csv")) %>%
+  select(PMID) %>%
+  rename("pmid"="PMID") %>%
+  mutate(project_id = "HuBMAP")
+sennet_pub_index <-
+  read.csv(here::here("data", "publications",
+        "NIHReporter-SenNet-publications-20260205.csv")) %>%
+  select(PMID) %>%
+  rename("pmid"="PMID") %>%
+  mutate(project_id = "SenNet")
+# Combine indices
+consortia_pub_index <- 
+  rbind(htan_pub_index, hubmap_pub_index, sennet_pub_index) %>%
+  distinct() %>%
+  mutate(pmid = as.character(pmid))
+# Remove objects
+rm(htan_pub_index, hubmap_pub_index, sennet_pub_index)
+```
+
+```{r load-publications, include=FALSE}
+# 4. Prepared Original Publications Records - Core-project and PMID
+# De-duplicated publications linked to awards via core_project_number,
+# with Web of Science and Google Scholar citation data appended.
+# File location: data/processed/
+publications <- 
+  fread(here::here("data", "processed",
+        "NIHReporter-map_consortia-publications-validated-citations.csv"))
+```
+
+```{r load-disambiguation, include=FALSE}
+# 5. Name disambiguation results
+# OpenRefine-processed names covering both award PIs and publication authors.
+# These results are NOT yet merged into the awards or publications files.
+# Joins below use shared keys:
+#   - core_project_number links PI names to awards
+#   - pmid links author names to publications
+# File location: data/name_disambiguation/
+names_disambig <- 
+  fread(here("data", "name_disambiguation",
+        "NIH-map_consortia-names_for_disambiguation-revised_field_set-results.csv"))
+```
+
+```{r prep-pi-roster, include=FALSE}
+# Extract PI names from disambiguation results
+# Filter to rows representing award PIs only.
+# Update the name_type values below to match your actual data.
+pis_raw <- 
+  names_disambig %>%
+  filter(source=="awards") %>%
+  select(record_id,original_name,disambiguated_name) %>%
+  distinct() %>%
+  rename("core_project_number" = "record_id")
+
+# Join PI names to awards+division data via core_project_number
+pi_roster <- 
+  pis_raw %>%
+  left_join(
+    division_meta,
+    by = "core_project_number"
+  ) %>%
+  select(project_id, core_project_number, division_type, division, 
+         original_name,disambiguated_name) %>%
+  arrange(project_id,division_type,division) 
+rm(pis_raw)
+
+# Summary counts
+n_pis_total  <- n_distinct(pi_roster$disambiguated_name)
+n_pis_hubmap <- n_distinct(pi_roster$disambiguated_name[pi_roster$project_id == "HuBMAP"])
+n_pis_htan   <- n_distinct(pi_roster$disambiguated_name[pi_roster$project_id == "HTAN"])
+n_pis_sennet <- n_distinct(pi_roster$disambiguated_name[pi_roster$project_id == "SenNet"])
+
+cat("Total unique PIs:", n_pis_total, "\n")
+cat("  HuBMAP:", n_pis_hubmap, " | HTAN:", n_pis_htan,
+    " | SenNet:", n_pis_sennet, "\n")
+```
+
+```{r prep-pi-publications, include=FALSE}
+# Link PIs to publications author names via core_project_number
+# A PI is credited with a publication when their core_project_number appears
+# on that publication record, consistent with the pipeline's pub-award look up.
+#### Author roster to PMID and Pre-print status ####
+author_roster <-   
+  names_disambig %>%
+  filter(source=="publications",
+         is_organization==FALSE) %>%
+  select(record_id, disambiguated_name,
+         times_cited) %>%
+  rename("pmid"="record_id") %>%
+  mutate("preprint"=ifelse(is.na(times_cited)==TRUE,1,0))
+
+#### Consortia split of Author roster to PMID and Pre-print status ####
+# Update author roster with consortia flags for accurate publication calculations
+# for PI with cross-atlas awards.
+author_roster_index <- 
+  author_roster %>%
+  left_join(consortia_pub_index,
+            by="pmid",
+            relationship = "many-to-many") %>%
+  select(project_id, pmid, disambiguated_name,
+         times_cited, preprint)
+
+#### Calculation of total number of publications and pre-prints for authors ####
+author_total_publications <- 
+  author_roster %>%
+  group_by(disambiguated_name) %>%
+    summarise(
+      total_authorships = n_distinct(pmid, na.rm = TRUE),
+      total_preprints = sum(preprint),
+      total_citations = sum(times_cited, na.rm = TRUE),
+      .groups        = "drop"
+    )
+# Update NA values for pre-prints to zero values
+author_total_publications$total_preprints <-
+  replace_na(author_total_publications$total_preprints, 0)
+
+# Calculate total publications as difference between authorship and pre-print values
+author_total_publications <- 
+  author_total_publications %>%
+  mutate(total_publications = total_authorships-total_preprints) %>%
+  select(disambiguated_name, total_authorships, total_publications, 
+         total_preprints, total_citations)
+
+# Select set of PIs in author list
+pi_total_publications <- 
+  author_total_publications[author_total_publications$disambiguated_name %in% 
+                            unique(pi_roster$disambiguated_name),]
+
+#### Calculation of Consortia level PI authorship, publication and pre-print counts ###
+pi_consortia_pubs <- 
+  pi_roster %>%
+  select(project_id, disambiguated_name) %>%
+  distinct() %>%
+  left_join(
+    author_roster_index,
+    by =c("project_id","disambiguated_name"), 
+    relationship = "many-to-many"
+  ) %>%
+  group_by(disambiguated_name, project_id) %>%
+  summarise(
+    n_authorships = n_distinct(pmid, na.rm = TRUE),
+    n_preprints = sum(preprint),
+    n_citations = sum(times_cited, na.rm = TRUE),
+    .groups        = "drop"
+  ) 
+
+pi_consortia_pubs$n_preprints <-
+  replace_na(pi_consortia_pubs$n_preprints, 0)
+  
+pi_consortia_pubs <- 
+  pi_consortia_pubs %>%
+  mutate(
+    n_publications = n_authorships-n_preprints,
+    pub_status = if_else(n_publications == 0,
+                              "No publications", "Has publications")) %>%
+  select(project_id,  disambiguated_name, n_authorships, n_publications, n_preprints,
+         n_citations, pub_status) %>%
+  arrange(project_id, -n_authorships)
+
+#### Combine PI total publication counts with consortia publication counts ####
+pi_publications <- 
+  left_join(pi_consortia_pubs, pi_total_publications,
+            by="disambiguated_name") %>%
+  rename("investigator" = "disambiguated_name",
+         "consortium" = "project_id") %>%
+  select(investigator, total_authorships, total_publications, total_preprints,
+         total_citations, consortium, n_authorships, n_publications, 
+         n_preprints, n_citations, pub_status)
+
+# Update total values for PIs without publication level metrics
+pi_publications <-
+  pi_publications %>%
+  replace_na(list(total_authorships=0,total_publications=0,
+                  total_preprints=0,total_citations=0))
+```
+
+# Principal Investigator Identification {#pi-identification}
+
+Across all three consortia the awards data contains **`r n_pis_total` unique Principal
+Investigators**: `r n_pis_hubmap` in HuBMAP, `r n_pis_htan` in HTAN, and
+`r n_pis_sennet` in SenNet.
+
+## PI Roster Table
+
+```{r pi-roster-table}
+pi_roster %>%
+  rename("consortium"="project_id",
+         "investigator"="disambiguated_name") %>%
+  select(-original_name) %>%
+  arrange(consortium, division_type, investigator) %>%
+  datatable(
+    filter  = "top",
+    options = list(pageLength = 25, scrollX = TRUE),
+    caption = "Table 1. All identified Principal Investigators by consortium and division."
+  )
+```
+
+## PIs per Consortium
+
+```{r fig-pi-counts, fig.cap="**Figure 1.** Number of unique Principal Investigators per NIH Maping Consortia."}
+pi_counts <- 
+  pi_roster %>%
+  rename("consortium"="project_id",
+         "investigator"="disambiguated_name") %>%
+  distinct(investigator, consortium) %>%
+  count(consortium, name = "investigator_count")
+
+fig1 <- 
+  ggplot(pi_counts, aes(x = consortium, y = investigator_count, fill = consortium)) +
+  geom_col(width = 0.55, colour = "white") +
+  geom_text(aes(label = investigator_count), 
+            vjust = -0.5, fontface = "bold", size = 4.5) +
+  scale_fill_manual(values = consortium_colours, guide = "none") +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(x = "Mapping Program",
+       y = "Number of PIs")
+
+fig1 +
+    labs(title    = "Principal Investigators per NIH Mapping Consortium",
+         subtitle = "Unique PIs identified from NIH Reporter awards data",
+         caption  = "Source: NIH Reporter Database. Awards data was collected on 2026-02-05 using opportunity numbers and project serial numbers associated with each NIH Mapping programs")
+```
+
+# Award & Project Engagement {#award-engagement}
+
+## Core Projects and Awards per PI
+
+```{r pi-award-counts}
+award_pi_tmp1 <-
+  awards %>%
+  select(project_id, core_project_number, project_number, application_id,
+         contact_pi_project_leader) %>%
+  rename(original_name = "contact_pi_project_leader")
+award_pi_tmp2 <-
+  awards %>%
+  select(project_id, core_project_number, project_number, application_id,
+         other_pi_or_project_leader_s) %>%
+  rename(original_name = "other_pi_or_project_leader_s") %>%
+  filter(original_name!="Not Applicable") %>%
+  separate_longer_delim(original_name, delim=";") 
+
+# Award PI list
+award_pi_list <- 
+  rbind(award_pi_tmp1,award_pi_tmp2)
+award_pi_list$original_name <- trimws(award_pi_list$original_name)
+
+award_pi_list <-
+  award_pi_list %>%
+  left_join(pi_roster, 
+            by=c("project_id","core_project_number","original_name")) %>%
+  select(-original_name) %>%
+  distinct()
+
+rm(award_pi_tmp1, award_pi_tmp2)
+
+pi_award_summary <- 
+  award_pi_list %>%
+  rename("consortium"="project_id",
+         "investigator"="disambiguated_name") %>%
+  group_by(investigator, consortium) %>%
+  summarise(
+    n_core_projects = n_distinct(core_project_number),
+    n_project_numbers = n_distinct(project_number),
+    n_applications = n_distinct(application_id),
+    .groups         = "drop"
+  ) %>%
+  arrange(investigator, desc(n_applications))
+```
+
+```{r pi-award-table}
+pi_award_summary %>%
+  rename("PI Name"       = investigator,
+         "Mapping Program"    = consortium,
+         "Count of Core Projects" = n_core_projects,
+         "Count of Full Project Identifers" = n_project_numbers,
+         "Count Award Applications Identifiers" = n_applications) %>%
+  datatable(
+    filter  = "top",
+    options = list(pageLength = 25, scrollX = TRUE),
+    caption = "Table 2. PI Counts of Core Projects, Project Identifiers, and Applications (sub-awards)."
+  )
+
+```
+
+## PIs with Awards in Multiple Programs
+
+```{r multi-program-pis}
+multi_program <- 
+  pi_award_summary %>%
+  group_by(investigator) %>%
+  summarise(
+    programs   = paste(sort(unique(consortium)), collapse = " · "),
+    n_programs = n_distinct(consortium),
+    total_core_projects  = sum(n_core_projects),
+    .groups       = "drop"
+  ) %>%
+  filter(n_programs > 1) %>%
+  arrange(desc(n_programs), desc(total_core_projects))
+
+n_multi <- nrow(multi_program)
+```
+
+```{r multi-program-table}
+if (n_multi > 0) {
+  multi_program %>%
+    rename("PI Name"       = investigator,
+           "Program"   = programs,
+           "# Programs" = n_programs,
+           "Total Core Projects"  = total_core_projects) %>%
+    kable(caption = paste0("Table 3. ", n_multi,
+                           " PIs with awards in multiple NIH mapping programs.")) %>%
+    kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) 
+} else {
+  cat("No PIs with awards in more than one consortium were identified.")
+}
+```
+
+## Distribution Core Projects per PI
+
+```{r fig-coreprj-dist, fig.cap="**Figure 2.** Distribution of total core project per PI within each NIH Mapping Consortia."}
+# Compute once, reuse in both figures
+max_pi_per_bin <- 
+  pi_award_summary %>%
+  count(consortium, n_core_projects) %>%
+  pull(n) %>%
+  max(na.rm = TRUE)
+
+ggplot(pi_award_summary, aes(x = n_core_projects, fill = consortium)) +
+  geom_histogram(binwidth = 1, colour = "white", boundary = 0.5) +
+  facet_wrap(~consortium, scales = "free_y") +
+  scale_fill_manual(values = consortium_colours, guide = "none") +
+  scale_x_continuous(breaks = scales::pretty_breaks(n=3)) +
+  scale_y_continuous(expand=c(0,0), limits=c(0,round(max_pi_per_bin+5,1))) +
+  labs(
+    title   = "Distribution of NIH Core Projects per Principal Investigator",
+    x       = "Number of Core Projects Awarded",
+    y       = "Number of PIs"
+  )
+```
+```{r fig-projects-dist, fig.cap="**Figure 3.** Distribution of total project awards per PI within each NIH Mapping Consortia."}
+max_pi_per_bin <- 
+  pi_award_summary %>%
+  count(consortium, n_project_numbers) %>%
+  pull(n) %>%
+  max(na.rm = TRUE)
+
+ggplot(pi_award_summary, aes(x = n_project_numbers, fill = consortium)) +
+  geom_histogram(binwidth = 1, colour = "white", boundary = 0.5) +
+  facet_wrap(~consortium, scales = "free_y") +
+  scale_fill_manual(values = consortium_colours, guide = "none") +
+  scale_x_continuous(breaks = scales::pretty_breaks()) +
+  scale_y_continuous(expand=c(0,0), limits=c(0,round(max_pi_per_bin+5,1))) +
+  labs(
+    title   = "Distribution of NIH Projects per Principal Investigator",
+    x       = "Number of Project Awards",
+    y       = "Number of PIs",
+    caption = "Counts of NIH Projects is based full project identifiers linked to an investigator,  including subawards linked to core projects."
+  )
+```
+
+# Publication Productivity {#publications}
+
+## Overview of Principal Investigator Publications
+
+```{r pi_award_pub_merge_1, include=FALSE}
+pi_overview <- 
+  pi_award_summary %>%
+  left_join(pi_publications, 
+            by = c("investigator", "consortium")) %>%
+  mutate(
+    n_publications = replace_na(n_publications, 0L),
+    pub_status     = replace_na(pub_status, "No publications")
+  )
+
+n_zero_pub <- 
+  pi_overview %>%
+  filter(n_publications == 0) %>%
+  select(investigator) %>%
+  distinct() %>%
+  nrow()
+```
+
+Of the **`r n_pis_total`** identified PIs, **`r n_zero_pub`**
+(`r scales::percent(n_zero_pub / n_pis_total, accuracy = 1)`) have no publications
+currently linked to their awards in the NIH Reporter data.
+
+```{r pi_award_pub_merge_2}
+pi_overview %>%
+  arrange(consortium, desc(n_publications)) %>%
+  rename("Investigator"         = investigator,
+         "Consortium"           = consortium,
+         "Core Projects"        = n_core_projects,
+         "Project Identifiers"  = n_project_numbers,
+         "Applications"         = n_applications,
+         "Total Authorships"    = total_authorships,
+         "Total Publications"   = total_publications,
+         "Total Pre-prints"     = total_preprints,
+         "Total Citations"      = total_citations,
+         "Consortia Authorships"  = n_authorships,
+         "Consortia Publications" = n_publications,
+         "Consortia Pre-prints"   = n_preprints,
+         "Consortia Citations"    = n_citations,
+         "Publication Status"     = pub_status) %>%
+  datatable(
+    filter  = "top",
+    options = list(
+      pageLength = 25,
+      scrollX    = TRUE,
+      columnDefs = list(list(className = "dt-center",
+                             targets   = c(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)))
+    ),
+    caption = "Table 4a. Complete PI overview combining award engagement and publication productivity."
+  ) %>%
+  formatStyle(
+    "Publication Status",
+    backgroundColor = styleEqual(
+      c("No publications", "Has publications"),
+      c("#fff0f0", "#f0fff4")
+    )
+  )
+```
+
+## Publication Productivity per PI
+
+```{r fig-pub-productivity, fig.cap="**Figure 4.** Log-Linear Distribution of Publications and PI Impact Rank for NIH Mapping Consortia", fig.height=4.5, fig.width=6.5, warning=FALSE}
+power_law_plot_data <- 
+  pi_publications %>%
+  mutate(citation_rate = 
+           round(n_citations/n_publications, 2)) %>%
+  arrange(consortium, -n_publications) %>%
+  group_by(consortium) %>%
+  mutate(pi_pub_rank = row_number()) %>%
+  ungroup() %>%
+  arrange(consortium, -citation_rate) %>%
+  group_by(consortium) %>%
+  mutate(pi_cite_rank = row_number()) %>%
+  ungroup() %>%
+  select(consortium, n_publications, pi_pub_rank,
+         citation_rate, pi_cite_rank) %>%
+  filter(n_publications>0)
+
+ggplot(power_law_plot_data, 
+       aes(x = n_publications, y = pi_pub_rank, colour = consortium)) +
+  geom_hline(yintercept = 0, linetype = "dashed", colour = "#cccccc") +
+  geom_point(alpha = 0.65, size = 2.2) +
+ # facet_wrap(~consortium, scales = "free_x") +
+  scale_colour_manual(values = consortium_colours) +
+  scale_y_log10(breaks = scales::pretty_breaks()) +
+  labs(
+    title    = "Log-Linear Distribution of PI Publications Counts and Rank",
+    subtitle = "PIs ranked by publication count within each consortium",
+    x        = "Count of Publications",
+    y        = "PI Rank (within consortium)"
+  ) +
+  guides(colour=guide_legend(title="NIH Mapping\nConsortia"))
+```
+
+## PIs with No Linked Publications
+
+```{r zero-pub-table}
+zero_pub_pis <- 
+  pi_publications %>%
+  filter(pub_status == "No publications") %>%
+  select(consortium, investigator, total_publications, n_publications) %>%
+  arrange(consortium, investigator) %>%
+  left_join(pi_roster %>%
+              select(project_id, disambiguated_name, core_project_number) %>%
+              rename("consortium" = "project_id",
+                     "investigator" = "disambiguated_name"), 
+            by=c("consortium","investigator")) %>% 
+  left_join(pi_award_summary,
+            by=c("consortium","investigator")) %>%
+  select(consortium,core_project_number,investigator, n_project_numbers,
+         n_publications, total_publications)
+
+zero_pub_pis %>%
+  kable(
+    col.names = c("Mapping Program", "Core Projects", "Investigator", 
+                  "Awards Identifiers", "Program Publications",
+                  "Other Publications"),
+    caption   = "Table 5. PIs with no publications linked to their awards in NIH Reporter."
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+::: {.note-box}
+**Interpretation notes:** Principal investigators with zero linked publications indicate that: 
+(a) a PI that have left a project without contributions rising to authorship, 
+(b) a PI failed to report a publication to NIH Research Performance Progress Reports (RPPR) or funding statements,
+(c) a PI publications are not yet indexed in NIH Reporter, 
+(d) a PI served an administrative role, or
+(e) a PI authorship is incorporated into a group author. 
+
+This list is intended as a starting point for validation, not a definitive judgement on the productivity of individuals in this data set. 
+:::
+
+# Investigator Division Affiliations {#divisions}
+
+```{r pi-divisions}
+pi_division_summary <- 
+  pi_roster %>%
+  rename("investigator" = "disambiguated_name",
+         "consortium"   = "project_id") %>%
+  group_by(consortium, investigator) %>%
+  summarise(
+    divisions      = paste(sort(unique(division)), collapse = "; "),
+    n_divisions    = n_distinct(division),
+    multi_division = if_else(n_distinct(division) > 1, "Yes", "No"),
+    .groups        = "drop"
+  ) %>%
+  arrange(consortium, divisions, -n_divisions) %>%
+  left_join(
+    pi_publications %>% select(consortium, investigator, n_publications, pub_status),
+    by = c("consortium", "investigator")
+  )
+
+pi_division_summary %>%
+  rename("Consortium"          = consortium,
+         "Investigator"        = investigator,
+         "Division(s)"         = divisions,
+         "# Divisions"         = n_divisions,
+         "Multi-Division"      = multi_division,
+         "Publications"        = n_publications,
+         "Publication Status"  = pub_status) %>%
+  datatable(
+    filter  = "top",
+    options = list(pageLength = 25, scrollX = TRUE),
+    caption = "Table 6. Division affiliations and publication status per Principal Investigator."
+  ) %>%
+  formatStyle(
+    "Publication Status",
+    backgroundColor = styleEqual(
+      c("No publications", "Has publications"),
+      c("#fff0f0", "#f0fff4")
+    )
+  )
+```
+
+# Summary {#summary}
+
+```{r summary-table}
+tibble(
+  Metric = c(
+    "Total unique PIs",
+    "  HuBMAP",
+    "  HTAN",
+    "  SenNet",
+    "PIs in multiple programs",
+    "PIs with \u2265 1 linked publication",
+    "PIs with no linked publications"
+  ),
+  Value = c(
+    n_pis_total,
+    n_pis_hubmap,
+    n_pis_htan,
+    n_pis_sennet,
+    n_multi,
+    n_pis_total - n_zero_pub,
+    n_zero_pub
+  )
+) %>%
+  kable(caption = "Table 7. Key summary statistics across all three consortia.") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
+  row_spec(0, bold = TRUE)
+```
+
+---
+
+# Session Information
+
+```{r export, include=FALSE}
+# Export tables and figures for publication
+# Table 5
+multi_program %>%
+  rename("mapping_program"="programs") %>%
+  write.csv(file=file.path(here::here("outputs","tables","NIH_map-PI_multiple_core_projects.csv")),
+            row.names=FALSE, fileEncoding = "UTF8")
+multi_program %>%
+  rename("mapping_program"="programs") %>%
+  write.csv(file=file.path(here::here("outputs","tables","table_5.csv")),
+            row.names=FALSE, fileEncoding = "UTF8")
+# Appendix A
+zero_pub_pis %>%
+  rename("mapping_program"="consortium") %>%
+  write.csv(file=file.path(here::here("outputs","tables","appendix_a.csv")),
+            row.names=FALSE, fileEncoding = "UTF8")
+
+# Export figures as SVG for publication work
+# Figure 4 in paper
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_4-pi_md.svg")) ,
+       plot=fig1, device="svg", height=2.75, width=4, units="in")
+```
+
+```{r session-info}
+sessionInfo()
+```
+
+---
+
+*Report generated `r format(Sys.time(), "%B %d, %Y at %H:%M %Z")`.  
+Data sourced from NIH Reporter; processed using the NIH Biomedical Mapping
+Scientometric Analysis pipeline.*

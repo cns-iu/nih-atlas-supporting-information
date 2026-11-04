@@ -1,0 +1,794 @@
+---
+title: "NIH Mapping Programs (NIH MAP) Comparative Award & Funding Analysis"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+author: "Michael Ginda"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 2
+    number_sections: true
+    df_print: paged
+    fig_caption: true
+    code_folding: hide
+    theme: journal
+    highlight: haddock
+
+---
+
+```{css, echo=FALSE}
+.figure-caption { font-size: 0.88em; color: #555; font-style: italic; }
+h1.title        { font-size: 1.9em; font-weight: 700; }
+h2              { border-bottom: 2px solid #dee2e6; padding-bottom: 4px; }
+h3              { color: #2c3e50; }
+.note-box {
+  background: #f8f9fa;
+  border-left: 4px solid #4a90d9;
+  padding: 10px 16px;
+  margin: 12px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.92em;
+}
+.warn-box {
+  background: #fff8e1;
+  border-left: 4px solid #f0a500;
+  padding: 10px 16px;
+  margin: 12px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.92em;
+}
+.metric-box {
+  display: inline-block;
+  background: #f0f4f8;
+  border: 1px solid #c8d6e5;
+  border-radius: 6px;
+  padding: 10px 18px;
+  margin: 6px;
+  text-align: center;
+  min-width: 130px;
+}
+.metric-box .metric-val { font-size: 1.6em; font-weight: 700; color: #2c3e50; }
+.metric-box .metric-lbl { font-size: 0.80em; color: #666; }
+```
+
+```{r packages, message=FALSE, warning=FALSE, include=FALSE}
+#### Set-up Environment ####
+# Core data manipulation
+library(dplyr)
+library(tidyr)
+library(magrittr)
+library(stringr)
+library(purrr)
+library(readr)
+library(data.table)
+library(forcats)
+library(lubridate)
+
+# Tables & display
+library(knitr)
+library(kableExtra)
+library(DT)
+library(janitor)
+
+# Visualization
+library(ggplot2)
+library(ggrepel)
+library(scales)
+library(patchwork)
+
+# Sankey / alluvial flow diagrams
+# Install whichever of the three is available; all three are listed in case
+# only a subset is installed in the project environment.
+library(ggalluvial)     # ggplot2-based alluvial / Sankey
+#library(ggsankey)       # ggplot2 Sankey (github.com/davidsjoberg/ggsankey)
+
+# Path management
+library(here)
+
+# Number formatting for figures and tables
+options(scipen = 999)
+```
+
+```{r global-options, include=FALSE}
+#### Knitr options and color palettes ####
+knitr::opts_chunk$set(
+  echo       = TRUE,
+  message    = FALSE,
+  warning    = FALSE,
+  fig.align  = "center",
+  fig.width  = 9,
+  fig.height = 5,
+  fig.align = "center", 
+  fig.path = here::here("outputs/figures/NIH_map-"),   # saved alongside the .Rmd for publication use
+  out.width = "80%",
+  dpi        = 300                           # publication-quality output
+)
+
+# ── Shared color palette ─────────────────────────────────────────────────────
+consortium_colours <- c(
+  HuBMAP = "#6D99D5",
+  HTAN   = "#008042",
+  SenNet = "#9964A8"
+)
+
+# Division palettes (light→dark within each consortium family)
+division_colours <- c(
+  # HuBMAP
+  HIVE  = "#2166ac", TMC_H = "#6D99D5", TTD  = "#9ecae1",
+  RIT   = "#c6dbef", DEMO  = "#deebf7",
+  # HTAN
+  DCC   = "#1a7a41", HTA   = "#008042", PCA  = "#74c476",
+  # SenNet
+  CODCC = "#6a3d9a", TMC_S = "#9964A8", TDA  = "#cab2d6"
+)
+
+# ── ggplot2 theme for publication figures ─────────────────────────────────────
+theme_atlas <- function(base_size = 12) {
+    theme_minimal(base_size = base_size) +
+    theme(
+      plot.title         = element_text(face = "bold", size = base_size + 2),
+      plot.subtitle      = element_text(colour = "#555555", size = base_size),
+      axis.text          = element_text(colour = "black"),
+      legend.position    = "right",
+      strip.background   = element_rect(fill = "#f0f0f0", colour = NA),
+      strip.text         = element_text(face = "bold"),
+      panel.grid.major.y = element_line(colour = "#eeeeee"),
+      plot.caption       = element_text(colour = "#444444", size = 9, hjust = 0)
+    )
+}
+    
+theme_set(theme_atlas())
+
+# ── Helper: dollar formatting ─────────────────────────────────────────────────
+fmt_dollars <- function(x, accuracy = 0.1) {
+  scales::label_dollar(scale = 1e-6, suffix = "M", accuracy = accuracy)(x)
+}
+```
+
+```{r load-data, include=FALSE}
+#### Load Data ####
+# File paths 
+data_dir <- here("data", "processed")
+meta_dir <- here("data", "metadata")
+
+awards_files <- list(
+  HuBMAP = file.path(data_dir, "NIHReporter-HuBMAP-awards-clean.csv"),
+  HTAN   = file.path(data_dir, "NIHReporter-HTAN-awards-clean.csv"),
+  SenNet = file.path(data_dir, "NIHReporter-SenNet-awards-clean.csv")
+)
+
+# NIH Code Look-up files
+ic_lookup_file  <- file.path(meta_dir, "NIH_institute_codes_lookup.csv")
+activity_lookup_file <- file.path(meta_dir, "NIH_activity_codes_lookup.csv")
+
+# Consortia RFA to Division Code Cross-walk
+division_crosswalk_file <- file.path(meta_dir, "NIH-map_consortia-rfa-metadata.csv")
+
+# Load & bind awards
+awards_raw <- 
+  purrr::imap_dfr(awards_files, function(path, consortium) {
+  data.table::fread(here::here(path), encoding = "UTF-8",
+                    colClasses = c(duns_number="character")) %>%
+    as_tibble() %>%
+    rename("consortium" = "project_id")
+})
+
+# NIH Grant Activity Codes
+activity_lookup <- 
+  read.csv(file=activity_lookup_file, header=TRUE)
+# NIH Institute Codes
+ic_lookup <- 
+  read.csv(file=ic_lookup_file, header=TRUE)
+
+# Load RFA / opportunity-number → division look-up 
+# Note: the source file contains a typo ("opportunity_number"); we rename on load
+# so the rest of the pipeline uses the correct spelling throughout.
+division_lookup <- 
+  read.csv(file=division_crosswalk_file, header = TRUE) %>%
+  select(opportunity_number, division, division_type, division_name)
+
+rm(activity_lookup_file, ic_lookup_file, division_crosswalk_file, awards_files)
+```
+
+```{r prep-data, include=FALSE}
+#### Standardize column names (snake_case) ####
+# NIH Reporter exports use title-case column names with spaces; rename to
+# snake_case equivalents that match the data dictionary.
+awards <- 
+  awards_raw %>%
+  rename_with(~ str_to_lower(str_replace_all(.x, "[ /()]", "_")) %>%
+                str_replace_all("_{2,}", "_") %>%
+                str_remove("_$")) %>%
+  rename(
+    org_name = organization_name,
+    org_city = organization_city,
+    org_state = organization_state,
+    org_type = organization_type,
+    org_zip = organization_zip,
+    org_country = organization_country,
+    admin_ic = administering_ic
+  )
+
+# Generate Core_Project_Number if not already present
+if (!"core_project_number" %in% names(awards)) {
+  awards <- awards %>%
+    mutate(
+      core_project_number = paste0(activity, administering_ic, serial_number)
+    )
+}
+
+# Parse date columns
+awards <- 
+  awards %>%
+  mutate(
+    across(c(project_start_date, project_end_date,
+             budget_start_date,  budget_end_date),
+           ~ lubridate::mdy(.x)),
+    type = as.character(type)
+  )
+
+# Classify parent vs sub-project records
+awards <-
+  awards %>%
+  mutate(
+    is_subproject = !is.na(subproject_number) & subproject_number != "") %>%
+  mutate(
+    # Use the appropriate cost column
+    total_cost_used = if_else(is_subproject==TRUE,
+                        total_cost_sub_projects,
+                        total_cost)
+  )
+
+# Award type labels
+type_labels <- c(
+  "1" = "New",
+  "2" = "Competing Renewal",
+  "3" = "Supplement",
+  "4" = "Competing Extension",
+  "5" = "Non-Competing Continuation",
+  "7" = "Change of Institution",
+  "9" = "Change of IC"
+)
+
+awards <- 
+  awards %>%
+  mutate(type_label = recode(type, !!!type_labels, .default = "Other"))
+
+
+# Division join QC objects (consumed in Section 2)
+division_summary <- 
+  awards %>%
+  group_by(consortium) %>%
+  summarise(
+    Total_Awards     = n(),
+    Matched_Division = sum(!is.na(division)),
+    Unmatched        = sum(is.na(division)),
+    Pct_Matched      = round(Matched_Division / Total_Awards * 100, 1),
+    .groups = "drop"
+  )
+
+unmatched_opps <- 
+  awards %>%
+  filter(is.na(division)) %>%
+  distinct(consortium, opportunity_number, type_label) %>%
+  arrange(consortium, opportunity_number)
+```
+
+# Overview
+
+This document presents an analysis of the award and funding landscape for three NIH-funded
+biomedical mapping programs:
+
+- **[Human BioMolecular Atlas Program (HuBMAP)](https://hubmapconsortium.org/)** — mapping the human body at single-cell resolution
+- **[Human Tumor Atlas Network (HTAN)](https://humantumoratlas.org/)** — building a 3-D atlas of cancer transitions
+- **[Cellular Senescence Network (SenNet)](https://sennetconsortium.org/)** — characterizing the role of cellular senescence in human health
+
+The analysis addresses four objectives:
+
+1. **Project & award inventory** — Quantify the core projects, award IDs, and sub-awards associated with each initiative.
+2. **Funding summary** — Calculate total, direct, and indirect funding overall and cross-tabulated by consortium division.
+3. **Temporal funding cycles** — Characterize how project funding evolved across fiscal years.
+4. **Funding flow** — Visualize the flow of resources from funding opportunity → NIH institute/center → core project → award → PI/organization → cost type → division.
+
+<div class="note-box">
+**Data source:** NIH Reporter awards data retrieved via the NIH Research Portfolio Online
+Reporting Tools (RePORTER) API. Records were cleaned and consortium division metadata were
+integrated during earlier pipeline steps (script 10). Division assignments are derived
+by joining each award's `opportunity_number` using `NIH-map_consortia-rfa-metadata.csv`. See
+the pipeline summary document for full provenance details.
+</div>
+
+## Division assignment quality check {-}
+
+Before any analysis, we verify that the RFA look-up successfully assigned a division to each
+award record. Non-competing continuations and administrative supplements often share the
+same opportunity number as their parent award and should match; PA-series numbers are not
+included in the look-up and will appear as unmatched.
+
+```{r division-qc, echo=FALSE}
+division_summary %>%
+  kbl(
+    col.names = c("Consortium", "Total Awards", "Matched", "Unmatched", "% Matched"),
+    caption   = "**Table 1.** Division assignment match rate by consortium.",
+    align     = c("l", "r", "r", "r", "r")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) %>%
+  column_spec(5, bold = TRUE,
+              color = if_else(division_summary$Pct_Matched == 100,
+                              "#008042", "#f0a500"))
+```
+
+```{r division-qc-unmatched,echo=FALSE}
+if (nrow(unmatched_opps) > 0) {
+  unmatched_opps %>%
+    DT::datatable(
+      caption  = htmltools::tags$caption(
+        style = "caption-side: top; text-align: left;",
+        htmltools::strong("Table 0b."),
+        " Award records with no division match — distinct opportunity numbers."
+      ),
+      colnames = c("Consortium", "Opportunity Number", "Award Type"),
+      options  = list(pageLength = 10, scrollX = TRUE),
+      rownames = FALSE
+    )
+} else {
+  cat('<div class="note-box">✓ All award records matched to a division.</div>')
+}
+```
+# NIH Mapping Program Award Record Descriptive Analysis {#inventory}
+
+## Overall Awards, Projects and Funding Summary {#funding}
+
+```{r inventory-counts, echo=FALSE}
+# Count distinct entities per consortium 
+inventory <- 
+  awards %>%
+  select(consortium, application_id, core_project_number, project_number, 
+         is_subproject, fiscal_year, total_cost_ic) %>%
+  distinct() %>%
+  group_by(consortium) %>%
+  summarise(
+    core_projects = n_distinct(core_project_number),
+    total_awards = n_distinct(application_id),
+    parent_awards = n_distinct(project_number),
+    sub_awards = n_distinct(project_number[is_subproject]),
+    first_year = min(fiscal_year, na.rm = TRUE),
+    last_year = max(fiscal_year, na.rm = TRUE),
+    total_cost_M   = round(sum(total_cost_ic, na.rm = TRUE) / 1e6, 2),
+    .groups = "drop"
+  )
+
+inventory %>%
+  kbl(
+    col.names = c("Mapping Program", "Core Projects", "Award Records", "Parent Awards",
+                  "Sub-Awards", "First Year", "Last Year",
+                  "Total Cost (M)"),
+    caption   = "**Table 2.** Overview of NIH mapping program award records.") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) %>%
+  column_spec(1, bold = TRUE,
+              color = consortium_colours[inventory$consortium])
+```
+
+```{r bargraph-consortia_inventory, fig.cap="**Figure 1.** Mapping programs awards are compared using bar graphs; A compares the count of total award records for programs. B compares core projects of each program; C compares total costs of each program across all parent awards.", fig.height=6, echo=FALSE}
+# Total award records granted to consortia (parent+sub_awards across multiple years)
+inv_total <- 
+  inventory %>%
+  select(consortium, total_awards) %>%
+  pivot_longer(-consortium, names_to = "type", values_to = "count") %>%
+  mutate(type = recode(type,
+    total_awards = "Total Awards",
+  ),
+  type = factor(type, labels = c("Total Awards (non-unique)")))
+
+# Unique set of award identifiers - core projects, parent awards and sub projects 
+inv_long <- 
+  inventory %>%
+  select(consortium, core_projects, parent_awards, sub_awards) %>%
+  pivot_longer(-consortium, names_to = "type", values_to = "count") %>%
+  mutate(type = recode(type,
+    core_projects  = "Core Project",
+    parent_awards  = "Parent Award",
+    sub_awards     = "Sub Award"
+  ),
+  type = factor(type, labels = c("Core Project", "Parent Award", "Sub Award")))
+
+p1 <- 
+  ggplot(inv_total, aes(x = consortium, y = count, fill = consortium)) +
+  geom_col(position = "dodge", colour = "white", linewidth = 0.3) +
+  scale_fill_manual(values = consortium_colours) +
+  scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.08))) +
+  labs(
+    tag = "A",
+    x = NULL, y = "Count",
+    fill = "Mapping Program") +
+  guides(fill = guide_legend(order = 1)) +
+  theme(legend.position = "bottom",
+        legend.direction = "vertical")
+
+p2 <- 
+  inv_long %>%
+  filter(type=="Core Project") %>%
+  ggplot(aes(x = consortium, y = count, fill = consortium)) +
+  geom_col(position = "dodge", colour = "white", linewidth = 0.3) +
+  scale_fill_manual(values = consortium_colours) +
+  scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.08))) +
+  labs(
+    tag = "B",
+    x = NULL, y = "Count",
+    fill = "Mapping Program",
+  ) +
+  guides(fill = guide_legend(order = 1)) +
+  theme(legend.position = "bottom",
+        legend.direction = "vertical")
+
+funding_real <-
+  awards %>%
+  filter(is_subproject==F) %>%
+  group_by(consortium) %>%
+  summarise(
+    Total_Cost   = sum(total_cost_ic, na.rm = TRUE),
+    .groups = "drop") %>%
+  select(consortium, Total_Cost) %>%
+  pivot_longer(-consortium, names_to = "Cost_Type", values_to = "Amount") %>%
+  mutate(Cost_Type = recode(Cost_Type,
+    Total_Cost   = "Final Total Cost"
+  ),
+  Cost_Type = factor(Cost_Type, levels = c("Final Total Cost")))
+
+limits = c(0,225000000)
+
+# Real funding - total costs - Inset A
+p3 <- 
+  ggplot(funding_real,
+         aes(x = fct_reorder(consortium, Amount, sum, .desc = TRUE),
+             y = Amount, fill = consortium)) +
+    geom_col(colour = "white", linewidth = 0.4) +
+    scale_fill_manual(values = consortium_colours) +
+    scale_y_continuous(labels = ~ scales::dollar(.x, scale = 1e-6, suffix = "M"),
+                       limits=limits) +
+    labs(
+      tag = "C",
+      x = NULL, y = "USD (millions)",
+      fill = "Mapping Program",
+    ) +
+    guides(fill = guide_legend(order = 1)) +
+    theme(legend.position = "bottom",
+          legend.direction = "vertical")
+
+# plot design
+design <-
+"12
+ 3#"
+
+# Plot
+fig1 <- 
+  p1+p2+p3 +
+  plot_layout(design = design,
+              guides="collect") & 
+  theme(legend.position = "bottom",
+        legend.direction = "vertical")
+fig1
+```
+
+## Program Parent Award Types and Activity Codes
+
+```{r award-types, echo=FALSE}
+type_counts <- 
+  awards %>%
+  filter(!is_subproject) %>%                          # parent records only
+  select(consortium, type_label, project_number) %>% 
+  distinct() %>%                                      # distinct project ids-cuts record of awards funded by multiple IC
+  count(consortium, type_label, name = "awards") %>%
+  pivot_wider(names_from = consortium, values_from = awards, values_fill = 0) %>%
+  arrange(desc(rowSums(across(where(is.numeric))))) %>%
+  rename("Award Type" = "type_label") %>%
+  adorn_totals(name="Total Awards")
+
+type_counts %>%
+  kbl(
+    caption = "**Table 3.** Parent award counts by application type and consortium.",
+    format.args = list(big.mark = ",")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) %>%
+  row_spec(nrow(type_counts), bold = TRUE)
+```
+
+```{r activity-codes, echo=FALSE}
+activity_counts <- 
+  awards %>%
+  filter(!is_subproject) %>%
+  distinct(consortium, project_number, activity) %>%
+  count(consortium, activity, name = "n") %>%
+  pivot_wider(names_from = consortium, values_from = n, values_fill = 0) %>%
+  arrange(desc(rowSums(across(where(is.numeric))))) %>%
+  left_join(activity_lookup %>% 
+              select(activity_code, title), 
+            by=c("activity"="activity_code")) %>%
+  select(activity,title,HTAN,HuBMAP,SenNet) %>%
+  arrange(activity) %>%
+  rename("Activity Code" = "activity",
+         "Activity Title" = "title") %>%
+  adorn_totals(name="Total Awards")
+
+activity_counts %>%
+  kbl(caption   = "**Table 4.** NIH mapping program parent award activities.",
+      format.args = list(big.mark = ",")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) %>%
+  row_spec(nrow(activity_counts), bold = TRUE)
+```
+
+```{r alluvial-consortia-award_type+activity_code, fig.cap="**Figure 2.** A bimodal network visualizing the relationships between NIH funding award types and activities codes for biomedical mapping consortia, HTAN, HuBMAP, and SenNet.", fig.width=8, fig.height=7, echo=FALSE}
+consortia_type_activity <-
+  awards %>%
+  filter(is_subproject==FALSE) %>%
+  select(consortium, project_number, 
+         type, type_label, activity) %>%
+  distinct() %>%
+  left_join(activity_lookup %>%
+              select(activity_code,title) %>%
+              rename("activity_label" = "title"), 
+            by=c("activity"="activity_code")) %>%
+  group_by(type_label, activity_label, consortium) %>%
+  summarise(weight = n_distinct(project_number),
+             .groups = "drop") %>%
+  rename("award_type" = "type_label",
+         "activity_type" = "activity_label") %>%
+  mutate(award_type = factor(award_type, 
+                             levels=c("New","Supplement",
+                                      "Competing Extension",
+                                      "Competing Renewal",
+                                      "Non-Competing Continuation")),
+         activity_type = factor(activity_type,
+                                levels=c("Phase I  Exploratory/Developmental Cooperative Agreement",
+                                         "Phase II Exploratory/Developmental Cooperative Agreement",
+                                         "Research Project--Cooperative Agreements",
+                                         "Research Project--Other Transaction Award",
+                                         "Specialized Center--Cooperative Agreements",
+                                         "Resource-Related Research Multi-Component Projects and Centers Cooperative Agreements",
+                                         "Resource-Related Research Projects--Cooperative Agreements"),
+                                labels=c("Phase I  Exploratory/Developmental\n
+                                          Cooperative Agreement",
+                                         "Phase II Exploratory/Developmental\n
+                                          Cooperative Agreement",
+                                         "Research Project--\nCooperative Agreements",
+                                         "Research Project--\nOther Transaction Award",
+                                         "Specialized Center--\nCooperative Agreements",
+                                         "Resource-Related Research Multi-Component\n
+                                          Projects and Centers Cooperative Agreements",
+                                         "Resource-Related Research Projects--\n
+                                          Cooperative Agreements")),
+         consortium = factor(consortium, 
+                             levels=c("HTAN","HuBMAP","SenNet")))
+
+# Fig 2. Bi-modal network via alluvial diagram
+ggplot(consortia_type_activity,
+         aes(y = weight, 
+             axis1 = award_type, axis2 = activity_type)) +
+    geom_alluvium(aes(fill=as.factor(consortium)), 
+                  width=1/10, discern=TRUE) +
+    geom_stratum(width=1/10, 
+                 discern = TRUE) +
+    geom_text(stat = "stratum", 
+              discern = TRUE, 
+              size = 8,
+              size.unit = "pt",
+              position = "nudge",
+              aes(label = after_stat(str_wrap(stratum,width=45)))) +
+    scale_x_discrete(limits = c("Award Type", "Activity Code"),
+                     expand=expansion(mult=.28)) +
+    scale_y_continuous(breaks=seq(0,400,50),
+                       guide=guide_axis(cap="both")) +
+    scale_fill_discrete(palette=consortium_colours, limits=
+                          c("HuBMAP","HTAN","SenNet")) +
+    labs(fill = "Mapping Program",
+         y="Funded Projects") +
+    theme(panel.grid.major.y = element_blank(),
+          panel.border = element_blank(),
+          axis.line.x = element_blank(),
+          legend.position = "bottom")
+```
+
+## Research Division Funding
+
+```{r funding-by-division1, echo=FALSE, warning=FALSE}
+# Division is now guaranteed by the RFA look-up join in prep-awards.
+# Unmatched records (NA division) are kept as "Unassigned" so no cost is lost.
+funding_div <- 
+  awards %>%
+  filter(is_subproject==F) %>%
+  select(consortium, division_type, division, project_number, total_cost_ic) %>%
+  mutate(division = factor(division,
+                           levels=c("DCC", "HIVE", "CODCC", "DEMO", 
+                                    "HTA", "PCA", "TMC_S", "TMC_H","TDA", "RIT","TTD"),
+                           labels=c("Data Coordinating Center (DCC)",
+                                    "HuBMAP Integration, Visualization and Integration (HIVE) Collaboratory",
+                                    "Consortium Organization and Data Coordination Center (CODCC)",
+                                    "Demonstration Projects (DEMO)",
+                                    "Human Tumor Atlas Research Centers (HTA)",
+                                    "Pre-Cancer Atlas Research Center (PCA)",
+                                    "Tissue Mapping Center (TMC)",
+                                    "Tissue Mapping Center (TMC)",
+                                    "Technology Development and Application (TDA)",
+                                    "Rapid Technology Integration (RTI)",
+                                    "Transformative Technology Development (TTD)")),
+         division_type = factor(division_type, 
+                                levels=c("data_administration","tissue_mapping_center",
+                                         "technology_development"),
+                                labels=c("Data Administration",
+                                         "Tissue Mapping Center",
+                                         "Technology Development"))) %>%
+  group_by(consortium, division_type, division) %>%
+  summarise(
+    projects = n_distinct(project_number),
+    cost = sum(total_cost_ic, na.rm = TRUE),
+    mean_cost = round(sum(total_cost_ic, na.rm = TRUE) / n_distinct(project_number),0),
+    .groups = "drop"
+  ) %>%
+  left_join(funding_real %>% select(consortium, Amount),
+            by="consortium") %>%
+  mutate(percent_total_cost = round(cost/Amount*100,1)) %>%
+  select(-Amount) %>%
+  arrange(consortium, division_type, division)
+
+funding_div %>%
+  rename("Mapping Program"="consortium") %>%
+  rename_with(~ str_to_title(gsub("_", " ", .x, fixed = TRUE))) %>%
+  kbl(caption  = "**Table 5.** An overview of NIH mapping program research division total and mean project costs.",
+      format.args = list(big.mark = ",")
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) 
+
+```
+
+```{r bargraph-division_funding, echo=FALSE, fig.cap="**Figure 3.** Total funding for NIH Mapping consortia, split organizational divisions; color is assigned to consortia; division labels are shown on the y-axis."}
+p4 <- 
+  funding_div %>%
+    ggplot(aes(x = division, y = cost, fill = consortium)) +
+    geom_col(show.legend = FALSE) +
+    scale_fill_manual(values = consortium_colours, na.value = "grey70") +
+    scale_y_continuous(labels = ~ scales::dollar(.x, scale = 1e-6, suffix = "M"),
+                       expand = expansion(mult = c(0, 0.05)),
+                       breaks=seq(0,125000000,25000000)) +
+    coord_flip() +
+    facet_wrap(~ consortium, scales = "free_y", space="free_y", ncol = 1) +
+    labs(x = NULL, y = "Total Cost (USD, millions)") +    
+    theme(panel.grid.major.y = element_blank(),
+          panel.grid.minor.x = element_blank())
+p7 <- 
+  funding_div %>%
+    ggplot(aes(x = division, y = mean_cost, fill = consortium)) +
+    geom_col(show.legend = FALSE) +
+    scale_fill_manual(values = consortium_colours, na.value = "grey70") +
+    scale_y_continuous(labels = ~ scales::dollar(.x, scale = 1e-6, suffix = "M"),
+                       expand = expansion(mult = c(0, 0.05))) +
+    coord_flip() +
+    facet_wrap(~ consortium, scales = "free_y", space="free_y", ncol = 1) +
+    labs(x = NULL, y = "Mean Project Cost (USD, millions)") +    
+    theme(panel.grid.major.y = element_blank(),
+          panel.grid.minor.x = element_blank(),
+          axis.text.y = element_blank())
+
+fig3 <- 
+  p4 + p7
+
+fig3
+```
+
+## Temporal Funding Cycles {#temporal}
+
+```{r annual-funding, include=FALSE}
+## Annual funding analysis
+annual_funding <-
+  awards %>%
+  filter(is_subproject==F) %>%
+  group_by(consortium, fiscal_year) %>%
+  summarise(
+    projects      = n_distinct(project_number),
+    total_cost    = sum(total_cost, na.rm = TRUE),
+    # direct_cost   = sum(direct_cost_ic, na.rm = TRUE),
+    # indirect_cost = sum(indirect_cost_ic, na.rm = TRUE),
+    .groups = "drop") %>%
+  # mutate(cost_gap = total_cost-(direct_cost + indirect_cost)) %>%
+  arrange(consortium, fiscal_year)
+
+```
+
+```{r linegraph-consortia-annual-funding, echo=FALSE, fig.cap="**Figure 4.** Line graphs compare annual NIH mapping program awarded projects and total funding, based on fiscal year of award records; A compares the total number of projects awarded to each program; while B compares annual funding for awarded to each program.", fig.height=4, fig.width=7}
+# Annual projects funded
+p5 <- 
+ ggplot(annual_funding, aes(x = fiscal_year, y = projects,
+                   colour = consortium, group = consortium)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2.5) +
+  scale_colour_manual(values = consortium_colours) +
+  scale_x_continuous(breaks = ~ seq(floor(min(.x)), ceiling(max(.x)), 1)) +
+  scale_y_continuous(expand = expansion(mult = c(0.02, 0.10))) +
+  labs(
+    tag = "A",
+    x = "Fiscal Year",
+    y = "Number of Full Projects",
+    colour = "Mapping Program",
+  ) 
+
+# Annual Funding
+p6 <- 
+  ggplot(annual_funding, 
+       aes(x = fiscal_year, y = total_cost,
+           color = consortium, group = consortium)) +
+    geom_line(linewidth = 1) +
+    geom_point(size = 2.5) +
+    scale_colour_manual(values = consortium_colours) +
+    scale_x_continuous(breaks = ~ seq(floor(min(.x)), ceiling(max(.x)), 1)) +
+    scale_y_continuous(labels = ~ scales::dollar(.x, scale = 1e-6, suffix = "M"),
+                       expand = expansion(mult = c(0.02, 0.08))) +
+    labs(
+      tag = "B",
+      x = "Fiscal Year",
+      y = "Total Cost (USD, million)",
+      colour = "Mapping Program",
+    )
+
+# Plot coalesce
+fig4 <-
+  p5 + p6 +
+  plot_layout(#design = design,
+              guides="collect") & theme(legend.position = "bottom")
+fig4
+```
+# Session Info {#session-info .unnumbered}
+
+```{r export, include=FALSE}
+# Export tables and figures for publication
+
+# Table 3
+write.csv(inventory, 
+          file=file.path(here::here("outputs","tables","NIH_map-program_awards_cost_overview.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+write.csv(inventory, 
+          file=file.path(here::here("outputs","tables","table_3.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Table 4
+funding_div %>%
+  rename("mapping_program"="consortium") %>%
+  write.csv(file=file.path(here::here("outputs","tables","NIH_map-program_division_cost.csv")),
+            row.names=FALSE, fileEncoding = "UTF8")
+funding_div %>%
+  rename("mapping_program"="consortium") %>%
+  write.csv(file=file.path(here::here("outputs","tables","table_4.csv")),
+            row.names=FALSE, fileEncoding = "UTF8")
+
+# Export figures as SVG for publication work
+# Figure 1 in paper
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_1-awards_md.svg")) ,
+       plot=fig1, device="svg")
+
+# Figure 2 in paper
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_2-awards_md.svg")) ,
+       plot=fig4, device="svg", width=6.75, height=3.75, units="in")
+
+# Figure 3 in paper
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_3-awards_md.svg")) ,
+       plot=fig3, device="svg", width=10, units="in")
+
+# # Figure 4 in paper - cut from paper
+# ggsave(filename = file.path(here::here("outputs",
+#                                        "figures","figure_4-awards_md.svg")) ,
+#        plot=fig2, device="svg")
+
+```
+
+```{r session-info}
+sessionInfo()
+```

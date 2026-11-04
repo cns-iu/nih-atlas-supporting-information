@@ -1,0 +1,11 @@
+{
+  "snapshot_type": "updated_OpenAlex_snapshot",
+  "retrieved_at_utc": "2026-10-06T03:03:13.062463+00:00",
+  "authorized_by_user": "2026-10-05 user request",
+  "workers": 2,
+  "source": "OpenAlex works API; citing works via filter=cites:<OpenAlex work ID>",
+  "n_target_pmids": 39,
+  "n_completed_pmids": 20,
+  "n_failed_attempts": 39,
+  "complete": false
+}

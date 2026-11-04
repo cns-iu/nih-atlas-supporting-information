@@ -1,0 +1,1603 @@
+---
+title: "NIH Mapping Programs (NIH MAP) Comparative Publication Analysis"
+subtitle: "Publication Productivity, Impact, and Collaboration Patterns across HTAN, HuBMAP, and SenNet"
+author: "Michael Ginda"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 2
+    number_sections: true
+    df_print: paged
+    fig_caption: true
+    code_folding: hide
+    theme: journal
+    highlighting: haddock
+---
+
+```{r load-libraries, include=FALSE}
+#### Environment Set-Up ####
+# Load project configuration, data directories, and custom functions
+# The setup script should define:
+#   - project_root: absolute path to project root
+#   - dirs: vector of subdirectory paths [1]=scripts, [2]=metadata, 
+#     [4]=processed, [7]=networks
+source(here::here("scripts/00_setup.R"))
+
+# Libraries
+library(glue)
+
+# Number formatting for figures and tables
+options(scipen = 999)
+```
+
+```{r setup, include=FALSE}
+#### Knitr Options and Figure themeing ####
+knitr::opts_chunk$set(
+  echo       = TRUE,
+  message    = FALSE,
+  warning    = FALSE,
+  fig.align = "center", 
+  fig.path = here::here("outputs/figures/NIH_map-"),
+  out.width = "95%",
+  dpi        = 300                          
+)
+
+# Shared color palette 
+consortium_colours <- c(
+  HuBMAP = "#6D99D5",
+  HTAN   = "#008042",
+  SenNet = "#9964A8"
+)
+
+# Theme set for ggplot2 figures 
+theme_atlas <- function(base_size = 10) {
+    theme_minimal(base_size = base_size) +
+    theme(
+      plot.title         = element_text(face = "bold", size = base_size + 2),
+      plot.subtitle      = element_text(colour = "#555555", size = base_size),
+      axis.text          = element_text(colour = "black"),
+      legend.position    = "right",
+      strip.background   = element_rect(fill = "#f0f0f0", colour = NA),
+      strip.text         = element_text(face = "bold"),
+      panel.grid.major.y = element_line(colour = "#eeeeee"),
+      plot.caption       = element_text(colour = "#444444", size = 9, hjust = 0)
+    )
+}
+    
+theme_set(theme_atlas())
+```
+
+```{r load-data, include=FALSE}
+#### Load Data ####
+# Publication metadata with citation and consortium data
+publications <- 
+  read.csv(file.path(project_root,dirs[4],
+                     "NIHReporter-map_consortia-publications-validated-citations.csv"),
+           header = T, encoding = "UTF8",
+           colClasses = c("pmid"="character", "pmc_id"="character"))
+
+# Consortium division and project metadata
+publication_metadata <- 
+  read.csv(file.path(project_root,dirs[2],
+                     "NIH-map_consortia-publication-metadata.csv"),
+           header = T, encoding = "UTF8",
+           colClasses = c("pmid"="character"))                              
+
+# Award records 
+awards <- 
+  read.csv(file.path(project_root,dirs[4],
+                     "NIHReporter-map_consortia-awards-clean.csv"),
+           header=T, encoding="UTF8")
+
+# Network partition indices (identifies collaborative vs baseline pubs)
+network_indices <-
+  read.csv(file.path(project_root,dirs[2],
+                     "NIH-map-publication_coauthor_network_partition_indices.csv"),
+           header = T, encoding = "UTF8",
+           colClasses = c("pmid"="character"))
+
+# Load baseline network nodes for all consortia
+consortia_list <- c("HTAN", "HuBMAP", "SenNet")
+consortia_list <- factor(consortia_list, levels=c("HTAN","HuBMAP","SenNet"))
+
+# Load Consortia Node Lists / Author Data
+baseline_nodes <- 
+  map_df(consortia_list, function(cons) {
+  # Use paste0() instead of glue() - more explicit
+  path <- 
+    file.path(project_root,dirs[7],paste0(cons,"-coauthorship-baseline-nodes.csv"))
+  
+  cat("Checking:", path, "\n")  # Debug output
+  
+  if (file.exists(path)) {
+    cat(" ✓ Found!\n")
+    read_csv(path, show_col_types = FALSE) %>%
+      mutate(consortia = cons)
+  } else {
+    cat(" ✗ NOT FOUND\n")
+    NULL # Explicit NULL
+  }
+}, .progress = TRUE)
+
+collab_nodes <- 
+  map_df(consortia_list, function(cons) {
+  # Use paste0() instead of glue() - more explicit
+  path <- 
+    file.path(project_root,dirs[7],
+              paste0(cons,"-coauthorship-collaboration_partition-nodes.csv"))
+  
+  cat("Checking:", path, "\n")  # Debug output
+  
+  if (file.exists(path)) {
+    cat(" ✓ Found!\n")
+    read_csv(path, show_col_types = FALSE) %>%
+      mutate(consortia = cons)
+  } else {
+    cat(" ✗ NOT FOUND\n")
+    NULL # Explicit NULL
+  }
+}, .progress = TRUE)
+```
+
+```{r prep-data, include=FALSE}
+#### Prepare Data ####
+# Publication Metadata - updated with collaboration data and pre-prints
+# Project and division metrics - publication counts, collaboration papers types
+publication_metadata <- 
+  publication_metadata %>%
+  left_join(publications %>%
+            select(consortia, pmid, is_preprint, preprint_matched, 
+                   multiatlas, division_collaboration, collab_type,
+                   author_count, relative_citation_ratio, times_cited) %>% 
+            distinct(),
+          by=c("consortia","pmid")) %>%
+  mutate(division = factor(division, 
+                           levels = c("DCC","HTA","PCA",
+                                      "HIVE","DEMO","TMC_H","TTD","RIT",
+                                      "CODCC","TMC_S","TDA")),
+         division_collaboration = ifelse(collab_type=="Single Project",0,1),
+         consortia = factor(consortia, 
+                            levels=c("HTAN","HuBMAP","SenNet")),
+         collab_type = factor(collab_type,
+                              levels = c("Interdivision Collaboration",
+                                         "Intradivision Collaboration",
+                                         "Single Project"))) %>%
+  mutate(division_collaboration = 
+           factor(division_collaboration,
+                  levels=c(1,0),
+                  labels=c("Internal Collaborative Publications",
+                           "Other Publications"))) %>%
+  filter(preprint_matched==F)
+
+# Update publications - citations, author counts, mean projects per paper
+publications <-
+  publications %>%
+  mutate(division_collaboration = ifelse(collab_type=="Single Project",0,1),
+         consortia = factor(consortia, 
+                            levels=c("HTAN","HuBMAP","SenNet")),
+         collab_type = factor(collab_type,
+                              levels = c("Interdivision Collaboration",
+                                         "Intradivision Collaboration",
+                                         "Single Project"))) %>%
+  mutate(division_collaboration = 
+           factor(division_collaboration,
+                  levels=c(1,0),
+                  labels=c("Internal Collaborative Publications",
+                           "Other Publications"))) %>%
+  filter(preprint_matched==F) %>%
+  select(consortia,pmid,pub_year,title,is_preprint,author_count,
+         relative_citation_ratio,times_cited,collab_type,
+         division_collaboration,multiatlas,
+         starts_with("HTAN"),starts_with("HuBMAP"),starts_with("SenNet")) %>%
+  select(-ends_with("index"))
+
+# Create comprehensive author-level data set combining baseline and collaboration networks
+author_baseline_metrics <- 
+  baseline_nodes %>%
+  select(consortia, id, role, publications,
+         citations, weighted_citations,) %>%
+  rename(author_name = id)
+
+author_collaboration_metrics <- 
+  collab_nodes %>%
+  select(consortia, id, role, ic_publications,
+         interdivision_collaboration, intradivision_collaboration, 
+         ic_citations, ic_weighted_citations) %>%
+  rename(author_name = id)
+
+# Combine author baseline and collaboration metrics
+authors_publication_metrics <- 
+  author_baseline_metrics %>%
+  left_join(author_collaboration_metrics %>% select(-role), 
+            by = c("consortia", "author_name")) %>%
+  mutate(
+    ic_publications = replace_na(ic_publications, 0),
+    single_project = publications - ic_publications,
+    interdivision_collaboration = replace_na(interdivision_collaboration, 0),
+    intradivision_collaboration = replace_na(intradivision_collaboration, 0),
+    ic_citations = replace_na(ic_citations, 0),
+    ic_weighted_citations = replace_na(ic_weighted_citations, 0),
+    other_publications = publications - ic_publications,
+    other_pub_citations = citations - ic_citations,
+    other_pub_weighted_citations = weighted_citations - ic_weighted_citations,
+    collaboration_type_concentration = 
+      ifelse(ic_publications>0, 
+      ((interdivision_collaboration/ic_publications)-
+      (intradivision_collaboration/ic_publications)),
+      NA),
+    is_pi = ifelse(role == "PI", 1, 0),
+    is_researcher = ifelse(role == "Researcher", 1, 0)
+  ) %>%
+  select(-single_project)
+
+rm(collab_nodes, baseline_nodes)
+
+# Awards Data
+awards <- 
+  awards %>%
+  select(project_id, opportunity_number, division, division_type, ic, 
+         project_serial_number, core_project_number) %>%
+  distinct() %>%
+  rename("consortia" = "project_id") %>%
+  mutate(consortia = factor(consortia, 
+                            levels=c("HTAN","HuBMAP","SenNet")),
+         division = factor(division, 
+                           levels = c("DCC","HTA","PCA",
+                                      "HIVE","DEMO","TMC_H","TTD","RIT",
+                                      "CODCC","TMC_S","TDA")))
+```
+
+# Overview 
+We use the publication for three NIH mapping programs, Human Tumor Atlas Network 
+(HTAN), Human Biomolecular Atlas Program (HuBMAP), and Cellular Senescence Network
+(SenNet) to assess projects' level participation in published research, research 
+productivity in terms of publications and pre-prints, and research impact using 
+citation metrics relative citation ratio and citation counts collected from 
+Web of Science and Google Scholar. 
+
+Comparative analysis is completed at three levels associated with each program:
+1. Macro-level: Mapping program
+2. Meso-level: Program research divisions
+3. Micro-level: Author level, with associated program roles (i.e., principal investigators and researchers)
+
+At each level of analysis we assess publications overall and by internal collaborations 
+associated with publications. Internal collaboration is measured for each publication, 
+at the research division-level using two two categorical variables: 
+- "division_collaboration" with two levels: division collaboration publication, other publication.
+- "collab_type" with three levels: inter-division collaboration, intra-division collaboration, and single project publication. 
+
+Importantly, publications cannot be identified with any particular year of the 
+project or fiscal year of funding, due to the continuous and cumulative research 
+publications over the life of a project and due to variability of publishing 
+timelines. Likewise, publications are associated to awards by core projects,
+limiting analysis of the sub-project in multi-component projects.
+
+# Analysis Results
+
+## Mapping Program Participation, Research Productivity and Impact
+
+```{r consortia-publication-citation-statistics, message=FALSE}
+#### Mapping program projects reporting publications ####
+# Count of NIH Mapping Program Core projects
+projects_overall <-
+  awards %>% 
+  group_by(consortia) %>%
+  summarise(Total_Projects = n())
+
+# Project reporting publications, overall
+projects_published_overall <-
+  publication_metadata %>%
+  select(consortia, core_project_number) %>%
+  distinct() %>%
+  group_by(consortia) %>%
+  summarise(Count_of_Projects = n()) %>%
+  mutate(Percent_of_Projects = 
+           round(Count_of_Projects/
+                 projects_overall$Total_Projects*100,2),
+         division_collaboration = "All Publications") %>%
+  select(consortia,division_collaboration,
+         Count_of_Projects,Percent_of_Projects)
+
+# Project reporting publications, grouped by collaboration type
+projects_published_grouped <-
+  publication_metadata %>%
+  select(consortia, division_collaboration, core_project_number) %>%
+  distinct() %>%
+  group_by(consortia, division_collaboration) %>%
+  summarise(Count_of_Projects = n()) %>% 
+  left_join(projects_overall, 
+            by=c("consortia")) %>%
+  mutate(Percent_of_Projects = 
+           round(Count_of_Projects/
+                 Total_Projects*100,2)) %>%
+  select(consortia,division_collaboration,
+         Count_of_Projects,Percent_of_Projects)
+
+# Combine counts of mapping program projects with publication data
+program_projects_counts <- 
+  rbind(projects_published_overall, projects_published_grouped) 
+
+#### Mapping program publication counts and percentages ####
+# Overall
+publication_counts_overall <- 
+  publications %>%
+  group_by(consortia) %>%
+  summarise(
+    Count_of_Publications = n(),
+    Percent_of_Publications = round(n()/n()*100,2),
+    .groups = "drop"
+  ) %>%
+  arrange(consortia) %>%
+  mutate(division_collaboration = "All Publications") %>%
+  select(consortia, division_collaboration, Count_of_Publications,
+         Percent_of_Publications)
+
+# by publication type
+publication_counts_grouped <-
+  publications %>%
+  group_by(consortia, division_collaboration) %>%
+  summarise(
+    Count_of_Publications = n(),
+    Percent_of_Publications = NA,
+    .groups = "drop"
+  ) %>%
+  left_join(publication_counts_overall %>%
+              select(consortia, Count_of_Publications) %>%
+              rename("Total_Publications" = "Count_of_Publications"),
+            by=c("consortia")) %>%
+  mutate(Percent_of_Publications = 
+           round(Count_of_Publications/Total_Publications*100,2)) %>%
+  select(-Total_Publications) %>%
+  arrange(consortia)
+
+# Combine publication count data tables
+program_publication_counts <- 
+  rbind(publication_counts_overall, publication_counts_grouped) 
+
+#### Mapping program pre-print Publication Counts ####
+# Overall
+preprint_counts_overall <- 
+  publications %>%
+  filter(is_preprint==T) %>% 
+  group_by(consortia) %>%
+  summarise(
+    Count_of_Preprints = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(consortia) %>%
+  mutate(division_collaboration = "All Publications") %>%
+  select(consortia, division_collaboration, Count_of_Preprints)
+
+# By division collaboration publication type
+preprint_counts_grouped <- 
+  publications %>%
+  filter(is_preprint==T) %>% 
+  group_by(consortia, division_collaboration) %>%
+  summarise(
+    Count_of_Preprints = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(consortia) %>%
+  select(consortia, division_collaboration, Count_of_Preprints)
+
+# Combine pre-print data
+program_preprint_counts <- 
+  rbind(preprint_counts_overall, preprint_counts_grouped)
+
+#### Mapping program citation impact measures ####
+# Overall publication data
+publication_citation_stats_overall <-
+  publications %>%
+  group_by(consortia) %>%
+  summarise(
+    Total_Citations = sum(times_cited, na.rm = T),
+    Mean_Citations = round(mean(times_cited, na.rm = T),2),
+    SD_Citations = round(sd(times_cited, na.rm = T),3),
+    Var_Citations = round(var(times_cited, na.rm = T),3),
+    Mean_Relative_Citation_Ratio = round(mean(relative_citation_ratio, na.rm = T),2),
+    SD_Relative_Citation_Ratio = round(sd(relative_citation_ratio, na.rm = T),3),
+    Var_Relative_Citation_Ratio = round(var(relative_citation_ratio, na.rm = T),3),
+    .groups = "drop"
+  ) %>%
+  arrange(consortia) %>%
+  mutate(division_collaboration = "All Publications")
+ 
+# By division collaboration publication types
+publication_citation_stats_groups <-
+  publications %>%
+  group_by(consortia, division_collaboration) %>%
+  summarise(
+    Total_Citations = sum(times_cited, na.rm = T),
+    Mean_Citations = round(mean(times_cited, na.rm = T),2),
+    SD_Citations = round(sd(times_cited, na.rm = T),3),
+    Var_Citations = round(var(times_cited, na.rm = T),3),
+    Mean_Relative_Citation_Ratio = round(mean(relative_citation_ratio, na.rm = T),2),
+    SD_Relative_Citation_Ratio = round(sd(relative_citation_ratio, na.rm = T),3),
+    Var_Relative_Citation_Ratio = round(var(relative_citation_ratio, na.rm = T),3),
+    .groups = "drop") 
+
+# Combine citation statistics data
+program_citation_stats <- 
+  rbind(publication_citation_stats_overall, 
+        publication_citation_stats_groups)
+
+#### Combine Mapping Program Publication Statistics ####
+mapping_program_publication_stats <-
+  left_join(program_projects_counts, 
+            program_publication_counts,
+            by=c("consortia","division_collaboration")) %>%
+  left_join(program_preprint_counts, 
+            by=c("consortia","division_collaboration")) %>%
+  left_join(program_citation_stats,
+            by=c("consortia","division_collaboration")) %>%
+  mutate(division_collaboration = factor(division_collaboration, 
+                            levels=c("All Publications",
+                                     "Internal Collaborative Publications",
+                                     "Other Publications"),
+                            labels=c("All Publications",
+                                     "Internal Collaborative Publications",
+                                     "Other Publications"))) %>%
+  arrange(consortia, division_collaboration) %>%
+  rename("Mapping_Program" = "consortia", 
+         "Publication_Group" = "division_collaboration")
+
+# Clean up environment
+rm(publication_counts_overall, publication_counts_grouped, 
+   projects_overall, projects_published_overall, projects_published_grouped,
+   preprint_counts_overall, preprint_counts_grouped)
+
+#### Knitr Data Table ####
+kable(mapping_program_publication_stats, 
+      caption = "Overview of NIH Mapping Program Publication Statistics.",
+      col.names = names(mapping_program_publication_stats) %>%
+                        str_replace_all("_"," "), digits=3) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```
+
+## Research Division Participation, Research Productivity and Impact
+
+### Research Division Project Participation
+
+```{r division-publication-statistics, message=FALSE}
+#### Research Division Core Projects ####
+# Count of NIH Mapping Program Core projects
+projects_overall <-
+  awards %>% 
+  group_by(consortia, division) %>%
+  summarise(Total_Projects = n())
+
+# Project reporting publications, overall
+division_projects_overall <-
+  publication_metadata %>%
+  select(consortia, division, core_project_number) %>%
+  distinct() %>%
+  group_by(consortia, division) %>%
+  summarise(Count_of_All_Projects = n()) %>%
+  ungroup() %>%
+  left_join(projects_overall,
+            by=c("consortia","division")) %>%
+  mutate(Percent_of_All_Projects = 
+           round(Count_of_All_Projects/Total_Projects*100,2)) %>%
+  select(consortia,division,Count_of_All_Projects,Percent_of_All_Projects)
+
+# Project reporting publications, grouped by collaboration type
+division_projects_grouped <-
+  publication_metadata %>%
+  select(consortia, division, division_collaboration, core_project_number) %>%
+  distinct() %>%
+  group_by(consortia, division, division_collaboration) %>%
+  summarise(Count_of_Projects_with_Internal_Collaboration = n()) %>% 
+  ungroup() %>%
+  left_join(projects_overall, 
+            by=c("consortia","division")) %>%
+  mutate(Percent_of_Projects_with_Internal_Collaboration = 
+           round(Count_of_Projects_with_Internal_Collaboration/
+                 Total_Projects*100,2)) %>%
+  filter(division_collaboration == "Internal Collaborative Publications") %>%
+  select(consortia, division, Count_of_Projects_with_Internal_Collaboration, 
+         Percent_of_Projects_with_Internal_Collaboration)
+
+# Combine data frames
+division_projects <- 
+  left_join(division_projects_overall,
+            division_projects_grouped, 
+            by=c("consortia","division"))
+
+#### Division publication counts overall ####
+# Overall publication counts
+division_overall_publications <- 
+  publication_metadata %>%
+  select(consortia, division, pmid) %>%
+  group_by(consortia, division) %>%
+  summarise(Count_of_Publications = n_distinct(pmid),
+            .groups = "drop") 
+
+#### Division publications by collaboration grouping ####
+division_grouped_publications <-
+  publication_metadata %>%
+  select(consortia, division, division_collaboration, pmid) %>%
+  group_by(consortia, division, division_collaboration) %>%
+  mutate(division_collaboration = 
+           as.character(division_collaboration) %>% 
+           str_replace_all(" ","_")) %>%
+  summarise(Count_of_Publications = n_distinct(pmid),
+            .groups = "drop") %>%
+  pivot_wider(id_cols = c(consortia, division), 
+              names_from = division_collaboration, 
+              names_prefix = "Count_of_",
+              values_from = Count_of_Publications,
+              values_fill = 0) %>%
+  select(-Count_of_Other_Publications)
+
+#### Division publications by collaboration types ####
+division_collab_type_publications <- 
+  publication_metadata %>%
+  select(consortia, division, collab_type, pmid) %>%
+  group_by(consortia, division, collab_type) %>%
+  mutate(collab_type = 
+           as.character(collab_type) %>% 
+           str_replace_all(" ","_")) %>%
+  summarise(Count_of_Publications = n_distinct(pmid),
+            .groups = "drop") %>%
+  pivot_wider(id_cols = c(consortia, division), 
+              names_from = collab_type, 
+              names_prefix = "Count_of_",
+              values_from = Count_of_Publications,
+              values_fill = 0) %>%
+  select(-Count_of_Single_Project)
+
+# Combine data
+division_publication_statistics <-
+  division_projects %>%
+  left_join(division_overall_publications,
+            by=c("consortia","division")) %>%
+  left_join(division_grouped_publications,
+            by=c("consortia","division")) %>%
+  left_join(division_collab_type_publications,
+            by=c("consortia","division")) %>%
+  mutate(Percent_of_Internal_Collaborations = 
+           round(Count_of_Internal_Collaborative_Publications/
+                 Count_of_Publications*100, 2),
+         Percent_of_Interdivision_Collaborations = 
+           round(Count_of_Interdivision_Collaboration/
+                 Count_of_Internal_Collaborative_Publications*100, 2),
+         Percent_of_Intradivision_Collaborations = 
+           round(Count_of_Intradivision_Collaboration/
+                 Count_of_Internal_Collaborative_Publications*100, 2),
+         Internal_Collaboration_Type_Score = 
+                round((Percent_of_Interdivision_Collaborations-
+                       Percent_of_Intradivision_Collaborations)/100, 2)
+          ) %>%
+  rename("Mapping_Program" = "consortia",
+         "Division"= "division") %>%
+  select(Mapping_Program, Division, Count_of_All_Projects, Percent_of_All_Projects,
+         Count_of_Projects_with_Internal_Collaboration,
+         Percent_of_Projects_with_Internal_Collaboration,
+         Count_of_Publications, Count_of_Internal_Collaborative_Publications, 
+         Percent_of_Internal_Collaborations, 
+         Count_of_Interdivision_Collaboration, Count_of_Intradivision_Collaboration,
+         Percent_of_Interdivision_Collaborations, Percent_of_Intradivision_Collaborations,
+         Internal_Collaboration_Type_Score)
+
+rm(division_projects_overall,
+   division_projects_grouped,
+   division_overall_publications,
+   division_grouped_publications,
+   division_collab_type_publications)
+
+#### Knitr Data Table ####
+kable(division_publication_statistics, caption = "Overview of Publications by Consortia Division",
+      col.names = names(division_publication_statistics) %>%
+                    str_replace_all("_"," ")) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```
+
+### Research Division Relative Citation Ratio Statistics
+
+```{r div-relCiteRatio-statistics}
+#### Division Relative Citation Ratio Statistics Overall ####
+division_rcr_stats_overall <- 
+  publication_metadata %>%
+  filter(is_preprint == FALSE) %>%
+  group_by(consortia, division) %>%
+  summarise(
+    Publications = n(),
+    Median_RCR = median(relative_citation_ratio, na.rm = TRUE),
+    Mean_RCR = round(mean(relative_citation_ratio, na.rm = TRUE), 2),
+    SD_RCR = round(sd(relative_citation_ratio, na.rm = TRUE), 2),
+    Var_RCR = round(var(relative_citation_ratio, na.rm = TRUE), 2),
+    Min_RCR = max(relative_citation_ratio, na.rm = TRUE),
+    Max_RCR = max(relative_citation_ratio, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(division_collaboration = "All Publications") %>%
+  select(consortia, division, division_collaboration, Publications,
+         Min_RCR, Median_RCR, Max_RCR, Mean_RCR, SD_RCR, Var_RCR)
+
+#### Division Citation Statistics by Publication Groups ####
+division_rcr_stats_collaboration_groups <- 
+  publication_metadata %>%
+  filter(is_preprint == FALSE) %>%
+  group_by(consortia, division, division_collaboration) %>%
+  summarise(
+    Publications = n(),
+    Median_RCR = median(relative_citation_ratio, na.rm = TRUE),
+    Mean_RCR = round(mean(relative_citation_ratio, na.rm = TRUE), 2),
+    SD_RCR = round(sd(relative_citation_ratio, na.rm = TRUE), 2),
+    Var_RCR = round(var(relative_citation_ratio, na.rm = TRUE), 2),
+    Min_RCR = max(relative_citation_ratio, na.rm = TRUE),
+    Max_RCR = max(relative_citation_ratio, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(division_collaboration = as.character(division_collaboration)) %>%
+  select(consortia, division, division_collaboration, Publications,
+         Min_RCR, Median_RCR, Max_RCR, Mean_RCR, SD_RCR, Var_RCR)
+
+# Combine data
+division_rcr_statistics <-
+  rbind(division_rcr_stats_overall,
+        division_rcr_stats_collaboration_groups) %>%
+  mutate(division_collaboration = 
+           factor(division_collaboration,
+                           levels=c("All Publications",
+                                    "Internal Collaborative Publications",
+                                    "Other Publications"),
+                            labels=c("All Publications",
+                                     "Internal Collaboration Publications",
+                                     "Other Publications"))) %>%
+  rename("Mapping_Program" = "consortia",
+         "Division" = "division",
+         "Division_Collaboration" = "division_collaboration") %>%
+  arrange(Mapping_Program, Division, Division_Collaboration)
+
+rm(division_rcr_stats_overall,
+        division_rcr_stats_collaboration_groups)
+
+#### Knitr Data Table ####
+kable(division_rcr_statistics, 
+      caption = "NIH Mapping Program Research Division Relative Citation Ratio Statistics",
+      col.names = names(division_rcr_statistics) %>%
+                    str_replace_all("_"," ")) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```  
+
+### Research Division Citation Statistics
+
+```{r div-citation-statistics}
+#### Division Citation Statistics Overall ####
+division_citation_stats_overall <- 
+  publication_metadata %>%
+  filter(is_preprint == FALSE) %>%
+  group_by(consortia, division) %>%
+  summarise(
+    Publications = n(),
+    Total_Citations = sum(times_cited, na.rm = TRUE),
+    Median_Citations = median(times_cited, na.rm = TRUE),
+    Max_Citations = max(times_cited, na.rm = TRUE),
+    Mean_Citations = round(mean(times_cited, na.rm = TRUE), 2),
+    SD_Citations = round(sd(times_cited, na.rm = TRUE), 2),
+    Var_Citations = round(var(times_cited, na.rm = TRUE), 2),
+    .groups = "drop"
+  ) %>%
+  mutate(division_collaboration = "All Publications")
+
+#### Division Citation Statistics by Publication Groups ####
+divivision_citation_stats_collaboration_groups <- 
+  publication_metadata %>%
+  filter(is_preprint == FALSE) %>%
+  group_by(consortia, division, division_collaboration) %>%
+  summarise(
+    Publications = n(),
+    Total_Citations = sum(times_cited, na.rm = TRUE),
+    Median_Citations = median(times_cited, na.rm = TRUE),
+    Max_Citations = max(times_cited, na.rm = TRUE),
+    Mean_Citations = round(mean(times_cited, na.rm = TRUE), 2),
+    SD_Citations = round(sd(times_cited, na.rm = TRUE), 2),
+    Var_Citations = round(var(times_cited, na.rm = TRUE), 2),
+    .groups = "drop"
+  ) %>%
+  mutate(division_collaboration = as.character(division_collaboration))
+
+# Combine data
+division_citation_statistics <-
+  rbind(division_citation_stats_overall,
+        divivision_citation_stats_collaboration_groups) %>%
+  select(consortia, division, division_collaboration, Publications,
+         Total_Citations, Mean_Citations, Median_Citations,
+         SD_Citations, Var_Citations, Max_Citations) %>%
+  mutate(division_collaboration = 
+           factor(division_collaboration,
+                           levels=c("All Publications",
+                                    "Internal Collaborative Publications",
+                                    "Other Publications"))) %>%
+  rename("Mapping_Program" = "consortia",
+         "Division" = "division",
+         "Division_Collaboration" = "division_collaboration") %>%
+  arrange(Mapping_Program, Division, Division_Collaboration)
+
+rm(division_citation_stats_overall, 
+   divivision_citation_stats_collaboration_groups)
+
+#### Knitr Data Table ####
+kable(division_citation_statistics, 
+      caption = "NIH Mapping Program Research Division Citation Statistics",
+      col.names = names(division_citation_statistics) %>%
+                    str_replace_all("_"," ")) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```
+
+
+## Author Publication Analysis
+
+### Average Number of Author per NIH Mapping Program Publication
+
+```{r consortia-avg-author-counts}
+#### Overall Mean Authors Per Publication ####
+consortia_avg_author_counts <- 
+  publications %>%
+  group_by(consortia) %>%
+    summarise(
+    Min_Authors_per_Publication =  min(author_count),
+    Median_Authors_per_Publication = median(author_count),
+    Max_Authors_per_Publication = max(author_count),
+    Mean_Authors_per_Publication = round(mean(author_count, na.rm = TRUE), 2),
+    SD_Authors = sd(author_count, na.rm = TRUE),
+    Var_Authors = var(author_count, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(division_collaboration = "All Publications")
+
+#### Collaborative Publications Mean Authors Per Publication ####
+consortia_grouped_avg_author_counts <- 
+  publications %>%
+  group_by(consortia, division_collaboration) %>%
+  summarise(
+    Min_Authors_per_Publication =  min(author_count),
+    Median_Authors_per_Publication = median(author_count),
+    Max_Authors_per_Publication = max(author_count),
+    Mean_Authors_per_Publication = round(mean(author_count, na.rm = TRUE), 2),
+    SD_Authors = sd(author_count, na.rm = TRUE),
+    Var_Authors = var(author_count, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(division_collaboration =
+           as.character(division_collaboration))
+
+# Combine data
+consortia_avg_author_statistics <-
+  rbind(consortia_avg_author_counts, consortia_grouped_avg_author_counts) %>%
+  select(consortia, division_collaboration, Min_Authors_per_Publication,
+         Median_Authors_per_Publication, Max_Authors_per_Publication,
+         Mean_Authors_per_Publication,
+         SD_Authors, Var_Authors) %>%
+  rename("Mapping_Program" = "consortia",
+         "Publication_Group" = "division_collaboration") %>%
+  arrange(Mapping_Program)
+
+rm(consortia_avg_author_counts, consortia_grouped_avg_author_counts)
+
+#### Knitr Data Table ####
+kable(consortia_avg_author_statistics, caption = "NIH Mapping Consortia Average Author Counts Per Paper",
+      col.names = names(consortia_avg_author_statistics) %>%
+                    str_replace_all("_"," ")) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```
+
+### Mapping Program Author Participation, by author role
+
+```{r consortia-author-counts}
+#### Count number of publication authors for role ####
+author_role_count <-
+  author_baseline_metrics %>%
+  group_by(consortia, role) %>%
+  mutate(role = str_replace_all(role, " ","_")) %>%
+  summarise(n_authors = n(), .groups = "drop")  %>%
+  pivot_wider(id_cols=consortia, names_from = role,
+              names_prefix = "Count_of_", values_from = n_authors,
+              values_fill = 0) %>% 
+  mutate(Count_of_Authors = 
+           Count_of_Principal_Investigator+ Count_of_Researcher) %>%
+  rename("Count_of_PIs" = "Count_of_Principal_Investigator",
+         "Count_of_Researchers" = "Count_of_Researcher")
+
+#### Count number of publication author role and publication group ####
+author_role_counts_cc_pub <-
+  author_collaboration_metrics %>%
+  filter(ic_publications > 0) %>%
+  group_by(consortia, role) %>%
+  mutate(role = str_replace_all(role, " ","_") %>%
+           tolower()) %>%
+  summarise(Count_of_Authors = n(), .groups = "drop")  %>%
+  pivot_wider(id_cols=consortia, names_from = role,
+              names_prefix = "Count_of_", values_from = Count_of_Authors,
+              values_fill = 0) %>% 
+  mutate(Count_of_Authors_involved_in_Internal_Collaborative_Research = 
+           Count_of_principal_investigator+Count_of_researcher) %>%
+  rename("Count_PIs_involved_in_Internal_Collaborative_Research" = "Count_of_principal_investigator",
+         "Count_Researchers_involved_in_Internal_Collaborative_Research" = "Count_of_researcher")
+
+# Combine data and calculate percentage groups
+author_roles_statistics <- 
+  author_role_count %>%
+  left_join(author_role_counts_cc_pub, 
+            by="consortia") %>%
+  mutate(Percent_of_PIs_involved_in_Collaborative_Research = 
+           round(Count_PIs_involved_in_Internal_Collaborative_Research/
+                   Count_of_PIs*100, 2),
+         Percent_of_Researchers_involved_in_Collaborative_Research = 
+           round(Count_Researchers_involved_in_Internal_Collaborative_Research/
+                   Count_of_Researchers*100, 2),
+         Percent_of_Authors_involved_in_Collaborative_Research = 
+           round(Count_of_Authors_involved_in_Internal_Collaborative_Research/
+                   Count_of_Authors*100, 2)
+         ) %>%
+  rename("Atlas Program"="consortia",
+         "Count of Authors" = "Count_of_Authors",
+         "Count of IC Authors" = "Count_of_Authors_involved_in_Internal_Collaborative_Research",
+         "Percent of Authors in IC publications" = "Percent_of_Authors_involved_in_Collaborative_Research",
+         "Count of PI Authors" = "Count_of_PIs",
+         "Count of PI IC Authors" = "Count_PIs_involved_in_Internal_Collaborative_Research",
+         "Percent of PI in IC publications" = "Percent_of_PIs_involved_in_Collaborative_Research",
+         "Percent of Other researcher in IC publications" = "Percent_of_Researchers_involved_in_Collaborative_Research") %>%
+  select(`Atlas Program`, `Count of Authors`, `Count of IC Authors`,
+         `Percent of Authors in IC publications`, `Count of PI Authors`,
+         `Count of PI IC Authors`, `Percent of PI in IC publications`,
+         `Percent of Other researcher in IC publications`)
+
+rm(author_role_count, author_role_counts_cc_pub)
+
+#### Knitr Data Table ####
+kable(author_roles_statistics, 
+      caption = "NIH Mapping Consortia Total Authors, by Author Role",
+      col.names = names(author_roles_statistics) %>%
+                    str_replace_all("_"," ")) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```
+
+### Mapping Program Author Research Productivity and Impact
+
+```{r consortia_avg_author_metrics}
+#### Author Average Publication and Citation Metrics, by Role ####
+consortia_author_publication_stats <- 
+    authors_publication_metrics %>%
+    group_by(consortia, role) %>%
+    summarise(
+        Count_of_Authors = n(),
+        Mean_Publications = round(mean(publications, na.rm = TRUE), 2),
+        Mean_Citations = round(mean(citations, na.rm = TRUE), 2),
+        .groups = "drop"
+      ) %>%
+      arrange(consortia, role)
+
+#### Internal Collaboration - Authors' Average Publication and Citation Metrics ####
+consortia_ic_author_publication_stats <- 
+    authors_publication_metrics %>%
+    filter(ic_publications > 0) %>%
+    group_by(consortia, role) %>%
+    summarise(
+        Count_of_Internal_Collaborative_Authors = n(),
+        Mean_Publications_of_IC_Authors = round(mean(publications, na.rm = TRUE), 2),
+        Mean_Count_Collaborative_Publications = 
+          round(mean(ic_publications, na.rm = TRUE), 2),
+        Mean_Citations_of_IC_Authors = round(mean(citations, na.rm = TRUE), 2),
+        Mean_Citations_Collaborative_Publications = round(mean(ic_citations, na.rm = TRUE), 2),
+        .groups = "drop"
+      ) %>%
+      arrange(consortia, role)
+
+#### Non-Consortia Collaboration - Authors' Average Publication and Citation Metrics ####
+consortia_other_author_publication_stats <- 
+    authors_publication_metrics %>%
+    filter(ic_publications == 0) %>%
+    group_by(consortia, role) %>%
+    summarise(
+        Count_of_Other_Authors = n(),
+        Mean_Publications_of_Other_Authors = round(mean(publications, na.rm = TRUE), 2),
+        Mean_Citations_of_Other_Authors = round(mean(citations, na.rm = TRUE), 2),
+        .groups = "drop"
+      ) %>%
+      arrange(consortia, role)
+
+# Combine data tables
+author_publication_citation_statistics <-
+  left_join(consortia_author_publication_stats,
+            consortia_ic_author_publication_stats,
+            by=c("consortia","role")) %>%
+  left_join(consortia_other_author_publication_stats,
+            by=c("consortia","role")) %>%
+  rename("Mapping_Program"="consortia",
+         "Role"="role") %>%
+  mutate(Percent_of_Authors_involved_in_Internal_Collaborations = 
+           round(Count_of_Internal_Collaborative_Authors/Count_of_Authors*100,
+                 2),
+         Percent_of_Authors_not_involved_in_Internal_Collaborations = 
+           100-Percent_of_Authors_involved_in_Internal_Collaborations) %>%
+  select(Mapping_Program, Role, Count_of_Authors, ,
+         Count_of_Internal_Collaborative_Authors,
+         Count_of_Other_Authors,
+         Percent_of_Authors_involved_in_Internal_Collaborations,
+         Percent_of_Authors_not_involved_in_Internal_Collaborations,
+         Mean_Publications, 
+         Mean_Publications_of_IC_Authors, 
+         Mean_Publications_of_Other_Authors,
+         Mean_Citations,
+         Mean_Citations_of_IC_Authors, 
+         Mean_Citations_of_Other_Authors,
+         Mean_Count_Collaborative_Publications, 
+         Mean_Citations_Collaborative_Publications)
+
+rm(consortia_cc_author_publication_stats, 
+   consortia_other_author_publication_stats)
+
+#### Knitr Data Table ####
+kable(author_publication_citation_statistics, 
+      caption = "NIH Mapping Program Average Publication and Citation Metrics, by Author Role",
+      col.names = names(author_publication_citation_statistics) %>%
+                    str_replace_all("_"," ")) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```
+
+### Distribution of Internal Collaborative Authors Publication Activity Levels
+
+```{r baseline-active-authors}
+#### Collaborative Author Publication Activity Ranking ####
+# Count of authors by role for each consortia
+consortia_role_author_counts <- 
+  rbind(author_publication_citation_statistics,
+        author_publication_citation_statistics,
+        author_publication_citation_statistics,
+        author_publication_citation_statistics,
+        author_publication_citation_statistics) %>%
+  select(Mapping_Program, Role, Count_of_Authors) %>%
+  arrange(Mapping_Program)
+
+authors_ic_activity <- 
+  authors_publication_metrics %>% 
+  mutate(Internal_Collaboration_Activity_Level = case_when(
+            ic_publications >= 10 ~ "Highly Active (10+)",
+            ic_publications >= 5 ~ "Very Active (5-9)",
+            ic_publications >= 2 ~ "Moderately Active (2-4)",
+            ic_publications == 1 ~ "Slightly Active (1)",
+            ic_publications == 0 ~ "Inactive (0)"), 
+         Internal_Collaboration_Activity_Level =
+            factor(Internal_Collaboration_Activity_Level, 
+                   levels=c("Highly Active (10+)","Very Active (5-9)",
+                            "Moderately Active (2-4)","Slightly Active (1)",
+                            "Inactive (0)"))) %>%
+  group_by(consortia, Internal_Collaboration_Activity_Level, role) %>%
+  summarise(
+    Authors = n(),
+    .groups = "drop"
+  ) %>% 
+  complete(consortia, Internal_Collaboration_Activity_Level, role, 
+           fill = list(Authors = 0)) %>%
+  mutate(Percent_of_Authors = 
+           round(Authors/consortia_role_author_counts$Count_of_Authors*100,2))
+  
+# Table View
+authors_ic_activity_table <- 
+  authors_ic_activity %>%
+  select(-Authors) %>%
+  pivot_wider(names_from = role, values_from = Percent_of_Authors, 
+              values_fill = 0) %>%
+  rename("Mapping_Program" = "consortia",
+         "Percent of Principal Investigators" = "Principal Investigator",
+         "Percent of Researchers" = "Researcher")
+
+rm(consortia_role_author_counts)
+
+#### Knitr Data Table ####
+kable(authors_ic_activity_table, 
+      caption = "Distribution of Author Internal Collaborative Publication Activity Levels",
+      col.names = names(authors_ic_activity_table) %>%
+                    str_replace_all("_"," ")) %>%
+  kable_styling(bootstrap_options = "condensed", full_width = FALSE,
+                html_font="trebuchet")
+```
+
+# Visualizations Results
+
+## Publication Trends
+
+### Publications Over Time
+
+```{r linegraph-consortia-publications-by-year-plot, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 1.** NIH Mapping program discrete annual publications, by publication group.", fig.width=6, fig.height=3}
+#### Consortia Annual Publication Metrics ####
+project_year <- 
+  publications %>%
+  group_by(consortia) %>%
+  select(consortia, pub_year) %>%
+  distinct() %>%
+  mutate(project_year = row_number()) 
+
+publications_by_year_overall <-
+  publications %>%
+  filter(pub_year != max(pub_year)) %>%
+  left_join(project_year,
+            by=c("consortia","pub_year")) %>%
+  group_by(consortia, project_year) %>%
+  summarise(
+    total_publications = n(),
+    .groups = "drop"
+  ) %>% 
+  mutate(division_collaboration = "All Publications")
+
+publications_by_year_grouped <- 
+  publications %>%
+  filter(pub_year != max(pub_year)) %>%
+  left_join(project_year,
+            by=c("consortia","pub_year")) %>%
+  group_by(consortia, project_year, division_collaboration) %>%
+  summarise(
+    total_publications = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(division_collaboration = as.character(division_collaboration)) %>%
+  filter(division_collaboration != "Other Publications")
+
+publications_by_year <- 
+  rbind(publications_by_year_overall,
+      publications_by_year_grouped) %>% 
+  mutate(division_collaboration = 
+           factor(division_collaboration,
+                  levels=c("All Publications",
+                           "Internal Collaborative Publications"))) %>%
+  arrange(consortia,division_collaboration)
+
+rm(publications_by_year_grouped, publications_by_year_overall)
+
+#### Plot of Publications over time ####
+p1 <- 
+  publications_by_year %>%
+  ggplot(aes(x = project_year, y = total_publications, color = consortia,
+             linetype = division_collaboration)) +
+  geom_line(size = .5) +
+  geom_point(size = 1.5) +
+  facet_grid(~consortia) +
+  scale_linetype_manual(values = 
+      c("All Publications" = "solid", 
+        "Internal Collaborative Publications" = "2121")) +
+  scale_x_continuous(breaks=seq(1,max(project_year$project_year,1))) +
+  scale_color_manual(values = consortium_colours) +
+  labs(x = "Project Year",
+       y = "Publications",
+       color = "Mapping Program",
+       linetype = "Publication Group") +
+  theme(legend.position = "bottom",
+        legend.box="vertical",
+        legend.box.just = "left",
+        legend.spacing.y = unit(.5, "pt"),
+        panel.grid.minor.x = element_blank())
+p1
+```
+
+
+```{r bargraph-ic-publication-rates, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 2.** Bar graphs comparing NIH mapping programs internal collaborations. Inset A compares the percentage of publications that resulting from internal collaborations; inset B compares the percentage of programs' core projects participating in internal collaborative research; inset C compares the percentage of principal investigators from mapping programs that participate in internal collaborative research.", fig.height=3, fig.width=7}
+#### Percent of mapping program publication that are research division collaborations ####
+p2.1 <-
+  mapping_program_publication_stats %>%
+  filter(Publication_Group == "Internal Collaborative Publications") %>%
+    ggplot(aes(x = reorder(Mapping_Program,
+                           Percent_of_Publications), 
+               y = Percent_of_Publications, 
+               fill = Mapping_Program)) +
+      geom_col(alpha = 0.95) +
+      geom_text(aes(label = paste0(Percent_of_Publications, "%")), 
+                vjust = -0.5, fontface = "bold") +
+      scale_fill_manual(values = consortium_colours) +
+      scale_y_continuous(limits=c(0,100)) +
+      labs(tag = "A",
+           y = "Percentage of Publications (%)",
+           fill = "Mapping Program") +
+      theme(legend.position = "none",
+            axis.title.x = element_blank(),
+            panel.grid.major.x = element_blank())
+
+#### Percent of Projects participating in internal collaborative research ####
+p2.2 <-
+  mapping_program_publication_stats %>%
+  filter(Publication_Group == "Internal Collaborative Publications") %>%
+    ggplot(aes(x = reorder(Mapping_Program,
+                           Percent_of_Projects), 
+               y = Percent_of_Projects, 
+               fill = Mapping_Program)) +
+      geom_col(alpha = 0.95) +
+      geom_text(aes(label = paste0(Percent_of_Projects, "%")), 
+                vjust = -0.5, fontface = "bold") +
+      scale_fill_manual(values = consortium_colours) +
+      scale_y_continuous(limits=c(0,100)) +
+      labs(tag = "B",
+           y = "Percentage of Projects (%)",
+           fill = "Mapping Program") +
+      theme(legend.position = "none",
+            axis.title.x = element_blank(),
+            panel.grid.major.x = element_blank())
+
+
+#### Percent of PIs participating in internal collaborative research ####
+p2.3 <- 
+  author_publication_citation_statistics %>%
+  filter(Role == "Principal Investigator") %>%
+    ggplot(aes(x = reorder(Mapping_Program,
+                           Percent_of_Authors_involved_in_Internal_Collaborations), 
+               y = Percent_of_Authors_involved_in_Internal_Collaborations, 
+               fill = Mapping_Program)) +
+      geom_col(alpha = 0.95) +
+      geom_text(aes(label = 
+                      paste0(Percent_of_Authors_involved_in_Internal_Collaborations, "%")), 
+                vjust = -0.5, fontface = "bold") +
+      scale_fill_manual(values = consortium_colours) +
+      scale_y_continuous(limits=c(0,100)) +
+      labs(tag = "C",
+           y = "Percentage of PIs (%)",
+           fill = "Mapping Program") +
+      theme(legend.position = "none",
+            axis.title.x = element_blank(),
+            panel.grid.major.x = element_blank())
+
+# Patchwork combine plots
+p2 <- p2.1 + p2.2 + p2.3 
+p2
+```
+
+## Citation Impact Analysis
+
+### NIH Mapping Program Citation Distributions
+
+#### Relative Citation Ratio
+
+```{r boxplot-consortia-rcr-distribution+collab_type, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 3.** Box plots show the distribution of relative citation ratios for NIH Mapping Program publications, broken out by the publication collaboration types.", fig.width=7.5, fig.height=4}
+p3 <- 
+  publications %>%
+  select(pmid, consortia, pub_year, division_collaboration, 
+         collab_type, relative_citation_ratio) %>%
+  mutate(collab_type = str_wrap(collab_type, width=15)) %>%
+  filter(pub_year < max(pub_year)) %>% 
+  ggplot(aes(x = collab_type, y = relative_citation_ratio, 
+             fill = division_collaboration)) +
+  facet_wrap(~consortia) +
+  geom_violin(alpha = 0.6) +
+  geom_boxplot(width = 0.2, alpha = 0.8) +
+  scale_y_log10() +
+  scale_fill_manual(values = c("Internal Collaborative Publications" = "#9964A8", 
+                               "Other Publications" = "#6D99D5")) +
+  labs(
+    # title = "NIH Mapping Program Distribution of Relative Citation Ratio",
+    # subtitle = "Grouped by publication collaboration types, for the period 2018-2025",
+    x = "Publication Type",
+    y = "Relative Citation Ratio",
+    fill = "Publication Type"
+  ) +
+    theme(legend.position = "bottom",
+          legend.box.just = "left",
+          axis.text.x = element_text(size=unit(8,"pt")))
+p3
+```
+
+#### Citation Counts
+
+```{r boxplot-consortia-citation-distribution+collab_type, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 4.** Box plots show the distribution of citations for NIH Mapping Program publications, broken out by the publication collaboration types.",  fig.width=7.5, fig.height=4}
+p4 <- 
+  publications %>%
+  select(pmid, consortia, pub_year, division_collaboration, 
+         collab_type, times_cited) %>%
+  mutate(collab_type = str_wrap(collab_type, width=15)) %>%
+  filter(pub_year < max(pub_year)) %>% 
+  ggplot(aes(x = collab_type, y = times_cited, 
+             fill = division_collaboration)) +
+  facet_wrap(~consortia) +
+  geom_violin(alpha = 0.6) +
+  geom_boxplot(width = 0.2, alpha = 0.8) +
+  scale_y_log10() +
+  scale_fill_manual(values = c("Internal Collaborative Publications" = "#9964A8", 
+                               "Other Publications" = "#6D99D5")) +
+  labs(
+    x = "Publication Type",
+    y = "Times Cited",
+    fill = "Publication Type"
+  ) +
+    theme(legend.position = "bottom",
+          legend.box.just = "left",
+          axis.text.x = element_text(size=unit(8,"pt")))
+p4
+```
+
+### NIH Mapping Program Research Divisions
+
+#### Relative Citation Ratio
+
+```{r boxplot-div-rcr-distribution+collab_type, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 5.**Box plots show the distribution of relative citation ratios for NIH Mapping Program research divisions, broken out by the publication collaboration types.", fig.height=8, fig.width=6}
+# HTAN
+p5.1 <- 
+  publication_metadata %>%
+  select(pmid, consortia, pub_year, division, division_type, 
+         division_collaboration, 
+         collab_type, relative_citation_ratio) %>%
+  filter(consortia=="HTAN") %>%
+  mutate(division_collaboration = 
+           str_wrap(division_collaboration, width=15)) %>%
+  filter(pub_year < max(pub_year)) %>% 
+  ggplot(aes(x = division_collaboration, 
+             y = relative_citation_ratio, 
+             fill = division_collaboration)) +
+  facet_grid(~division) +
+  geom_violin(alpha = 0.6) +
+  geom_boxplot(width = 0.2, alpha = 0.8) +
+  scale_y_log10() +
+  scale_fill_manual(values = c("Internal\nCollaborative\nPublications" = "#9964A8", 
+                               "Other\nPublications" = "#6D99D5")) +
+  labs(
+    tag = "A",
+    title = "HTAN",
+    x = "Publication Type",
+    y = "Relative Citation Ratio",
+    fill = "Publication Type"
+  ) +
+    theme(legend.position = "bottom",
+          legend.box.just = "left")
+# HuBMAP
+p5.2 <- 
+  publication_metadata %>%
+  select(pmid, consortia, pub_year, division, division_type, 
+         division_collaboration, 
+         collab_type, relative_citation_ratio) %>%
+  filter(consortia=="HuBMAP") %>%
+  mutate(division_collaboration = 
+           str_wrap(division_collaboration, width=15)) %>%
+  filter(pub_year < max(pub_year)) %>% 
+  ggplot(aes(x = division_collaboration, 
+             y = relative_citation_ratio, 
+             fill = division_collaboration)) +
+  facet_wrap(~division, ncol=3) +
+  geom_violin(alpha = 0.6) +
+  geom_boxplot(width = 0.2, alpha = 0.8) +
+  scale_y_log10() +
+  scale_fill_manual(values = c("Internal\nCollaborative\nPublications" = "#9964A8", 
+                               "Other\nPublications" = "#6D99D5")) +
+  labs(
+    tag = "B",
+    title = "HuBMAP",
+    x = "Publication Type",
+    y = "Relative Citation Ratio",
+    fill = "Publication Type"
+  ) +
+    theme(legend.position = "bottom",
+          legend.box.just = "left")
+# SenNet
+p5.3 <- 
+  publication_metadata %>%
+  select(pmid, consortia, pub_year, division, division_type, 
+         division_collaboration, 
+         collab_type, relative_citation_ratio) %>%
+  filter(consortia=="SenNet") %>%
+  mutate(division_collaboration = 
+           str_wrap(division_collaboration, width=15)) %>%
+  filter(pub_year < max(pub_year)) %>% 
+  ggplot(aes(x = division_collaboration,
+             y = relative_citation_ratio, 
+             fill = division_collaboration)) +
+  facet_grid(~division) +
+  geom_violin(alpha = 0.6) +
+  geom_boxplot(width = 0.2, alpha = 0.8) +
+  scale_y_log10() +
+  scale_fill_manual(values = c("Internal\nCollaborative\nPublications" = "#9964A8", 
+                               "Other\nPublications" = "#6D99D5")) +
+  labs(
+    tag = "C",
+    title = "SenNet",
+    x = "Publication Type",
+    y = "Relative Citation Ratio",
+    fill = "Publication Type"
+  ) +
+    theme(legend.position = "bottom",
+          legend.box.just = "left")
+
+# plot design
+design <- 
+"111
+ 222
+ 222
+ 222
+ 333"
+
+p5.1 / free(p5.2) / p5.3 +
+  plot_layout(design = design, guides="collect") & 
+  theme(legend.position = "bottom",
+        plot.title = element_text(size=unit(10,"pt")),
+        panel.grid.major.x = element_blank(),
+        axis.title = element_text(size=unit(9,"pt")),
+        axis.title.x = element_blank(),
+        axis.text.x = element_text(size=unit(8,"pt")),
+        strip.text = element_text(size=unit(8,"pt")))
+```
+
+#### Distibution of Citations for NIH Mapping Program Authors, by Collaboration Activity
+
+```{r boxplot-consortia-citation-distribution+role, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="**Figure 6.**Boxplots show distribution of citation for NIH Mapping Program authors. Authors are grouped by their role within the programs and their internal collaboration activity for the period 2018-2025.", fig.height=5.5, fig.width=4}
+p7 <-
+  authors_publication_metrics %>%
+  select(consortia, role, publications, ic_publications, 
+         citations, weighted_citations) %>%
+  mutate(author_group = 
+           ifelse(ic_publications==0,"Non-IC Author","IC Author"),
+         author_group = factor(author_group, 
+                              levels=c("IC Author", "Non-IC Author"))) %>%
+  ggplot(aes(x = role, y = (citations+1), fill = author_group)) +
+
+  facet_wrap(~consortia, nrow=3) +
+  geom_violin(alpha = 0.6, position=position_dodge(.7)) +
+  geom_boxplot(width = 0.275, alpha = 0.8, position=position_dodge(.7)) +
+  scale_y_log10() +
+  scale_fill_manual(values = c("IC Author" = "#9964A8", 
+                               "Non-IC Author" = "#6D99D5")) +
+  labs(
+    x = "Author Role",
+    y = "Citations",
+    fill = "Author Group"
+  ) +
+    theme(legend.position = "bottom",
+          legend.box.just = "left",
+          panel.grid.major.x = element_blank())
+p7
+```
+
+## Mapping Division and Author Internal Collaboration Activity Analysis
+
+### Internal Collaboration Type Scores for NIH Mapping Program Research Divisions
+
+```{r scattergraph-div-ict_score, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 4A.** Dot plot compares the internal collaboration type scores (ICT score) of NIH mapping program research divisions. An ICT score of 1 indicates that an division only engages in  inter-division research; a score of -1 indicates that an division only engages in intra-division collaboration; a score of 0 indicates that an division engages in both inter- and intra-division equally.", fig.height=3, fig.width=4.5}
+#### Dot plot of division collaboration type concentration score. ####
+# A internal collaboration type (ICT) score represents the type of internal consortia
+# collaborative research that division projects engages, which is based internal
+# collaboration publications (i.e., inter-division (between) vs.
+# intra-division (within) collaborations) they contributed to in their work.
+# 
+# Interpretation: An ICT score of 1 indicates that an division only engages in
+# inter-division research; a score of -1 indicates that an division only engages
+# in intra-division collaboration; a score of 0 indicates that an division engages 
+# in both inter- and intra-division equally.
+
+# geom_segment color data set.
+gradient_data <- data.frame(
+  collaboration_type_concentration = seq(-1.07,1.07,.001), 
+  color = seq(-1.07,1.07,.001) )
+
+# Plot
+p6 <-
+  division_publication_statistics %>% 
+  mutate(ICT_Score = 
+           round((Percent_of_Interdivision_Collaborations - 
+                  Percent_of_Intradivision_Collaborations)/100,2)) %>%
+  select(Mapping_Program, Division, Count_of_Publications,
+         Count_of_Internal_Collaborative_Publications,
+         Percent_of_Internal_Collaborations,
+         ICT_Score) %>%
+  # Use the manuscript-facing spelling for the HuBMAP technology division.
+  mutate(Division = recode(Division, "RIT" = "RTI")) %>%
+  arrange(Mapping_Program, desc(Division)) %>%
+  ggplot(aes(x=ICT_Score, y=fct_rev(Division))) +
+    geom_segment(data = gradient_data, alpha = .15,
+                 aes(x=color, xend=color,
+                 y=-Inf, yend=Inf, color=color),
+                 show.legend = FALSE) +
+    scale_color_gradient2(low="#ffeda0", mid="white", high="#87C980",
+                    midpoint=0) +
+    annotate("text", x=-.85, y="DCC", size=1.65, color="#6B6443",
+             label="Intradivision\nCollaborations") +
+    annotate("text", x=.85, y="DCC", size=1.65, color="#3F6B40",
+             label="Interdivision\nCollaborations") +
+    annotate("text", x=0, y="DCC", size=1.75, color="#444444",
+             label="Mixed Collaboration Types") +
+    new_scale_color() +
+    geom_point(aes(colour=Mapping_Program, 
+               size=Count_of_Internal_Collaborative_Publications)) +
+    scale_x_continuous(limits=c(-1.05,1.05), breaks=seq(-1,1,.1),
+                       expand=c(0,0)) +
+    scale_color_manual(values = consortium_colours) +
+    scale_size_area(max_size=3) +
+    labs(x="Internal Collaboration Type Score",
+         y="Consortium Component",
+         size = "Collaborative Publications") +
+    theme(legend.position = "bottom",
+          legend.box="vertical",
+          legend.box.just = "left",
+          legend.spacing = unit(0, "pt"),
+          legend.title = element_text(size=unit(8,"pt")),
+          legend.text = element_text(size=unit(6,"pt")),
+          panel.grid.minor.x = element_blank(), 
+          panel.grid.major.y = element_blank(),
+          axis.text.x = element_text(size=unit(6,"pt")),
+          axis.text.y = element_text(size=unit(6,"pt")),
+          axis.title = element_text(size=unit(8,"pt")))
+p6
+```
+
+### Distribution of Internal Collaboration Type Scores for NIH Mapping Program Authors
+
+```{r histogram-author-distribution_ict_score+role, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 8.** A histogram compares the distribution of authors' internal collaboration type (ICT) scores for NIH mapping program; bar color identifies number of the collaborative authors by role within a program. An ICT score of 1 indicates that an division only engages in inter-division research; a score of -1 indicates that an division only engages in intra-division collaboration; a score of 0 indicates that an division engages in both inter- and intra-division equally.", fig.height=6, fig.width=5.5}
+#### Histogram of author internal collaboration type concentration score. ####
+# A Internal Collaboration Type Score represents the concentration and type of 
+# internal collaborative research and concentration that an author engages. 
+# There are two types of internal collaboration: inter-division (between) vs. 
+# intra-division (within) collaborations.
+#
+# Interpretation: An ICT Score of 1 indicates that 
+# an author only engages in  inter-division research; a score of -1 indicates 
+# that an author only engages in intra-division collaboration; a score of 0  
+# indicates that an author engages in both inter- and intra-division equally.
+
+# geom_segment color data set.
+gradient_data <- data.frame(
+  collaboration_type_concentration = seq(-1.07,1.07,.001), 
+  color = seq(-1.07,1.07,.001) )
+
+# Plot
+p8 <- 
+  authors_publication_metrics %>%
+    select(consortia, role, collaboration_type_concentration, ic_publications) %>%
+    filter(is.na(collaboration_type_concentration)==FALSE) %>%
+    ggplot() +
+      geom_segment(data = gradient_data, alpha = .15,
+                   aes(x=color, xend=color,
+                       y=0, yend=Inf, color=color),
+                   show.legend = FALSE) +
+      annotate("text", x=-.85, y=1300, size=2, color="#6B6443",
+               label="Intradivision\nCollaborations") +
+      annotate("text", x=.85, y=1300, size=2, color="#3F6B40",
+               label="Interdivision\nCollaborations") +
+      annotate("text", x=0, y=1300, size=2, color="#444444",
+               label="Mixed Collaboration\nTypes") +
+      geom_histogram(aes(x = collaboration_type_concentration, fill = role),
+                     binwidth=.1, color="#9E9E9E1E") + 
+      facet_wrap(~consortia, nrow=3) +
+      scale_x_continuous(limits=c(-1.07,1.07), breaks=seq(-1,1,.1),
+                         expand=c(0,0)) +
+      scale_y_continuous(trans="sqrt", limits=c(0,1600)) +
+      scale_color_gradient2(low="#ffeda0", mid="white", high="#87C980",
+                            midpoint=0) +
+      scale_fill_manual(values = c("Principal Investigator" = "#9964A8", 
+                                   "Researcher" = "#6D99D5")) +
+      labs(x = "Internal Collaboration Type Score",
+           y = "Authors (Square Root Scale)",
+           fill = "Author Role") +
+      theme(legend.position = "bottom",
+            legend.box.just = "left",
+            panel.grid.major.y = element_line(colour = "#E0E0E0"),
+            panel.grid.minor.y = element_line(colour = "#E0E0E0"),
+            panel.grid.major.x = element_blank(),
+            panel.grid.minor.x = element_blank())
+p8
+```
+
+### Ranking Author on Internal Collaborative Reseach Production
+
+```{r bargraph-author-collab-activity-rank+role, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 9.** Bar graphs identify the top twenty authors that participate in internal collaborative research project; bar color identifies author roles within a program.", fig.width=6}
+p9 <- 
+  authors_publication_metrics %>%
+  filter(ic_publications > 0) %>%
+  group_by(consortia) %>%
+  mutate(rank = rank(-ic_publications, 
+                     ties.method = "last")) %>% 
+  ungroup() %>%
+  arrange(consortia, -rank) %>%
+  filter(rank <= 20) %>%
+  ggplot(aes(x = reorder_within(author_name, -rank,-ic_publications), 
+             y = ic_publications, fill = role)) +
+    geom_col(alpha = 0.95) +
+    facet_wrap(~consortia, scales = "free") +
+    scale_fill_manual(values = c("Principal Investigator" = "#9964A8", 
+                                 "Researcher" = "#6D99D5")) +
+    scale_x_reordered() +
+    coord_flip() +
+    labs(
+      # title = "Most Active Authors in Collaborative Research",
+      # subtitle = "Top 20 authors by collaborative publication count (by consortia)",
+      x = "Authors",
+      y = "Collaborative Publications",
+      fill = "Author Role"
+    ) +
+    theme(legend.position = "bottom",
+          axis.text.y = element_text(size = 8),
+          panel.grid.major.y = element_blank(),
+          panel.grid.minor.x = element_blank())
+
+p9
+```
+
+---
+
+# Export Session Information
+
+```{r export, include=FALSE}
+# Export tables and figures for publication
+# Write Table 6
+write.csv(mapping_program_publication_stats[,1:7], 
+          file=file.path(here::here("outputs","tables","NIH_map-program_publications_overview.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+write.csv(mapping_program_publication_stats[,1:7], 
+          file=file.path(here::here("outputs","tables","table_6.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Write Table 7
+write.csv(mapping_program_publication_stats[,c(1,2,8:14)], 
+          file=file.path(here::here("outputs","tables","table_6_publication_impact_across_collaboration_types.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+write.csv(mapping_program_publication_stats[,c(1,2,8:14)], 
+          file=file.path(here::here("outputs","tables","table_7.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Appendix B - Program Research Division Publication Statistics
+write.csv(division_publication_statistics, 
+          file=file.path(here::here("outputs","tables","appendix_b.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Appendix C - Program Research Division Relative Citation Ratio Statistics
+write.csv(division_rcr_statistics, 
+          file=file.path(here::here("outputs","tables","appendix_c.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Appendix D - Program Research Division Citation Statistics
+write.csv(division_citation_statistics, 
+          file=file.path(here::here("outputs","tables","appendix_d.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Appendix E - Program Publication Author Counts
+write.csv(consortia_avg_author_statistics, 
+          file=file.path(here::here("outputs","tables","appendix_e.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Write Table 3
+write.csv(author_roles_statistics, 
+          file=file.path(here::here("outputs","tables","table_3_atlas_program_authors_and participation.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+
+# Appendix F - Program Author Role Publication and Citation Statistics
+write.csv(author_publication_citation_statistics, 
+          file=file.path(here::here("outputs","tables","appendix_f.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+# Write Table 9 
+write.csv(authors_ic_activity_table, 
+          file=file.path(here::here("outputs","tables","NIH_map-program_author_ic_activity_level.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+write.csv(authors_ic_activity_table, 
+          file=file.path(here::here("outputs","tables","table_4_distribution.csv")),
+          row.names=FALSE, fileEncoding = "UTF8")
+
+
+# Export figures as SVG for publication work
+# Figure 3 in paper
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_3.svg")) ,
+       plot=p1, device="svg", width=6.5, height = 2.75, units="in")
+
+# Figure 6 in paper
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_6-publications_md.svg")) ,
+       plot=p2, device="svg", width=6.5, height = 2.75, units="in")
+
+# Figure 4A in paper
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_4_a.svg")) ,
+       plot=p6, device="svg", width=5, height = 3, units="in")
+ggsave(filename = file.path(here::here("outputs",
+                                       "figures","figure_4_a.jpg")) ,
+       plot=p6, device="jpeg", width=5, height = 3, units="in", dpi=300)
+
+```
+
+```{r session-info, echo=FALSE}
+sessionInfo()
+```

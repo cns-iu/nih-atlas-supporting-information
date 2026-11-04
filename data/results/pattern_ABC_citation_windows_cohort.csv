@@ -1,0 +1,921 @@
+consortia,pmid,functional_collaboration_class,pub_year,journal,is_preprint_bool,pattern
+HTAN,29891724,single_project,2018,Clinical cancer research : an official journal of the American Association for Cancer Research,False,Other publications
+HTAN,30247654,single_project,2019,Nucleic acids research,False,Other publications
+HTAN,30283195,single_project,2018,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HTAN,30346945,single_project,2018,PLoS biology,False,Other publications
+HTAN,30590704,single_project,2019,Nucleic acids research,False,Other publications
+HTAN,30827681,single_project,2019,Cell,False,Other publications
+HTAN,30889376,single_project,2019,Cancer cell,False,Other publications
+HTAN,30930166,single_project,2019,Developmental cell,False,Other publications
+HTAN,30995507,single_project,2019,Immunity,False,Other publications
+HTAN,31060596,single_project,2019,Genome biology,False,Other publications
+HTAN,31070747,single_project,2019,Molecular biology and evolution,False,Other publications
+HTAN,31142513,single_project,2019,Cancer research,False,Other publications
+HTAN,31161239,single_project,2020,Acta neuropathologica,False,Other publications
+HTAN,31371596,single_project,2019,"Science (New York, N.Y.)",False,Other publications
+HTAN,31373345,single_project,2019,"Bioinformatics (Oxford, England)",False,Other publications
+HTAN,31488706,single_project,2019,"Science (New York, N.Y.)",False,Other publications
+HTAN,31613963,single_project,2020,Neuro-oncology,False,Other publications
+HTAN,31648981,single_project,2019,EBioMedicine,False,Other publications
+HTAN,31667165,single_project,2019,Frontiers in ecology and evolution,False,Other publications
+HTAN,31784532,single_project,2019,Nature communications,False,Other publications
+HTAN,31848351,single_project,2019,Scientific data,False,Other publications
+HTAN,31874858,single_project,2020,Cancer research,False,Other publications
+HTAN,31937348,single_project,2020,Genome biology,False,Other publications
+HTAN,31995767,single_project,2020,Cell reports,False,Other publications
+HTAN,32005835,single_project,2020,Nature communications,False,Other publications
+HTAN,32015472,single_project,2020,Nature reviews. Immunology,False,Other publications
+HTAN,32042191,single_project,2020,Nature medicine,False,Other publications
+HTAN,32077397,single_project,2020,The British journal of nutrition,False,Other publications
+HTAN,32112046,single_project,2020,Mucosal immunology,False,Other publications
+HTAN,32122539,single_project,2020,Methods in enzymology,False,Other publications
+HTAN,32127393,single_project,2020,Clinical cancer research : an official journal of the American Association for Cancer Research,False,Other publications
+HTAN,32130964,single_project,2020,Seminars in nephrology,False,Other publications
+HTAN,32152322,single_project,2020,Nature communications,False,Other publications
+HTAN,32152447,single_project,2020,Communications biology,False,Other publications
+HTAN,32162345,single_project,2020,The New phytologist,False,Other publications
+HTAN,32243801,single_project,2020,Cell,False,Other publications
+HTAN,32246919,single_project,2020,The American journal of pathology,False,Other publications
+HTAN,32312293,single_project,2020,Genome biology,False,Other publications
+HTAN,32341560,single_project,2020,Nature biotechnology,False,Other publications
+HTAN,32375029,single_project,2020,Cell reports,False,Other publications
+HTAN,32405060,single_project,2020,Nature medicine,False,Other publications
+HTAN,32417404,single_project,2020,Gastroenterology,False,Other publications
+HTAN,32421773,single_project,2020,Molecular biology and evolution,False,Other publications
+HTAN,32423648,single_project,2020,Methods in cell biology,False,Other publications
+HTAN,32471990,single_project,2020,Nature communications,False,Other publications
+HTAN,32616006,single_project,2020,BMC genomics,False,Other publications
+HTAN,32624198,single_project,2020,Trends in pharmacological sciences,False,Other publications
+HTAN,32675368,single_project,2020,"Science (New York, N.Y.)",False,Other publications
+HTAN,32680998,single_project,2020,Nature communications,False,Other publications
+HTAN,32690541,single_project,2020,Cancer discovery,False,Other publications
+HTAN,32822815,single_project,2020,Cancer letters,False,Other publications
+HTAN,32832663,single_project,2020,Science advances,False,Other publications
+HTAN,32856614,single_project,2020,"Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",False,Other publications
+HTAN,32868927,single_project,2020,Nature methods,False,Other publications
+HTAN,32973205,single_project,2020,NPJ biofilms and microbiomes,False,Other publications
+HTAN,33004476,single_project,2020,Cancer discovery,False,Other publications
+HTAN,33053333,single_project,2020,Immunity,False,Other publications
+HTAN,33060677,single_project,2020,Scientific reports,False,Other publications
+HTAN,33093160,single_project,2020,"Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",False,Other publications
+HTAN,33209304,single_project,2020,"Evolution, medicine, and public health",False,Other publications
+HTAN,33219054,single_project,2021,Genome research,False,Other publications
+HTAN,33262400,single_project,2020,Scientific reports,False,Other publications
+HTAN,33423324,single_project,2021,"Hepatology (Baltimore, Md.)",False,Other publications
+HTAN,33633365,single_project,2021,Nature genetics,False,Other publications
+HTAN,33649333,single_project,2021,NPJ breast cancer,False,Other publications
+HTAN,33711272,single_project,2021,Cancer cell,False,Other publications
+HTAN,33727309,single_project,2021,Cancer discovery,False,Other publications
+HTAN,33774354,single_project,2021,Epilepsy & behavior : E&B,False,Other publications
+HTAN,33820778,single_project,2021,Cancer discovery,False,Other publications
+HTAN,33839362,single_project,2021,Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer,False,Other publications
+HTAN,33853780,single_project,2021,Science advances,False,Other publications
+HTAN,33963182,single_project,2021,Nature communications,False,Other publications
+HTAN,33972311,single_project,2021,Cancer discovery,False,Other publications
+HTAN,33982010,single_project,2021,STAR protocols,False,Other publications
+HTAN,34017141,single_project,2021,Nature biotechnology,False,Other publications
+HTAN,34061826,single_project,2021,PLoS computational biology,False,Other publications
+HTAN,34112709,single_project,2021,Clinical cancer research : an official journal of the American Association for Cancer Research,False,Other publications
+HTAN,34117742,single_project,2021,Briefings in bioinformatics,False,Other publications
+HTAN,34127402,single_project,2021,Journal of genetics and genomics = Yi chuan xue bao,False,Other publications
+HTAN,34222745,single_project,2021,Annual review of cancer biology,False,Other publications
+HTAN,34239102,single_project,2021,Nature methods,False,Other publications
+HTAN,34295327,single_project,2021,Frontiers in immunology,False,Other publications
+HTAN,34328530,single_project,2022,European journal of nuclear medicine and molecular imaging,False,Other publications
+HTAN,34350656,single_project,2021,Human mutation,False,Other publications
+HTAN,34359696,single_project,2021,Cancers,False,Other publications
+HTAN,34404785,single_project,2021,Nature communications,False,Other publications
+HTAN,34450029,single_project,2021,Cell,False,Other publications
+HTAN,34485971,single_project,2021,Cell reports methods,False,Other publications
+HTAN,34510766,single_project,2022,International forum of allergy & rhinology,False,Other publications
+HTAN,34565895,single_project,2021,"Leonardo (Oxford, England)",False,Other publications
+HTAN,34572448,single_project,2021,Biomedicines,False,Other publications
+HTAN,34589908,single_project,2020,JTO clinical and research reports,False,Other publications
+HTAN,34593797,single_project,2021,Nature communications,False,Other publications
+HTAN,34625255,single_project,2021,Analytica chimica acta,False,Other publications
+HTAN,34642316,single_project,2021,Nature communications,False,Other publications
+HTAN,34648021,single_project,2022,Nucleic acids research,False,Other publications
+HTAN,34653364,single_project,2021,Cancer cell,False,Other publications
+HTAN,34653367,single_project,2021,Cell,False,Other publications
+HTAN,34667258,single_project,2021,NPJ precision oncology,False,Other publications
+HTAN,34788294,single_project,2021,PLoS biology,False,Other publications
+HTAN,34859676,single_project,2021,Analytical chemistry,False,Other publications
+HTAN,34862248,single_project,2022,Clinical cancer research : an official journal of the American Association for Cancer Research,False,Other publications
+HTAN,34862501,single_project,2021,Nature methods,False,Other publications
+HTAN,34864916,single_project,2022,Blood,False,Other publications
+HTAN,34890155,single_project,2022,Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing,False,Other publications
+HTAN,34890551,single_project,2021,Cell,False,Other publications
+HTAN,34903605,single_project,2021,Cancer research,False,Other publications
+HTAN,34907331,single_project,2022,Nature reviews. Gastroenterology & hepatology,False,Other publications
+HTAN,34910928,single_project,2021,Cell,False,Other publications
+HTAN,34937938,single_project,2022,Nature,False,Other publications
+HTAN,34980906,single_project,2022,Nature methods,False,Other publications
+HTAN,34983062,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+HTAN,35048125,single_project,2022,Briefings in bioinformatics,False,Other publications
+HTAN,35063072,single_project,2022,Cell,False,Other publications
+HTAN,35084791,single_project,2022,Cytometry. Part A : the journal of the International Society for Analytical Cytology,False,Other publications
+HTAN,35110735,single_project,2022,Nature,False,Other publications
+HTAN,35121878,single_project,2021,Nature cancer,False,Other publications
+HTAN,35217711,single_project,2022,NPJ precision oncology,False,Other publications
+HTAN,35236940,single_project,2022,Nature reviews. Cancer,False,Other publications
+HTAN,35243422,single_project,2022,Cell reports. Medicine,False,Other publications
+HTAN,35322205,single_project,2022,Communications biology,False,Other publications
+HTAN,35354805,single_project,2022,Nature communications,False,Other publications
+HTAN,35380701,single_project,2022,Molecular cancer research : MCR,False,Other publications
+HTAN,35404441,single_project,2022,Cancer discovery,False,Other publications
+HTAN,35463156,single_project,2022,Cell reports methods,False,Other publications
+HTAN,35482476,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+HTAN,35484108,single_project,2022,Nature communications,False,Other publications
+HTAN,35545666,single_project,2022,Communications biology,False,Other publications
+HTAN,35603231,single_project,2022,Bioinformatics advances,False,Other publications
+HTAN,35663986,single_project,2022,Frontiers in immunology,False,Other publications
+HTAN,35678528,single_project,2022,Cancer discovery,False,Other publications
+HTAN,35678579,single_project,2022,Journal of the American Medical Informatics Association : JAMIA,False,Other publications
+HTAN,35681680,single_project,2022,Cancers,False,Other publications
+HTAN,35726067,single_project,2022,Nature genetics,False,Other publications
+HTAN,35728595,single_project,2022,Cell stem cell,False,Other publications
+HTAN,35731887,single_project,2022,Science translational medicine,False,Other publications
+HTAN,35880121,single_project,2022,STAR protocols,False,Other publications
+HTAN,35894778,single_project,2022,Cancer discovery,False,Other publications
+HTAN,35972352,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+HTAN,35977827,single_project,2022,Life science alliance,False,Other publications
+HTAN,35995947,single_project,2022,Nature genetics,False,Other publications
+HTAN,36017308,single_project,2022,Journal of open source software,False,Other publications
+HTAN,36098652,single_project,2022,Cancer discovery,False,Other publications
+HTAN,36109587,single_project,2022,NPJ breast cancer,False,Other publications
+HTAN,36112643,single_project,2022,Cancer research,False,Other publications
+HTAN,36194852,single_project,2022,American journal of public health,False,Other publications
+HTAN,36223499,single_project,2022,Genome research,False,Other publications
+HTAN,36239989,single_project,2023,Clinical cancer research : an official journal of the American Association for Cancer Research,False,Other publications
+HTAN,36255409,single_project,2023,Cancer immunology research,False,Other publications
+HTAN,36280724,single_project,2022,Nature methods,False,Other publications
+HTAN,36307504,single_project,2022,Scientific reports,False,Other publications
+HTAN,36313536,single_project,2022,STAR protocols,False,Other publications
+HTAN,36400020,single_project,2022,Cancer cell,False,Other publications
+HTAN,36400937,single_project,2022,Communications biology,False,Other publications
+HTAN,36417885,single_project,2022,Cell reports,False,Other publications
+HTAN,36446066,single_project,2022,American journal of public health,False,Other publications
+HTAN,36459673,single_project,2023,Journal of clinical oncology : official journal of the American Society of Clinical Oncology,False,Other publications
+HTAN,36482321,single_project,2022,BMC bioinformatics,False,Other publications
+HTAN,36517591,single_project,2023,Nature,False,Other publications
+HTAN,36519514,single_project,2022,"Development (Cambridge, England)",False,Other publications
+HTAN,36541551,single_project,2023,Neuro-oncology,False,Other publications
+HTAN,36587187,single_project,2023,Nature methods,False,Other publications
+HTAN,36748312,single_project,2023,"Cytometry. Part B, Clinical cytometry",False,Other publications
+HTAN,36765116,single_project,2023,Nature communications,False,Other publications
+HTAN,36779841,single_project,2023,Cancer research,False,Other publications
+HTAN,36929077,single_project,2023,"Methods in molecular biology (Clifton, N.J.)",False,Other publications
+HTAN,36973268,single_project,2023,Nature communications,False,Other publications
+HTAN,36973557,single_project,2023,Nature biotechnology,False,Other publications
+HTAN,37027002,single_project,2023,Journal of medicinal chemistry,False,Other publications
+HTAN,37059065,single_project,2023,Cell,False,Other publications
+HTAN,37059105,single_project,2023,Cancer cell,False,Other publications
+HTAN,37100774,single_project,2023,Nature communications,False,Other publications
+HTAN,37124613,single_project,2023,Frontiers in genetics,False,Other publications
+HTAN,37127830,single_project,2023,Nature immunology,False,Other publications
+HTAN,37142678,single_project,2023,Communications biology,False,Other publications
+HTAN,37150829,single_project,2023,Journal of experimental & clinical cancer research : CR,False,Other publications
+HTAN,37157910,single_project,2023,Biological reviews of the Cambridge Philosophical Society,False,Other publications
+HTAN,37349501,single_project,2023,Nature cancer,False,Other publications
+HTAN,37352344,single_project,2023,Science advances,False,Other publications
+HTAN,37384647,single_project,2023,PloS one,False,Other publications
+HTAN,37444556,single_project,2023,Cancers,False,Other publications
+HTAN,37477508,single_project,2023,Cancer research,False,Other publications
+HTAN,37496679,single_project,2023,iScience,False,Other publications
+HTAN,37592182,single_project,2023,Nature methods,False,Other publications
+HTAN,37613256,single_project,2023,"Microscopy and microanalysis : the official journal of Microscopy Society of America, Microbeam Analysis Society, Microscopical Society of Canada",False,Other publications
+HTAN,37664174,single_project,2023,Computational and structural biotechnology journal,False,Other publications
+HTAN,37668528,single_project,2023,Cancer research,False,Other publications
+HTAN,37679544,single_project,2024,Nature biotechnology,False,Other publications
+HTAN,37735262,single_project,2024,Nature biotechnology,False,Other publications
+HTAN,37741277,single_project,2023,Cell reports methods,False,Other publications
+HTAN,37756410,single_project,2023,Science advances,False,Other publications
+HTAN,37817229,single_project,2023,Respiratory research,False,Other publications
+HTAN,37857854,single_project,2023,NPJ precision oncology,False,Other publications
+HTAN,37870091,single_project,2024,Neuro-oncology,False,Other publications
+HTAN,37889813,single_project,2024,IEEE transactions on visualization and computer graphics,False,Other publications
+HTAN,37914932,single_project,2023,Nature,False,Other publications
+HTAN,37928169,single_project,2023,Frontiers in bioinformatics,False,Other publications
+HTAN,37958330,single_project,2023,Cancers,False,Other publications
+HTAN,38036590,single_project,2023,Nature communications,False,Other publications
+HTAN,38037115,single_project,2023,Genome biology,False,Other publications
+HTAN,38065082,single_project,2023,Cell,False,Other publications
+HTAN,38117502,single_project,2024,Cancer research,False,Other publications
+HTAN,38162122,single_project,2023,Frontiers in bioinformatics,False,Other publications
+HTAN,38162124,single_project,2023,Frontiers in bioinformatics,False,Other publications
+HTAN,38191930,single_project,2024,Nature methods,False,Other publications
+HTAN,38236580,single_project,2024,Clinical cancer research : an official journal of the American Association for Cancer Research,False,Other publications
+HTAN,38237908,single_project,2024,"Bioinformatics (Oxford, England)",False,Other publications
+HTAN,38252662,single_project,2024,PLoS computational biology,False,Other publications
+HTAN,38254748,single_project,2024,Cancers,False,Other publications
+HTAN,38360200,single_project,2024,The Journal of investigative dermatology,False,Other publications
+HTAN,38381401,single_project,2024,Cancer immunology research,False,Other publications
+HTAN,38385578,single_project,2024,Cytometry. Part A : the journal of the International Society for Analytical Cytology,False,Other publications
+HTAN,38418883,single_project,2024,Nature,False,Other publications
+HTAN,38502849,single_project,2024,Cancer research,False,Other publications
+HTAN,38505617,single_project,2024,Theranostics,False,Other publications
+HTAN,38553457,single_project,2024,Scientific reports,False,Other publications
+HTAN,38570598,single_project,2024,Communications biology,False,Other publications
+HTAN,38588853,single_project,2024,The American journal of pathology,False,Other publications
+HTAN,38590513,single_project,2023,Gastrointestinal tumors,False,Other publications
+HTAN,38600391,single_project,2024,Nature,False,Other publications
+HTAN,38604528,single_project,2024,Journal of molecular biology,False,Other publications
+HTAN,38714197,single_project,2024,Cell,False,Other publications
+HTAN,38833684,single_project,2024,"Bioinformatics (Oxford, England)",False,Other publications
+HTAN,38856716,single_project,2024,Cancer research communications,False,Other publications
+HTAN,38862492,single_project,2024,Nature communications,False,Other publications
+HTAN,39003273,single_project,2024,Nature communications,False,Other publications
+HTAN,39083807,single_project,2024,Cancer discovery,False,Other publications
+HTAN,39090647,single_project,2024,Genome biology,False,Other publications
+HTAN,39090672,single_project,2024,Genome biology,False,Other publications
+HTAN,39189422,single_project,2024,The Journal of animal ecology,False,Other publications
+HTAN,39231036,single_project,2024,"Bioinformatics (Oxford, England)",False,Other publications
+HTAN,39232666,single_project,2024,BMC bioinformatics,False,Other publications
+HTAN,39233763,single_project,2024,"Evolution, medicine, and public health",False,Other publications
+HTAN,39236169,single_project,2024,"Science (New York, N.Y.)",False,Other publications
+HTAN,39256635,single_project,2024,Nature reviews. Cancer,False,Other publications
+HTAN,39296808,single_project,2024,Computational and structural biotechnology journal,False,Other publications
+HTAN,39300183,single_project,2024,Scientific reports,False,Other publications
+HTAN,39353436,single_project,2024,Cell,False,Other publications
+HTAN,39356625,single_project,2024,Cancer research,False,Other publications
+HTAN,39478117,single_project,2024,Nature cancer,False,Other publications
+HTAN,39478119,single_project,2024,Nature cancer,False,Other publications
+HTAN,39478120,single_project,2024,Nature cancer,False,Other publications
+HTAN,39478141,single_project,2024,Communications biology,False,Other publications
+HTAN,39478176,single_project,2024,Nature methods,False,Other publications
+HTAN,39478207,single_project,2024,Nature,False,Other publications
+HTAN,39478210,single_project,2024,Nature,False,Other publications
+HTAN,39481380,single_project,2024,Cell,False,Other publications
+HTAN,39510845,single_project,2024,Journal of the American Society for Mass Spectrometry,False,Other publications
+HTAN,39641198,single_project,2024,Journal of cell science,False,Other publications
+HTAN,41394177,single_project,2024,The annals of applied statistics,False,Other publications
+HTAN,31534232,cross_cc_same_type,2019,Nature protocols,False,Pattern B
+HTAN,32579974,cross_cc_same_type,2020,Cell,False,Pattern B
+HTAN,32763154,cross_cc_same_type,2020,Cell,False,Pattern B
+HTAN,33044226,cross_cc_same_type,2020,The Journal of clinical investigation,False,Pattern B
+HTAN,33548142,cross_cc_same_type,2021,European journal of immunology,False,Pattern B
+HTAN,33768192,cross_cc_same_type,2020,Journal of open source software,False,Pattern B
+HTAN,34093591,cross_cc_same_type,2021,Frontiers in immunology,False,Pattern B
+HTAN,34215862,cross_cc_same_type,2021,Nature protocols,False,Pattern B
+HTAN,34484237,cross_cc_same_type,2021,Frontiers in immunology,False,Pattern B
+HTAN,34606456,cross_cc_same_type,2022,IEEE transactions on visualization and computer graphics,False,Pattern B
+HTAN,34750536,cross_cc_same_type,2022,Nature biomedical engineering,False,Pattern B
+HTAN,34795254,cross_cc_same_type,2021,Nature communications,False,Pattern B
+HTAN,34811542,cross_cc_same_type,2021,Nature immunology,False,Pattern B
+HTAN,34824477,cross_cc_same_type,2022,Nature methods,False,Pattern B
+HTAN,34872889,cross_cc_same_type,2022,Trends in cancer,False,Pattern B
+HTAN,36178966,cross_cc_same_type,2022,PLoS computational biology,False,Pattern B
+HTAN,36240778,cross_cc_same_type,2022,Cancer cell,False,Pattern B
+HTAN,36280720,cross_cc_same_type,2022,Nature methods,False,Pattern B
+HTAN,36669472,cross_cc_same_type,2023,Cell,False,Pattern B
+HTAN,38085642,cross_cc_same_type,2023,Cell reports,False,Pattern B
+HTAN,38167908,cross_cc_same_type,2024,NPJ breast cancer,False,Pattern B
+HTAN,38636457,cross_cc_same_type,2024,Cell systems,False,Pattern B
+HTAN,39174703,cross_cc_same_type,2024,Nature microbiology,False,Pattern B
+HTAN,39478175,cross_cc_same_type,2024,Nature methods,False,Pattern B
+HTAN,32302568,cross_type,2020,Cell,False,Pattern C
+HTAN,35277708,cross_type,2022,Nature methods,False,Pattern C
+HuBMAP,30371680,single_project,2018,Nature biotechnology,False,Other publications
+HuBMAP,30476689,single_project,2019,Current opinion in chemical biology,False,Other publications
+HuBMAP,30530683,single_project,2018,Proceedings of the National Academy of Sciences of the United States of America,False,Other publications
+HuBMAP,30567574,single_project,2018,Genome biology,False,Other publications
+HuBMAP,30718386,single_project,2019,Proceedings of the National Academy of Sciences of the United States of America,False,Other publications
+HuBMAP,30768159,single_project,2021,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,30787437,single_project,2019,Nature,False,Other publications
+HuBMAP,30820578,single_project,2019,Nucleic acids research,False,Other publications
+HuBMAP,30906202,single_project,2019,International journal of mass spectrometry,False,Other publications
+HuBMAP,30923225,single_project,2019,"Science (New York, N.Y.)",False,Other publications
+HuBMAP,30955045,single_project,2019,Diabetologia,False,Other publications
+HuBMAP,30991381,single_project,2019,Physical biology,False,Other publications
+HuBMAP,31038684,single_project,2019,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,31059546,single_project,2019,PloS one,False,Other publications
+HuBMAP,31110282,single_project,2019,Nature methods,False,Other publications
+HuBMAP,31149808,single_project,2019,Analytical chemistry,False,Other publications
+HuBMAP,31178118,single_project,2019,Cell,False,Other publications
+HuBMAP,31197846,single_project,2019,Lipids,False,Other publications
+HuBMAP,31254303,single_project,2019,Journal of mass spectrometry : JMS,False,Other publications
+HuBMAP,31427819,single_project,2019,Nature biotechnology,False,Other publications
+HuBMAP,31477929,single_project,2019,Nature genetics,False,Other publications
+HuBMAP,31501545,single_project,2019,Nature methods,False,Other publications
+HuBMAP,31502160,single_project,2020,"Methods in molecular biology (Clifton, N.J.)",False,Other publications
+HuBMAP,31593446,single_project,2019,Analytical chemistry,False,Other publications
+HuBMAP,31602691,single_project,2020,Mass spectrometry reviews,False,Other publications
+HuBMAP,31611408,single_project,2019,Proceedings of the National Academy of Sciences of the United States of America,False,Other publications
+HuBMAP,31611697,single_project,2019,Nature biotechnology,False,Other publications
+HuBMAP,31822622,single_project,2019,Proceedings of the National Academy of Sciences of the United States of America,False,Other publications
+HuBMAP,31835027,single_project,2019,Cell,False,Other publications
+HuBMAP,31860760,single_project,2020,Journal of mass spectrometry : JMS,False,Other publications
+HuBMAP,31870423,single_project,2019,Genome biology,False,Other publications
+HuBMAP,31892734,single_project,2020,Nature reviews. Rheumatology,False,Other publications
+HuBMAP,32004478,single_project,2020,Cell stem cell,False,Other publications
+HuBMAP,32069291,single_project,2020,PLoS computational biology,False,Other publications
+HuBMAP,32087551,single_project,2020,Current opinion in chemical biology,False,Other publications
+HuBMAP,32161403,single_project,2020,Nature medicine,False,Other publications
+HuBMAP,32221477,single_project,2020,Nature reviews. Nephrology,False,Other publications
+HuBMAP,32298091,single_project,2020,Analytical chemistry,False,Other publications
+HuBMAP,32417404,single_project,2020,Gastroenterology,False,Other publications
+HuBMAP,32483555,single_project,2019,"Clinical mass spectrometry (Del Mar, Calif.)",False,Other publications
+HuBMAP,32546686,single_project,2020,Nature communications,False,Other publications
+HuBMAP,32579974,single_project,2020,Cell,False,Other publications
+HuBMAP,32602650,single_project,2020,Cytometry. Part A : the journal of the International Society for Analytical Cytology,False,Other publications
+HuBMAP,32628476,single_project,2020,Journal of the American Society for Mass Spectrometry,False,Other publications
+HuBMAP,32668225,single_project,2020,Immunity,False,Other publications
+HuBMAP,32682822,single_project,2020,Experimental eye research,False,Other publications
+HuBMAP,32686750,single_project,2020,Nature biotechnology,False,Other publications
+HuBMAP,32763154,single_project,2020,Cell,False,Other publications
+HuBMAP,32790176,single_project,2020,The Journal of physiology,False,Other publications
+HuBMAP,32868913,single_project,2021,Nature biotechnology,False,Other publications
+HuBMAP,32886099,single_project,2021,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,32886506,single_project,2020,Journal of the American Society for Mass Spectrometry,False,Other publications
+HuBMAP,32886681,single_project,2020,PloS one,False,Other publications
+HuBMAP,32924468,single_project,2020,Journal of the American Chemical Society,False,Other publications
+HuBMAP,32945844,single_project,2020,Investigative ophthalmology & visual science,False,Other publications
+HuBMAP,33026994,single_project,2021,IEEE transactions on visualization and computer graphics,False,Other publications
+HuBMAP,33044226,single_project,2020,The Journal of clinical investigation,False,Other publications
+HuBMAP,33073588,single_project,2020,American journal of physiology. Renal physiology,False,Other publications
+HuBMAP,33108369,single_project,2020,PLoS computational biology,False,Other publications
+HuBMAP,33188371,single_project,2020,Nature biotechnology,False,Other publications
+HuBMAP,33197228,single_project,2021,Physiological genomics,False,Other publications
+HuBMAP,33219054,single_project,2021,Genome research,False,Other publications
+HuBMAP,33303016,single_project,2020,Genome biology,False,Other publications
+HuBMAP,33355143,single_project,2020,Science advances,False,Other publications
+HuBMAP,33410167,single_project,2021,Medical physics,False,Other publications
+HuBMAP,33470876,single_project,2021,Journal of computational biology : a journal of computational molecular cell biology,False,Other publications
+HuBMAP,33505024,single_project,2021,Nature,False,Other publications
+HuBMAP,33548142,single_project,2021,European journal of immunology,False,Other publications
+HuBMAP,33560981,single_project,2021,IEEE transactions on medical imaging,False,Other publications
+HuBMAP,33713785,single_project,2021,Ophthalmology,False,Other publications
+HuBMAP,33753784,single_project,2021,Scientific reports,False,Other publications
+HuBMAP,33844503,single_project,2021,Analytical chemistry,False,Other publications
+HuBMAP,33853780,single_project,2021,Science advances,False,Other publications
+HuBMAP,33876191,single_project,2021,Briefings in bioinformatics,False,Other publications
+HuBMAP,33971932,single_project,2021,Genome biology,False,Other publications
+HuBMAP,33981285,single_project,2021,Frontiers in endocrinology,False,Other publications
+HuBMAP,34043341,single_project,2021,Journal of the American Society for Mass Spectrometry,False,Other publications
+HuBMAP,34062119,single_project,2021,Cell,False,Other publications
+HuBMAP,34093591,single_project,2021,Frontiers in immunology,False,Other publications
+HuBMAP,34099939,single_project,2021,Nature methods,False,Other publications
+HuBMAP,34210887,single_project,2021,"Science (New York, N.Y.)",False,Other publications
+HuBMAP,34215862,single_project,2021,Nature protocols,False,Other publications
+HuBMAP,34233175,single_project,2021,Experimental eye research,False,Other publications
+HuBMAP,34239102,single_project,2021,Nature methods,False,Other publications
+HuBMAP,34353350,single_project,2021,Genome biology,False,Other publications
+HuBMAP,34354322,single_project,2021,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,34376480,single_project,2021,Science immunology,False,Other publications
+HuBMAP,34430920,single_project,2021,STAR protocols,False,Other publications
+HuBMAP,34449196,single_project,2021,Analytical chemistry,False,Other publications
+HuBMAP,34484237,single_project,2021,Frontiers in immunology,False,Other publications
+HuBMAP,34489600,single_project,2022,Nature biotechnology,False,Other publications
+HuBMAP,34531632,single_project,2021,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,34554179,single_project,2021,Investigative ophthalmology & visual science,False,Other publications
+HuBMAP,34619231,single_project,2022,Kidney international,False,Other publications
+HuBMAP,34625255,single_project,2021,Analytica chimica acta,False,Other publications
+HuBMAP,34628030,single_project,2022,"Methods (San Diego, Calif.)",False,Other publications
+HuBMAP,34642644,single_project,2021,Kidney international reports,False,Other publications
+HuBMAP,34650278,single_project,2021,Nature protocols,False,Other publications
+HuBMAP,34705835,single_project,2021,PloS one,False,Other publications
+HuBMAP,34711971,single_project,2021,Nature methods,False,Other publications
+HuBMAP,34721308,single_project,2021,Frontiers in endocrinology,False,Other publications
+HuBMAP,34725479,single_project,2021,Nature methods,False,Other publications
+HuBMAP,34725481,single_project,2021,Nature methods,False,Other publications
+HuBMAP,34750578,single_project,2021,Nature cell biology,False,Other publications
+HuBMAP,34764310,single_project,2021,Nature communications,False,Other publications
+HuBMAP,34792808,single_project,2022,CA: a cancer journal for clinicians,False,Other publications
+HuBMAP,34795254,single_project,2021,Nature communications,False,Other publications
+HuBMAP,34795433,single_project,2022,Nature biotechnology,False,Other publications
+HuBMAP,34859676,single_project,2021,Analytical chemistry,False,Other publications
+HuBMAP,34872889,single_project,2022,Trends in cancer,False,Other publications
+HuBMAP,34881479,single_project,2021,Journal of mass spectrometry : JMS,False,Other publications
+HuBMAP,34912115,single_project,2022,Nature,False,Other publications
+HuBMAP,34914532,single_project,2021,"Science (New York, N.Y.)",False,Other publications
+HuBMAP,34936882,single_project,2022,Developmental cell,False,Other publications
+HuBMAP,35042561,single_project,2022,Genome biology,False,Other publications
+HuBMAP,35063072,single_project,2022,Cell,False,Other publications
+HuBMAP,35084980,single_project,2022,"Science (New York, N.Y.)",False,Other publications
+HuBMAP,35102309,single_project,2022,Nature reviews. Genetics,False,Other publications
+HuBMAP,35136674,single_project,2022,Journal of pathology informatics,False,Other publications
+HuBMAP,35181197,single_project,2022,Trends in cell biology,False,Other publications
+HuBMAP,35220718,single_project,2022,Journal of proteome research,False,Other publications
+HuBMAP,35247306,single_project,2022,Cell reports,False,Other publications
+HuBMAP,35255944,single_project,2022,Genome biology,False,Other publications
+HuBMAP,35277708,single_project,2022,Nature methods,False,Other publications
+HuBMAP,35278717,single_project,2022,Practical radiation oncology,False,Other publications
+HuBMAP,35290070,single_project,2022,Journal of proteome research,False,Other publications
+HuBMAP,35332340,single_project,2022,Nature biotechnology,False,Other publications
+HuBMAP,35339536,single_project,2022,Kidney international,False,Other publications
+HuBMAP,35344335,single_project,2022,Analytical chemistry,False,Other publications
+HuBMAP,35347328,single_project,2022,Nature biotechnology,False,Other publications
+HuBMAP,35351966,single_project,2022,Laboratory investigation; a journal of technical methods and pathology,False,Other publications
+HuBMAP,35357911,single_project,2022,"Science (New York, N.Y.)",False,Other publications
+HuBMAP,35357935,single_project,2022,"Science (New York, N.Y.)",False,Other publications
+HuBMAP,35361931,single_project,2022,Nature methods,False,Other publications
+HuBMAP,35361932,single_project,2022,Nature methods,False,Other publications
+HuBMAP,35384407,single_project,2022,Current protocols,False,Other publications
+HuBMAP,35384842,single_project,2022,eLife,False,Other publications
+HuBMAP,35413190,single_project,2022,Journal of proteome research,False,Other publications
+HuBMAP,35422041,single_project,2022,Nature communications,False,Other publications
+HuBMAP,35422106,single_project,2022,Nature communications,False,Other publications
+HuBMAP,35434692,single_project,2022,Cell genomics,False,Other publications
+HuBMAP,35443184,single_project,2022,Cell reports,False,Other publications
+HuBMAP,35471911,single_project,2022,Proceedings of the National Academy of Sciences of the United States of America,False,Other publications
+HuBMAP,35474899,single_project,2021,Cell reports methods,False,Other publications
+HuBMAP,35483961,single_project,2022,Genome research,False,Other publications
+HuBMAP,35501385,single_project,2022,Nature methods,False,Other publications
+HuBMAP,35504500,single_project,2022,"International journal of radiation oncology, biology, physics",False,Other publications
+HuBMAP,35533459,single_project,2022,Computers in biology and medicine,False,Other publications
+HuBMAP,35562344,single_project,2022,Nature communications,False,Other publications
+HuBMAP,35675394,single_project,2022,Science advances,False,Other publications
+HuBMAP,35726067,single_project,2022,Nature genetics,False,Other publications
+HuBMAP,35764397,single_project,2022,Genome research,False,Other publications
+HuBMAP,35799304,single_project,2022,Genome biology,False,Other publications
+HuBMAP,35838077,single_project,2022,Lab on a chip,False,Other publications
+HuBMAP,35876858,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,35910077,single_project,2022,Journal of pathology informatics,False,Other publications
+HuBMAP,35952496,single_project,2022,EBioMedicine,False,Other publications
+HuBMAP,35996627,single_project,2022,Communications medicine,False,Other publications
+HuBMAP,36036832,single_project,2022,Journal of computational biology : a journal of computational molecular cell biology,False,Other publications
+HuBMAP,36055991,single_project,2022,Cell death discovery,False,Other publications
+HuBMAP,36094294,single_project,2022,Diabetes,False,Other publications
+HuBMAP,36095011,single_project,2022,PLoS computational biology,False,Other publications
+HuBMAP,36131149,single_project,2022,Nature chemical biology,False,Other publications
+HuBMAP,36179091,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,36192637,single_project,2023,Nature biotechnology,False,Other publications
+HuBMAP,36201825,single_project,2022,Journal of proteome research,False,Other publications
+HuBMAP,36206763,single_project,2022,Cell metabolism,False,Other publications
+HuBMAP,36240778,single_project,2022,Cancer cell,False,Other publications
+HuBMAP,36280720,single_project,2022,Nature methods,False,Other publications
+HuBMAP,36303577,single_project,2022,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,36333818,single_project,2022,Acta neuropathologica communications,False,Other publications
+HuBMAP,36371407,single_project,2022,Scientific data,False,Other publications
+HuBMAP,36384130,single_project,2022,Cell reports,False,Other publications
+HuBMAP,36399478,single_project,2023,Nucleic acids research,False,Other publications
+HuBMAP,36442460,single_project,2023,"European journal of cancer (Oxford, England : 1990)",False,Other publications
+HuBMAP,36452867,single_project,2022,Cell reports methods,False,Other publications
+HuBMAP,36515991,single_project,2023,Molecular biology of the cell,False,Other publications
+HuBMAP,36536150,single_project,2023,Nature biotechnology,False,Other publications
+HuBMAP,36564153,single_project,2023,Annals of the rheumatic diseases,False,Other publications
+HuBMAP,36568148,single_project,2022,Frontiers in oncology,False,Other publications
+HuBMAP,36646895,single_project,2023,Nature methods,False,Other publications
+HuBMAP,36696598,single_project,2023,American journal of physiology. Endocrinology and metabolism,False,Other publications
+HuBMAP,36697347,single_project,2023,Practical radiation oncology,False,Other publications
+HuBMAP,36705559,single_project,2023,Radiology. Imaging cancer,False,Other publications
+HuBMAP,36749013,single_project,2023,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,36762475,single_project,2023,Nucleic acids research,False,Other publications
+HuBMAP,36913267,single_project,2023,Clinical journal of the American Society of Nephrology : CJASN,False,Other publications
+HuBMAP,36918099,single_project,2023,Molecular & cellular proteomics : MCP,False,Other publications
+HuBMAP,36940317,single_project,2023,Diabetes,False,Other publications
+HuBMAP,36989362,single_project,2023,Science advances,False,Other publications
+HuBMAP,36990394,single_project,2023,Radiotherapy and oncology : journal of the European Society for Therapeutic Radiology and Oncology,False,Other publications
+HuBMAP,36994731,single_project,2023,"Arteriosclerosis, thrombosis, and vascular biology",False,Other publications
+HuBMAP,37045921,single_project,2023,Nature,False,Other publications
+HuBMAP,37116182,single_project,2023,Diabetes,False,Other publications
+HuBMAP,37165083,single_project,2024,Nature biotechnology,False,Other publications
+HuBMAP,37165242,single_project,2023,Nature,False,Other publications
+HuBMAP,37206615,single_project,2023,Trends in analytical chemistry : TRAC,False,Other publications
+HuBMAP,37231260,single_project,2024,Nature biotechnology,False,Other publications
+HuBMAP,37248299,single_project,2023,Nature medicine,False,Other publications
+HuBMAP,37291214,single_project,2023,Nature medicine,False,Other publications
+HuBMAP,37293883,single_project,2023,Clinical chemistry,False,Other publications
+HuBMAP,37306417,single_project,2023,Journal of visualized experiments : JoVE,False,Other publications
+HuBMAP,37310834,single_project,2023,IEEE journal of biomedical and health informatics,False,Other publications
+HuBMAP,37327781,single_project,2023,Cell reports. Medicine,False,Other publications
+HuBMAP,37355343,single_project,2023,Journal of pediatric urology,False,Other publications
+HuBMAP,37387167,single_project,2023,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,37425649,single_project,2023,Gastro hep advances,False,Other publications
+HuBMAP,37428210,single_project,2023,Histochemistry and cell biology,False,Other publications
+HuBMAP,37429992,single_project,2023,Nature methods,False,Other publications
+HuBMAP,37463098,single_project,2023,Journal of the American Society for Mass Spectrometry,False,Other publications
+HuBMAP,37465097,single_project,2023,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,37468493,single_project,2023,Nature communications,False,Other publications
+HuBMAP,37468503,single_project,2023,Scientific data,False,Other publications
+HuBMAP,37468586,single_project,2023,Nature,False,Other publications
+HuBMAP,37555624,single_project,2023,Journal of cell science,False,Other publications
+HuBMAP,37584588,single_project,2023,Current protocols,False,Other publications
+HuBMAP,37592036,single_project,2024,Nature biotechnology,False,Other publications
+HuBMAP,37679544,single_project,2024,Nature biotechnology,False,Other publications
+HuBMAP,37695017,single_project,2023,eLife,False,Other publications
+HuBMAP,37725868,single_project,2023,Medical image analysis,False,Other publications
+HuBMAP,37735591,single_project,2023,Nature immunology,False,Other publications
+HuBMAP,37782224,single_project,2023,Lab on a chip,False,Other publications
+HuBMAP,37817875,single_project,2022,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,37817876,single_project,2022,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,37817877,single_project,2022,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,37817879,single_project,2022,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,37827214,single_project,2024,The American journal of pathology,False,Other publications
+HuBMAP,37838706,single_project,2023,Nature communications,False,Other publications
+HuBMAP,37881846,single_project,2024,Diabetes..,False,Other publications
+HuBMAP,37966063,single_project,2023,Kidney360,False,Other publications
+HuBMAP,37982512,single_project,2023,Journal of visualized experiments : JoVE,False,Other publications
+HuBMAP,38030732,single_project,2023,Nature,False,Other publications
+HuBMAP,38040721,single_project,2023,Nature communications,False,Other publications
+HuBMAP,38045023,single_project,2023,Trends in analytical chemistry : TRAC,False,Other publications
+HuBMAP,38049589,single_project,2023,Nature,False,Other publications
+HuBMAP,38074525,single_project,2023,Proceedings of the SIGCHI conference on human factors in computing systems. CHI Conference,False,Other publications
+HuBMAP,38085642,single_project,2023,Cell reports,False,Other publications
+HuBMAP,38092041,single_project,2024,Nature,False,Other publications
+HuBMAP,38093010,single_project,2024,Nature,False,Other publications
+HuBMAP,38096378,single_project,2024,Journal of proteome research,False,Other publications
+HuBMAP,38103980,single_project,2024,Trends in pharmacological sciences,False,Other publications
+HuBMAP,38172101,single_project,2024,Nature communications,False,Other publications
+HuBMAP,38186747,single_project,2023,Frontiers in ophthalmology,False,Other publications
+HuBMAP,38191930,single_project,2024,Nature methods,False,Other publications
+HuBMAP,38195739,single_project,2024,Nature communications,False,Other publications
+HuBMAP,38200118,single_project,2024,Nature biotechnology,False,Other publications
+HuBMAP,38249839,single_project,2024,Learning health systems,False,Other publications
+HuBMAP,38273415,single_project,2024,Genome biology,False,Other publications
+HuBMAP,38326615,single_project,2024,Nature,False,Other publications
+HuBMAP,38366243,single_project,2024,Nature methods,False,Other publications
+HuBMAP,38497708,single_project,2024,Journal of proteome research,False,Other publications
+HuBMAP,38509069,single_project,2024,Nature communications,False,Other publications
+HuBMAP,38517028,single_project,2024,Analytical chemistry,False,Other publications
+HuBMAP,38538789,single_project,2024,Nature,False,Other publications
+HuBMAP,38627094,single_project,2024,Genome research,False,Other publications
+HuBMAP,38636457,single_project,2024,Cell systems,False,Other publications
+HuBMAP,38657025,single_project,2024,Science translational medicine,False,Other publications
+HuBMAP,38663087,single_project,2024,Annual review of genomics and human genetics,False,Other publications
+HuBMAP,38690733,single_project,2024,The Journal of clinical investigation,False,Other publications
+HuBMAP,38714197,single_project,2024,Cell,False,Other publications
+HuBMAP,38751729,single_project,2024,"Journal of medical imaging (Bellingham, Wash.)",False,Other publications
+HuBMAP,38754427,single_project,2024,Cell stem cell,False,Other publications
+HuBMAP,38766899,single_project,2024,Journal of medical imaging and radiation oncology,False,Other publications
+HuBMAP,38787940,single_project,2024,Science advances,False,Other publications
+HuBMAP,38813089,single_project,2024,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,38838804,single_project,2024,Fertility and sterility,False,Other publications
+HuBMAP,38866597,single_project,2024,Journal of mass spectrometry : JMS,False,Other publications
+HuBMAP,38888996,single_project,2024,"Reproduction (Cambridge, England)",False,Other publications
+HuBMAP,38902953,single_project,2024,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,38907149,single_project,2024,"Methods in molecular biology (Clifton, N.J.)",False,Other publications
+HuBMAP,38919518,single_project,2024,Neurosurgery practice,False,Other publications
+HuBMAP,38925112,single_project,2024,Cell,False,Other publications
+HuBMAP,38966983,single_project,2024,Nucleic acids research,False,Other publications
+HuBMAP,39003273,single_project,2024,Nature communications,False,Other publications
+HuBMAP,39006170,single_project,2024,Nature reviews. Methods primers,False,Other publications
+HuBMAP,39052897,single_project,2024,Journal of the American Society for Mass Spectrometry,False,Other publications
+HuBMAP,39080444,single_project,2024,Scientific reports,False,Other publications
+HuBMAP,39089681,single_project,2024,Analytical chemistry,False,Other publications
+HuBMAP,39152082,single_project,2024,Trends in molecular medicine,False,Other publications
+HuBMAP,39187646,single_project,2024,Communications biology,False,Other publications
+HuBMAP,39220622,single_project,2024,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,39220623,single_project,2024,Proceedings of SPIE--the International Society for Optical Engineering,False,Other publications
+HuBMAP,39223427,single_project,2024,Nature reviews. Molecular cell biology,False,Other publications
+HuBMAP,39261641,single_project,2024,Nature methods,False,Other publications
+HuBMAP,39353436,single_project,2024,Cell,False,Other publications
+HuBMAP,39363499,single_project,2024,"Bioinformatics (Oxford, England)",False,Other publications
+HuBMAP,39478141,single_project,2024,Communications biology,False,Other publications
+HuBMAP,39512072,single_project,2024,Expert review of proteomics,False,Other publications
+HuBMAP,39554509,single_project,2024,"Journal of medical imaging (Bellingham, Wash.)",False,Other publications
+HuBMAP,39638780,single_project,2024,Nature communications,False,Other publications
+HuBMAP,39700255,single_project,2024,PLoS computational biology,False,Other publications
+HuBMAP,41458213,single_project,2023,Medical image computing and computer-assisted intervention : MICCAI ... International Conference on Medical Image Computing and Computer-Assisted Intervention,False,Other publications
+HuBMAP,31723300,within_cc,2019,Nature protocols,False,Pattern A
+HuBMAP,31911630,within_cc,2020,Nature communications,False,Pattern A
+HuBMAP,32743957,within_cc,2020,Angewandte Chemie (International ed. in English),False,Pattern A
+HuBMAP,32955134,within_cc,2020,Journal of mass spectrometry : JMS,False,Pattern A
+HuBMAP,33188776,within_cc,2020,Cell,False,Pattern A
+HuBMAP,33226031,within_cc,2020,Journal of visualized experiments : JoVE,False,Pattern A
+HuBMAP,33238290,within_cc,2020,Nature,False,Pattern A
+HuBMAP,33241625,within_cc,2020,Journal of mass spectrometry : JMS,False,Pattern A
+HuBMAP,33441032,within_cc,2021,Annual review of physical chemistry,False,Pattern A
+HuBMAP,33570915,within_cc,2021,Analytical chemistry,False,Pattern A
+HuBMAP,33649493,within_cc,2021,Communications biology,False,Pattern A
+HuBMAP,33659462,within_cc,2020,Bio-protocol,False,Pattern A
+HuBMAP,34027489,within_cc,2021,STAR protocols,False,Pattern A
+HuBMAP,34038090,within_cc,2021,Analytical chemistry,False,Pattern A
+HuBMAP,34075742,within_cc,2021,Analytical chemistry,False,Pattern A
+HuBMAP,34351778,within_cc,2021,Journal of proteome research,False,Pattern A
+HuBMAP,34482894,within_cc,2021,Analytica chimica acta,False,Pattern A
+HuBMAP,34667487,within_cc,2021,Proceedings. IEEE International Symposium on Biomedical Imaging,False,Pattern A
+HuBMAP,34719806,within_cc,2023,Mass spectrometry reviews,False,Pattern A
+HuBMAP,34722959,within_cc,2021,IS&T International Symposium on Electronic Imaging,False,Pattern A
+HuBMAP,35059155,within_cc,2021,Chemical science,False,Pattern A
+HuBMAP,35143307,within_cc,2022,"Science (New York, N.Y.)",False,Pattern A
+HuBMAP,35230809,within_cc,2022,ACS chemical biology,False,Pattern A
+HuBMAP,35245349,within_cc,2022,Endocrinology,False,Pattern A
+HuBMAP,35508105,within_cc,2022,Cell metabolism,False,Pattern A
+HuBMAP,35770488,within_cc,2022,Analytical chemistry,False,Pattern A
+HuBMAP,35803244,within_cc,2022,Cell,False,Pattern A
+HuBMAP,35849531,within_cc,2023,Journal of proteome research,False,Pattern A
+HuBMAP,35978191,within_cc,2022,Nature,False,Pattern A
+HuBMAP,36067026,within_cc,2022,Analytical chemistry,False,Pattern A
+HuBMAP,36155452,within_cc,2023,IEEE transactions on visualization and computer graphics,False,Pattern A
+HuBMAP,36193887,within_cc,2022,eLife,False,Pattern A
+HuBMAP,36216958,within_cc,2022,Nature methods,False,Pattern A
+HuBMAP,36253139,within_cc,2022,"Advanced science (Weinheim, Baden-Wurttemberg, Germany)",False,Pattern A
+HuBMAP,36281292,within_cc,2022,ACS measurement science au,False,Pattern A
+HuBMAP,36512424,within_cc,2023,The Journal of clinical investigation,False,Pattern A
+HuBMAP,36603806,within_cc,2023,Molecular & cellular proteomics : MCP,False,Pattern A
+HuBMAP,36622763,within_cc,2023,Journal of the American Society for Mass Spectrometry,False,Pattern A
+HuBMAP,36653408,within_cc,2023,Communications biology,False,Pattern A
+HuBMAP,36823353,within_cc,2023,Nature biotechnology,False,Pattern A
+HuBMAP,36917636,within_cc,2023,Analytical chemistry,False,Pattern A
+HuBMAP,36922587,within_cc,2023,Nature,False,Pattern A
+HuBMAP,37061946,within_cc,2023,Journal of the American Society for Mass Spectrometry,False,Pattern A
+HuBMAP,37231261,within_cc,2024,Nature biotechnology,False,Pattern A
+HuBMAP,37251286,within_cc,2023,IEEE transactions on computational imaging,False,Pattern A
+HuBMAP,37272843,within_cc,2023,Cancer discovery,False,Pattern A
+HuBMAP,37280296,within_cc,2023,Nature reviews. Molecular cell biology,False,Pattern A
+HuBMAP,37468622,within_cc,2023,Nature,False,Pattern A
+HuBMAP,37523489,within_cc,2023,Journal of the American Society for Mass Spectrometry,False,Pattern A
+HuBMAP,37710018,within_cc,2023,Nature methods,False,Pattern A
+HuBMAP,37827646,within_cc,2023,Analytica chimica acta,False,Pattern A
+HuBMAP,38151595,within_cc,2024,Nature methods,False,Pattern A
+HuBMAP,38310340,within_cc,2024,"Bioinformatics (Oxford, England)",False,Pattern A
+HuBMAP,38359832,within_cc,2024,Developmental cell,False,Pattern A
+HuBMAP,38432187,within_cc,2024,Current opinion in biotechnology,False,Pattern A
+HuBMAP,38586243,within_cc,2024,Journal of lightwave technology : a joint IEEE/OSA publication,False,Pattern A
+HuBMAP,38605048,within_cc,2024,Scientific data,False,Pattern A
+HuBMAP,38729109,within_cc,2024,Cell,False,Pattern A
+HuBMAP,38834597,within_cc,2024,Scientific data,False,Pattern A
+HuBMAP,38943021,within_cc,2024,Nature protocols,False,Pattern A
+HuBMAP,39026254,within_cc,2024,Genome biology,False,Pattern A
+HuBMAP,39246448,within_cc,2024,iScience,False,Pattern A
+HuBMAP,39516256,within_cc,2024,Scientific reports,False,Pattern A
+HuBMAP,39695169,within_cc,2024,Scientific data,False,Pattern A
+HuBMAP,40263091,within_cc,2024,Seminars in nephrology,False,Pattern A
+HuBMAP,40417545,within_cc,2024,AMIA ... Annual Symposium proceedings. AMIA Symposium,False,Pattern A
+HuBMAP,35446460,cross_cc_same_type,2022,Angewandte Chemie (International ed. in English),False,Pattern B
+HuBMAP,36191605,cross_cc_same_type,2023,American journal of obstetrics and gynecology,False,Pattern B
+HuBMAP,36308436,cross_cc_same_type,2023,Biology of reproduction,False,Pattern B
+HuBMAP,30911168,cross_type,2019,Nature,False,Pattern C
+HuBMAP,31597973,cross_type,2019,Nature,False,Pattern C
+HuBMAP,33685491,cross_type,2021,Genome biology,False,Pattern C
+HuBMAP,34599004,cross_type,2021,Genome research,False,Pattern C
+HuBMAP,34750582,cross_type,2021,Nature cell biology,False,Pattern C
+HuBMAP,34811556,cross_type,2022,Nature methods,False,Pattern C
+HuBMAP,34872616,cross_type,2021,Genome biology,False,Pattern C
+HuBMAP,35222094,cross_type,2022,Frontiers in physiology,False,Pattern C
+HuBMAP,35463156,cross_type,2022,Cell reports methods,False,Pattern C
+HuBMAP,35545714,cross_type,2022,Nature methods,False,Pattern C
+HuBMAP,35654359,cross_type,2022,Molecular & cellular proteomics : MCP,False,Pattern C
+HuBMAP,35947651,cross_type,2022,Science advances,False,Pattern C
+HuBMAP,35951581,cross_type,2022,ACS chemical biology,False,Pattern C
+HuBMAP,36513738,cross_type,2022,Communications biology,False,Pattern C
+HuBMAP,36973309,cross_type,2023,Scientific data,False,Pattern C
+HuBMAP,37328065,cross_type,2023,Molecular & cellular proteomics : MCP,False,Pattern C
+HuBMAP,37353004,cross_type,2023,Molecular & cellular proteomics : MCP,False,Pattern C
+HuBMAP,37468557,cross_type,2023,Communications biology,False,Pattern C
+HuBMAP,37468583,cross_type,2023,Nature,False,Pattern C
+HuBMAP,37468619,cross_type,2023,Nature methods,False,Pattern C
+HuBMAP,37468756,cross_type,2023,Nature cell biology,False,Pattern C
+HuBMAP,37468758,cross_type,2023,Communications biology,False,Pattern C
+HuBMAP,37537179,cross_type,2023,Nature communications,False,Pattern C
+HuBMAP,39392310,cross_type,2024,Analytical chemistry,False,Pattern C
+HuBMAP,39710940,cross_type,2024,Expert review of proteomics,False,Pattern C
+HuBMAP,40893796,cross_type,2024,BMC methods,False,Pattern C
+SenNet,32886099,single_project,2021,"Bioinformatics (Oxford, England)",False,Other publications
+SenNet,34063608,single_project,2021,International journal of molecular sciences,False,Other publications
+SenNet,34758157,single_project,2021,FASEB journal : official publication of the Federation of American Societies for Experimental Biology,False,Other publications
+SenNet,35015337,single_project,2023,The FEBS journal,False,Other publications
+SenNet,35032706,single_project,2022,Mitochondrion,False,Other publications
+SenNet,35183510,single_project,2022,The American journal of pathology,False,Other publications
+SenNet,35188184,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+SenNet,35238734,single_project,2022,American journal of respiratory cell and molecular biology,False,Other publications
+SenNet,35456020,single_project,2022,Cells,False,Other publications
+SenNet,35462999,single_project,2022,Frontiers in medicine,False,Other publications
+SenNet,35500458,single_project,2022,Neural networks : the official journal of the International Neural Network Society,False,Other publications
+SenNet,35642896,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+SenNet,35678384,single_project,2022,eLife,False,Other publications
+SenNet,35781769,single_project,2022,"Chromosome research : an international journal on the molecular, supramolecular and evolutionary aspects of chromosome biology",False,Other publications
+SenNet,35799304,single_project,2022,Genome biology,False,Other publications
+SenNet,35840754,single_project,2023,Nature reviews. Genetics,False,Other publications
+SenNet,35881957,single_project,2022,American journal of respiratory cell and molecular biology,False,Other publications
+SenNet,35895854,single_project,2023,Biometrics,False,Other publications
+SenNet,35912854,single_project,2022,The Journal of clinical investigation,False,Other publications
+SenNet,35968782,single_project,2022,The Journal of clinical investigation,False,Other publications
+SenNet,35978191,single_project,2022,Nature,False,Other publications
+SenNet,36071159,single_project,2022,Nature,False,Other publications
+SenNet,36090815,single_project,2022,Computational and structural biotechnology journal,False,Other publications
+SenNet,36112652,single_project,2022,PloS one,False,Other publications
+SenNet,36134664,single_project,2022,JCI insight,False,Other publications
+SenNet,36170431,single_project,2022,Plastic and reconstructive surgery,False,Other publications
+SenNet,36215696,single_project,2022,The EMBO journal,False,Other publications
+SenNet,36250784,single_project,2022,"Bioinformatics (Oxford, England)",False,Other publications
+SenNet,36322029,single_project,2022,FASEB journal : official publication of the Federation of American Societies for Experimental Biology,False,Other publications
+SenNet,36322713,single_project,2023,AIDS research and human retroviruses,False,Other publications
+SenNet,36371407,single_project,2022,Scientific data,False,Other publications
+SenNet,36447241,single_project,2022,Genome medicine,False,Other publications
+SenNet,36458905,single_project,2023,"Bioinformatics (Oxford, England)",False,Other publications
+SenNet,36513738,single_project,2022,Communications biology,False,Other publications
+SenNet,36522139,single_project,2022,The European respiratory journal,False,Other publications
+SenNet,36575517,single_project,2022,Genome biology,False,Other publications
+SenNet,36602939,single_project,2023,Current opinion in hematology,False,Other publications
+SenNet,36637389,single_project,2023,Analytical chemistry,False,Other publications
+SenNet,36731429,single_project,2023,Neuron,False,Other publications
+SenNet,36775129,single_project,2023,The Journal of biological chemistry,False,Other publications
+SenNet,36810839,single_project,2023,Nature communications,False,Other publications
+SenNet,36819765,single_project,2022,The journal of cardiovascular aging,False,Other publications
+SenNet,36823353,single_project,2023,Nature biotechnology,False,Other publications
+SenNet,36830591,single_project,2023,Biomolecules,False,Other publications
+SenNet,36833412,single_project,2023,Genes,False,Other publications
+SenNet,36879684,single_project,2023,NAR cancer,False,Other publications
+SenNet,36921370,single_project,2023,DNA repair,False,Other publications
+SenNet,36973309,single_project,2023,Scientific data,False,Other publications
+SenNet,36976763,single_project,2023,Proceedings of the National Academy of Sciences of the United States of America,False,Other publications
+SenNet,37001528,single_project,2023,Cancer cell,False,Other publications
+SenNet,37078192,single_project,2023,Expert review of respiratory medicine,False,Other publications
+SenNet,37078230,single_project,2023,Aging cell,False,Other publications
+SenNet,37079217,single_project,2023,GeroScience,False,Other publications
+SenNet,37118118,single_project,2023,Nature aging,False,Other publications
+SenNet,37118134,single_project,2022,Nature aging,False,Other publications
+SenNet,37152922,single_project,2023,Frontiers in endocrinology,False,Other publications
+SenNet,37161089,single_project,2023,Nature reviews. Genetics,False,Other publications
+SenNet,37166337,single_project,2023,Gerontology,False,Other publications
+SenNet,37181487,single_project,2023,Frontiers in bioinformatics,False,Other publications
+SenNet,37188670,single_project,2023,Nature communications,False,Other publications
+SenNet,37225966,single_project,2023,Nature cell biology,False,Other publications
+SenNet,37231261,single_project,2024,Nature biotechnology,False,Other publications
+SenNet,37325957,single_project,2023,"The journals of gerontology. Series A, Biological sciences and medical sciences",False,Other publications
+SenNet,37329949,single_project,2023,Molecular metabolism,False,Other publications
+SenNet,37336975,single_project,2023,Nature neuroscience,False,Other publications
+SenNet,37345431,single_project,2023,Aging cell,False,Other publications
+SenNet,37371475,single_project,2023,Biomolecules,False,Other publications
+SenNet,37389519,single_project,2023,Journal of the American College of Cardiology,False,Other publications
+SenNet,37428794,single_project,2023,PLoS computational biology,False,Other publications
+SenNet,37468756,single_project,2023,Nature cell biology,False,Other publications
+SenNet,37487137,single_project,2023,American journal of respiratory cell and molecular biology,False,Other publications
+SenNet,37524694,single_project,2023,Nature communications,False,Other publications
+SenNet,37586438,single_project,2024,Biochimica et biophysica acta. Molecular basis of disease,False,Other publications
+SenNet,37605876,single_project,2023,Aging cell,False,Other publications
+SenNet,37656130,single_project,2023,American journal of physiology. Heart and circulatory physiology,False,Other publications
+SenNet,37688329,single_project,2023,Aging cell,False,Other publications
+SenNet,37740454,single_project,2023,Aging cell,False,Other publications
+SenNet,37761000,single_project,2023,Biomedicines,False,Other publications
+SenNet,37777848,single_project,2024,Alzheimer's & dementia : the journal of the Alzheimer's Association,False,Other publications
+SenNet,37811693,single_project,2023,EMBO reports,False,Other publications
+SenNet,37858214,single_project,2023,BMC biology,False,Other publications
+SenNet,37874084,single_project,2023,The journal of prevention of Alzheimer's disease,False,Other publications
+SenNet,37887011,single_project,2023,Biology,False,Other publications
+SenNet,37899138,single_project,2023,Aging,False,Other publications
+SenNet,37914932,single_project,2023,Nature,False,Other publications
+SenNet,37922325,single_project,2023,Proceedings of the National Academy of Sciences of the United States of America,False,Other publications
+SenNet,37939657,single_project,2023,Cell metabolism,False,Other publications
+SenNet,37953486,single_project,2024,Transplantation,False,Other publications
+SenNet,37963892,single_project,2023,Nature communications,False,Other publications
+SenNet,37982669,single_project,2024,"The journals of gerontology. Series A, Biological sciences and medical sciences",False,Other publications
+SenNet,38060592,single_project,2023,PLoS computational biology,False,Other publications
+SenNet,38098449,single_project,2023,Cancer research,False,Other publications
+SenNet,38128812,single_project,2024,Brain research,False,Other publications
+SenNet,38145026,single_project,2023,ACS measurement science au,False,Other publications
+SenNet,38191932,single_project,2024,Nature methods,False,Other publications
+SenNet,38233091,single_project,2023,Briefings in bioinformatics,False,Other publications
+SenNet,38244568,single_project,2024,"Bioinformatics (Oxford, England)",False,Other publications
+SenNet,38246968,single_project,2024,GeroScience,False,Other publications
+SenNet,38278054,single_project,2024,Current opinion in genetics & development,False,Other publications
+SenNet,38360926,single_project,2024,Nature aging,False,Other publications
+SenNet,38416061,single_project,2024,"Advanced materials (Deerfield Beach, Fla.)",False,Other publications
+SenNet,38432187,single_project,2024,Current opinion in biotechnology,False,Other publications
+SenNet,38454639,single_project,2024,Aging cell,False,Other publications
+SenNet,38509064,single_project,2024,Nature communications,False,Other publications
+SenNet,38509574,single_project,2024,"Journal of inflammation (London, England)",False,Other publications
+SenNet,38528186,single_project,2024,Nature methods,False,Other publications
+SenNet,38532727,single_project,2024,Aging cell,False,Other publications
+SenNet,38556028,single_project,2024,Biochemical pharmacology,False,Other publications
+SenNet,38605048,single_project,2024,Scientific data,False,Other publications
+SenNet,38683144,single_project,2024,Cancer discovery,False,Other publications
+SenNet,38683161,single_project,2024,Cancer discovery,False,Other publications
+SenNet,38697121,single_project,2024,Cell genomics,False,Other publications
+SenNet,38717161,single_project,2024,Cancer research communications,False,Other publications
+SenNet,38741205,single_project,2024,Genome biology,False,Other publications
+SenNet,38834597,single_project,2024,Scientific data,False,Other publications
+SenNet,38869711,single_project,2024,GeroScience,False,Other publications
+SenNet,38870523,single_project,2024,Molecular human reproduction,False,Other publications
+SenNet,38874400,single_project,2024,"Advanced science (Weinheim, Baden-Wurttemberg, Germany)",False,Other publications
+SenNet,38902953,single_project,2024,"Bioinformatics (Oxford, England)",False,Other publications
+SenNet,38994981,single_project,2024,Cells,False,Other publications
+SenNet,39102243,single_project,2024,JAMA internal medicine,False,Other publications
+SenNet,39111286,single_project,2024,Cell metabolism,False,Other publications
+SenNet,39117766,single_project,2024,Nature protocols,False,Other publications
+SenNet,39122941,single_project,2024,Nature methods,False,Other publications
+SenNet,39147413,single_project,2024,The European respiratory journal,False,Other publications
+SenNet,39154193,single_project,2024,Briefings in bioinformatics,False,Other publications
+SenNet,39209833,single_project,2024,Nature communications,False,Other publications
+SenNet,39285015,single_project,2024,Nature aging,False,Other publications
+SenNet,39315549,single_project,2024,JCI insight,False,Other publications
+SenNet,39326411,single_project,2024,Cell reports methods,False,Other publications
+SenNet,39332852,single_project,2024,The Lancet. Digital health,False,Other publications
+SenNet,39349637,single_project,2024,Nature reviews. Drug discovery,False,Other publications
+SenNet,39352744,single_project,2024,JCI insight,False,Other publications
+SenNet,39367123,single_project,2024,Nature immunology,False,Other publications
+SenNet,39389805,single_project,2024,Trends in neurosciences,False,Other publications
+SenNet,39393608,single_project,2024,Experimental hematology,False,Other publications
+SenNet,39427288,single_project,2024,Experimental lung research,False,Other publications
+SenNet,39478176,single_project,2024,Nature methods,False,Other publications
+SenNet,39478210,single_project,2024,Nature,False,Other publications
+SenNet,39516256,single_project,2024,Scientific reports,False,Other publications
+SenNet,39516853,single_project,2024,Genome biology,False,Other publications
+SenNet,39543686,single_project,2024,Cell communication and signaling : CCS,False,Other publications
+SenNet,39578558,single_project,2024,Nature aging,False,Other publications
+SenNet,39627588,single_project,2024,Nature neuroscience,False,Other publications
+SenNet,39695169,single_project,2024,Scientific data,False,Other publications
+SenNet,39705362,single_project,2024,Science advances,False,Other publications
+SenNet,40417545,single_project,2024,AMIA ... Annual Symposium proceedings. AMIA Symposium,False,Other publications
+SenNet,40443964,single_project,2024,Journal of aging science,False,Other publications
+SenNet,40475302,single_project,2024,Frontiers in applied mathematics and statistics,False,Other publications
+SenNet,40756061,single_project,2024,Nature reviews. Methods primers,False,Other publications
+SenNet,32979174,within_cc,2022,Cardiovascular drugs and therapy,False,Pattern A
+SenNet,32997601,within_cc,2021,Annual review of pharmacology and toxicology,False,Pattern A
+SenNet,33764576,within_cc,2021,The EMBO journal,False,Pattern A
+SenNet,34597050,within_cc,2021,Journal of proteome research,False,Pattern A
+SenNet,34715021,within_cc,2021,Cell,False,Pattern A
+SenNet,34716448,within_cc,2021,Nature protocols,False,Pattern A
+SenNet,34736325,within_cc,2021,Journal of proteome research,False,Pattern A
+SenNet,34916628,within_cc,2022,Cell death and differentiation,False,Pattern A
+SenNet,34986167,within_cc,2022,PLoS biology,False,Pattern A
+SenNet,35032547,within_cc,2022,Mechanisms of ageing and development,False,Pattern A
+SenNet,35048548,within_cc,2023,The FEBS journal,False,Pattern A
+SenNet,35063071,within_cc,2022,Cell,False,Pattern A
+SenNet,35114789,within_cc,2022,Journal of proteome research,False,Pattern A
+SenNet,35165420,within_cc,2022,Nature cell biology,False,Pattern A
+SenNet,35247283,within_cc,2022,Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research,False,Pattern A
+SenNet,35363946,within_cc,2022,Aging cell,False,Pattern A
+SenNet,35599179,within_cc,2023,Trends in cell biology,False,Pattern A
+SenNet,35835881,within_cc,2023,Nature biotechnology,False,Pattern A
+SenNet,35867799,within_cc,2022,Science immunology,False,Pattern A
+SenNet,35974106,within_cc,2022,Nature communications,False,Pattern A
+SenNet,36147777,within_cc,2022,Nature aging,False,Pattern A
+SenNet,36154662,within_cc,2022,Molecular and cellular biology,False,Pattern A
+SenNet,36166734,within_cc,2022,American journal of physiology. Lung cellular and molecular physiology,False,Pattern A
+SenNet,36239841,within_cc,2022,Current diabetes reports,False,Pattern A
+SenNet,36280719,within_cc,2022,Nature methods,False,Pattern A
+SenNet,36284674,within_cc,2022,Bioinformatics advances,False,Pattern A
+SenNet,36351380,within_cc,2022,Cell reports,False,Pattern A
+SenNet,36368323,within_cc,2022,Cell,False,Pattern A
+SenNet,36571403,within_cc,2022,Journal of visualized experiments : JoVE,False,Pattern A
+SenNet,36622281,within_cc,2023,Aging,False,Pattern A
+SenNet,36624346,within_cc,2023,Nature genetics,False,Pattern A
+SenNet,36734849,within_cc,2023,Radiology. Imaging cancer,False,Pattern A
+SenNet,36735898,within_cc,2023,Journal of proteome research,False,Pattern A
+SenNet,36809340,within_cc,2023,The Journal of clinical investigation,False,Pattern A
+SenNet,36835113,within_cc,2023,International journal of molecular sciences,False,Pattern A
+SenNet,36864200,within_cc,2023,Nature methods,False,Pattern A
+SenNet,36899164,within_cc,2023,Nature methods,False,Pattern A
+SenNet,36922587,within_cc,2023,Nature,False,Pattern A
+SenNet,36965820,within_cc,2023,Mutation research. Reviews in mutation research,False,Pattern A
+SenNet,37012480,within_cc,2023,Nature methods,False,Pattern A
+SenNet,37086260,within_cc,2023,Aging,False,Pattern A
+SenNet,37102475,within_cc,2024,"Hepatology (Baltimore, Md.)",False,Pattern A
+SenNet,37148367,within_cc,2023,"The journals of gerontology. Series A, Biological sciences and medical sciences",False,Pattern A
+SenNet,37280296,within_cc,2023,Nature reviews. Molecular cell biology,False,Pattern A
+SenNet,37291214,within_cc,2023,Nature medicine,False,Pattern A
+SenNet,37308489,within_cc,2023,Nature communications,False,Pattern A
+SenNet,37316516,within_cc,2023,npj aging,False,Pattern A
+SenNet,37358516,within_cc,2023,Comprehensive Physiology,False,Pattern A
+SenNet,37387573,within_cc,2023,"Development (Cambridge, England)",False,Pattern A
+SenNet,37434081,within_cc,2024,GeroScience,False,Pattern A
+SenNet,37466640,within_cc,2023,Age and ageing,False,Pattern A
+SenNet,37473732,within_cc,2023,Cell systems,False,Pattern A
+SenNet,37540754,within_cc,2023,Science advances,False,Pattern A
+SenNet,37576699,within_cc,2022,SIAM journal on mathematics of data science,False,Pattern A
+SenNet,37695820,within_cc,2023,Journal of proteome research,False,Pattern A
+SenNet,37722048,within_cc,2023,Proceedings of the National Academy of Sciences of the United States of America,False,Pattern A
+SenNet,37804247,within_cc,2024,"The journals of gerontology. Series A, Biological sciences and medical sciences",False,Pattern A
+SenNet,37987887,within_cc,2024,GeroScience,False,Pattern A
+SenNet,37996541,within_cc,2024,Nature protocols,False,Pattern A
+SenNet,37998148,within_cc,2023,Biosensors,False,Pattern A
+SenNet,38012404,within_cc,2023,Nature cell biology,False,Pattern A
+SenNet,38150087,within_cc,2024,Biogerontology,False,Pattern A
+SenNet,38168624,within_cc,2024,Nature,False,Pattern A
+SenNet,38200118,within_cc,2024,Nature biotechnology,False,Pattern A
+SenNet,38329533,within_cc,2024,Skeletal radiology,False,Pattern A
+SenNet,38345804,within_cc,2024,JAMA,False,Pattern A
+SenNet,38509231,within_cc,2024,Oncogene,False,Pattern A
+SenNet,38553563,within_cc,2024,Nature aging,False,Pattern A
+SenNet,38584965,within_cc,2024,Journal of biomedical optics,False,Pattern A
+SenNet,38589516,within_cc,2024,Nature methods,False,Pattern A
+SenNet,38693267,within_cc,2024,Nature,False,Pattern A
+SenNet,38744973,within_cc,2024,Nature genetics,False,Pattern A
+SenNet,38753433,within_cc,2024,The Journal of clinical investigation,False,Pattern A
+SenNet,38764379,within_cc,2024,The American journal of surgical pathology,False,Pattern A
+SenNet,38943021,within_cc,2024,Nature protocols,False,Pattern A
+SenNet,38951178,within_cc,2024,Communications biology,False,Pattern A
+SenNet,38964507,within_cc,2024,Ageing research reviews,False,Pattern A
+SenNet,39038806,within_cc,2024,Analytical chemistry,False,Pattern A
+SenNet,39058773,within_cc,2024,Science advances,False,Pattern A
+SenNet,39178854,within_cc,2024,Cell metabolism,False,Pattern A
+SenNet,39266749,within_cc,2024,Nature methods,False,Pattern A
+SenNet,39325426,within_cc,2024,Proceedings of the National Academy of Sciences of the United States of America,False,Pattern A
+SenNet,39353436,within_cc,2024,Cell,False,Pattern A
+SenNet,39438481,within_cc,2024,npj aging,False,Pattern A
+SenNet,39541357,within_cc,2024,Proceedings of the National Academy of Sciences of the United States of America,False,Pattern A
+SenNet,39781544,within_cc,2023,Aging biology,False,Pattern A
+SenNet,39927857,within_cc,2024,Briefings in bioinformatics,False,Pattern A
+SenNet,34623423,cross_type,2022,"Bioinformatics (Oxford, England)",False,Pattern C
+SenNet,35102309,cross_type,2022,Nature reviews. Genetics,False,Pattern C
+SenNet,35422041,cross_type,2022,Nature communications,False,Pattern C
+SenNet,35764397,cross_type,2022,Genome research,False,Pattern C
+SenNet,36452867,cross_type,2022,Cell reports methods,False,Pattern C
+SenNet,36516485,cross_type,2022,Aging,False,Pattern C
+SenNet,36762475,cross_type,2023,Nucleic acids research,False,Pattern C
+SenNet,36936385,cross_type,2022,Nature aging,False,Pattern C
+SenNet,37387167,cross_type,2023,"Bioinformatics (Oxford, England)",False,Pattern C
+SenNet,37400722,cross_type,2023,Nature aging,False,Pattern C
+SenNet,37429992,cross_type,2023,Nature methods,False,Pattern C
+SenNet,37468619,cross_type,2023,Nature methods,False,Pattern C
+SenNet,37819791,cross_type,2023,Aging,False,Pattern C
+SenNet,37821702,cross_type,2023,Nature,False,Pattern C
+SenNet,38092041,cross_type,2024,Nature,False,Pattern C
+SenNet,38831121,cross_type,2024,Nature reviews. Molecular cell biology,False,Pattern C
+SenNet,38940139,cross_type,2024,"Bioinformatics (Oxford, England)",False,Pattern C
+SenNet,39121846,cross_type,2024,Cell,False,Pattern C
+SenNet,39418098,cross_type,2024,Aging,False,Pattern C
+SenNet,39700255,cross_type,2024,PLoS computational biology,False,Pattern C

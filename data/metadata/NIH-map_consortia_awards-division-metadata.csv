@@ -1,0 +1,109 @@
+project_id,core_project_number,project_serial_number,division,division_type,division_name
+HTAN,U01CA294459,CA294459,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294507,CA294507,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294514,CA294514,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294518,CA294518,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294527,CA294527,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294532,CA294532,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294536,CA294536,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294548,CA294548,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294551,CA294551,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U01CA294552,CA294552,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U24CA233243,CA233243,DCC,data_administration,Data Computation and Administration
+HTAN,U2CCA233195,CA233195,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233238,CA233238,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233254,CA233254,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233262,CA233262,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233280,CA233280,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233284,CA233284,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233285,CA233285,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233291,CA233291,PCA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233303,CA233303,HTA,tissue_mapping_center,Tissue Mapping Center
+HTAN,U2CCA233311,CA233311,PCA,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,OT2OD026663,OD026663,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD026671,OD026671,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD026673,OD026673,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD026675,OD026675,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD026677,OD026677,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD026682,OD026682,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD033753,OD033753,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD033756,OD033756,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD033758,OD033758,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD033759,OD033759,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD033760,OD033760,HIVE,data_administration,Data Computation and Administration
+HuBMAP,OT2OD033761,OD033761,HIVE,data_administration,Data Computation and Administration
+HuBMAP,U01HD110336,HD110336,DEMO,data_administration,Data Computation and Administration
+HuBMAP,U01HG012680,HG012680,DEMO,data_administration,Data Computation and Administration
+HuBMAP,U01HL166058,HL166058,DEMO,data_administration,Data Computation and Administration
+HuBMAP,U01HL166060,HL166060,DEMO,data_administration,Data Computation and Administration
+HuBMAP,U54AI142766,AI142766,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54AR078664,AR078664,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54DK120058,DK120058,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54DK127823,DK127823,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54EY032442,EY032442,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54HD104392,HD104392,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54HD104393,HD104393,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54HG010426,HG010426,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54HL145594,HL145594,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54HL145608,HL145608,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54HL145611,HL145611,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,U54HL156090,HL156090,TMC_H,tissue_mapping_center,Tissue Mapping Center
+HuBMAP,UG3CA256959,CA256959,TTD,technology_development,Technology Development
+HuBMAP,UG3CA256960,CA256960,TTD,technology_development,Technology Development
+HuBMAP,UG3CA256962,CA256962,TTD,technology_development,Technology Development
+HuBMAP,UG3CA256967,CA256967,TTD,technology_development,Technology Development
+HuBMAP,UG3CA257393,CA257393,TTD,technology_development,Technology Development
+HuBMAP,UG3HL145593,HL145593,TTD,technology_development,Technology Development
+HuBMAP,UG3HL145600,HL145600,TTD,technology_development,Technology Development
+HuBMAP,UG3HL145609,HL145609,TTD,technology_development,Technology Development
+HuBMAP,UG3HL145623,HL145623,TTD,technology_development,Technology Development
+HuBMAP,UH3CA246594,CA246594,RIT,technology_development,Technology Development
+HuBMAP,UH3CA246632,CA246632,RIT,technology_development,Technology Development
+HuBMAP,UH3CA246633,CA246633,RIT,technology_development,Technology Development
+HuBMAP,UH3CA246635,CA246635,RIT,technology_development,Technology Development
+HuBMAP,UH3CA255132,CA255132,TTD,technology_development,Technology Development
+HuBMAP,UH3CA256962,CA256962,TTD,technology_development,Technology Development
+HuBMAP,UH3CA255133,CA255133,TTD,technology_development,Technology Development
+HuBMAP,UH3CA255134,CA255134,TTD,technology_development,Technology Development
+HuBMAP,UH3CA255135,CA255135,TTD,technology_development,Technology Development
+HuBMAP,UH3CA256959,CA256959,TTD,technology_development,Technology Development
+HuBMAP,UH3CA256960,CA256960,TTD,technology_development,Technology Development
+HuBMAP,UH3CA256967,CA256967,TTD,technology_development,Technology Development
+HuBMAP,UH3CA257393,CA257393,TTD,technology_development,Technology Development
+SenNet,U24CA268108,CA268108,CODCC,data_administration,Data Computation and Administration
+SenNet,U54AG075931,AG075931,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG075932,AG075932,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG075934,AG075934,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG075936,AG075936,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG075941,AG075941,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG076040,AG076040,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG076041,AG076041,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG076043,AG076043,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG079753,AG079753,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG079754,AG079754,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG079758,AG079758,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG079759,AG079759,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,U54AG079779,AG079779,TMC_S,tissue_mapping_center,Tissue Mapping Center
+SenNet,UG3CA268091,CA268091,TDA,technology_development,Technology Development
+SenNet,UG3CA268096,CA268096,TDA,technology_development,Technology Development
+SenNet,UG3CA268103,CA268103,TDA,technology_development,Technology Development
+SenNet,UG3CA268105,CA268105,TDA,technology_development,Technology Development
+SenNet,UG3CA268112,CA268112,TDA,technology_development,Technology Development
+SenNet,UG3CA268117,CA268117,TDA,technology_development,Technology Development
+SenNet,UG3CA268202,CA268202,TDA,technology_development,Technology Development
+SenNet,UG3CA275669,CA275669,TDA,technology_development,Technology Development
+SenNet,UG3CA275681,CA275681,TDA,technology_development,Technology Development
+SenNet,UG3CA275686,CA275686,TDA,technology_development,Technology Development
+SenNet,UG3CA275687,CA275687,TDA,technology_development,Technology Development
+SenNet,UG3CA275697,CA275697,TDA,technology_development,Technology Development
+SenNet,UH3CA268091,CA268091,TDA,technology_development,Technology Development
+SenNet,UH3CA268103,CA268103,TDA,technology_development,Technology Development
+SenNet,UH3CA268117,CA268117,TDA,technology_development,Technology Development
+SenNet,UH3CA268202,CA268202,TDA,technology_development,Technology Development
+SenNet,UH3CA268096,CA268096,TDA,technology_development,Technology Development
+SenNet,UH3CA268105,CA268105,TDA,technology_development,Technology Development
+SenNet,UH3CA268112,CA268112,TDA,technology_development,Technology Development
+SenNet,UH3CA275669,CA275669,TDA,technology_development,Technology Development
+SenNet,UH3CA275681,CA275681,TDA,technology_development,Technology Development
+SenNet,UH3CA275686,CA275686,TDA,technology_development,Technology Development
+SenNet,UH3CA275687,CA275687,TDA,technology_development,Technology Development

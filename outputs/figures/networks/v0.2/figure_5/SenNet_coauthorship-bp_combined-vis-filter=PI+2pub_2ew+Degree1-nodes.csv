@@ -1,0 +1,954 @@
+Id,Label,role,first_publication_year,publications,publications_ic,citations,citations_ic,weighted_citations,weighted_citations_ic,interdivision_collaboration,intradivision_collaboration,ict_score,ic_partition,pubs_2021,pubs_2022,pubs_2023,pubs_2024,pubs_2025,pubs_2026,pubs_2021_ic,pubs_2022_ic,pubs_2023_ic,pubs_2024_ic,pubs_2025_ic,pubs_2026_ic,Degree,componentnumber,X,Y
+0,Anchor1,SupportingNode,,10,10,,,,,0,0,0,0,10,10,10,10,10,10,10,10,10,10,10,10,0,11,1,0
+1,Anchor2,SupportingNode,,10,10,,,,,0,0,0,0,10,10,10,10,10,10,10,10,10,10,10,10,0,11,0,1
+2,Legend1,SupportingNode,,1,1,,,,,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,11,0.00933,0.023096
+3,Legend6,SupportingNode,,50,50,,,,,0,0,0,0,50,50,50,50,50,50,50,50,50,50,50,50,0,11,0.00933,0.179944
+4,Legend2,SupportingNode,,2,2,,,,,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,0,11,0.00933,0.038026
+5,Legend3,SupportingNode,,5,5,,,,,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,11,0.00933,0.054064
+6,Legend4,SupportingNode,,15,15,,,,,0,0,0,0,15,15,15,15,15,15,15,15,15,15,15,15,0,11,0.00933,0.079993
+7,Legend5,SupportingNode,,30,30,,,,,0,0,0,0,30,30,30,30,30,30,30,30,30,30,30,30,0,11,0.00933,0.120543
+"Abdala-Valencia, Hiam","Abdala-Valencia, Hiam",Researcher,2024,4,,33,,1.03,,,,NA,0,0,0,0,1,4,4,,,,,,,23,0,0.520668,0.282403
+"Abkowitz, Janis L","Abkowitz, Janis L",Researcher,2023,2,2,35,35,3.5,3.5,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,9,1,0.956977,0.675288
+"Acosta, Juan Carlos","Acosta, Juan Carlos",Researcher,2022,3,3,207,207,8.06,8.06,1,2,-0.33,1,0,2,2,3,3,3,0,2,2,3,3,3,5,0,0.328278,0.776796
+"Adams, Peter D.","Adams, Peter D.",Principal Investigator,2021,15,11,1270,1270,67.33,67.33,5,6,-0.09,1,1,2,4,9,15,15,1,2,4,9,11,11,118,0,0.306666,0.833359
+"Agabiti, Sherry S","Agabiti, Sherry S",Researcher,2024,2,,3,,0.23,,,,NA,0,0,0,0,1,2,2,,,,,,,11,2,0.961306,0.522438
+"Agrawal, Ankit","Agrawal, Ankit",Researcher,2025,3,,0,,0,,,,NA,0,0,0,0,0,3,3,,,,,,,20,0,0.453943,0.338303
+"Aguayo-Mazzucato, Cristina","Aguayo-Mazzucato, Cristina",Researcher,2024,4,3,241,241,3.95,3.95,2,1,0.33,1,0,0,0,2,4,4,0,0,0,2,3,3,32,0,0.312594,0.584748
+"Agudelo Garcia, Paula A","Agudelo Garcia, Paula A",Researcher,2025,2,1,10,5,0.28,0.05,1,0,1,1,0,0,0,0,2,2,0,0,0,0,1,1,7,0,0.491365,0.56411
+"Alam, Shahul","Alam, Shahul",Researcher,2023,3,2,63,63,15.75,15.75,0,2,-1,1,0,0,1,1,3,3,0,0,1,1,2,2,4,1,0.929487,0.657587
+"Alavi, Amir","Alavi, Amir",Researcher,2022,3,3,54,54,3.46,3.46,3,0,1,1,0,1,2,3,3,3,0,1,2,3,3,3,16,0,0.816728,0.785451
+"Alcoforado Diniz, Juliana","Alcoforado Diniz, Juliana",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,1,0,0.298166,0.619184
+"Alder, Jonathan K","Alder, Jonathan K",Researcher,2023,3,1,98,90,2.49,2,1,0,1,1,0,0,2,2,3,3,0,0,1,1,1,1,5,0,0.494456,0.595859
+"Allen, Carter","Allen, Carter",Researcher,2022,3,,43,,2.91,,,,NA,0,0,1,2,3,3,3,,,,,,,4,0,0.565329,0.542349
+"Al-Naggar, Iman M","Al-Naggar, Iman M",Researcher,2024,2,1,233,229,4.23,2.9,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,1,0,0.244021,0.548128
+"Altman, Yoav","Altman, Yoav",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.256802,0.936089
+"Anacleto, Angelo","Anacleto, Angelo",Researcher,2025,2,1,20,20,1.11,1.11,0,1,-1,1,0,0,0,0,2,2,0,0,0,0,1,1,11,0,0.667371,0.745958
+"Anderson, Rozalyn M","Anderson, Rozalyn M",Researcher,2025,2,2,0,0,0,0,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,10,0,0.409141,0.54915
+"Angelini, Luise","Angelini, Luise",Researcher,2024,3,3,0,0,0,0,0,3,-1,1,0,0,0,1,3,3,0,0,0,1,3,3,15,0,0.210084,0.672023
+"Anidi, Ifeanyichukwu U","Anidi, Ifeanyichukwu U",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.715995,0.234917
+"Ansari, Meshal","Ansari, Meshal",Researcher,2023,2,1,422,411,5.3,4.72,0,1,-1,1,0,0,1,2,2,2,0,0,1,1,1,1,1,0,0.589625,0.675036
+"Arakkal, Leanne","Arakkal, Leanne",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.700257,0.245284
+"Aren, Kathleen","Aren, Kathleen",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.449949,0.357046
+"Arnold, Rouven","Arnold, Rouven",Researcher,2025,3,,0,,0,,,,NA,0,0,0,0,0,3,3,,,,,,,19,0,0.191715,0.849795
+"Arroyo-Mejias, Armando J","Arroyo-Mejias, Armando J",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.710606,0.263225
+"Asashima, Hiromitsu","Asashima, Hiromitsu",Researcher,2022,2,,246,,14.47,,,,NA,0,0,1,2,2,2,2,,,,,,,14,0,0.330641,0.314758
+"Ashiqueali, Sarah A","Ashiqueali, Sarah A",Researcher,2023,2,1,11,0,0.69,0,1,0,1,1,0,0,1,1,2,2,0,0,0,0,1,1,1,0,0.250916,0.670039
+"Aslani, Shahab","Aslani, Shahab",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.792088,0.643619
+"Asmussen, Niels C","Asmussen, Niels C",Researcher,2024,3,3,17,17,1.13,1.13,1,2,-0.33,1,0,0,0,1,3,3,0,0,0,1,3,3,6,0,0.407777,0.641665
+"Atkinson, Elizabeth J","Atkinson, Elizabeth J",Researcher,2022,2,2,661,661,35.02,35.02,0,2,-1,1,0,1,1,1,2,2,0,1,1,1,2,2,1,0,0.472234,0.730864
+"Atzmon, Gil","Atzmon, Gil",Researcher,2022,2,,46,,1.58,,,,NA,0,0,1,2,2,2,2,,,,,,,5,0,0.116894,0.675151
+"Börner, Katy","Börner, Katy",Principal Investigator,2022,16,3,192,45,10.9,1.46,3,0,1,1,0,1,5,8,14,16,0,0,1,1,3,3,90,0,0.724467,0.41493
+"Babu, Jaanvi Mahesh","Babu, Jaanvi Mahesh",Researcher,2022,2,2,110,110,5.79,5.79,0,2,-1,1,0,1,1,2,2,2,0,1,1,2,2,2,8,0,0.276806,0.077077
+"Baer, John M","Baer, John M",Researcher,2024,2,,171,,9.43,,,,NA,0,0,0,0,2,2,2,,,,,,,4,0,0.110802,0.4348
+"Bai, Hua","Bai, Hua",Researcher,2024,3,3,0,0,0,0,1,2,-0.33,1,0,0,0,1,3,3,0,0,0,1,3,3,13,0,0.409368,0.483655
+"Bai, Zhiliang","Bai, Zhiliang",Researcher,2023,6,6,735,735,172.95,172.95,0,6,-1,1,0,0,1,4,6,6,0,0,1,4,6,6,30,0,0.350642,0.233546
+"Baker, Darren J","Baker, Darren J",Principal Investigator,2023,10,6,466,420,12.38,9.68,4,2,0.33,1,0,0,3,5,10,10,0,0,0,2,6,6,48,0,0.373711,0.59637
+"Bakula, Daniela","Bakula, Daniela",Researcher,2022,2,1,188,48,9.71,0.38,1,0,1,1,0,1,1,2,2,2,0,0,0,1,1,1,2,0,0.166795,0.603443
+"Balaban, Metin","Balaban, Metin",Researcher,2024,2,,81,,2.9,,,,NA,0,0,0,0,2,2,2,,,,,,,5,0,0.141673,0.349813
+"Baldissera, Gabriel","Baldissera, Gabriel",Researcher,2024,2,,3,,0.23,,,,NA,0,0,0,0,1,2,2,,,,,,,11,2,0.949178,0.553492
+"Ballester, Beatriz","Ballester, Beatriz",Researcher,2024,2,,30,,1.22,,,,NA,0,0,0,0,2,2,2,,,,,,,7,0,0.563079,0.630851
+"Banarjee, Reema","Banarjee, Reema",Researcher,2023,3,,12,,1.1,,,,NA,0,0,0,1,2,3,3,,,,,,,15,0,0.070053,0.558059
+"Banovich, Nicholas E","Banovich, Nicholas E",Researcher,2023,2,1,431,411,5.31,4.72,0,1,-1,1,0,0,1,1,2,2,0,0,1,1,1,1,2,0,0.510107,0.566777
+"Bao, Shuozhen","Bao, Shuozhen",Researcher,2023,6,6,349,349,16.74,16.74,0,6,-1,1,0,0,1,4,6,6,0,0,1,4,6,6,37,0,0.328991,0.240551
+"Bar-Joseph, Ziv","Bar-Joseph, Ziv",Principal Investigator,2021,21,15,481,425,110.73,94.15,15,0,1,1,1,7,13,18,21,21,0,5,11,14,15,15,39,0,0.714929,0.689
+"Barrutia, Arrate Muñoz","Barrutia, Arrate Muñoz",Researcher,2024,3,3,4,4,0.29,0.29,0,3,-1,1,0,0,0,2,3,3,0,0,0,2,3,3,11,0,0.235567,0.041401
+"Bartley, Jenna M","Bartley, Jenna M",Researcher,2024,2,,26,,1.46,,,,NA,0,0,0,0,2,2,2,,,,,,,1,0,0.26848,0.581054
+"Bartolomucci, Alessandro","Bartolomucci, Alessandro",Researcher,2025,2,2,10,10,0.87,0.87,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.374587,0.683914
+"Bartosovic, Marek","Bartosovic, Marek",Researcher,2022,2,1,546,283,26.14,12.3,0,1,-1,1,0,1,2,2,2,2,0,0,1,1,1,1,14,0,0.264928,0.282755
+"Bartz, Josh","Bartz, Josh",Researcher,2023,5,5,19,19,3.95,3.95,0,5,-1,1,0,0,2,2,5,5,0,0,2,2,5,5,3,0,0.257328,0.700611
+"Barzilai, Nir","Barzilai, Nir",Researcher,2022,5,1,181,48,6.26,0.38,1,0,1,1,0,1,3,5,5,5,0,0,0,1,1,1,21,0,0.151201,0.664218
+"Basisty, Nathan","Basisty, Nathan",Researcher,2023,9,1,304,229,13.38,2.9,1,0,1,1,0,0,4,7,9,9,0,0,0,1,1,1,18,0,0.099039,0.543584
+"Baur, Joseph A","Baur, Joseph A",Researcher,2023,2,1,72,48,5.18,0.38,1,0,1,1,0,0,1,2,2,2,0,0,0,1,1,1,1,3,0.947714,0.261905
+"Baysoy, Alev","Baysoy, Alev",Researcher,2023,4,4,681,681,170.25,170.25,0,4,-1,1,0,0,1,3,4,4,0,0,1,3,4,4,27,0,0.369716,0.227391
+"Behr, Jürgen","Behr, Jürgen",Researcher,2022,2,,26,,1.28,,,,NA,0,0,1,1,2,2,2,,,,,,,1,0,0.552863,0.611143
+"Belle, Jad I","Belle, Jad I",Researcher,2024,2,,171,,9.43,,,,NA,0,0,0,0,2,2,2,,,,,,,4,0,0.11872,0.435237
+"Bellier, Alexandre","Bellier, Alexandre",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.79021,0.633138
+"Bemiss, Bradford C","Bemiss, Bradford C",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.450047,0.371648
+"Benayoun, Bérénice A","Benayoun, Bérénice A",Researcher,2025,2,,9,,1.88,,,,NA,0,0,0,0,0,2,2,,,,,,,3,0,0.112091,0.701501
+"Benz, Christopher C","Benz, Christopher C",Researcher,2023,8,2,115,95,4.2,2.05,2,0,1,1,0,0,2,5,8,8,0,0,1,1,2,2,31,0,0.330765,0.543884
+"Bernlohr, David A","Bernlohr, David A",Principal Investigator,2022,7,4,280,259,12.03,7.12,3,1,0.5,1,0,1,2,4,7,7,0,1,1,2,4,4,35,0,0.361913,0.559924
+"Betts-LaCroix, Joe","Betts-LaCroix, Joe",Researcher,2024,2,1,106,48,2.04,0.38,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,11,0,0.138125,0.653019
+"Beuschel, Rebecca T","Beuschel, Rebecca T",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.681285,0.27074
+"Bharat, Ankit","Bharat, Ankit",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.499313,0.326279
+"Biashad, Seyed Ali","Biashad, Seyed Ali",Researcher,2022,2,1,45,0,1.41,0,0,1,-1,1,0,1,1,1,2,2,0,0,0,0,1,1,5,0,0.236175,0.749125
+"Birch, Jodie","Birch, Jodie",Researcher,2021,3,3,201,201,6.9,6.9,0,3,-1,1,1,2,2,3,3,3,1,2,2,3,3,3,5,0,0.41131,0.840057
+"Boldrini, Maura","Boldrini, Maura",Researcher,2022,2,1,546,283,26.14,12.3,0,1,-1,1,0,1,2,2,2,2,0,0,1,1,1,1,14,0,0.274471,0.286785
+"Bons, Joanna","Bons, Joanna",Researcher,2024,4,1,14,1,1.28,0.05,1,0,1,1,0,0,0,2,4,4,0,0,0,0,1,1,8,0,0.285048,0.479119
+"Bordignon, Pino","Bordignon, Pino",Researcher,2022,2,,246,,14.47,,,,NA,0,0,1,2,2,2,2,,,,,,,14,0,0.334626,0.326602
+"Boroumand, Mozhgan","Boroumand, Mozhgan",Researcher,2023,3,1,235,229,3.65,2.9,1,0,1,1,0,0,1,2,3,3,0,0,0,1,1,1,3,0,0.063172,0.522018
+"Braxton, Alicia M","Braxton, Alicia M",Researcher,2022,5,5,116,116,6.24,6.24,0,5,-1,1,0,1,1,5,5,5,0,1,1,5,5,5,13,0,0.302128,0.081883
+"Bresci, Arianna","Bresci, Arianna",Researcher,2023,3,2,15,15,1.98,1.98,0,2,-1,1,0,0,1,2,3,3,0,0,1,2,2,2,4,4,0.964994,0.3775
+"Brunet, Joseph","Brunet, Joseph",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.783315,0.647327
+"Budinger, G R Scott","Budinger, G R Scott",Principal Investigator,2024,9,2,36,0,1.28,0,1,1,0,1,0,0,0,2,9,9,0,0,0,1,2,2,46,0,0.454575,0.39558
+"Bueckle, Andreas","Bueckle, Andreas",Researcher,2022,7,2,38,13,3.02,0.62,2,0,1,1,0,1,3,3,7,7,0,0,0,0,2,2,17,0,0.763882,0.581841
+"Bueno, Marta","Bueno, Marta",Researcher,2022,6,2,122,95,3.97,2.05,2,0,1,1,0,1,2,3,6,6,0,0,1,1,2,2,31,0,0.477982,0.596987
+"Bunyan, Elsie G","Bunyan, Elsie G",Researcher,2025,3,,0,,0,,,,NA,0,0,0,0,0,3,3,,,,,,,13,0,0.535309,0.34653
+"Callahan, Claire","Callahan, Claire",Researcher,2025,2,2,2,2,0.25,0.25,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,3,4,0.93956,0.397589
+"Callahan, Tiffany J","Callahan, Tiffany J",Researcher,2024,2,,39,,1.58,,,,NA,0,0,0,0,2,2,2,,,,,,,1,0,0.819395,0.585642
+"Calyeca, Jazmin","Calyeca, Jazmin",Researcher,2022,3,1,13,5,1.78,0.05,1,0,1,1,0,1,1,1,3,3,0,0,0,0,1,1,7,0,0.499943,0.570941
+"Cambuli, Francesco","Cambuli, Francesco",Researcher,2024,2,1,229,229,2.9,2.9,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,3,0,0.449298,0.628232
+"Camell, Christina D","Camell, Christina D",Researcher,2022,3,2,38,25,5.25,4.17,1,1,0,1,0,1,1,1,3,3,0,1,1,1,2,2,3,0,0.255679,0.641438
+"Campisi, Judith","Campisi, Judith",Principal Investigator,2022,9,5,417,338,22.27,12.25,5,0,1,1,0,1,2,5,9,9,0,1,1,2,5,5,13,0,0.259727,0.488451
+"Camussi, Giovanni","Camussi, Giovanni",Researcher,2025,2,2,1,1,0.11,0.11,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,2,0,0.244957,0.6832
+"Candia, Julián","Candia, Julián",Researcher,2024,2,,6,,0.35,,,,NA,0,0,0,0,1,2,2,,,,,,,15,0,0.079647,0.550622
+"Cao, Qin","Cao, Qin",Researcher,2024,4,,4,,0.39,,,,NA,0,0,0,0,2,4,4,,,,,,,5,0,0.106863,0.872047
+"Carapeto, Priscila","Carapeto, Priscila",Researcher,2024,2,1,229,229,2.9,2.9,1,0,1,1,0,0,0,1,2,2,0,0,0,1,1,1,5,0,0.299456,0.589691
+"Caravan, Wagma","Caravan, Wagma",Researcher,2023,2,,131,,3.07,,,,NA,0,0,0,1,1,2,2,,,,,,,12,0,0.08092,0.36114
+"Carns, Mary","Carns, Mary",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.459433,0.360671
+"Caron, Anita R","Caron, Anita R",Researcher,2023,2,,7,,0.7,,,,NA,0,0,0,1,1,1,2,,,,,,,6,0,0.762957,0.564045
+"Carver, Chase M","Carver, Chase M",Researcher,2023,4,4,257,257,5.86,5.86,2,2,0,1,0,0,1,3,4,4,0,0,1,3,4,4,5,0,0.376948,0.496965
+"Cassano, Marco","Cassano, Marco",Researcher,2022,2,,246,,14.47,,,,NA,0,0,1,2,2,2,2,,,,,,,14,0,0.322976,0.320793
+"Castelo-Branco, Gonçalo","Castelo-Branco, Gonçalo",Researcher,2022,4,3,548,285,26.21,12.37,0,3,-1,1,0,1,2,3,4,4,0,0,1,2,3,3,36,0,0.247308,0.245123
+"Chan, Cliburn C","Chan, Cliburn C",Principal Investigator,2022,3,2,11,0,1.57,0,1,1,0,1,0,1,1,2,3,3,0,0,0,1,2,2,4,0,0.526737,0.688436
+"Chandel, Navdeep S","Chandel, Navdeep S",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,12,0,0.528829,0.335421
+"Chandra, Abhishek","Chandra, Abhishek",Researcher,2022,3,3,141,141,11.58,11.58,0,3,-1,1,0,2,2,3,3,3,0,2,2,3,3,3,9,0,0.459879,0.793978
+"Chang, Won","Chang, Won",Researcher,2023,2,,31,,4.26,,,,NA,0,0,0,2,2,2,2,,,,,,,1,0,0.513597,0.540972
+"Chang, Yuzhou","Chang, Yuzhou",Researcher,2022,8,,203,,12.09,,,,NA,0,0,1,4,7,8,8,,,,,,,17,0,0.609075,0.569715
+"Chapman, James","Chapman, James",Researcher,2021,3,3,627,627,16.32,16.32,1,2,-0.33,1,1,1,2,3,3,3,1,1,2,3,3,3,38,0,0.473014,0.919744
+"Chen, Chongyi","Chen, Chongyi",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.286334,0.899078
+"Chen, Fei","Chen, Fei",Researcher,2025,3,1,0,0,0,0,0,1,-1,1,0,0,0,0,3,3,0,0,0,0,1,1,12,0,0.529979,0.359448
+"Chen, Feng","Chen, Feng",Principal Investigator,2023,6,1,444,229,8.05,2.9,1,0,1,1,0,0,2,4,6,6,0,0,0,1,1,1,33,0,0.08035,0.303457
+"Chen, Hao","Chen, Hao",Researcher,2023,6,4,152,146,21.42,20.67,4,0,1,1,0,0,3,4,6,6,0,0,3,3,4,4,6,0,0.492567,0.518187
+"Chen, Jiamin","Chen, Jiamin",Researcher,2023,2,,4,,0.5,,,,NA,0,0,0,1,1,2,2,,,,,,,2,0,0.117308,0.855252
+"Chen, Jinmiao","Chen, Jinmiao",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.251252,0.209843
+"Chen, Jun","Chen, Jun",Researcher,2023,3,,32,,5.88,,,,NA,0,0,0,1,2,3,3,,,,,,,1,5,0.977507,0.26462
+"Chen, Lu","Chen, Lu",Researcher,2023,2,,7,,0.7,,,,NA,0,0,0,1,1,2,2,,,,,,,4,0,0.754692,0.604826
+"Chen, Sidi","Chen, Sidi",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.377381,0.243009
+"Chen, Siqi","Chen, Siqi",Researcher,2023,5,,224,,6.28,,,,NA,0,0,0,2,4,5,5,,,,,,,33,0,0.098978,0.355068
+"Chen, Xingjian","Chen, Xingjian",Researcher,2025,2,2,0,0,0,0,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,5,4,0.947607,0.416676
+"Chen, Xinyi Lisa","Chen, Xinyi Lisa",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.261286,0.201359
+"Chen, Yanbo","Chen, Yanbo",Researcher,2025,2,,4,,0.4,,,,NA,0,0,0,0,0,2,2,,,,,,,5,2,0.93931,0.517629
+"Cheng, Hao","Cheng, Hao",Researcher,2022,4,,146,,9.1,,,,NA,0,0,1,2,2,4,4,,,,,,,7,0,0.600315,0.529073
+"Cheng, Lixin","Cheng, Lixin",Researcher,2023,2,,4,,0.34,,,,NA,0,0,0,1,2,2,2,,,,,,,1,0,0.125434,0.850441
+"Cheng, Weiqiu","Cheng, Weiqiu",Researcher,2024,4,3,43,43,2.88,2.88,0,3,-1,1,0,0,0,2,4,4,0,0,0,2,3,3,13,0,0.652698,0.73169
+"Cheng, Wenduo","Cheng, Wenduo",Researcher,2024,2,,6,,0.75,,,,NA,0,0,0,0,1,2,2,,,,,,,1,1,0.959844,0.633196
+"Cheng, Xiuyuan","Cheng, Xiuyuan",Researcher,2025,2,2,20,20,1.54,1.54,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.17398,0.187834
+"Cheng, Yubao","Cheng, Yubao",Researcher,2024,4,1,15,2,1.35,0.2,0,1,-1,1,0,0,0,1,4,4,0,0,0,1,1,1,7,2,0.939321,0.505184
+"Cherry, Christopher","Cherry, Christopher",Researcher,2023,2,,40,,1.54,,,,NA,0,0,0,1,1,2,2,,,,,,,3,0,0.21593,0.487138
+"Chheda, Milan G","Chheda, Milan G",Researcher,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.116944,0.34445
+"Chi, Hongbo","Chi, Hongbo",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.359137,0.21531
+"Chidester, Benjamin","Chidester, Benjamin",Researcher,2023,2,2,63,63,15.75,15.75,0,2,-1,1,0,0,1,1,2,2,0,0,1,1,2,2,3,1,0.937885,0.663922
+"Childs, Bennett G","Childs, Bennett G",Researcher,2023,3,2,8,5,1.05,0.05,2,0,1,1,0,0,1,1,3,3,0,0,0,0,2,2,12,0,0.420641,0.645519
+"Cho, Chun-Seok","Cho, Chun-Seok",Researcher,2022,6,5,141,141,6.77,6.77,0,5,-1,1,0,1,1,3,6,6,0,1,1,3,5,5,18,0,0.683423,0.749271
+"Chow, Savio Ho-Chit","Chow, Savio Ho-Chit",Researcher,2025,2,,1,,0.12,,,,NA,0,0,0,0,0,2,2,,,,,,,2,0,0.115572,0.865367
+"Christie, Thomas D","Christie, Thomas D",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.937084,0.849228
+"Chu, Colin J","Chu, Colin J",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.663214,0.257028
+"Chuang, Jeffrey H","Chuang, Jeffrey H",Researcher,2023,6,2,129,95,3.74,2.05,2,0,1,1,0,0,3,3,6,6,0,0,1,1,2,2,26,0,0.394954,0.582647
+"Chung, Dongjun","Chung, Dongjun",Researcher,2022,10,1,79,5,8,0.05,1,0,1,1,0,1,5,6,10,10,0,0,0,0,1,1,19,0,0.504191,0.550462
+"Chuva de Sousa Lopes, Susana M","Chuva de Sousa Lopes, Susana M",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.782852,0.761941
+"Ciotlos, Serban","Ciotlos, Serban",Researcher,2022,2,2,100,100,8.41,8.41,2,0,1,1,0,1,1,1,2,2,0,1,1,1,2,2,2,0,0.333707,0.5019
+"Clark, Beatrice H","Clark, Beatrice H",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.657545,0.281855
+"Clark, Kelly","Clark, Kelly",Researcher,2023,2,2,7,7,1,1,0,2,-1,1,0,0,1,1,2,2,0,0,1,1,2,2,3,0,0.444965,0.689796
+"Clatworthy, Menna R","Clatworthy, Menna R",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.688145,0.296507
+"Cloix, Catherine","Cloix, Catherine",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.464481,0.899078
+"Cohn, Rachel L","Cohn, Rachel L",Researcher,2023,2,1,234,209,53.21,52.25,0,1,-1,1,0,0,1,2,2,2,0,0,1,1,1,1,3,0,0.259463,0.580038
+"Colautti, Jake","Colautti, Jake",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.708996,0.288621
+"Collinge, Charles W","Collinge, Charles W",Researcher,2025,2,2,10,10,0.87,0.87,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.370078,0.691847
+"Connelly, Jon P","Connelly, Jon P",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.382425,0.221621
+"Cornish, Toby C","Cornish, Toby C",Researcher,2022,5,5,116,116,6.24,6.24,0,5,-1,1,0,1,1,5,5,5,0,1,1,5,5,5,13,0,0.297552,0.100954
+"Coscia, Fabian","Coscia, Fabian",Researcher,2025,3,,3,,0.05,,,,NA,0,0,0,0,0,2,3,,,,,,,60,0,0.677323,0.23735
+"Cosgrove, Benjamin D","Cosgrove, Benjamin D",Researcher,2024,2,1,21,5,1.83,0.05,1,0,1,1,0,0,0,1,2,2,0,0,0,0,1,1,1,0,0.230056,0.462232
+"Cox, Jürgen","Cox, Jürgen",Researcher,2023,2,2,181,181,9.97,9.97,0,2,-1,1,0,0,2,2,2,2,0,0,2,2,2,2,7,0,0.672922,0.857074
+"Craft, Joseph E","Craft, Joseph E",Researcher,2022,3,,509,,28.31,,,,NA,0,0,2,3,3,3,3,,,,,,,14,0,0.346593,0.330337
+"Crary, John F","Crary, John F",Researcher,2024,3,,34,,1.55,,,,NA,0,0,0,0,1,3,3,,,,,,,17,6,0.953047,0.871207
+"Croteau, Joshua","Croteau, Joshua",Researcher,2023,3,1,35,32,0.89,0.84,1,0,1,1,0,0,1,1,2,3,0,0,1,1,1,1,60,0,0.668829,0.303815
+"Cui, Jenny","Cui, Jenny",Researcher,2023,2,,12,,1.2,,,,NA,0,0,0,1,2,2,2,,,,,,,9,0,0.174428,0.574594
+"Cui, Linna","Cui, Linna",Researcher,2024,2,,6,,0.35,,,,NA,0,0,0,0,1,2,2,,,,,,,15,0,0.06565,0.571748
+"Cumming, R Ian","Cumming, R Ian",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.498889,0.313595
+"Cusick, Luisa","Cusick, Luisa",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,8,0,0.512301,0.347735
+"d'Adda di Fagagna, Fabrizio","d'Adda di Fagagna, Fabrizio",Researcher,2022,2,2,752,752,152.56,152.56,1,1,0,1,0,1,1,2,2,2,0,1,1,2,2,2,2,0,0.406389,0.796201
+"Dai, Haiming","Dai, Haiming",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.453278,0.911824
+"Daldrup-Link, Heike Elizabeth","Daldrup-Link, Heike Elizabeth",Principal Investigator,2023,4,4,235,235,3.52,3.52,1,3,-0.5,1,0,0,1,3,4,4,0,0,1,3,4,4,6,0,0.51509,0.717687
+"Dang, Thai Nam Son","Dang, Thai Nam Son",Researcher,2025,2,2,0,0,0,0,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,5,4,0.95675,0.416455
+"Dang, Yonglong","Dang, Yonglong",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.239401,0.215043
+"Daoud, Elena V","Daoud, Elena V",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.922491,0.857866
+"Dapas, Matthew","Dapas, Matthew",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.440967,0.348311
+"Dasgupta, Nirmalya","Dasgupta, Nirmalya",Researcher,2021,3,3,242,242,32.87,32.87,0,3,-1,1,1,1,1,2,3,3,1,1,1,2,3,3,33,0,0.300485,0.891522
+"Davies, Sherri R","Davies, Sherri R",Researcher,2023,3,,35,,1.21,,,,NA,0,0,0,1,3,3,3,,,,,,,11,0,0.131872,0.403819
+"Davis, Andrew","Davis, Andrew",Researcher,2024,5,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,5,5,0,0,0,1,2,2,46,0,0.234226,0.86023
+"Daya, Gulzar N","Daya, Gulzar N",Researcher,2024,2,,6,,0.35,,,,NA,0,0,0,0,1,2,2,,,,,,,15,0,0.069611,0.54437
+"De Cabo, Rafael","De Cabo, Rafael",Principal Investigator,2023,3,1,72,48,5.18,0.38,1,0,1,1,0,0,1,2,3,3,0,0,0,1,1,1,1,3,0.934351,0.261826
+"De Jager, Philip L","De Jager, Philip L",Researcher,2023,2,,55,,3.13,,,,NA,0,0,0,1,1,2,2,,,,,,,1,0,0.33161,0.569363
+"Dehkordi, Shiva Kazempour","Dehkordi, Shiva Kazempour",Researcher,2023,2,,0,,0,,,,NA,0,0,0,1,1,2,2,,,,,,,2,6,0.943365,0.795067
+"Dematte, Jane E","Dematte, Jane E",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.438774,0.374366
+"Demichev, Vadim","Demichev, Vadim",Researcher,2023,3,2,279,279,22.14,22.14,0,2,-1,1,0,0,2,2,3,3,0,0,2,2,2,2,5,0,0.663185,0.850101
+"DeNardo, David G","DeNardo, David G",Researcher,2023,4,,318,,13.07,,,,NA,0,0,0,1,4,4,4,,,,,,,10,0,0.115477,0.42031
+"Deng, Yanxiang","Deng, Yanxiang",Researcher,2022,5,2,802,293,42.28,13.97,0,2,-1,1,0,2,4,5,5,5,0,0,1,2,2,2,26,0,0.300338,0.306619
+"Denha, Saven","Denha, Saven",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.695246,0.216183
+"Dequiedt, Lucie","Dequiedt, Lucie",Researcher,2024,2,2,5,5,0.33,0.33,0,2,-1,1,0,0,0,2,2,2,0,0,0,2,2,2,8,0,0.272844,0.0671
+"Derks, Jason","Derks, Jason",Researcher,2023,5,4,367,367,35.37,35.37,0,4,-1,1,0,0,4,5,5,5,0,0,4,4,4,4,12,0,0.673989,0.872113
+"Deshpande, Ajinkya","Deshpande, Ajinkya",Researcher,2025,2,,1,,0.25,,,,NA,0,0,0,0,0,2,2,,,,,,,2,1,0.950008,0.629506
+"Desprez, Pierre-Yves","Desprez, Pierre-Yves",Researcher,2024,3,1,22,8,2.39,0.89,1,0,1,1,0,0,0,1,3,3,0,0,0,0,1,1,5,0,0.270633,0.502253
+"Dever, Rose","Dever, Rose",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.730437,0.281581
+"Dey, Amit K","Dey, Amit K",Researcher,2023,6,1,252,229,6.75,2.9,1,0,1,1,0,0,2,4,6,6,0,0,0,1,1,1,16,0,0.07659,0.529541
+"Diaz, Estefani","Diaz, Estefani",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.48893,0.308214
+"Ding, Jun","Ding, Jun",Researcher,2021,5,3,211,168,65.98,53.47,3,0,1,1,1,4,4,4,5,5,0,3,3,3,3,3,3,0,0.742621,0.665346
+"Ding, Li","Ding, Li",Principal Investigator,2023,11,2,552,234,14.44,2.95,2,0,1,1,0,0,2,8,11,11,0,0,0,1,2,2,71,0,0.19,0.437346
+"DiStasio, Marcello","DiStasio, Marcello",Researcher,2022,2,,246,,14.47,,,,NA,0,0,1,2,2,2,2,,,,,,,14,0,0.342142,0.316248
+"Dixit, Vishwa Deep","Dixit, Vishwa Deep",Principal Investigator,2023,3,,49,,5.72,,,,NA,0,0,0,1,1,3,3,,,,,,,3,7,0.9352,0.30364
+"Dlugos, Tamara","Dlugos, Tamara",Researcher,2023,2,,35,,4.79,,,,NA,0,0,0,1,1,2,2,,,,,,,1,7,0.927758,0.310659
+"Dong, Chuanpeng","Dong, Chuanpeng",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.363988,0.246242
+"Dong, Mingze","Dong, Mingze",Researcher,2023,5,5,290,290,12.75,12.75,1,4,-0.6,1,0,0,1,2,4,5,0,0,1,2,4,5,3,0,0.255,0.306715
+"Dong, Runze","Dong, Runze",Researcher,2022,4,4,428,428,15.8,15.8,3,1,0.5,1,0,1,2,3,4,4,0,1,2,3,4,4,11,0,0.436543,0.676877
+"Dong, Xiao","Dong, Xiao",Researcher,2022,10,9,164,54,37.28,9.78,0,9,-1,1,0,1,3,6,10,10,0,0,2,5,9,9,10,0,0.239243,0.699877
+"Dookun, Emily","Dookun, Emily",Researcher,2022,2,2,102,102,17.55,17.55,0,2,-1,1,0,1,2,2,2,2,0,1,2,2,2,2,2,0,0.369621,0.802999
+"Doolittle, Madison L","Doolittle, Madison L",Researcher,2021,10,9,1240,1199,55.74,51.18,4,5,-0.11,1,1,3,6,8,10,10,1,3,5,7,9,9,23,0,0.48619,0.749606
+"Dosch, Andrew J","Dosch, Andrew J",Researcher,2025,2,2,17,17,1.13,1.13,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,6,0,0.411266,0.652313
+"Doty, Raymond T","Doty, Raymond T",Researcher,2023,2,2,35,35,3.5,3.5,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,9,1,0.953224,0.687379
+"Dou, Zhixun","Dou, Zhixun",Principal Investigator,2022,10,8,821,818,30.27,29.67,3,5,-0.25,1,0,1,2,6,9,10,0,1,2,6,8,8,73,0,0.405374,0.943607
+"Drummond, Eleanor","Drummond, Eleanor",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.942786,0.861244
+"Du, Wenxuan","Du, Wenxuan",Researcher,2024,4,4,2,2,0.34,0.34,0,4,-1,1,0,0,0,1,2,4,0,0,0,1,2,4,8,0,0.266522,0.052546
+"Duan, Zhijun","Duan, Zhijun",Researcher,2023,2,2,35,35,3.5,3.5,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,9,1,0.944151,0.686986
+"Dubal, Dena B","Dubal, Dena B",Researcher,2025,2,,9,,1.88,,,,NA,0,0,0,0,0,2,2,,,,,,,3,0,0.117794,0.708705
+"Duncan, Francesca E.","Duncan, Francesca E.",Principal Investigator,2023,5,4,257,235,6.14,3,4,0,1,1,0,0,1,2,5,5,0,0,0,1,4,4,30,0,0.295648,0.572529
+"Dutra, Walderez O","Dutra, Walderez O",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.702157,0.318711
+"Dwork, Andrew J","Dwork, Andrew J",Researcher,2022,2,1,546,283,26.14,12.3,0,1,-1,1,0,1,2,2,2,2,0,0,1,1,1,1,14,0,0.262623,0.294581
+"Eadon, Michael T","Eadon, Michael T",Researcher,2023,3,,21,,2.09,,,,NA,0,0,0,1,1,3,3,,,,,,,8,0,0.628946,0.548993
+"Ebrahimkhani, Mo R","Ebrahimkhani, Mo R",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.792684,0.75638
+"Ehrenberg, Alexander J","Ehrenberg, Alexander J",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.944761,0.878898
+"Eickelberg, Oliver","Eickelberg, Oliver",Researcher,2022,10,2,577,501,10.56,6.72,1,1,0,1,0,2,4,7,10,10,0,0,2,2,2,2,31,0,0.546253,0.62658
+"Elisseeff, Jennifer H","Elisseeff, Jennifer H",Principal Investigator,2023,6,1,74,5,7.7,0.05,1,0,1,1,0,0,1,3,6,6,0,0,0,0,1,1,9,0,0.220482,0.468887
+"Ellerby, Lisa M","Ellerby, Lisa M",Researcher,2024,3,,8,,0.95,,,,NA,0,0,0,0,2,3,3,,,,,,,7,0,0.298043,0.483185
+"Elsallabi, Osama","Elsallabi, Osama",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.228726,0.682173
+"Emmott, Edward","Emmott, Edward",Researcher,2021,3,3,300,300,26.97,26.97,0,3,-1,1,1,1,3,3,3,3,1,1,3,3,3,3,9,0,0.687659,0.871822
+"Englund, Davis A","Englund, Davis A",Researcher,2022,2,2,158,158,6.58,6.58,0,2,-1,1,0,1,1,1,2,2,0,1,1,1,2,2,1,0,0.398638,0.552717
+"Enninful, Archibald","Enninful, Archibald",Researcher,2022,10,8,405,159,20.89,6.42,3,5,-0.25,1,0,1,3,7,10,10,0,0,1,5,8,8,59,0,0.383964,0.355949
+"Eppard, Madeline","Eppard, Madeline",Researcher,2023,4,3,487,486,22.96,22.92,1,2,-0.33,1,0,0,1,3,4,4,0,0,1,3,3,3,38,0,0.492788,0.913342
+"Espinoza, Sara E","Espinoza, Sara E",Researcher,2023,2,,24,,4.8,,,,NA,0,0,0,1,1,2,2,,,,,,,1,0,0.289146,0.623873
+"Esposito, Anthony J","Esposito, Anthony J",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.442653,0.33625
+"Estrada-Bernal, Adriana","Estrada-Bernal, Adriana",Researcher,2024,2,,28,,0.87,,,,NA,0,0,0,0,1,2,2,,,,,,,8,0,0.555385,0.645583
+"Evans, Shane A","Evans, Shane A",Researcher,2021,3,3,182,182,5.73,5.73,0,3,-1,1,1,1,2,2,3,3,1,1,2,2,3,3,3,0,0.453538,0.690071
+"Evensen, Garrett","Evensen, Garrett",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.181334,0.864959
+"Fan, Jean","Fan, Jean",Researcher,2024,4,3,23,20,1.45,1.12,2,1,0.33,1,0,0,0,1,4,4,0,0,0,0,3,3,10,0,0.729307,0.577505
+"Fan, Rong","Fan, Rong",Principal Investigator,2022,20,17,1775,1266,218.65,190.34,3,14,-0.65,1,0,2,5,13,20,20,0,0,2,10,17,17,102,0,0.313239,0.357082
+"Farr, Joshua N","Farr, Joshua N",Researcher,2022,8,7,1325,1284,63.86,59.3,1,6,-0.71,1,0,3,6,8,8,8,0,3,5,7,7,7,52,0,0.46986,0.863735
+"Farrell, Kurt","Farrell, Kurt",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.941485,0.891804
+"Farzad, Negin","Farzad, Negin",Researcher,2024,4,4,15,15,1.72,1.72,2,2,0,1,0,0,0,2,4,4,0,0,0,2,4,4,3,0,0.370139,0.395362
+"Fedichev, Peter O","Fedichev, Peter O",Researcher,2024,2,1,106,48,2.04,0.38,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,11,0,0.145113,0.644983
+"Fenske, Samuel","Fenske, Samuel",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.509052,0.31145
+"Ferreira, Ricardo Melo","Ferreira, Ricardo Melo",Researcher,2025,2,,1,,0.09,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.620769,0.560457
+"Ferrucci, Luigi","Ferrucci, Luigi",Researcher,2023,9,2,194,49,11.72,0.44,2,0,1,1,0,0,3,7,9,9,0,0,0,1,2,2,33,0,0.129472,0.59976
+"Fertig, Elana J","Fertig, Elana J",Principal Investigator,2023,3,1,45,5,1.59,0.05,1,0,1,1,0,0,1,1,3,3,0,0,0,0,1,1,6,0,0.209506,0.505271
+"Field, Natania S","Field, Natania S",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.438485,0.36127
+"Fields, Ryan C","Fields, Ryan C",Principal Investigator,2023,5,,298,,9.53,,,,NA,0,0,0,2,5,5,5,,,,,,,31,0,0.133931,0.369283
+"Finkel, Toren","Finkel, Toren",Principal Investigator,2021,13,1,517,48,204.85,0.38,1,0,1,1,1,4,6,8,12,13,0,0,0,1,1,1,17,0,0.52881,0.555727
+"Flavell, Richard A","Flavell, Richard A",Researcher,2024,2,2,20,20,1.54,1.54,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,2,0,0.183892,0.205533
+"Flores, Lisa C","Flores, Lisa C",Researcher,2024,2,,28,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,1,0,0.424297,0.744203
+"Flynn, William F","Flynn, William F",Researcher,2025,3,1,16,5,0.66,0.05,1,0,1,1,0,0,0,0,3,3,0,0,0,0,1,1,4,0,0.30152,0.63859
+"Forjaz, André","Forjaz, André",Researcher,2024,9,9,11,11,0.96,0.96,0,9,-1,1,0,0,0,5,6,9,0,0,0,5,6,9,21,0,0.250908,0.055101
+"Fortney, Kristen","Fortney, Kristen",Researcher,2024,2,1,106,48,2.04,0.38,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,11,0,0.136626,0.665346
+"Franco, Ana Catarina","Franco, Ana Catarina",Researcher,2025,5,4,22,21,1.03,0.99,3,1,0.5,1,0,0,0,0,5,5,0,0,0,0,4,4,24,0,0.408522,0.701962
+"Franks, Alexander M","Franks, Alexander M",Researcher,2023,3,1,110,110,5.24,5.24,0,1,-1,1,0,0,1,2,3,3,0,0,1,1,1,1,3,0,0.654785,0.84244
+"Fritzsche, Sonja","Fritzsche, Sonja",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.641105,0.293791
+"Froemming, Mitchell N","Froemming, Mitchell N",Researcher,2023,2,2,62,62,3.31,3.31,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,10,0,0.481458,0.784257
+"Fu, Xiaonan","Fu, Xiaonan",Researcher,2022,3,3,208,208,13.35,13.35,1,2,-0.33,1,0,1,2,2,3,3,0,1,2,2,3,3,3,0,0.46955,0.674633
+"Fuentealba, Matias","Fuentealba, Matias",Researcher,2024,2,,9,,1.06,,,,NA,0,0,0,0,1,2,2,,,,,,,1,0,0.419695,0.606223
+"Fuh, Katherine C","Fuh, Katherine C",Researcher,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.10375,0.324149
+"Fullam, Spencer","Fullam, Spencer",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.646188,0.314829
+"Fuller, Sophia","Fuller, Sophia",Researcher,2023,2,,12,,1.2,,,,NA,0,0,0,1,2,2,2,,,,,,,9,0,0.181474,0.5829
+"Furman, David","Furman, David",Principal Investigator,2023,7,3,423,96,48.15,2.1,3,0,1,1,0,0,2,4,7,7,0,0,1,1,3,3,23,0,0.411221,0.617338
+"Güenther, Andreas","Güenther, Andreas",Researcher,2022,3,,46,,1.62,,,,NA,0,0,1,1,2,3,3,,,,,,,11,0,0.564838,0.61952
+"Gandhi, Armin","Gandhi, Armin",Researcher,2024,5,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,5,5,0,0,0,1,2,2,46,0,0.22893,0.890078
+"Ganier, Clarisse","Ganier, Clarisse",Researcher,2025,2,,20,,2.55,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.329423,0.686729
+"Gao, Catherine A","Gao, Catherine A",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.48165,0.374328
+"Gao, Daniel","Gao, Daniel",Researcher,2023,2,2,35,35,3.5,3.5,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,9,1,0.963746,0.684909
+"Gao, Fu","Gao, Fu",Researcher,2023,5,4,248,2,14.54,0.07,0,4,-1,1,0,0,1,3,5,5,0,0,0,2,4,4,49,0,0.305088,0.208638
+"Gao, Zichen","Gao, Zichen",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.280942,0.881476
+"Garcia, Guillermina","Garcia, Guillermina",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.290959,0.916722
+"Garovic, Vesna D","Garovic, Vesna D",Principal Investigator,2024,3,2,234,234,2.95,2.95,2,0,1,1,0,0,0,1,3,3,0,0,0,1,2,2,30,0,0.329721,0.605771
+"Gasek, Nathan S","Gasek, Nathan S",Researcher,2023,3,1,245,209,53.82,52.25,0,1,-1,1,0,0,1,2,3,3,0,0,1,1,1,1,12,0,0.25448,0.603161
+"Gaulton, Kyle J","Gaulton, Kyle J",Researcher,2023,2,,223,,74.34,,,,NA,0,0,0,2,2,2,2,,,,,,,2,0,0.162033,0.826029
+"Gaur, Pallavi","Gaur, Pallavi",Researcher,2022,3,,198,,10.3,,,,NA,0,0,1,3,3,3,3,,,,,,,3,0,0.346752,0.551685
+"Gavathiotis, Evripidis","Gavathiotis, Evripidis",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.480097,0.896035
+"Gehlenborg, Nils","Gehlenborg, Nils",Principal Investigator,2023,2,1,136,32,4.69,0.84,1,0,1,1,0,0,2,2,2,2,0,0,1,1,1,1,9,0,0.765632,0.491196
+"Gerencser, Akos A","Gerencser, Akos A",Researcher,2023,3,2,105,98,3.89,2.89,2,0,1,1,0,0,1,2,3,3,0,0,1,1,2,2,4,0,0.267264,0.514743
+"Germain, Ronald N","Germain, Ronald N",Researcher,2023,3,1,35,32,0.89,0.84,1,0,1,1,0,0,1,1,2,3,0,0,1,1,1,1,60,0,0.688165,0.335917
+"Gerner, Michael Y","Gerner, Michael Y",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.736701,0.25495
+"Gerstein, Mark","Gerstein, Mark",Researcher,2024,2,2,54,54,2.7,2.7,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,9,0,0.394678,0.255469
+"Ghobashi, Ahmed","Ghobashi, Ahmed",Researcher,2025,2,,2,,1,,,,NA,0,0,0,0,0,2,2,,,,,,,1,0,0.584001,0.586738
+"Gillanders, William E.","Gillanders, William E.",Principal Investigator,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.106563,0.337441
+"Ginty, Fiona","Ginty, Fiona",Principal Investigator,2023,3,2,136,32,4.69,0.84,2,0,1,1,0,0,2,2,3,3,0,0,1,1,2,2,11,0,0.746736,0.509392
+"Gladyshev, Vadim N","Gladyshev, Vadim N",Researcher,2024,2,1,106,48,2.04,0.38,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,11,0,0.128932,0.657272
+"Glass, Carolyn","Glass, Carolyn",Principal Investigator,2025,2,2,5,5,0.05,0.05,2,0,1,1,0,0,0,0,2,2,0,0,0,0,2,2,3,0,0.510627,0.64814
+"Gokce, Ozgun","Gokce, Ozgun",Researcher,2024,2,,13,,0.45,,,,NA,0,0,0,0,1,2,2,,,,,,,1,0,0.339759,0.568939
+"Gola, Anita","Gola, Anita",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.648231,0.229863
+"Gollob, Kenneth J","Gollob, Kenneth J",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.746433,0.303926
+"Gomez, Paul T","Gomez, Paul T",Researcher,2023,4,4,257,257,5.86,5.86,2,2,0,1,0,0,1,3,4,4,0,0,1,3,4,4,5,0,0.386919,0.504737
+"Goracci, Chiara","Goracci, Chiara",Researcher,2023,2,,14,,3.5,,,,NA,0,0,0,1,2,2,2,,,,,,,1,0,0.439193,0.496979
+"Gorbunova, Vera","Gorbunova, Vera",Researcher,2022,6,4,166,63,3.89,0.82,1,3,-0.5,1,0,1,1,4,6,6,0,0,0,2,4,4,52,0,0.20724,0.775897
+"Gorospe, Myriam","Gorospe, Myriam",Researcher,2022,3,,146,,9.68,,,,NA,0,0,1,1,2,3,3,,,,,,,15,0,0.054957,0.575803
+"Govindan, Ramaswamy","Govindan, Ramaswamy",Researcher,2023,3,,35,,1.21,,,,NA,0,0,0,1,3,3,3,,,,,,,11,0,0.119443,0.403675
+"Granic, Antoneta","Granic, Antoneta",Researcher,2022,3,3,178,178,9.58,9.58,0,3,-1,1,0,1,2,3,3,3,0,1,2,3,3,3,5,0,0.404659,0.809218
+"Grant, Rogan A","Grant, Rogan A",Researcher,2024,3,,33,,1.03,,,,NA,0,0,0,0,1,3,3,,,,,,,12,0,0.518341,0.3612
+"Greaves, Laura C","Greaves, Laura C",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.458438,0.933047
+"Grudzinski, Kevin M","Grudzinski, Kevin M",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.425258,0.365305
+"Gu, Liangcai","Gu, Liangcai",Principal Investigator,2022,4,4,123,123,11.4,11.4,2,2,0,1,0,1,1,1,4,4,0,1,1,1,4,4,6,0,0.472865,0.661482
+"Gudjonsson, Johann E","Gudjonsson, Johann E",Researcher,2022,3,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,3,3,0,1,2,2,2,2,13,0,0.69737,0.763501
+"Gundersheimer, Aaron N","Gundersheimer, Aaron N",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.429724,0.354294
+"Guo, Chun","Guo, Chun",Researcher,2024,2,,36,,1.57,,,,NA,0,0,0,0,1,2,2,,,,,,,10,0,0.250774,0.626659
+"Guo, Qi","Guo, Qi",Researcher,2024,2,,14,,0.88,,,,NA,0,0,0,0,1,2,2,,,,,,,2,0,0.592327,0.56008
+"Gurkar, Aditi U","Gurkar, Aditi U",Researcher,2023,5,1,109,90,5.87,2,1,0,1,1,0,0,3,4,5,5,0,0,1,1,1,1,2,8,0.982785,0.306266
+"Gustilo, Katherine S","Gustilo, Katherine S",Researcher,2024,2,,4,,0.4,,,,NA,0,0,0,0,1,2,2,,,,,,,2,0,0.7975,0.583168
+"Guy, Cliff","Guy, Cliff",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.38345,0.191002
+"Haak, Andrew J","Haak, Andrew J",Researcher,2025,4,2,37,17,1.72,1.13,1,1,0,1,0,0,0,0,4,4,0,0,0,0,2,2,10,0,0.417701,0.664897
+"Haber, Ellie","Haber, Ellie",Researcher,2025,4,2,1,0,0.25,0,0,2,-1,1,0,0,0,0,4,4,0,0,0,0,2,2,3,1,0.931726,0.641824
+"Habib, Naomi","Habib, Naomi",Researcher,2023,2,,62,,3.44,,,,NA,0,0,0,1,2,2,2,,,,,,,1,0,0.34801,0.574115
+"Habiballa, Leena","Habiballa, Leena",Researcher,2021,3,3,341,341,12.31,12.31,0,3,-1,1,1,2,2,3,3,3,1,2,2,3,3,3,7,0,0.409912,0.823512
+"Hafler, David A","Hafler, David A",Researcher,2022,2,,246,,14.47,,,,NA,0,0,1,2,2,2,2,,,,,,,14,0,0.323921,0.303677
+"Hajipour, Mohammadjavad","Hajipour, Mohammadjavad",Researcher,2024,2,2,232,232,3.02,3.02,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,4,0,0.52222,0.707686
+"Halene, Stephanie","Halene, Stephanie",Principal Investigator,2022,6,1,517,5,29.53,0.05,1,0,1,1,0,2,4,5,6,6,0,0,0,0,1,1,14,0,0.359972,0.308641
+"Hall-Younger, Ella","Hall-Younger, Ella",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.441815,0.927751
+"Han, Jin","Han, Jin",Researcher,2023,2,,53,,5.87,,,,NA,0,0,0,1,2,2,2,,,,,,,1,0,0.214864,0.455331
+"Han, Kyu Sang","Han, Kyu Sang",Researcher,2022,4,4,114,114,6.08,6.08,0,4,-1,1,0,1,1,3,4,4,0,1,1,3,4,4,12,0,0.227241,0.073986
+"Han, Yeaeun","Han, Yeaeun",Researcher,2024,3,2,2,1,0.1,0.06,1,1,0,1,0,0,0,1,3,3,0,0,0,1,2,2,9,0,0.428177,0.849943
+"Hanna, Eban Andrew","Hanna, Eban Andrew",Researcher,2024,3,3,0,0,0,0,0,3,-1,1,0,0,0,1,3,3,0,0,0,1,3,3,4,0,0.275394,0.039115
+"Hardi, Josef","Hardi, Josef",Researcher,2022,5,,41,,6.28,,,,NA,0,0,1,2,2,4,5,,,,,,,9,0,0.754592,0.553912
+"Hari, Priya","Hari, Priya",Researcher,2022,2,2,45,45,3,3,0,2,-1,1,0,2,2,2,2,2,0,2,2,2,2,2,5,0,0.335683,0.760389
+"Hasanaj, Euxhen","Hasanaj, Euxhen",Researcher,2022,5,3,25,21,4.7,4.2,3,0,1,1,0,2,2,4,5,5,0,2,2,3,3,3,2,0,0.684654,0.79246
+"Havas, Aaron P","Havas, Aaron P",Researcher,2022,6,4,105,105,13.3,13.3,0,4,-1,1,0,1,1,3,6,6,0,1,1,3,4,4,45,0,0.212634,0.914934
+"He, Fei","He, Fei",Researcher,2022,2,,34,,1.79,,,,NA,0,0,1,1,1,2,2,,,,,,,6,0,0.59857,0.541889
+"Heckenbach, Indra","Heckenbach, Indra",Researcher,2022,5,1,242,90,12.53,2,1,0,1,1,0,1,3,4,5,5,0,0,1,1,1,1,9,0,0.164352,0.564724
+"Held, Jason M","Held, Jason M",Researcher,2023,4,,219,,5.28,,,,NA,0,0,0,1,4,4,4,,,,,,,27,0,0.116314,0.364734
+"Henry, Jill","Henry, Jill",Researcher,2023,2,,12,,1.2,,,,NA,0,0,0,1,2,2,2,,,,,,,9,0,0.172166,0.585548
+"Hernandez, Jonathan M","Hernandez, Jonathan M",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.725341,0.308607
+"Herndon, John M","Herndon, John M",Researcher,2023,4,,213,,4.9,,,,NA,0,0,0,2,3,4,4,,,,,,,32,0,0.081157,0.344827
+"Herr II, Bruce W","Herr II, Bruce W",Researcher,2022,9,2,45,13,3.16,0.62,2,0,1,1,0,1,2,3,8,9,0,0,0,0,2,2,21,0,0.744664,0.590277
+"Hertzel, Ann V","Hertzel, Ann V",Researcher,2024,3,2,247,234,4.03,2.95,2,0,1,1,0,0,0,1,3,3,0,0,0,1,2,2,25,0,0.331249,0.623481
+"Hickey, John W","Hickey, John W",Researcher,2023,5,3,152,45,5.64,1.46,3,0,1,1,0,0,2,3,5,5,0,0,1,1,3,3,20,0,0.767704,0.530015
+"Hilgendorff, Anne","Hilgendorff, Anne",Researcher,2022,3,,46,,1.62,,,,NA,0,0,1,1,2,3,3,,,,,,,11,0,0.566006,0.642584
+"Hillpot, Eric","Hillpot, Eric",Researcher,2022,2,1,45,0,1.41,0,0,1,-1,1,0,1,1,1,2,2,0,0,0,0,1,1,5,0,0.244254,0.742664
+"Hinchcliff, Monique E","Hinchcliff, Monique E",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.417557,0.355904
+"Hinthorn, Samuel J","Hinthorn, Samuel J",Researcher,2023,3,3,38,38,8,8,0,3,-1,1,0,0,2,3,3,3,0,0,2,3,3,3,2,0,0.44839,0.679035
+"Hirsova, Petra","Hirsova, Petra",Researcher,2021,2,1,176,175,4.77,4.73,0,1,-1,1,1,1,1,1,2,2,1,1,1,1,1,1,3,0,0.397204,0.831708
+"Hislop, Joshua","Hislop, Joshua",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.781846,0.776553
+"Ho, Chia-Kang","Ho, Chia-Kang",Researcher,2025,2,1,0,0,0,0,1,0,1,1,0,0,0,0,1,2,0,0,0,0,1,1,2,0,0.591618,0.815152
+"Hong, Seung-Mo","Hong, Seung-Mo",Researcher,2022,2,2,110,110,5.79,5.79,0,2,-1,1,0,1,1,2,2,2,0,1,1,2,2,2,8,0,0.279673,0.088123
+"Hoog, Jeremy","Hoog, Jeremy",Researcher,2023,2,,14,,0.43,,,,NA,0,0,0,1,2,2,2,,,,,,,6,0,0.133547,0.419949
+"Hor, Jyh Liang","Hor, Jyh Liang",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.635292,0.214818
+"Horvath, Tamas L","Horvath, Tamas L",Researcher,2025,2,,29,,1.72,,,,NA,0,0,0,0,0,2,2,,,,,,,2,7,0.944736,0.300774
+"Hou, Wenpin","Hou, Wenpin",Researcher,2022,6,,137,,67.82,,,,NA,0,0,1,2,4,6,6,,,,,,,3,0,0.536273,0.677848
+"Houston, Andrew","Houston, Andrew",Researcher,2023,4,,203,,4.84,,,,NA,0,0,0,1,2,4,4,,,,,,,28,0,0.089378,0.326892
+"Hruban, Ralph H","Hruban, Ralph H",Researcher,2022,5,5,116,116,6.24,6.24,0,5,-1,1,0,1,1,5,5,5,0,1,1,5,5,5,13,0,0.282942,0.102432
+"Hruby, Adam J","Hruby, Adam J",Researcher,2021,3,3,341,341,12.31,12.31,0,3,-1,1,1,2,2,3,3,3,1,2,2,3,3,3,7,0,0.414519,0.811108
+"Hsu, Jer-En","Hsu, Jer-En",Researcher,2022,5,4,303,303,11.47,11.47,0,4,-1,1,0,1,2,3,5,5,0,1,2,3,4,4,22,0,0.698326,0.738922
+"Hu, Qianjiang","Hu, Qianjiang",Researcher,2022,9,2,177,95,8.78,2.05,2,0,1,1,0,1,3,7,9,9,0,0,1,1,2,2,32,0,0.523246,0.64207
+"Huang, Huijie","Huang, Huijie",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.498032,0.893322
+"Huang, Timothy Y","Huang, Timothy Y",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.450401,0.890205
+"Hudgins, Adam D","Hudgins, Adam D",Researcher,2022,2,1,274,229,4.31,2.9,1,0,1,1,0,1,1,2,2,2,0,0,0,1,1,1,1,0,0.126857,0.707867
+"Hudson, Hannah R","Hudson, Hannah R",Researcher,2024,2,,9,,3,,,,NA,0,0,0,0,1,2,2,,,,,,,1,6,0.953475,0.803084
+"Huffman, R Gray","Huffman, R Gray",Researcher,2021,4,3,359,359,38.63,38.63,0,3,-1,1,1,1,3,4,4,4,1,1,3,3,3,3,8,0,0.699808,0.870861
+"Hughes, Brian","Hughes, Brian",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.221752,0.672495
+"Hultenius, Erik","Hultenius, Erik",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.276547,0.912899
+"Hwang, Yongha","Hwang, Yongha",Researcher,2024,5,4,49,49,3.23,3.23,0,4,-1,1,0,0,0,2,5,5,0,0,0,2,4,4,13,0,0.654684,0.749769
+"Ichise, Hiroshi","Ichise, Hiroshi",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.639002,0.25059
+"Iglesia, Michael D","Iglesia, Michael D",Researcher,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.116736,0.326988
+"Ikeno, Yuji","Ikeno, Yuji",Researcher,2022,5,3,807,779,43.45,42.42,0,3,-1,1,0,2,3,4,5,5,0,2,3,3,3,3,15,0,0.426391,0.757171
+"Iwasaki, Kanako","Iwasaki, Kanako",Researcher,2024,3,2,234,234,2.95,2.95,2,0,1,1,0,0,0,1,3,3,0,0,0,1,2,2,30,0,0.315567,0.602791
+"Jachim, Sarah K","Jachim, Sarah K",Researcher,2022,3,2,168,168,7.58,7.58,1,1,0,1,0,1,2,2,3,3,0,1,2,2,2,2,2,0,0.412359,0.750577
+"Jain, Eshita","Jain, Eshita",Researcher,2024,2,,30,,1.22,,,,NA,0,0,0,0,2,2,2,,,,,,,7,0,0.57311,0.630523
+"Jain, Manu","Jain, Manu",Researcher,2023,2,1,444,411,5.75,4.72,0,1,-1,1,0,0,1,2,2,2,0,0,1,1,1,1,2,0,0.475724,0.335082
+"Jain, Sanjay","Jain, Sanjay",Principal Investigator,2022,4,,128,,5.17,,,,NA,0,0,1,2,3,4,4,,,,,,,3,0,0.782098,0.551851
+"Jain, Yashvardhan","Jain, Yashvardhan",Researcher,2024,5,2,18,13,1,0.62,2,0,1,1,0,0,0,2,5,5,0,0,0,0,2,2,20,0,0.772941,0.618364
+"Jayasinghe, Reyka G","Jayasinghe, Reyka G",Researcher,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.111224,0.311245
+"Jensen, Tyler B","Jensen, Tyler B",Researcher,2024,3,,12,,0.98,,,,NA,0,0,0,0,1,3,3,,,,,,,11,2,0.976396,0.519774
+"Jeon, Hyeongseon","Jeon, Hyeongseon",Researcher,2023,3,1,33,5,4.39,0.05,1,0,1,1,0,0,2,2,3,3,0,0,0,0,1,1,3,0,0.55679,0.535583
+"Jeon, Yeseul","Jeon, Yeseul",Researcher,2023,2,,23,,3.39,,,,NA,0,0,0,1,1,2,2,,,,,,,1,0,0.523929,0.511501
+"Ji, Beijie","Ji, Beijie",Researcher,2025,2,1,0,0,0,0,1,0,1,1,0,0,0,0,2,2,0,0,0,0,1,1,1,0,0.49608,0.645711
+"Ji, Zhicheng","Ji, Zhicheng",Researcher,2022,16,3,246,95,71.43,2.05,3,0,1,1,0,1,3,7,16,16,0,0,1,1,3,3,26,0,0.481649,0.639145
+"Jia, Deyong","Jia, Deyong",Researcher,2023,2,2,35,35,3.5,3.5,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,9,1,0.94748,0.675403
+"Jiang, Ann C","Jiang, Ann C",Researcher,2022,2,2,110,110,5.79,5.79,0,2,-1,1,0,1,1,2,2,2,0,1,1,2,2,2,8,0,0.281039,0.06778
+"Jiang, Sizun","Jiang, Sizun",Researcher,2024,2,,14,,0.88,,,,NA,0,0,0,0,2,2,2,,,,,,,5,0,0.597031,0.586891
+"Jiang, Yi","Jiang, Yi",Researcher,2024,2,,14,,0.88,,,,NA,0,0,0,0,1,2,2,,,,,,,2,0,0.574338,0.543734
+"Jimenez-Beristain, Tony","Jimenez-Beristain, Tony",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.24671,0.1917
+"Jin, Shengyan","Jin, Shengyan",Researcher,2024,5,,16,,1.38,,,,NA,0,0,0,0,1,5,5,,,,,,,15,2,0.915243,0.541332
+"Jing, Zhixin","Jing, Zhixin",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.736039,0.205329
+"Johnston, Matthew J","Johnston, Matthew J",Researcher,2025,2,2,0,0,0,0,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,10,0,0.414228,0.539015
+"Jonasson, Emmy","Jonasson, Emmy",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.499162,0.300233
+"Jonigk, Danny","Jonigk, Danny",Researcher,2023,4,1,40,32,1.27,0.84,1,0,1,1,0,0,1,2,3,4,0,0,1,1,1,1,61,0,0.697552,0.18204
+"Joshi, Saurabh","Joshi, Saurabh",Researcher,2024,3,3,4,4,0.29,0.29,0,3,-1,1,0,0,0,2,3,3,0,0,0,2,3,3,11,0,0.238446,0.066988
+"Jun, Goo","Jun, Goo",Researcher,2022,5,4,50,48,4.53,4.13,0,4,-1,1,0,1,1,3,5,5,0,1,1,3,4,4,11,0,0.667528,0.76411
+"Jung, Kyeong Joo","Jung, Kyeong Joo",Researcher,2023,2,,22,,3.14,,,,NA,0,0,0,1,2,2,2,,,,,,,2,0,0.540689,0.51355
+"Jurczak, Michael J","Jurczak, Michael J",Researcher,2023,3,,13,,0.72,,,,NA,0,0,0,1,1,3,3,,,,,,,4,0,0.476803,0.571134
+"Jurk, Diana","Jurk, Diana",Researcher,2021,21,20,2850,2849,247.49,247.45,7,13,-0.3,1,2,6,11,17,21,21,2,6,11,17,20,20,71,0,0.436469,0.823848
+"Justice, Jamie N","Justice, Jamie N",Researcher,2024,2,1,106,48,2.04,0.38,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,11,0,0.129792,0.644284
+"Königshoff, Melanie","Königshoff, Melanie",Principal Investigator,2022,15,2,221,95,11.41,2.05,2,0,1,1,0,2,5,10,15,15,0,0,1,1,2,2,50,0,0.518742,0.6062
+"Kaech, Susan M","Kaech, Susan M",Researcher,2024,3,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,3,3,0,0,0,1,2,2,33,0,0.309295,0.913625
+"Kamat, Pratik","Kamat, Pratik",Researcher,2024,2,2,29,29,1.72,1.72,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,2,0,0.24296,0.102928
+"Kaminski, Naftali","Kaminski, Naftali",Researcher,2022,6,2,514,411,14.67,4.72,1,1,0,1,0,1,3,4,6,6,0,0,1,2,2,2,11,0,0.542932,0.592791
+"Kanatani, Shigeaki","Kanatani, Shigeaki",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.257812,0.184228
+"Kandov, Evelyn","Kandov, Evelyn",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.754542,0.270487
+"Kang, Hyun Min","Kang, Hyun Min",Researcher,2022,9,7,61,59,6.38,5.98,0,7,-1,1,0,1,3,5,9,9,0,1,3,5,7,7,14,0,0.649215,0.7704
+"Kang, Jeon Woong","Kang, Jeon Woong",Principal Investigator,2023,9,8,85,85,8.78,8.78,2,6,-0.5,1,0,0,1,5,9,9,0,0,1,5,8,8,6,4,0.937995,0.380869
+"Kang, Liang-I","Kang, Liang-I",Researcher,2024,2,,139,,5.58,,,,NA,0,0,0,0,2,2,2,,,,,,,2,0,0.162291,0.394683
+"Karpova, Alla","Karpova, Alla",Researcher,2023,4,1,430,229,7.49,2.9,1,0,1,1,0,0,1,3,4,4,0,0,0,1,1,1,30,0,0.072528,0.325046
+"Kastenmüller, Wolfgang","Kastenmüller, Wolfgang",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.714225,0.202208
+"Kauffman, Justin","Kauffman, Justin",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.922318,0.876484
+"Kaufmann, Scott H","Kaufmann, Scott H",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.471155,0.946022
+"Kaur, Gagandeep","Kaur, Gagandeep",Researcher,2021,5,1,290,229,22.34,2.9,1,0,1,1,1,1,2,5,5,5,0,0,0,1,1,1,3,0,0.449393,0.442599
+"Kaur, Japneet","Kaur, Japneet",Researcher,2023,2,1,88,47,6.8,2.24,0,1,-1,1,0,0,2,2,2,2,0,0,1,1,1,1,7,0,0.509482,0.800799
+"Kautz, Tiffany F","Kautz, Tiffany F",Researcher,2023,3,,31,,1.48,,,,NA,0,0,0,1,2,3,3,,,,,,,17,6,0.963048,0.886146
+"Kayumov, Mukhammad","Kayumov, Mukhammad",Researcher,2025,2,,2,,0.25,,,,NA,0,0,0,0,0,2,2,,,,,,,6,0,0.666884,0.968063
+"Kelleher, Neil L","Kelleher, Neil L",Principal Investigator,2023,2,1,136,32,4.69,0.84,1,0,1,1,0,0,2,2,2,2,0,0,1,1,1,1,9,0,0.798945,0.476666
+"Kelly, George","Kelly, George",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.447278,0.949226
+"Keshavarz F, Kamyar","Keshavarz F, Kamyar",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.80306,0.762206
+"Khaliullin, Timur","Khaliullin, Timur",Researcher,2023,2,1,93,90,2.17,2,1,0,1,1,0,0,1,2,2,2,0,0,1,1,1,1,5,0,0.50429,0.587217
+"Khan, Saad","Khan, Saad",Researcher,2023,6,2,273,240,27.56,21.63,0,2,-1,1,0,0,2,5,6,6,0,0,2,2,2,2,6,0,0.677384,0.889728
+"Khosla, Sundeep","Khosla, Sundeep",Principal Investigator,2021,21,17,2383,2283,134.89,105.41,6,11,-0.29,1,2,6,12,17,21,21,2,6,9,14,17,17,67,0,0.480955,0.818611
+"Khoury, Luke","Khoury, Luke",Researcher,2021,5,3,203,182,14.67,10.47,0,3,-1,1,1,1,3,4,5,5,1,1,3,3,3,3,9,0,0.661648,0.865686
+"Kiani, Samira","Kiani, Samira",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.811923,0.757456
+"Kiemen, Ashley L","Kiemen, Ashley L",Researcher,2022,11,11,120,120,6.53,6.53,0,11,-1,1,0,1,1,8,10,11,0,1,1,8,10,11,26,0,0.261228,0.028811
+"Kim, Albert H","Kim, Albert H",Researcher,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.125318,0.316843
+"Kim, Myungjin","Kim, Myungjin",Researcher,2022,6,5,127,127,6,6,0,5,-1,1,0,1,2,3,6,6,0,1,2,3,5,5,17,0,0.681776,0.771762
+"Kim, Taewan","Kim, Taewan",Researcher,2024,2,,36,,1.57,,,,NA,0,0,0,0,1,2,2,,,,,,,10,0,0.257783,0.619053
+"Kim, Yongsung","Kim, Yongsung",Researcher,2025,2,1,20,20,1.11,1.11,0,1,-1,1,0,0,0,0,2,2,0,0,0,0,1,1,11,0,0.664652,0.733662
+"Kirkland, James L","Kirkland, James L",Researcher,2021,20,12,1539,1454,87.1,80.34,4,8,-0.33,1,2,4,8,11,20,20,2,4,6,8,12,12,50,0,0.311109,0.702946
+"Klechevsky, Eynav","Klechevsky, Eynav",Researcher,2022,2,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,2,2,0,1,2,2,2,2,10,0,0.699793,0.775646
+"Kliment, Corrine R","Kliment, Corrine R",Researcher,2023,3,,44,,4.33,,,,NA,0,0,0,1,3,3,3,,,,,,,4,0,0.541506,0.652559
+"Kluger, Yuval","Kluger, Yuval",Principal Investigator,2022,12,10,397,319,32.09,18.91,0,10,-1,1,0,2,4,5,11,12,0,1,2,3,9,10,13,0,0.199274,0.203767
+"Knopf, Bailey Anna","Knopf, Bailey Anna",Researcher,2025,2,2,0,0,0,0,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,10,0,0.405597,0.534636
+"Kobayashi-Kirschvink, Koseki J","Kobayashi-Kirschvink, Koseki J",Researcher,2023,6,6,69,69,5.98,5.98,1,5,-0.67,1,0,0,1,4,6,6,0,0,1,4,6,6,6,4,0.952705,0.370877
+"Koenig, Joshua F E","Koenig, Joshua F E",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.617378,0.25818
+"Kong, Yongxin","Kong, Yongxin",Researcher,2024,2,1,18,13,3.12,0.62,1,0,1,1,0,0,0,1,2,2,0,0,0,0,1,1,1,0,0.728301,0.482169
+"Konopka, Adam R","Konopka, Adam R",Researcher,2024,3,3,0,0,0,0,1,2,-0.33,1,0,0,0,1,3,3,0,0,0,1,3,3,13,0,0.402308,0.512062
+"Korolchuk, Viktor I","Korolchuk, Viktor I",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.460263,0.959516
+"Korotkov, Anatoly","Korotkov, Anatoly",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.268265,0.895737
+"Korstanje, Ronny","Korstanje, Ronny",Principal Investigator,2023,4,1,41,5,8,0.05,1,0,1,1,0,0,2,2,4,4,0,0,0,0,1,1,2,0,0.310951,0.517411
+"Kortekaas, Rosa K","Kortekaas, Rosa K",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.725161,0.178858
+"Kosinsky, Robyn Laura","Kosinsky, Robyn Laura",Researcher,2022,4,4,660,660,35.02,35.02,2,2,0,1,0,1,2,3,4,4,0,1,2,3,4,4,12,0,0.425441,0.725492
+"Kothurkar, Aanandita","Kothurkar, Aanandita",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.616274,0.229058
+"Kreins, Alexandra Y","Kreins, Alexandra Y",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.724336,0.33385
+"Krieger, Spencer","Krieger, Spencer",Researcher,2025,4,1,1,0,0.25,0,0,1,-1,1,0,0,0,0,4,4,0,0,0,0,1,1,3,1,0.939741,0.628636
+"Kriegstein, Arnold","Kriegstein, Arnold",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.224824,0.20938
+"Krishnan, Kavita","Krishnan, Kavita",Researcher,2023,2,,40,,1.54,,,,NA,0,0,0,1,1,2,2,,,,,,,3,0,0.208504,0.483204
+"Krull, Jordan E","Krull, Jordan E",Researcher,2024,5,,29,,1.49,,,,NA,0,0,0,0,3,5,5,,,,,,,7,0,0.59326,0.57365
+"Kuchel, George A","Kuchel, George A",Principal Investigator,2023,10,2,582,438,63.71,55.15,1,1,0,1,0,0,4,8,10,10,0,0,1,2,2,2,20,0,0.256982,0.555045
+"Kukanja, Petra","Kukanja, Petra",Researcher,2022,4,3,548,285,26.21,12.37,0,3,-1,1,0,1,2,3,4,4,0,0,1,2,3,3,36,0,0.262807,0.23187
+"Kuksenko, Olena","Kuksenko, Olena",Researcher,2024,2,1,229,229,2.9,2.9,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,3,0,0.452123,0.636688
+"Kulkarni, Hrishikesh S","Kulkarni, Hrishikesh S",Researcher,2025,2,,20,,0.59,,,,NA,0,0,0,0,0,2,2,,,,,,,1,0,0.559053,0.669887
+"Kurihara, Chitaru","Kurihara, Chitaru",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.489411,0.320837
+"Lagnado, Anthony B","Lagnado, Anthony B",Researcher,2021,16,15,1145,1144,45.8,45.68,2,13,-0.73,1,1,6,10,13,16,16,1,6,10,13,15,15,82,0,0.377206,0.858203
+"Lal, Preet","Lal, Preet",Researcher,2023,2,,17,,0.52,,,,NA,0,0,0,1,1,2,2,,,,,,,10,0,0.053613,0.362721
+"Lamborn, Ian T","Lamborn, Ian T",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.623155,0.282722
+"Lamming, Dudley W","Lamming, Dudley W",Researcher,2024,4,4,21,21,6.33,6.33,1,3,-0.5,1,0,0,0,1,4,4,0,0,0,1,4,4,10,0,0.412608,0.52349
+"Landa, Boris","Landa, Boris",Researcher,2022,4,4,34,34,6.21,6.21,0,4,-1,1,0,1,1,1,4,4,0,1,1,1,4,4,2,0,0.156404,0.165322
+"Lande, Kathryn","Lande, Kathryn",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.173858,0.854393
+"LaPorta, Michael A","LaPorta, Michael A",Researcher,2024,3,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,3,3,0,0,0,1,2,2,33,0,0.286862,0.937393
+"Lear, Travis B","Lear, Travis B",Researcher,2022,2,,5,,2.5,,,,NA,0,0,1,1,1,2,2,,,,,,,1,0,0.542542,0.534341
+"LeBrasseur, Nathan K","LeBrasseur, Nathan K",Principal Investigator,2021,22,16,1794,1696,100.01,89.8,7,9,-0.12,1,1,5,10,14,22,22,1,4,8,10,16,16,73,0,0.452822,0.741567
+"Leduc, Andrew D","Leduc, Andrew D",Researcher,2021,13,7,532,508,52.88,48.08,0,7,-1,1,1,1,5,9,13,13,1,1,5,7,7,7,17,0,0.679552,0.838549
+"Lee, ChangHee","Lee, ChangHee",Researcher,2024,2,2,43,43,2.88,2.88,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,7,0,0.641472,0.736963
+"Lee, Dylan I","Lee, Dylan I",Researcher,2022,3,,198,,10.3,,,,NA,0,0,1,3,3,3,3,,,,,,,3,0,0.345838,0.539196
+"Lee, Gung","Lee, Gung",Researcher,2024,3,2,230,229,2.94,2.9,1,1,0,1,0,0,0,2,3,3,0,0,0,2,2,2,8,0,0.409696,0.856251
+"Lee, Jun Hee","Lee, Jun Hee",Principal Investigator,2022,15,12,448,446,19.79,19.39,2,10,-0.67,1,0,2,7,9,15,15,0,2,7,9,12,12,38,0,0.609314,0.706273
+"Lee, Kyooa","Lee, Kyooa",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.219084,0.660391
+"Lee, Peter D","Lee, Peter D",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.796905,0.652692
+"Lee, Young Je","Lee, Young Je",Researcher,2023,3,1,6,0,0.75,0,1,0,1,1,0,0,1,2,3,3,0,0,1,1,1,1,6,0,0.497467,0.532404
+"LeGraw, Ryan","LeGraw, Ryan",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.79287,0.78222
+"Lehmann, Mareike","Lehmann, Mareike",Researcher,2024,5,,67,,2.57,,,,NA,0,0,0,0,3,5,5,,,,,,,17,0,0.581312,0.643495
+"Lei, Xue","Lei, Xue",Researcher,2023,7,5,467,467,12.03,12.03,1,4,-0.6,1,0,0,1,4,7,7,0,0,1,4,5,5,67,0,0.367214,0.966234
+"Leitschuh, Ethan A","Leitschuh, Ethan A",Researcher,2025,2,2,17,17,1.13,1.13,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,6,0,0.40159,0.630561
+"Leong, Kam W","Leong, Kam W",Researcher,2022,2,1,546,283,26.14,12.3,0,1,-1,1,0,1,2,2,2,2,0,0,1,1,1,1,14,0,0.253113,0.287522
+"Levine, Ariel J","Levine, Ariel J",Researcher,2023,2,,110,,3.24,,,,NA,0,0,0,1,1,2,2,,,,,,,2,0,0.345836,0.562774
+"Li, Brightany","Li, Brightany",Researcher,2024,3,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,3,3,0,0,0,1,2,2,33,0,0.263527,0.875105
+"Li, Dongmei","Li, Dongmei",Researcher,2022,6,2,73,5,11.14,0.05,1,1,0,1,0,1,1,3,6,6,0,0,0,1,2,2,17,0,0.548033,0.547687
+"Li, Dongshunyi","Li, Dongshunyi",Researcher,2021,3,2,101,64,33.67,21.34,2,0,1,1,1,2,3,3,3,3,0,1,2,2,2,2,2,0,0.734497,0.655852
+"Li, Haikuo","Li, Haikuo",Researcher,2024,3,3,54,54,2.7,2.7,0,3,-1,1,0,0,0,2,3,3,0,0,0,2,3,3,29,0,0.401081,0.218586
+"Li, Jingxian","Li, Jingxian",Researcher,2023,2,,126,,6.3,,,,NA,0,0,0,2,2,2,2,,,,,,,6,0,0.590392,0.524989
+"Li, Jinpu","Li, Jinpu",Researcher,2023,5,,146,,8.3,,,,NA,0,0,0,2,2,5,5,,,,,,,9,0,0.641334,0.542268
+"Li, Kelly Yichen","Li, Kelly Yichen",Researcher,2023,5,,43,,2.33,,,,NA,0,0,0,1,2,5,5,,,,,,,5,0,0.108884,0.888511
+"Li, Qi-Jing","Li, Qi-Jing",Researcher,2022,2,1,11,0,1.57,0,0,1,-1,1,0,1,1,2,2,2,0,0,0,1,1,1,3,0,0.520042,0.679749
+"Li, Ruiqi","Li, Ruiqi",Researcher,2025,3,3,0,0,0,0,0,3,-1,1,0,0,0,0,3,3,0,0,0,0,3,3,4,0,0.155766,0.193117
+"Li, Sha","Li, Sha",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.253127,0.89838
+"Li, Sheng","Li, Sheng",Principal Investigator,2023,5,1,53,5,2.59,0.05,1,0,1,1,0,0,1,4,5,5,0,0,0,0,1,1,8,0,0.293981,0.498524
+"Li, Shunqiang","Li, Shunqiang",Researcher,2023,2,,14,,0.43,,,,NA,0,0,0,1,2,2,2,,,,,,,6,0,0.135565,0.430532
+"Li, Yang","Li, Yang",Researcher,2022,2,,145,,9.01,,,,NA,0,0,1,2,2,2,2,,,,,,,5,0,0.600204,0.552975
+"Li, Yize","Li, Yize",Researcher,2023,2,,131,,3.07,,,,NA,0,0,0,1,1,2,2,,,,,,,12,0,0.066158,0.36344
+"Li, Zihai","Li, Zihai",Researcher,2022,6,,183,,10.09,,,,NA,0,0,1,4,6,6,6,,,,,,,12,0,0.585908,0.5385
+"Liang, Shaoheng","Liang, Shaoheng",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,1,1,0.969187,0.646277
+"Lim, Kian-Huat","Lim, Kian-Huat",Researcher,2023,2,,33,,1.09,,,,NA,0,0,0,1,2,2,2,,,,,,,6,0,0.1063,0.397898
+"Lin, Brian","Lin, Brian",Researcher,2022,2,2,122,122,14.74,14.74,0,2,-1,1,0,1,1,2,2,2,0,1,1,2,2,2,2,0,0.398755,0.988552
+"Lin, Shin","Lin, Shin",Researcher,2022,2,1,213,109,14.75,10.9,0,1,-1,1,0,1,2,2,2,2,0,1,1,1,1,1,1,9,0.973797,0.233309
+"Lin, Yiing","Lin, Yiing",Researcher,2022,2,1,213,109,14.75,10.9,0,1,-1,1,0,1,2,2,2,2,0,1,1,1,1,1,1,9,0.982369,0.232283
+"Lin, Yingxin","Lin, Yingxin",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.234194,0.197371
+"Lin, Yuri","Lin, Yuri",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.674727,0.18469
+"Lindenbaum, Ofir","Lindenbaum, Ofir",Researcher,2022,3,2,19,0,4.75,0,0,2,-1,1,0,1,1,1,3,3,0,0,0,0,2,2,3,0,0.158101,0.205027
+"Liu, Bingqiang","Liu, Bingqiang",Researcher,2022,4,,174,,8.97,,,,NA,0,0,1,3,4,4,4,,,,,,,10,0,0.610822,0.520725
+"Liu, Jie","Liu, Jie",Researcher,2021,2,,118,,39.33,,,,NA,0,1,1,2,2,2,2,,,,,,,1,0,0.53756,0.574524
+"Liu, Jingxian","Liu, Jingxian",Researcher,2023,3,,207,,5.76,,,,NA,0,0,0,1,3,3,3,,,,,,,24,0,0.130117,0.336324
+"Liu, Jixin","Liu, Jixin",Researcher,2022,2,,48,,2.67,,,,NA,0,0,1,1,2,2,2,,,,,,,6,0,0.592137,0.550561
+"Liu, Miao","Liu, Miao",Researcher,2024,4,,7,,0.63,,,,NA,0,0,0,0,1,4,4,,,,,,,14,2,0.949512,0.524129
+"Liu, Ruiyang","Liu, Ruiyang",Researcher,2023,3,1,246,229,3.42,2.9,1,0,1,1,0,0,1,2,3,3,0,0,0,1,1,1,11,0,0.059206,0.374759
+"Liu, Tianhui","Liu, Tianhui",Researcher,2021,3,3,242,242,32.87,32.87,0,3,-1,1,1,1,1,2,3,3,1,1,1,2,3,3,33,0,0.244043,0.921346
+"Liu, Xiuting","Liu, Xiuting",Researcher,2023,2,,195,,6.92,,,,NA,0,0,0,1,2,2,2,,,,,,,3,0,0.104028,0.423994
+"Liu, Yang","Liu, Yang",Researcher,2022,10,6,854,344,43.63,15.12,1,5,-0.67,1,0,2,4,7,10,10,0,0,1,3,6,6,55,0,0.273471,0.317336
+"Lou, Xing","Lou, Xing",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.220541,0.194101
+"Lu, Yao","Lu, Yao",Researcher,2024,2,2,5,5,0.05,0.05,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,3,0,0.362886,0.387305
+"Lu, Ziyan","Lu, Ziyan",Researcher,2024,4,,33,,1.03,,,,NA,0,0,0,0,1,4,4,,,,,,,23,0,0.52517,0.314759
+"Luciano Pereira Morais, Katia","Luciano Pereira Morais, Katia",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.758689,0.220234
+"Lugo-Martinez, Jose","Lugo-Martinez, Jose",Researcher,2023,6,2,14,5,0.97,0.05,2,0,1,1,0,0,1,3,6,6,0,0,1,1,2,2,18,0,0.52971,0.52703
+"Lunich, Aleksandra","Lunich, Aleksandra",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.701508,0.156391
+"Luz, Jean C S","Luz, Jean C S",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.767539,0.300394
+"Lynch, Magnus D","Lynch, Magnus D",Researcher,2025,2,,20,,2.55,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.337469,0.683951
+"Lyu, Jun","Lyu, Jun",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.271564,0.929955
+"Ma, Anjun","Ma, Anjun",Researcher,2022,9,1,198,5,11.73,0.05,1,0,1,1,0,2,4,5,9,9,0,0,0,0,1,1,27,0,0.572658,0.522619
+"Ma, Cong","Ma, Cong",Researcher,2023,5,2,492,285,18.13,12.37,0,2,-1,1,0,0,2,4,5,5,0,0,1,1,2,2,30,0,0.14637,0.315736
+"Ma, Cynthia X","Ma, Cynthia X",Researcher,2023,2,,14,,0.43,,,,NA,0,0,0,1,2,2,2,,,,,,,6,0,0.141522,0.414508
+"Ma, Feiyang","Ma, Feiyang",Researcher,2022,2,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,2,2,0,1,2,2,2,2,10,0,0.71117,0.771016
+"Ma, Huifang","Ma, Huifang",Researcher,2025,3,,2,,0.32,,,,NA,0,0,0,0,0,3,3,,,,,,,3,0,0.547919,0.683397
+"Ma, Jian","Ma, Jian",Principal Investigator,2023,14,7,166,110,32.42,23.25,0,7,-1,1,0,0,3,7,14,14,0,0,3,5,7,7,18,1,0.95377,0.651372
+"Ma, Qin","Ma, Qin",Principal Investigator,2022,21,1,281,5,20.17,0.05,1,0,1,1,0,2,7,12,21,21,0,0,0,0,1,1,49,0,0.568242,0.570947
+"Ma, Sai","Ma, Sai",Researcher,2022,2,1,546,283,26.14,12.3,0,1,-1,1,0,1,2,2,2,2,0,0,1,1,1,1,14,0,0.250965,0.274031
+"MacCoss, Michael J","MacCoss, Michael J",Researcher,2023,2,2,170,170,15.24,15.24,0,2,-1,1,0,0,2,2,2,2,0,0,2,2,2,2,1,0,0.643743,0.836055
+"MacDonald, Ryan B","MacDonald, Ryan B",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.762578,0.245977
+"Machado Espindola-Netto, Jair","Machado Espindola-Netto, Jair",Researcher,2023,3,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,3,3,0,0,1,2,2,2,38,0,0.477483,0.968248
+"Macip, Carolina Cano","Macip, Carolina Cano",Researcher,2024,3,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,3,3,0,0,0,1,2,2,33,0,0.293948,0.956586
+"Mahmud, Shamsed","Mahmud, Shamsed",Researcher,2024,2,2,14,14,2.33,2.33,0,2,-1,1,0,0,0,2,2,2,0,0,0,2,2,2,2,0,0.254745,0.685423
+"Maier, Andrea B","Maier, Andrea B",Researcher,2024,3,1,133,48,4.29,0.38,1,0,1,1,0,0,0,2,3,3,0,0,0,1,1,1,11,0,0.135984,0.633432
+"Maier, Elizabeth","Maier, Elizabeth",Researcher,2025,2,1,4,0,0.4,0,1,0,1,1,0,0,0,0,2,2,0,0,0,0,1,1,3,0,0.778276,0.562716
+"Makranz, Chen","Makranz, Chen",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.656835,0.168663
+"Maltez, Vivien I","Maltez, Vivien I",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.655683,0.19759
+"Mamde, Sainath","Mamde, Sainath",Researcher,2025,3,,0,,0,,,,NA,0,0,0,0,0,3,3,,,,,,,19,0,0.184734,0.825962
+"Mangarova, Dilyana B","Mangarova, Dilyana B",Researcher,2024,2,2,232,232,3.02,3.02,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,4,0,0.526339,0.715426
+"Mann, Derek A","Mann, Derek A",Researcher,2021,3,3,627,627,16.32,16.32,1,2,-0.33,1,1,1,2,3,3,3,1,1,2,3,3,3,38,0,0.446207,0.974464
+"Mann, J John","Mann, J John",Researcher,2022,2,1,546,283,26.14,12.3,0,1,-1,1,0,1,2,2,2,2,0,0,1,1,1,1,14,0,0.261399,0.269076
+"Mansk, Rachel P","Mansk, Rachel P",Researcher,2025,2,2,10,10,0.87,0.87,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.36661,0.683207
+"Markov, Nikolay S","Markov, Nikolay S",Researcher,2023,4,1,444,411,5.75,4.72,0,1,-1,1,0,0,1,2,4,4,0,0,1,1,1,1,30,0,0.467966,0.322813
+"Martínez-Romero, Marcos","Martínez-Romero, Marcos",Researcher,2022,2,,32,,5.25,,,,NA,0,0,1,1,1,2,2,,,,,,,3,0,0.762352,0.5435
+"Martin, Friederike","Martin, Friederike",Researcher,2025,2,,2,,0.25,,,,NA,0,0,0,0,0,2,2,,,,,,,6,0,0.671513,0.977707
+"Martini, Hélène","Martini, Hélène",Researcher,2023,10,8,939,938,133.96,133.92,4,4,0,1,0,0,2,5,10,10,0,0,2,5,8,8,75,0,0.424776,0.781492
+"Marx, Gabriel A","Marx, Gabriel A",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.935158,0.877062
+"Mashl, R Jay","Mashl, R Jay",Researcher,2023,2,,14,,0.43,,,,NA,0,0,0,1,2,2,2,,,,,,,6,0,0.143285,0.425313
+"Masuda, Claudio Akio","Masuda, Claudio Akio",Researcher,2021,3,3,627,627,16.32,16.32,1,2,-0.33,1,1,1,2,3,3,3,1,1,2,3,3,3,38,0,0.515424,0.918792
+"Matelsky, Jordan","Matelsky, Jordan",Researcher,2024,2,2,4,4,0.29,0.29,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,11,0,0.229321,0.058245
+"Matos Romero, Valentina","Matos Romero, Valentina",Researcher,2024,2,2,5,5,0.33,0.33,0,2,-1,1,0,0,0,2,2,2,0,0,0,2,2,2,8,0,0.271407,0.085441
+"Mayr, Christoph H","Mayr, Christoph H",Researcher,2023,2,1,433,411,5.41,4.72,0,1,-1,1,0,0,1,2,2,2,0,0,1,1,1,1,2,0,0.590205,0.662837
+"McDonough, John E","McDonough, John E",Researcher,2024,3,1,3,0,0.05,0,1,0,1,1,0,0,0,1,2,3,0,0,0,1,1,1,60,0,0.664232,0.335817
+"McGonigle, Seth","McGonigle, Seth",Researcher,2025,2,2,10,10,0.87,0.87,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.360422,0.689584
+"McGowan, Sara J","McGowan, Sara J",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.231278,0.668593
+"Meade, Thomas J","Meade, Thomas J",Researcher,2024,2,2,6,6,0.62,0.62,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,4,0,0.523672,0.7257
+"Melo-Narvaéz, Maria Camila","Melo-Narvaéz, Maria Camila",Researcher,2024,2,,30,,1.22,,,,NA,0,0,0,0,2,2,2,,,,,,,7,0,0.58292,0.62707
+"Melov, Simon","Melov, Simon",Principal Investigator,2022,6,6,138,138,9.35,9.35,6,0,1,1,0,1,3,3,6,6,0,1,3,3,6,6,9,0,0.3492,0.505402
+"Menon, Vilas","Menon, Vilas",Principal Investigator,2022,8,2,445,234,13.7,2.95,2,0,1,1,0,1,3,5,8,8,0,0,0,1,2,2,34,0,0.337575,0.583553
+"Miciano, Charlene","Miciano, Charlene",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.162024,0.853767
+"Mihaylova, Maria M","Mihaylova, Maria M",Researcher,2024,3,3,0,0,0,0,1,2,-0.33,1,0,0,0,1,3,3,0,0,0,1,3,3,13,0,0.411034,0.501842
+"Millar, Fraser R","Millar, Fraser R",Researcher,2022,2,2,45,45,3,3,0,2,-1,1,0,2,2,2,2,2,0,2,2,2,2,2,5,0,0.33667,0.770863
+"Miller, Karl N","Miller, Karl N",Researcher,2021,4,3,242,242,32.87,32.87,0,3,-1,1,1,1,1,2,4,4,1,1,1,2,3,3,33,0,0.2414,0.948677
+"Misharin, Alexander V","Misharin, Alexander V",Researcher,2023,7,1,444,411,5.75,4.72,0,1,-1,1,0,0,1,2,7,7,0,0,1,1,1,1,42,0,0.484511,0.349531
+"Misra, Ravi S","Misra, Ravi S",Researcher,2025,2,2,13,13,0.62,0.62,2,0,1,1,0,0,0,0,2,2,0,0,0,0,2,2,9,0,0.740205,0.558168
+"Mitchell, Jacob T","Mitchell, Jacob T",Researcher,2025,2,1,5,5,0.05,0.05,1,0,1,1,0,0,0,0,2,2,0,0,0,0,1,1,3,0,0.2059,0.493197
+"Mo, Chia-Kuei","Mo, Chia-Kuei",Researcher,2023,5,,234,,5.68,,,,NA,0,0,0,2,4,5,5,,,,,,,36,0,0.083664,0.383102
+"Modlin, Robert L","Modlin, Robert L",Researcher,2022,3,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,3,3,0,1,2,2,2,2,13,0,0.720387,0.763077
+"Mogler, Carolin","Mogler, Carolin",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.260779,0.914592
+"Mohamed, Abdalla","Mohamed, Abdalla",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.21746,0.68327
+"Mohseni Ahooyi, Taha","Mohseni Ahooyi, Taha",Researcher,2024,2,,7,,0.58,,,,NA,0,0,0,0,1,2,2,,,,,,,5,0,0.831455,0.573
+"Mokhtari, Tahere","Mokhtari, Tahere",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.784949,0.791064
+"Molla, Gesmira","Molla, Gesmira",Researcher,2024,2,1,2253,13,204.26,0.62,1,0,1,1,0,0,0,1,2,2,0,0,0,0,1,1,1,0,0.722347,0.560758
+"Monroe, David G","Monroe, David G",Researcher,2022,9,8,874,833,52.33,47.77,3,5,-0.25,1,0,3,6,7,9,9,0,3,5,6,8,8,21,0,0.50507,0.764653
+"Monroe, T Blake","Monroe, T Blake",Researcher,2024,3,1,14,0,1.41,0,1,0,1,1,0,0,0,1,3,3,0,0,0,0,1,1,3,0,0.264712,0.63688
+"Moody, Kelsey","Moody, Kelsey",Researcher,2022,2,1,93,48,1.79,0.38,1,0,1,1,0,1,1,2,2,2,0,0,0,1,1,1,5,0,0.176593,0.687373
+"Mora, Ana Lucia","Mora, Ana Lucia",Principal Investigator,2022,12,5,121,95,6.45,2.05,4,1,0.6,1,0,2,5,7,12,12,0,0,2,2,5,5,55,0,0.45525,0.570516
+"Morales-Nebreda, Luisa C","Morales-Nebreda, Luisa C",Researcher,2024,2,2,0,0,0,0,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,5,0,0.414016,0.451151
+"Moriarty, Ryan V","Moriarty, Ryan V",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.747231,0.180763
+"Mozurak, Molly","Mozurak, Molly",Researcher,2024,2,,28,,0.87,,,,NA,0,0,0,0,1,2,2,,,,,,,8,0,0.562152,0.656262
+"Mudd, Jacqueline L","Mudd, Jacqueline L",Researcher,2023,4,,229,,5.47,,,,NA,0,0,0,2,4,4,4,,,,,,,29,0,0.104273,0.380551
+"Muir, Morwenna","Muir, Morwenna",Researcher,2022,2,2,45,45,3,3,0,2,-1,1,0,2,2,2,2,2,0,2,2,2,2,2,5,0,0.328474,0.764886
+"Munday, Adam D","Munday, Adam D",Researcher,2023,2,2,35,35,3.5,3.5,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,9,1,0.937366,0.695844
+"Murphy, Coleen T","Murphy, Coleen T",Researcher,2024,3,1,57,48,2.26,0.38,1,0,1,1,0,0,0,1,3,3,0,0,0,1,1,1,3,0,0.1089,0.711926
+"Musen, Mark A","Musen, Mark A",Researcher,2022,5,,41,,6.28,,,,NA,0,0,1,2,2,4,5,,,,,,,9,0,0.769715,0.552845
+"Musi, Nicolas","Musi, Nicolas",Principal Investigator,2023,5,1,40,5,5.54,0.05,1,0,1,1,0,0,3,3,5,5,0,0,0,0,1,1,9,0,0.287237,0.636429
+"Muzumdar, Mandar Deepak","Muzumdar, Mandar Deepak",Researcher,2024,2,,3,,0.23,,,,NA,0,0,0,0,1,2,2,,,,,,,11,2,0.959421,0.546646
+"Myung, Peggy","Myung, Peggy",Researcher,2025,2,2,20,20,1.54,1.54,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.166498,0.183655
+"Nafikova, Radmila A","Nafikova, Radmila A",Researcher,2025,3,,0,,0,,,,NA,0,0,0,0,0,3,3,,,,,,,13,0,0.542745,0.355965
+"Nagaraj, Sushma","Nagaraj, Sushma",Researcher,2025,2,1,5,5,0.05,0.05,1,0,1,1,0,0,0,0,2,2,0,0,0,0,1,1,3,0,0.199774,0.487695
+"Nair, Praful R","Nair, Praful R",Researcher,2024,4,4,24,24,1.56,1.56,0,4,-1,1,0,0,0,2,2,4,0,0,0,2,2,4,6,0,0.255715,0.073659
+"Nam, Jungmin","Nam, Jungmin",Researcher,2023,2,1,246,0,14.47,0,0,1,-1,1,0,0,1,2,2,2,0,0,0,1,1,1,4,0,0.334544,0.283237
+"Naser Al Deen, Nataly","Naser Al Deen, Nataly",Researcher,2023,2,,131,,3.07,,,,NA,0,0,0,1,1,2,2,,,,,,,12,0,0.049173,0.350514
+"Nelson, Andrew C","Nelson, Andrew C",Researcher,2023,2,2,95,95,2.05,2.05,2,0,1,1,0,0,1,1,2,2,0,0,1,1,2,2,15,0,0.430076,0.620848
+"Nemarich, Christopher M","Nemarich, Christopher M",Researcher,2024,2,,7,,0.58,,,,NA,0,0,0,0,1,2,2,,,,,,,5,0,0.837142,0.580551
+"Neretti, Nicola","Neretti, Nicola",Principal Investigator,2021,7,7,532,532,17.63,17.63,2,5,-0.43,1,1,1,4,6,7,7,1,1,4,6,7,7,19,0,0.433179,0.696545
+"Neri, Francesco","Neri, Francesco",Researcher,2024,2,1,15,8,1.89,0.89,1,0,1,1,0,0,0,1,2,2,0,0,0,0,1,1,4,0,0.276205,0.510932
+"Nernekli, Kerem","Nernekli, Kerem",Researcher,2024,3,3,235,235,3.52,3.52,1,2,-0.33,1,0,0,0,2,3,3,0,0,0,2,3,3,6,0,0.534615,0.721119
+"Newman, John C","Newman, John C",Researcher,2023,3,,37,,4.47,,,,NA,0,0,0,1,3,3,3,,,,,,,1,0,0.235101,0.538682
+"Ng, Yan Er","Ng, Yan Er",Researcher,2022,3,2,181,158,9.46,6.58,1,1,0,1,0,1,2,2,3,3,0,1,1,1,2,2,5,0,0.415361,0.735697
+"Nguyen, Nam D","Nguyen, Nam D",Researcher,2024,2,1,3,0,0.17,0,1,0,1,1,0,0,0,1,2,2,0,0,0,0,1,1,1,0,0.744154,0.69857
+"Nicoletti, Chiara","Nicoletti, Chiara",Researcher,2024,3,,4,,0.19,,,,NA,0,0,0,0,1,3,3,,,,,,,4,0,0.116765,0.877277
+"Nie, Jia","Nie, Jia",Researcher,2023,3,1,265,229,4.55,2.9,1,0,1,1,0,0,1,3,3,3,0,0,0,1,1,1,3,0,0.251672,0.586369
+"Niedernhofer, Laura J","Niedernhofer, Laura J",Principal Investigator,2021,23,18,2681,1610,288.7,84.14,7,11,-0.22,1,1,7,11,17,23,23,1,4,7,12,18,18,84,0,0.358447,0.654201
+"Nixon, Andrew B.","Nixon, Andrew B.",Principal Investigator,2024,2,2,0,0,0,0,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,2,0,0.524819,0.671862
+"Nunes, Allancer Divino De Carvalho","Nunes, Allancer Divino De Carvalho",Researcher,2023,5,4,12,1,0.8,0.11,0,4,-1,1,0,0,1,2,5,5,0,0,0,1,4,4,16,0,0.22012,0.698052
+"Nyunt, Thedoe","Nyunt, Thedoe",Researcher,2023,3,,12,,1.1,,,,NA,0,0,0,1,2,3,3,,,,,,,15,0,0.044998,0.565516
+"Ocampo-Godinez, Juan M","Ocampo-Godinez, Juan M",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.723765,0.15344
+"O'Connor, Martin J","O'Connor, Martin J",Researcher,2022,2,,32,,5.25,,,,NA,0,0,1,1,1,2,2,,,,,,,3,0,0.754895,0.539178
+"Ogrodnik, Mikolaj","Ogrodnik, Mikolaj",Researcher,2021,2,2,337,337,9.79,9.79,1,1,0,1,1,1,1,2,2,2,1,1,1,2,2,2,5,0,0.357124,0.804488
+"Okawa, Satoshi","Okawa, Satoshi",Researcher,2024,2,,14,,1.7,,,,NA,0,0,0,0,1,2,2,,,,,,,1,8,0.991752,0.300869
+"O'Kelly, Ryan D","O'Kelly, Ryan D",Researcher,2024,3,3,0,0,0,0,0,3,-1,1,0,0,0,1,3,3,0,0,0,1,3,3,15,0,0.20671,0.688332
+"Olinger, Bradley","Olinger, Bradley",Researcher,2023,4,,12,,1.1,,,,NA,0,0,0,1,2,4,4,,,,,,,16,0,0.049179,0.533033
+"Onwuka, Ugochi","Onwuka, Ugochi",Researcher,2024,2,,28,,0.87,,,,NA,0,0,0,0,1,2,2,,,,,,,8,0,0.571817,0.656517
+"Orr, Miranda E","Orr, Miranda E",Researcher,2023,9,,103,,26.98,,,,NA,0,0,0,2,5,9,9,,,,,,,23,6,0.944065,0.81511
+"Orr, Timothy C","Orr, Timothy C",Researcher,2024,3,,31,,1.48,,,,NA,0,0,0,0,1,3,3,,,,,,,17,6,0.953423,0.854841
+"Osumi-Sutherland, David","Osumi-Sutherland, David",Researcher,2023,2,,7,,0.7,,,,NA,0,0,0,1,1,1,2,,,,,,,6,0,0.771249,0.568171
+"Ovando-Ricardez, Jose A","Ovando-Ricardez, Jose A",Researcher,2024,2,,9,,0.92,,,,NA,0,0,0,0,2,2,2,,,,,,,5,0,0.512181,0.52926
+"Oxenius, Annette","Oxenius, Annette",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.673943,0.210624
+"Póczos, Barnabás","Póczos, Barnabás",Researcher,2022,2,1,3,2,0.73,0.4,1,0,1,1,0,1,1,1,2,2,0,1,1,1,1,1,2,0,0.691136,0.783067
+"Pabelick, Christina M","Pabelick, Christina M",Researcher,2022,2,1,30,29,3.74,3.62,0,1,-1,1,0,1,1,1,2,2,0,1,1,1,1,1,3,0,0.355352,0.783381
+"Pachynski, Russell K.","Pachynski, Russell K.",Principal Investigator,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.110336,0.279009
+"Padhan, Kartika","Padhan, Kartika",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.780787,0.274636
+"Pan, Hui","Pan, Hui",Researcher,2024,2,1,7,7,1,1,0,1,-1,1,0,0,0,1,2,2,0,0,0,1,1,1,1,0,0.308613,0.533885
+"Park, Anna","Park, Anna",Researcher,2025,2,1,20,20,1.11,1.11,0,1,-1,1,0,0,0,0,2,2,0,0,0,0,1,1,11,0,0.673834,0.736857
+"Passos, João F","Passos, João F",Principal Investigator,2021,42,39,3757,3755,449.99,449.83,11,28,-0.44,1,3,13,23,33,42,42,3,13,23,33,39,39,148,0,0.375584,0.762641
+"Patel, Shreeya","Patel, Shreeya",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.2671,0.950624
+"Patterson, Nathan Heath","Patterson, Nathan Heath",Researcher,2022,3,2,13,0,0.87,0,0,2,-1,1,0,1,1,2,3,3,0,0,0,1,2,2,26,0,0.386014,0.172768
+"Pavelko, Kevin D","Pavelko, Kevin D",Researcher,2021,2,1,216,175,9.29,4.73,0,1,-1,1,1,1,2,2,2,2,1,1,1,1,1,1,2,0,0.528351,0.769786
+"Pellegrini, Matteo","Pellegrini, Matteo",Researcher,2022,2,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,2,2,0,1,2,2,2,2,10,0,0.708807,0.78237
+"Peltekian, Alec K","Peltekian, Alec K",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.436662,0.325232
+"Peng, Zhongsheng","Peng, Zhongsheng",Researcher,2024,2,,6,,0.35,,,,NA,0,0,0,0,1,2,2,,,,,,,15,0,0.059866,0.54833
+"Perlman, David H","Perlman, David H",Researcher,2021,3,3,300,300,26.97,26.97,0,3,-1,1,1,1,3,3,3,3,1,1,3,3,3,3,9,0,0.683199,0.860204
+"Perlman, Harris","Perlman, Harris",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.425426,0.33145
+"Petelski, Aleksandra A","Petelski, Aleksandra A",Researcher,2021,5,4,322,307,30.8,29.3,0,4,-1,1,1,2,4,5,5,5,1,2,4,4,4,4,9,0,0.695311,0.854956
+"Peters, Samuel T","Peters, Samuel T",Researcher,2023,2,2,95,95,2.05,2.05,2,0,1,1,0,0,1,1,2,2,0,0,1,1,2,2,15,0,0.438167,0.600953
+"Petrescu, Joana","Petrescu, Joana",Researcher,2023,2,1,200,90,5.24,2,1,0,1,1,0,0,2,2,2,2,0,0,1,1,1,1,1,0,0.450102,0.648934
+"Phatnani, Hemali","Phatnani, Hemali",Principal Investigator,2023,8,4,439,319,10.54,4.9,4,0,1,1,0,0,2,5,8,8,0,0,1,2,4,4,20,0,0.439009,0.641184
+"Phillip, Jude M","Phillip, Jude M",Researcher,2024,5,5,9,9,0.84,0.84,0,5,-1,1,0,0,0,1,3,5,0,0,0,1,3,5,7,0,0.240709,0.082507
+"Pierce-Hoffman, Hannah R","Pierce-Hoffman, Hannah R",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.276886,0.96306
+"Pietrzak, Maciej","Pietrzak, Maciej",Researcher,2023,2,,2,,0.45,,,,NA,0,0,0,1,1,2,2,,,,,,,1,0,0.498474,0.501393
+"Pignolo, Robert J","Pignolo, Robert J",Researcher,2021,6,6,1091,1091,73.61,73.61,0,6,-1,1,1,4,5,6,6,6,1,4,5,6,6,6,19,0,0.469582,0.773726
+"Pineda, Ricardo H","Pineda, Ricardo H",Researcher,2024,4,,37,,1.35,,,,NA,0,0,0,0,1,4,4,,,,,,,6,0,0.584375,0.611248
+"Pirius, Nicholas","Pirius, Nicholas",Researcher,2023,5,4,468,467,12.51,12.47,1,3,-0.5,1,0,0,1,3,5,5,0,0,1,3,4,4,43,0,0.43158,0.903459
+"Pirtskhalava, Tamar","Pirtskhalava, Tamar",Researcher,2023,3,2,36,11,1.88,0.92,0,2,-1,1,0,0,1,2,3,3,0,0,1,1,2,2,2,0,0.299511,0.650931
+"Pitcher, Louise E","Pitcher, Louise E",Researcher,2022,6,3,963,13,177.34,2.11,0,3,-1,1,0,2,3,4,6,6,0,0,0,1,3,3,4,0,0.229713,0.719207
+"Plazyo, Olesya","Plazyo, Olesya",Researcher,2022,3,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,3,3,0,1,2,2,2,2,13,0,0.708859,0.758597
+"Polli, Dario","Polli, Dario",Researcher,2023,3,2,15,15,1.98,1.98,0,2,-1,1,0,0,1,2,2,3,0,0,1,2,2,2,4,4,0.956289,0.386523
+"Porritt, Rebecca A","Porritt, Rebecca A",Researcher,2023,6,6,557,557,14.03,14.03,2,4,-0.33,1,0,0,2,5,6,6,0,0,2,5,6,6,65,0,0.350894,0.938405
+"Powell, Mark","Powell, Mark",Researcher,2023,3,,12,,1.2,,,,NA,0,0,0,1,2,3,3,,,,,,,9,0,0.177471,0.561992
+"Prakash, Y S","Prakash, Y S",Researcher,2022,4,2,31,30,3.8,3.68,1,1,0,1,0,1,1,1,4,4,0,1,1,1,2,2,3,0,0.342415,0.796571
+"Preissl, Sebastian","Preissl, Sebastian",Researcher,2023,2,,223,,74.34,,,,NA,0,0,0,2,2,2,2,,,,,,,2,0,0.168368,0.820676
+"Prieto, Luis I","Prieto, Luis I",Researcher,2025,2,1,0,0,0,0,1,0,1,1,0,0,0,0,2,2,0,0,0,0,1,1,2,0,0.422156,0.632166
+"Proulx, Jessica","Proulx, Jessica",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.168215,0.868149
+"Pruett-Miller, Shondra M","Pruett-Miller, Shondra M",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.368226,0.165255
+"Pryhuber, Gloria","Pryhuber, Gloria",Researcher,2023,6,3,68,45,2.22,1.46,3,0,1,1,0,0,1,2,6,6,0,0,1,1,3,3,23,0,0.675587,0.565656
+"Puig-Barbe, Aleix","Puig-Barbe, Aleix",Researcher,2025,3,1,0,0,0,0,1,0,1,1,0,0,0,0,2,3,0,0,0,0,1,1,6,0,0.779762,0.578834
+"Puram, Sidharth V","Puram, Sidharth V",Researcher,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.097919,0.30859
+"Puri, Pier Lorenzo","Puri, Pier Lorenzo",Researcher,2024,2,,1,,0.12,,,,NA,0,0,0,0,1,2,2,,,,,,,4,0,0.120295,0.887226
+"Purkerson, Jeffrey M","Purkerson, Jeffrey M",Researcher,2025,2,2,13,13,0.62,0.62,2,0,1,1,0,0,0,0,2,2,0,0,0,0,2,2,9,0,0.740097,0.570419
+"Qaurooni, Danial","Qaurooni, Danial",Researcher,2025,3,2,13,13,0.62,0.62,2,0,1,1,0,0,0,0,3,3,0,0,0,0,2,2,10,0,0.750918,0.569525
+"Qi, Jianhuan","Qi, Jianhuan",Researcher,2025,2,2,0,0,0,0,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,5,4,0.952502,0.426735
+"Qin, Xiaoyu","Qin, Xiaoyu",Researcher,2022,3,,509,,28.31,,,,NA,0,0,2,3,3,3,3,,,,,,,14,0,0.344803,0.301315
+"Qu, Rihao","Qu, Rihao",Researcher,2025,2,2,20,20,1.54,1.54,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.166605,0.172411
+"Qu, Yilong","Qu, Yilong",Researcher,2025,4,1,2,0,0.32,0,1,0,1,1,0,0,0,0,4,4,0,0,0,0,1,1,3,0,0.540762,0.693589
+"Quardokus, Ellen M","Quardokus, Ellen M",Researcher,2022,8,3,287,261,6.04,3.74,3,0,1,1,0,1,3,4,7,8,0,0,1,2,3,3,16,0,0.790159,0.56641
+"Queiroga, Vasco","Queiroga, Vasco",Researcher,2024,3,3,4,4,0.29,0.29,0,3,-1,1,0,0,0,1,3,3,0,0,0,1,3,3,11,0,0.222978,0.048624
+"Quintanilla, Andrea","Quintanilla, Andrea",Researcher,2022,2,2,45,45,3,3,0,2,-1,1,0,2,2,2,2,2,0,2,2,2,2,2,5,0,0.320259,0.767748
+"Radda, Jonathan S D","Radda, Jonathan S D",Researcher,2024,4,,12,,0.98,,,,NA,0,0,0,0,1,4,4,,,,,,,13,2,0.929391,0.554342
+"Radtke, Andrea J","Radtke, Andrea J",Researcher,2023,4,1,139,32,4.74,0.84,1,0,1,1,0,0,2,2,3,4,0,0,1,1,1,1,68,0,0.755721,0.363776
+"Rahman, Irfan","Rahman, Irfan",Principal Investigator,2021,14,2,413,234,45.55,2.95,2,0,1,1,1,3,5,11,14,14,0,0,0,1,2,2,48,0,0.431928,0.515358
+"Rahmani, Shahrokh","Rahmani, Shahrokh",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.788809,0.658526
+"Raina, Mauminah","Raina, Mauminah",Researcher,2025,2,,1,,0.09,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.624984,0.56933
+"Rajaei, Moein","Rajaei, Moein",Researcher,2024,2,,3,,0.23,,,,NA,0,0,0,0,1,2,2,,,,,,,11,2,0.940974,0.54652
+"Rajagopal, Jayaraj","Rajagopal, Jayaraj",Principal Investigator,2022,3,3,533,533,19.46,19.46,0,3,-1,1,0,1,2,3,3,3,0,1,2,3,3,3,2,0,0.398518,0.977887
+"Rajesh, Adarsh","Rajesh, Adarsh",Researcher,2024,5,3,244,244,3.34,3.34,1,2,-0.33,1,0,0,0,2,5,5,0,0,0,2,3,3,46,0,0.203942,0.883231
+"Ralser, Markus","Ralser, Markus",Researcher,2023,2,1,169,169,16.9,16.9,0,1,-1,1,0,0,1,1,2,2,0,0,1,1,1,1,3,0,0.662495,0.836749
+"Ram, Anjana","Ram, Anjana",Researcher,2024,2,,6,,0.35,,,,NA,0,0,0,0,1,2,2,,,,,,,15,0,0.061466,0.536126
+"Ramasamy, Ramalakshmi","Ramasamy, Ramalakshmi",Researcher,2024,2,2,234,234,2.95,2.95,2,0,1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.319123,0.567756
+"Rankin, Sherri","Rankin, Sherri",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.387267,0.205856
+"Raphael, Benjamin J","Raphael, Benjamin J",Researcher,2023,4,1,490,283,18.06,12.3,0,1,-1,1,0,0,2,4,4,4,0,0,1,1,1,1,24,0,0.120891,0.298646
+"Rasmussen, Luke V","Rasmussen, Luke V",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.482653,0.385966
+"Razzoli, Maria","Razzoli, Maria",Researcher,2025,2,2,10,10,0.87,0.87,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.364383,0.699225
+"Reader, Brenda F","Reader, Brenda F",Researcher,2025,2,1,5,0,0.23,0,0,1,-1,1,0,0,0,0,2,2,0,0,0,0,1,1,2,0,0.473126,0.518314
+"Rebecca, Vito W","Rebecca, Vito W",Researcher,2024,2,2,22,22,1.22,1.22,0,2,-1,1,0,0,0,2,2,2,0,0,0,2,2,2,3,0,0.263305,0.081966
+"Reddy, Sashank","Reddy, Sashank",Researcher,2022,2,2,110,110,5.79,5.79,0,2,-1,1,0,1,1,2,2,2,0,1,1,2,2,2,4,0,0.264392,0.068334
+"Reed, Rebecca","Reed, Rebecca",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.509241,0.952159
+"Remmert, Kirsten","Remmert, Kirsten",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.634636,0.18329
+"Ren, Bing","Ren, Bing",Principal Investigator,2023,7,,293,,95.09,,,,NA,0,0,0,2,4,7,7,,,,,,,19,0,0.170591,0.837066
+"Renauer, Paul","Renauer, Paul",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.37279,0.207868
+"Rhoads, Timothy W","Rhoads, Timothy W",Researcher,2024,2,2,0,0,0,0,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,5,0,0.406676,0.444975
+"Richardson, Carrie","Richardson, Carrie",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.431277,0.34177
+"Richardson, Gavin D","Richardson, Gavin D",Researcher,2022,3,3,114,114,19.55,19.55,0,3,-1,1,0,1,3,3,3,3,0,1,3,3,3,3,2,0,0.367368,0.813645
+"Richardson, Timothy E","Richardson, Timothy E",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.919552,0.842286
+"Richoz, Nathan","Richoz, Nathan",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.67985,0.152548
+"Riemondy, Kent","Riemondy, Kent",Researcher,2022,2,,27,,2.03,,,,NA,0,0,1,1,2,2,2,,,,,,,1,0,0.567988,0.673872
+"Riessland, Markus","Riessland, Markus",Researcher,2023,3,,72,,25.5,,,,NA,0,0,0,1,3,3,3,,,,,,,1,6,0.965063,0.79435
+"Riley, Joel S","Riley, Joel S",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.501055,0.969258
+"Rindone, Alexandra N","Rindone, Alexandra N",Researcher,2024,3,1,18,5,4.38,0.05,1,0,1,1,0,0,0,1,3,3,0,0,0,0,1,1,1,0,0.224198,0.45079
+"Robbins, Paul D.","Robbins, Paul D.",Principal Investigator,2021,29,22,2339,1319,266.62,87.88,7,15,-0.36,1,1,7,11,18,29,29,1,4,6,12,22,22,72,0,0.275446,0.669118
+"Robson, Paul","Robson, Paul",Principal Investigator,2023,5,2,338,234,6.8,2.95,2,0,1,1,0,0,1,2,5,5,0,0,0,1,2,2,32,0,0.30949,0.620683
+"Rocha, Azucena","Rocha, Azucena",Researcher,2024,2,2,229,229,2.9,2.9,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,1,0,0.459203,0.680409
+"Rodig, Scott J","Rodig, Scott J",Researcher,2024,2,,14,,0.88,,,,NA,0,0,0,0,2,2,2,,,,,,,5,0,0.610399,0.589145
+"Rodriguez, Sonia L","Rodriguez, Sonia L",Researcher,2023,3,3,28,28,2.96,2.96,1,2,-0.33,1,0,0,1,2,3,3,0,0,1,2,3,3,4,0,0.387516,0.491319
+"Rodriguez-Lopez, Jhonny","Rodriguez-Lopez, Jhonny",Researcher,2025,3,2,10,5,0.28,0.05,2,0,1,1,0,0,0,0,3,3,0,0,0,0,2,2,16,0,0.456473,0.601487
+"Rojas, Mauricio M","Rojas, Mauricio M",Principal Investigator,2022,13,5,518,416,20.51,4.77,3,2,0.2,1,0,3,5,7,13,13,0,0,2,2,5,5,42,0,0.474043,0.539473
+"Rosas, Ivan O","Rosas, Ivan O",Researcher,2025,2,,26,,0.77,,,,NA,0,0,0,0,0,2,2,,,,,,,4,0,0.573611,0.609456
+"Rosas, Lorena","Rosas, Lorena",Researcher,2023,6,3,14,5,0.97,0.05,2,1,0.33,1,0,0,1,3,6,6,0,0,1,1,3,3,21,0,0.509911,0.513102
+"Rose, Jacob P","Rose, Jacob P",Researcher,2023,3,1,30,1,3.69,0.05,1,0,1,1,0,0,1,1,3,3,0,0,0,0,1,1,5,0,0.278385,0.492624
+"Rosenfeld, Michael G","Rosenfeld, Michael G",Researcher,2023,2,,6,,1.87,,,,NA,0,0,0,2,2,2,2,,,,,,,2,0,0.110365,0.690983
+"Rosoklija, Gorazd B","Rosoklija, Gorazd B",Researcher,2022,2,1,546,283,26.14,12.3,0,1,-1,1,0,1,2,2,2,2,0,0,1,1,1,1,14,0,0.242568,0.283877
+"Rowsey, Jennifer L","Rowsey, Jennifer L",Researcher,2023,5,4,118,77,8.75,4.19,0,4,-1,1,0,0,2,4,5,5,0,0,1,3,4,4,18,0,0.494592,0.786298
+"Rubio Rodríguez-Kirby, Leslie A","Rubio Rodríguez-Kirby, Leslie A",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.235433,0.166648
+"Ruffalo, Matthew","Ruffalo, Matthew",Principal Investigator,2023,4,4,31,31,4.17,4.17,4,0,1,1,0,0,2,2,4,4,0,0,2,2,4,4,1,0,0.757644,0.704328
+"Ruiz, Christian F","Ruiz, Christian F",Researcher,2024,2,,3,,0.23,,,,NA,0,0,0,0,1,2,2,,,,,,,11,2,0.941471,0.560089
+"Runyan, Constance E","Runyan, Constance E",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,12,0,0.539349,0.331269
+"Ruppert, Clemens","Ruppert, Clemens",Researcher,2022,2,,40,,1.44,,,,NA,0,0,1,1,2,2,2,,,,,,,3,0,0.57552,0.620399
+"Rysdyk, Sam","Rysdyk, Sam",Researcher,2023,2,,12,,1.2,,,,NA,0,0,0,1,2,2,2,,,,,,,9,0,0.164459,0.579726
+"Rytel, Matthew","Rytel, Matthew",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.796149,0.795202
+"Ryu, Seungjin","Ryu, Seungjin",Researcher,2022,2,,46,,1.58,,,,NA,0,0,1,2,2,2,2,,,,,,,5,0,0.110134,0.680442
+"Sainz, Alva G","Sainz, Alva G",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.498197,0.936819
+"Sajedi, Sogand","Sajedi, Sogand",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,2,6,0.953298,0.78216
+"Salekeen, Rahagir","Salekeen, Rahagir",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.197636,0.675953
+"Sales Gomez, Lilian","Sales Gomez, Lilian",Researcher,2023,3,3,463,463,12.51,12.51,1,2,-0.33,1,0,0,2,3,3,3,0,0,2,3,3,3,38,0,0.48909,0.988304
+"Salmonowicz, Hanna","Salmonowicz, Hanna",Researcher,2021,4,4,854,854,48.75,48.75,1,3,-0.5,1,2,2,3,4,4,4,2,2,3,4,4,4,38,0,0.527424,0.965579
+"Satija, Rahul","Satija, Rahul",Principal Investigator,2023,4,2,2937,694,374.84,170.87,1,1,0,1,0,0,1,3,4,4,0,0,1,1,2,2,3,0,0.731352,0.562855
+"Sato, Kazuhito","Sato, Kazuhito",Researcher,2023,4,,145,,3.63,,,,NA,0,0,0,2,2,4,4,,,,,,,18,0,0.045833,0.378538
+"Saul, Dominik","Saul, Dominik",Researcher,2022,10,8,1239,1197,57.67,53.07,3,5,-0.25,1,0,2,6,8,10,10,0,2,5,7,8,8,55,0,0.507006,0.855729
+"Sayer, Avan A","Sayer, Avan A",Researcher,2022,3,3,178,178,9.58,9.58,0,3,-1,1,0,1,2,3,3,3,0,1,2,3,3,3,5,0,0.397755,0.819536
+"Schafer, Marissa Joy","Schafer, Marissa Joy",Principal Investigator,2022,11,10,421,421,12.66,12.66,4,6,-0.2,1,0,1,3,6,11,11,0,1,3,6,10,10,56,0,0.389803,0.539625
+"Scheibye-Knudsen, Morten","Scheibye-Knudsen, Morten",Researcher,2022,6,2,290,138,12.91,2.38,2,0,1,1,0,1,3,5,6,6,0,0,1,2,2,2,12,0,0.178951,0.599239
+"Schiller, Herbert B","Schiller, Herbert B",Researcher,2023,3,1,444,411,5.99,4.72,0,1,-1,1,0,0,1,3,3,3,0,0,1,1,1,1,6,0,0.582276,0.668844
+"Schilling, Birgit","Schilling, Birgit",Principal Investigator,2023,12,5,387,244,16.47,4.06,4,1,0.6,1,0,0,2,8,12,12,0,0,1,2,5,5,45,0,0.285302,0.531374
+"Schleck, Maxwell J","Schleck, Maxwell J",Researcher,2025,3,,0,,0,,,,NA,0,0,0,0,0,3,3,,,,,,,13,0,0.523087,0.346712
+"Schmidt, Elizabeth L","Schmidt, Elizabeth L",Researcher,2024,2,2,234,234,2.95,2.95,2,0,1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.295388,0.601465
+"Schneider, Kevin","Schneider, Kevin",Researcher,2025,2,2,6,6,0.1,0.1,2,0,1,1,0,0,0,0,2,2,0,0,0,0,2,2,4,0,0.344059,0.522759
+"Schoenberger, Rayna","Schoenberger, Rayna",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.812956,0.771715
+"Schrank, Mitchell","Schrank, Mitchell",Researcher,2024,3,2,20,20,1.11,1.11,0,2,-1,1,0,0,0,1,3,3,0,0,0,1,2,2,12,0,0.675236,0.723725
+"Schrom, Edward C","Schrom, Edward C",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.750146,0.150451
+"Schumacher, Björn","Schumacher, Björn",Researcher,2024,2,2,55,55,1.78,1.78,1,1,0,1,0,0,0,1,2,2,0,0,0,1,2,2,2,0,0.159059,0.705685
+"Schupp, Jonas C","Schupp, Jonas C",Researcher,2022,2,1,18,0,0.75,0,1,0,1,1,0,1,1,2,2,2,0,0,0,1,1,1,1,0,0.554821,0.599231
+"Scott, Gary K","Scott, Gary K",Researcher,2024,3,,8,,0.95,,,,NA,0,0,0,0,2,3,3,,,,,,,7,0,0.298839,0.46145
+"Sebastiano, Vittorio","Sebastiano, Vittorio",Researcher,2024,2,1,106,48,2.04,0.38,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,11,0,0.122258,0.636684
+"Sedivy, John M","Sedivy, John M",Researcher,2023,4,4,217,217,6.44,6.44,2,2,0,1,0,0,1,3,4,4,0,0,1,3,4,4,7,0,0.44791,0.701802
+"Sefik, Esen","Sefik, Esen",Researcher,2024,2,2,20,20,1.54,1.54,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,2,0,0.176257,0.203311
+"Selaru, Florin A","Selaru, Florin A",Researcher,2025,2,2,4,4,0.29,0.29,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,2,0,0.269786,0.075436
+"Selmanovic, Enna","Selmanovic, Enna",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.932203,0.836713
+"Seluanov, Andrei","Seluanov, Andrei",Researcher,2022,4,3,60,15,1.85,0.44,0,3,-1,1,0,1,1,2,4,4,0,0,0,1,3,3,37,0,0.254894,0.840194
+"Sembrat, John","Sembrat, John",Researcher,2024,2,,17,,0.76,,,,NA,0,0,0,0,1,2,2,,,,,,,4,0,0.592758,0.621171
+"Senkow, Karolina J","Senkow, Karolina J",Researcher,2024,4,,33,,1.03,,,,NA,0,0,0,0,1,4,4,,,,,,,23,0,0.514029,0.329566
+"Sestan, Nenad","Sestan, Nenad",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.246795,0.171571
+"Shadel, Gerald S","Shadel, Gerald S",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.488959,0.952798
+"Shaikh, Sadiya","Shaikh, Sadiya",Researcher,2024,2,1,233,229,3.34,2.9,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,2,0,0.441748,0.433509
+"Shaikh, Sadiya Bi","Shaikh, Sadiya Bi",Researcher,2023,3,,29,,5.32,,,,NA,0,0,0,1,2,3,3,,,,,,,1,0,0.439406,0.41924
+"Shang, Wanjing","Shang, Wanjing",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.770065,0.191469
+"Shen, Yu","Shen, Yu",Researcher,2024,3,3,9,9,0.62,0.62,0,3,-1,1,0,0,0,2,3,3,0,0,0,2,3,3,11,0,0.216764,0.060558
+"Shi, Hao","Shi, Hao",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.357224,0.183901
+"Shi, Lihong","Shi, Lihong",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.614978,0.195228
+"Shih, Rochelle M","Shih, Rochelle M",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.669085,0.130858
+"Shinkle, Andrew T","Shinkle, Andrew T",Researcher,2023,4,,213,,4.9,,,,NA,0,0,0,2,3,4,4,,,,,,,32,0,0.063102,0.345149
+"Shipkovenska, Gergana G","Shipkovenska, Gergana G",Researcher,2024,3,1,35,32,2.48,1.88,0,1,-1,1,0,0,0,1,3,3,0,0,0,1,1,1,4,0,0.626329,0.822611
+"Shoghi, Kooresh Isaac","Shoghi, Kooresh Isaac",Researcher,2024,2,,72,,1.64,,,,NA,0,0,0,0,2,2,2,,,,,,,2,0,0.148049,0.393805
+"Shu, Jian","Shu, Jian",Principal Investigator,2024,6,6,62,62,4.61,4.61,2,4,-0.33,1,0,0,0,1,6,6,0,0,0,1,6,6,10,4,0.937222,0.41153
+"Si, Yichen","Si, Yichen",Researcher,2024,6,4,51,49,3.63,3.23,0,4,-1,1,0,0,0,2,6,6,0,0,0,2,4,4,13,0,0.662161,0.715509
+"Silverstein, Jonathan C.","Silverstein, Jonathan C.",Principal Investigator,2022,7,3,326,274,6.81,4.36,3,0,1,1,0,1,2,5,7,7,0,0,1,2,3,3,14,0,0.81549,0.572376
+"Simmons, Alan J","Simmons, Alan J",Researcher,2024,2,,7,,0.58,,,,NA,0,0,0,0,1,2,2,,,,,,,5,0,0.843238,0.573318
+"Simonsick, Eleanor M","Simonsick, Eleanor M",Researcher,2023,3,,14,,1.35,,,,NA,0,0,0,1,2,3,3,,,,,,,15,0,0.076812,0.569759
+"Sims, Austin A","Sims, Austin A",Researcher,2023,2,,5,,2.17,,,,NA,0,0,0,2,2,2,2,,,,,,,1,8,0.972252,0.305821
+"Slavov, Nikolai","Slavov, Nikolai",Principal Investigator,2021,25,16,934,883,170.46,162.43,1,15,-0.88,1,3,7,14,20,25,25,3,7,14,16,16,16,18,0,0.65256,0.812725
+"Smoot, Elizabeth","Smoot, Elizabeth",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.154183,0.840804
+"Snyder, Michael P.","Snyder, Michael P.",Principal Investigator,2023,3,1,194,32,6.35,0.84,1,0,1,1,0,0,2,3,3,3,0,0,1,1,1,1,9,0,0.817629,0.50651
+"So, Peter T C","So, Peter T C",Principal Investigator,2023,9,8,85,85,8.78,8.78,2,6,-0.5,1,0,0,1,5,9,9,0,0,1,5,8,8,6,4,0.96958,0.395585
+"Song, Mengyi","Song, Mengyi",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.2115,0.181813
+"Song, Qi","Song, Qi",Researcher,2022,5,4,68,59,8.39,5.39,4,0,1,1,0,1,3,5,5,5,0,0,2,4,4,4,16,0,0.824602,0.766408
+"Song, Yizhe","Song, Yizhe",Researcher,2023,2,1,355,229,5.76,2.9,1,0,1,1,0,0,1,2,2,2,0,0,0,1,1,1,3,0,0.061084,0.295649
+"Song, Zhuolun","Song, Zhuolun",Researcher,2025,2,,2,,0.25,,,,NA,0,0,0,0,0,2,2,,,,,,,6,0,0.662931,0.979459
+"Soriano, Alexandra","Soriano, Alexandra",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.41928,0.344436
+"Soto-Palma, Carolina","Soto-Palma, Carolina",Researcher,2022,3,2,110,0,27.5,0,0,2,-1,1,0,1,1,2,3,3,0,0,0,1,2,2,15,0,0.198139,0.699761
+"Southard-Smith, Austin N","Southard-Smith, Austin N",Researcher,2023,2,,196,,4.38,,,,NA,0,0,0,1,2,2,2,,,,,,,23,0,0.098159,0.293363
+"Soygur, Bikem","Soygur, Bikem",Researcher,2024,2,2,230,230,2.95,2.95,2,0,1,1,0,0,0,1,2,2,0,0,0,1,2,2,3,0,0.25348,0.510296
+"Sozen, Berna","Sozen, Berna",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.804921,0.785828
+"Specht, Harrison","Specht, Harrison",Researcher,2021,5,5,368,368,41.96,41.96,0,5,-1,1,1,3,5,5,5,5,1,3,5,5,5,5,8,0,0.693116,0.887139
+"Speranza, Emily","Speranza, Emily",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.770613,0.165222
+"Spraggins, Jeffrey M","Spraggins, Jeffrey M",Principal Investigator,2022,3,1,149,32,5.56,0.84,1,0,1,1,0,1,3,3,3,3,0,0,1,1,1,1,12,0,0.820628,0.53883
+"Staab-Weijnitz, Claudia A","Staab-Weijnitz, Claudia A",Researcher,2022,3,,27,,1.53,,,,NA,0,0,2,2,2,3,3,,,,,,,4,0,0.563012,0.605631
+"Stanley III, Jay S","Stanley III, Jay S",Researcher,2025,3,3,20,20,1.54,1.54,0,3,-1,1,0,0,0,0,3,3,0,0,0,0,3,3,7,0,0.157421,0.178628
+"Starich, Bartholomew","Starich, Bartholomew",Researcher,2024,3,3,29,29,1.72,1.72,0,3,-1,1,0,0,0,2,3,3,0,0,0,2,3,3,5,0,0.252073,0.08586
+"Stear, Benjamin J","Stear, Benjamin J",Researcher,2024,2,,7,,0.58,,,,NA,0,0,0,0,1,2,2,,,,,,,5,0,0.843677,0.563202
+"Stewart, Sheila A","Stewart, Sheila A",Principal Investigator,2024,3,,176,,9.64,,,,NA,0,0,0,0,2,3,3,,,,,,,5,0,0.116864,0.446618
+"Stierli, Salome","Stierli, Salome",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.705652,0.126857
+"Stockwell, Brent R.","Stockwell, Brent R.",Principal Investigator,2023,2,1,136,32,4.69,0.84,1,0,1,1,0,0,2,2,2,2,0,0,1,1,1,1,9,0,0.784517,0.523925
+"Stolz, Donna","Stolz, Donna",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.801412,0.774413
+"Strino, Francesco","Strino, Francesco",Researcher,2025,2,2,20,20,1.54,1.54,0,2,-1,1,0,0,0,0,2,2,0,0,0,0,2,2,5,0,0.174331,0.177203
+"Sturmlechner, Ines","Sturmlechner, Ines",Researcher,2023,2,1,40,0,1.54,0,1,0,1,1,0,0,1,1,2,2,0,0,0,0,1,1,1,0,0.362016,0.525141
+"Su, Graham","Su, Graham",Researcher,2022,6,3,846,337,43.31,15,0,3,-1,1,0,2,4,6,6,6,0,0,1,3,3,3,28,0,0.302917,0.281487
+"Su, Li","Su, Li",Researcher,2022,5,,180,,10.09,,,,NA,0,0,1,3,3,5,5,,,,,,,12,0,0.625722,0.519879
+"Suh, Yousin","Suh, Yousin",Principal Investigator,2022,8,2,338,277,8.61,3.28,2,0,1,1,0,1,4,6,8,8,0,0,0,2,2,2,16,0,0.125094,0.692543
+"Sui, Justin","Sui, Justin",Researcher,2023,2,,33,,3.75,,,,NA,0,0,0,1,2,2,2,,,,,,,4,0,0.542959,0.664597
+"Sun, Li","Sun, Li",Researcher,2022,3,3,123,123,11.4,11.4,1,2,-0.33,1,0,1,1,1,3,3,0,1,1,1,3,3,2,0,0.479801,0.674377
+"Sundar, Isaac Kirubakaran","Sundar, Isaac Kirubakaran",Researcher,2021,3,,24,,7.67,,,,NA,0,1,1,1,2,3,3,,,,,,,1,0,0.437539,0.464234
+"Suryadevara, Vidyani","Suryadevara, Vidyani",Researcher,2023,4,4,325,325,5.52,5.52,2,2,0,1,0,0,1,3,4,4,0,0,1,3,4,4,14,0,0.502288,0.706026
+"Swaminathan, Suchitra","Swaminathan, Suchitra",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.489674,0.292677
+"Szczepanowska, Karolina","Szczepanowska, Karolina",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.472654,0.993486
+"Sznajder, Jacob I","Sznajder, Jacob I",Researcher,2024,3,,33,,1.03,,,,NA,0,0,0,0,1,3,3,,,,,,,12,0,0.549002,0.339684
+"Tadeo, Ada","Tadeo, Ada",Researcher,2024,2,,7,,0.84,,,,NA,0,0,0,0,1,2,2,,,,,,,4,0,0.294969,0.471793
+"Tafforeau, Paul","Tafforeau, Paul",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.806496,0.650897
+"Taheri, Mohammad Naser","Taheri, Mohammad Naser",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.807401,0.798583
+"Tait, Stephen W G","Tait, Stephen W G",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.506797,0.989644
+"Talwalkar, Ameet","Talwalkar, Ameet",Researcher,2024,2,,49,,8.17,,,,NA,0,0,0,0,2,2,2,,,,,,,1,1,0.970392,0.634967
+"Tan, Jay Xiaojun","Tan, Jay Xiaojun",Researcher,2022,2,,323,,161.5,,,,NA,0,0,1,2,2,2,2,,,,,,,1,0,0.543278,0.56683
+"Tanaka, Toshiko","Tanaka, Toshiko",Researcher,2023,4,,57,,6.73,,,,NA,0,0,0,1,3,4,4,,,,,,,15,0,0.03869,0.548649
+"Tang, Jian-Hong","Tang, Jian-Hong",Researcher,2024,2,2,6,6,0.62,0.62,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,4,0,0.529883,0.732049
+"Tanner, John J","Tanner, John J",Researcher,2024,2,,7,,0.84,,,,NA,0,0,0,0,1,2,2,,,,,,,4,0,0.288991,0.464559
+"Tao, Bo","Tao, Bo",Researcher,2024,3,3,54,54,2.7,2.7,0,3,-1,1,0,0,0,2,3,3,0,0,0,2,3,3,29,0,0.393523,0.235895
+"Tare, Archana","Tare, Archana",Researcher,2022,2,,46,,1.58,,,,NA,0,0,1,2,2,2,2,,,,,,,5,0,0.104377,0.672311
+"Targino da Costa, André Luiz N","Targino da Costa, André Luiz N",Researcher,2024,2,,75,,1.73,,,,NA,0,0,0,0,1,2,2,,,,,,,9,0,0.043632,0.33474
+"Taylor, Deanne M","Taylor, Deanne M",Researcher,2024,2,,7,,0.58,,,,NA,0,0,0,0,1,2,2,,,,,,,5,0,0.835196,0.564396
+"Tchkonia, Tamar","Tchkonia, Tamar",Researcher,2021,16,10,1300,1244,79.02,74.9,2,8,-0.6,1,2,4,7,8,16,16,2,4,6,6,10,10,42,0,0.318548,0.656547
+"Teichmann, Sarah Amalia","Teichmann, Sarah Amalia",Principal Investigator,2023,4,2,427,424,5.39,5.34,1,1,0,1,0,0,1,1,3,4,0,0,1,1,2,2,61,0,0.811851,0.220927
+"Teklu, Amanuel Abraha","Teklu, Amanuel Abraha",Researcher,2023,2,,12,,1.2,,,,NA,0,0,0,1,2,2,2,,,,,,,9,0,0.184499,0.57207
+"Teles, Rosane","Teles, Rosane",Researcher,2022,2,1,92,92,3.54,3.54,0,1,-1,1,0,1,1,1,2,2,0,1,1,1,1,1,7,0,0.71211,0.745078
+"Teneche, Marcos Garcia","Teneche, Marcos Garcia",Researcher,2024,6,4,249,249,3.39,3.39,2,2,0,1,0,0,0,2,6,6,0,0,0,2,4,4,67,0,0.246621,0.787011
+"Teo, Yee Voan","Teo, Yee Voan",Researcher,2023,2,2,31,31,7,7,0,2,-1,1,0,0,2,2,2,2,0,0,2,2,2,2,2,0,0.454397,0.670978
+"Teramayi, Fadzai","Teramayi, Fadzai",Researcher,2024,2,,6,,0.73,,,,NA,0,0,0,0,2,2,2,,,,,,,5,0,0.304777,0.47334
+"Thompson, Elizabeth D","Thompson, Elizabeth D",Researcher,2022,2,2,110,110,5.79,5.79,0,2,-1,1,0,1,1,2,2,2,0,1,1,2,2,2,8,0,0.290112,0.091261
+"Thompson, Elizabeth L","Thompson, Elizabeth L",Researcher,2022,2,1,112,90,7.5,2,1,0,1,1,0,1,2,2,2,2,0,0,1,1,1,1,1,0,0.415086,0.585305
+"Thorn, Emma L","Thorn, Emma L",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.967288,0.849861
+"Tian, Xiao","Tian, Xiao",Researcher,2024,2,2,15,15,0.44,0.44,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,33,0,0.256188,0.967185
+"Tian, Xiaolong","Tian, Xiaolong",Researcher,2024,4,4,54,54,2.7,2.7,0,4,-1,1,0,0,0,2,4,4,0,0,0,2,4,4,29,0,0.402092,0.195365
+"Tighe, Robert M","Tighe, Robert M",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.509377,0.296473
+"Tjitropranoto, Ariel","Tjitropranoto, Ariel",Researcher,2023,2,,10,,2.5,,,,NA,0,0,0,1,2,2,2,,,,,,,1,0,0.453794,0.470071
+"Tomayko, Mary","Tomayko, Mary",Researcher,2022,2,,246,,14.47,,,,NA,0,0,1,2,2,2,2,,,,,,,14,0,0.334033,0.299036
+"Townsend, Jeffrey P","Townsend, Jeffrey P",Researcher,2024,2,,3,,0.23,,,,NA,0,0,0,0,1,2,2,,,,,,,11,2,0.949788,0.541104
+"Tran, Thao","Tran, Thao",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.354225,0.167513
+"Tran, Tommy","Tran, Tommy",Researcher,2023,2,2,1,1,0.05,0.05,2,0,1,1,0,0,1,1,2,2,0,0,1,1,2,2,1,0,0.349918,0.486505
+"Tsitsipatis, Dimitrios","Tsitsipatis, Dimitrios",Researcher,2024,2,,6,,0.35,,,,NA,0,0,0,0,1,2,2,,,,,,,15,0,0.050606,0.552383
+"Tsoi, Lam C","Tsoi, Lam C",Researcher,2022,2,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,2,2,0,1,2,2,2,2,10,0,0.71698,0.788518
+"Tsou, Sarah","Tsou, Sarah",Researcher,2025,2,,2,,0.25,,,,NA,0,0,0,0,0,2,2,,,,,,,6,0,0.658761,0.970477
+"Tullius, Stefan G","Tullius, Stefan G",Researcher,2025,4,1,17,15,1.13,0.88,0,1,-1,1,0,0,0,0,4,4,0,0,0,0,1,1,7,0,0.657841,0.957573
+"Uhlén, Per","Uhlén, Per",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.223326,0.160447
+"Unwalla, Hoshang","Unwalla, Hoshang",Researcher,2022,4,,40,,9.01,,,,NA,0,0,1,1,4,4,4,,,,,,,3,0,0.454897,0.425562
+"van Deursen, Jan M","van Deursen, Jan M",Researcher,2023,2,1,47,7,2.08,0.54,0,1,-1,1,0,0,1,1,2,2,0,0,0,0,1,1,1,0,0.377111,0.620993
+"Vanegas-Avendaño, Natalia Del Pilar","Vanegas-Avendaño, Natalia Del Pilar",Researcher,2025,4,2,10,5,0.28,0.05,2,0,1,1,0,0,0,0,4,4,0,0,0,0,2,2,24,0,0.488471,0.578405
+"Vaz, Eduarda","Vaz, Eduarda",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,2,2,2,0,0,0,2,2,2,4,0,0.277298,0.057596
+"Velazquez, Jeremy J","Velazquez, Jeremy J",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.801852,0.748406
+"Verdin, Eric","Verdin, Eric",Researcher,2022,5,1,258,48,12.57,0.38,1,0,1,1,0,1,2,5,5,5,0,0,0,1,1,1,21,0,0.155446,0.610518
+"Veres, Tibor Z","Veres, Tibor Z",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.785903,0.246638
+"Vickovic, Sanja","Vickovic, Sanja",Researcher,2024,4,1,232,229,2.97,2.9,1,0,1,1,0,0,0,2,4,4,0,0,0,1,1,1,4,0,0.443698,0.618305
+"Victorelli, Stella G","Victorelli, Stella G",Researcher,2021,14,13,1029,1028,64.77,64.73,2,11,-0.69,1,2,3,6,11,14,14,2,3,6,11,13,13,74,0,0.378013,0.904216
+"Vierhout, Megan","Vierhout, Megan",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.686506,0.116457
+"Viggiani, Francesca","Viggiani, Francesca",Researcher,2025,2,2,2,2,0.25,0.25,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,3,4,0.930552,0.399983
+"Vijg, Jan","Vijg, Jan",Researcher,2022,4,3,121,76,6.69,5.28,1,2,-0.33,1,0,1,1,3,4,4,0,0,0,2,3,3,6,0,0.155385,0.694389
+"Vizioli, Maria Grazia","Vizioli, Maria Grazia",Researcher,2021,3,3,627,627,16.32,16.32,1,2,-0.33,1,1,1,2,3,3,3,1,1,2,3,3,3,38,0,0.455632,1
+"Vlachos, Ioannis S","Vlachos, Ioannis S",Researcher,2023,2,1,136,32,4.69,0.84,1,0,1,1,0,0,2,2,2,2,0,0,1,1,1,1,9,0,0.790213,0.50379
+"von Zglinicki, Thomas","von Zglinicki, Thomas",Researcher,2021,2,2,337,337,9.79,9.79,1,1,0,1,1,1,1,2,2,2,1,1,1,2,2,2,5,0,0.353846,0.81608
+"Vos, Stephanie J","Vos, Stephanie J",Researcher,2023,3,2,103,62,7.87,3.31,0,2,-1,1,0,0,2,3,3,3,0,0,1,2,2,2,11,0,0.519604,0.789626
+"Wachter, Brianna T","Wachter, Brianna T",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.647174,0.142864
+"Wade-Vallance, Adam K","Wade-Vallance, Adam K",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.733036,0.126798
+"Walker, Jamie M","Walker, Jamie M",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.946505,0.84148
+"Walker, Keenan A","Walker, Keenan A",Researcher,2024,2,,6,,0.35,,,,NA,0,0,0,0,1,2,2,,,,,,,15,0,0.057661,0.561532
+"Wallmann, Georg","Wallmann, Georg",Researcher,2023,2,2,176,176,19.23,19.23,0,2,-1,1,0,0,2,2,2,2,0,0,2,2,2,2,2,0,0.679955,0.816161
+"Walsh, Claire L","Walsh, Claire L",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.802437,0.661837
+"Walston, Jeremy D","Walston, Jeremy D",Researcher,2024,2,2,7,7,0.5,0.5,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,3,0,0.245337,0.094346
+"Wan, Changxin","Wan, Changxin",Researcher,2025,4,,1,,0.12,,,,NA,0,0,0,0,0,4,4,,,,,,,1,0,0.556155,0.696463
+"Wan, Zeqi","Wan, Zeqi",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,4,0,0.283478,0.033402
+"Wang, Allen","Wang, Allen",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.153791,0.868044
+"Wang, Binsheng","Wang, Binsheng",Researcher,2024,2,,36,,1.57,,,,NA,0,0,0,0,1,2,2,,,,,,,10,0,0.242722,0.609252
+"Wang, Cankun","Wang, Cankun",Researcher,2023,3,,153,,8.55,,,,NA,0,0,0,1,1,3,3,,,,,,,4,0,0.593362,0.503563
+"Wang, Dejiang","Wang, Dejiang",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.233292,0.149749
+"Wang, Fusheng","Wang, Fusheng",Researcher,2023,2,,7,,0.7,,,,NA,0,0,0,1,1,2,2,,,,,,,4,0,0.763737,0.602586
+"Wang, Guangchuan","Wang, Guangchuan",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.342799,0.179474
+"Wang, Jingtao","Wang, Jingtao",Researcher,2022,3,1,34,19,6.98,3.8,1,0,1,1,0,2,2,2,3,3,0,1,1,1,1,1,2,0,0.748068,0.677777
+"Wang, Juexin","Wang, Juexin",Researcher,2022,7,,200,,12.89,,,,NA,0,0,2,4,4,7,7,,,,,,,15,0,0.636871,0.562783
+"Wang, Julia Tianjiao","Wang, Julia Tianjiao",Researcher,2024,2,2,234,234,2.95,2.95,2,0,1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.308577,0.555929
+"Wang, Li","Wang, Li",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.223919,0.177445
+"Wang, Lichao","Wang, Lichao",Researcher,2024,3,1,265,229,4.47,2.9,1,0,1,1,0,0,0,2,3,3,0,0,0,1,1,1,12,0,0.240614,0.593779
+"Wang, Liguo","Wang, Liguo",Researcher,2023,2,2,11,11,1.83,1.83,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,4,0,0.379844,0.484299
+"Wang, Lijun","Wang, Lijun",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.235848,0.182213
+"Wang, Liuyang","Wang, Liuyang",Researcher,2022,2,1,11,0,1.57,0,0,1,-1,1,0,1,1,2,2,2,0,0,0,1,1,1,3,0,0.516522,0.687826
+"Wang, Qixin","Wang, Qixin",Researcher,2022,3,,22,,7,,,,NA,0,0,1,1,3,3,3,,,,,,,2,0,0.45874,0.413064
+"Wang, Shaohui","Wang, Shaohui",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.247693,0.153595
+"Wang, Siyuan","Wang, Siyuan",Principal Investigator,2023,9,3,34,11,5.57,0.69,1,2,-0.33,1,0,0,1,4,9,9,0,0,1,2,3,3,16,2,0.959618,0.50172
+"Wang, Xiaoying","Wang, Xiaoying",Researcher,2023,3,,126,,6.3,,,,NA,0,0,0,2,2,3,3,,,,,,,8,0,0.599522,0.514135
+"Wang, Yan","Wang, Yan",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.345593,0.195771
+"Watkins, Simon","Watkins, Simon",Researcher,2023,2,2,52,52,3.06,3.06,2,0,1,1,0,0,1,2,2,2,0,0,1,2,2,2,16,0,0.791936,0.769234
+"Watson, Mark A","Watson, Mark A",Researcher,2025,3,2,16,9,1.44,0.94,2,0,1,1,0,0,0,0,3,3,0,0,0,0,2,2,5,0,0.272876,0.478276
+"Weber, Griffin M","Weber, Griffin M",Researcher,2022,4,1,30,13,1.89,0.62,1,0,1,1,0,1,1,2,4,4,0,0,0,0,1,1,7,0,0.792844,0.594109
+"Wendl, Michael C","Wendl, Michael C",Researcher,2023,4,,213,,4.9,,,,NA,0,0,0,2,3,4,4,,,,,,,32,0,0.055112,0.322802
+"Werlein, Christopher","Werlein, Christopher",Researcher,2023,2,1,37,32,1.22,0.84,1,0,1,1,0,0,1,2,2,2,0,0,1,1,1,1,1,0,0.691013,0.100069
+"Wester, Brock","Wester, Brock",Researcher,2024,2,2,4,4,0.29,0.29,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,11,0,0.236418,0.053621
+"Whaley, Madison G","Whaley, Madison G",Researcher,2025,2,1,17,17,1.13,1.13,0,1,-1,1,0,0,0,0,2,2,0,0,0,0,1,1,3,0,0.429643,0.659744
+"White 3rd, Charles L","White 3rd, Charles L",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.932606,0.864462
+"Williams, April E","Williams, April E",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.148731,0.854106
+"Williams, Margaret","Williams, Margaret",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.740149,0.230369
+"Williams, Sarah M","Williams, Sarah M",Researcher,2023,2,,27,,2.7,,,,NA,0,0,0,2,2,2,2,,,,,,,1,10,0.938392,0.225848
+"Winer, Daniel A","Winer, Daniel A",Researcher,2022,4,2,363,98,52.02,8.13,2,0,1,1,0,1,2,2,4,4,0,1,1,1,2,2,4,0,0.328512,0.490762
+"Wirtz, Denis","Wirtz, Denis",Researcher,2022,18,18,152,152,8.98,8.98,1,17,-0.89,1,0,1,1,9,15,18,0,1,1,9,15,18,32,0,0.294766,0.05184
+"Wisniewski, Thomas","Wisniewski, Thomas",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.965212,0.867306
+"Woo, Seung-Hwa","Woo, Seung-Hwa",Researcher,2024,4,3,31,30,1.36,1.32,0,3,-1,1,0,0,0,1,4,4,0,0,0,1,3,3,37,0,0.308505,0.938739
+"Wood, Laura Delong","Wood, Laura Delong",Principal Investigator,2022,5,5,116,116,6.24,6.24,0,5,-1,1,0,1,1,5,5,5,0,1,1,5,5,5,13,0,0.288138,0.077942
+"Wu, Fei","Wu, Fei",Researcher,2023,3,2,96,91,2.61,2.05,2,0,1,1,0,0,1,1,3,3,0,0,1,1,2,2,2,0,0.339996,0.491625
+"Wu, Pei-Hsun","Wu, Pei-Hsun",Principal Investigator,2022,17,17,164,164,9.53,9.53,2,15,-0.76,1,0,1,1,9,14,17,0,1,1,9,14,17,33,0,0.260974,0.107026
+"Wu, Yinghan","Wu, Yinghan",Researcher,2025,2,2,0,0,0,0,1,1,0,1,0,0,0,0,2,2,0,0,0,0,2,2,5,4,0.943326,0.426913
+"Wunderink, Richard G","Wunderink, Richard G",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.474079,0.381513
+"Wyczalkowski, Matthew A","Wyczalkowski, Matthew A",Researcher,2023,2,,138,,3.17,,,,NA,0,0,0,2,2,2,2,,,,,,,10,0,0.064912,0.390561
+"Wyles, Saranya P","Wyles, Saranya P",Researcher,2023,6,3,58,27,5.02,1.86,1,2,-0.33,1,0,0,1,1,6,6,0,0,1,1,3,3,10,0,0.34564,0.706165
+"Xenes, Daniel","Xenes, Daniel",Researcher,2024,2,2,4,4,0.29,0.29,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,11,0,0.225709,0.035436
+"Xi, Jingyue","Xi, Jingyue",Researcher,2022,5,5,312,312,13.72,13.72,0,5,-1,1,0,2,4,4,5,5,0,2,4,4,5,5,14,0,0.700009,0.793337
+"Xiao, Yang","Xiao, Yang",Researcher,2022,3,2,600,337,28.84,15,0,2,-1,1,0,1,2,3,3,3,0,0,1,2,2,2,16,0,0.275327,0.268395
+"Xiao, Yao","Xiao, Yao",Researcher,2025,2,,2,,0.25,,,,NA,0,0,0,0,0,2,2,,,,,,,6,0,0.67138,0.959439
+"Xie, Jichun","Xie, Jichun",Researcher,2022,4,3,16,5,1.62,0.05,2,1,0.33,1,0,1,1,2,4,4,0,0,0,1,3,3,8,0,0.514411,0.667989
+"Xie, Juan","Xie, Juan",Researcher,2023,4,1,33,5,4.39,0.05,1,0,1,1,0,0,2,3,4,4,0,0,0,0,1,1,4,0,0.550136,0.517294
+"Xie, Zidian","Xie, Zidian",Researcher,2022,2,,65,,10.92,,,,NA,0,0,1,1,1,2,2,,,,,,,2,0,0.52792,0.501439
+"Xin, Gang","Xin, Gang",Researcher,2023,2,,132,,7.5,,,,NA,0,0,0,2,2,2,2,,,,,,,1,0,0.623787,0.603256
+"Xin, Li","Xin, Li",Researcher,2023,2,2,35,35,3.5,3.5,0,2,-1,1,0,0,1,2,2,2,0,0,1,2,2,2,9,1,0.947693,0.699703
+"Xin, Shan","Xin, Shan",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.372476,0.179075
+"Xing, Xianying","Xing, Xianying",Researcher,2022,2,2,283,283,10.36,10.36,0,2,-1,1,0,1,2,2,2,2,0,1,2,2,2,2,10,0,0.720706,0.777212
+"Xu, Chuan","Xu, Chuan",Researcher,2023,2,2,424,424,5.34,5.34,1,1,0,1,0,0,1,1,2,2,0,0,1,1,2,2,1,0,0.806852,0.205312
+"Xu, Chunhui","Xu, Chunhui",Researcher,2023,2,,20,,2,,,,NA,0,0,0,1,1,2,2,,,,,,,6,0,0.638016,0.528519
+"Xu, Dong","Xu, Dong",Researcher,2022,10,,214,,13.77,,,,NA,0,0,2,5,6,10,10,,,,,,,21,0,0.613791,0.54294
+"Xu, Hang","Xu, Hang",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.259435,0.165744
+"Xu, Mina Luqing","Xu, Mina Luqing",Principal Investigator,2022,6,3,563,54,31.01,2.7,0,3,-1,1,0,2,3,5,6,6,0,0,0,2,3,3,26,0,0.361362,0.282594
+"Xu, Ming","Xu, Ming",Principal Investigator,2023,6,3,480,443,57.27,55.2,2,1,0.33,1,0,0,1,4,6,6,0,0,1,2,3,3,40,0,0.274688,0.593258
+"Xu, Wandi","Xu, Wandi",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.199865,0.662875
+"Xu, Yanxin","Xu, Yanxin",Researcher,2024,6,3,264,261,5.38,4.78,2,1,0.33,1,0,0,0,2,5,6,0,0,0,2,3,3,6,0,0.600802,0.805669
+"Yadav, Archana","Yadav, Archana",Researcher,2022,3,,146,,7.24,,,,NA,0,0,1,2,2,3,3,,,,,,,4,0,0.355454,0.543757
+"Yagis, Ekin","Yagis, Ekin",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.793904,0.665859
+"Yan, Pengyi","Yan, Pengyi",Researcher,2024,2,,36,,1.57,,,,NA,0,0,0,0,1,2,2,,,,,,,10,0,0.232362,0.605319
+"Yang, Bing","Yang, Bing",Researcher,2023,2,1,13,4,1.19,0.44,0,1,-1,1,0,0,1,1,2,2,0,0,1,1,1,1,1,2,0.959312,0.474468
+"Yang, Junchen","Yang, Junchen",Researcher,2023,3,2,59,0,8.43,0,0,2,-1,1,0,0,1,1,3,3,0,0,0,0,2,2,3,0,0.148499,0.201479
+"Yang, Lu","Yang, Lu",Researcher,2023,3,,32,,5.88,,,,NA,0,0,0,1,2,3,3,,,,,,,1,5,0.988203,0.263667
+"Yang, Mingyu","Yang, Mingyu",Researcher,2024,3,3,0,0,0,0,0,3,-1,1,0,0,0,2,3,3,0,0,0,2,3,3,27,0,0.341451,0.211358
+"Yang, Muyu","Yang, Muyu",Researcher,2024,3,,55,,8.92,,,,NA,0,0,0,0,1,3,3,,,,,,,1,1,0.979852,0.646356
+"Yang, Qian","Yang, Qian",Researcher,2025,2,,0,,0,,,,NA,0,0,0,0,0,2,2,,,,,,,17,0,0.15972,0.880795
+"Yang, Tianqi","Yang, Tianqi",Researcher,2024,4,,19,,4.48,,,,NA,0,0,0,0,2,4,4,,,,,,,11,2,0.95654,0.562957
+"Yaniv, Ziv","Yaniv, Ziv",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.626689,0.158392
+"Ye, Jiayu","Ye, Jiayu",Researcher,2024,2,,171,,9.43,,,,NA,0,0,0,0,2,2,2,,,,,,,4,0,0.107205,0.44371
+"Yeo, Yao Yu","Yeo, Yao Yu",Researcher,2024,2,,14,,0.88,,,,NA,0,0,0,0,2,2,2,,,,,,,5,0,0.603568,0.595287
+"Yildirim, Ali Önder","Yildirim, Ali Önder",Researcher,2024,3,,37,,1.72,,,,NA,0,0,0,0,3,3,3,,,,,,,7,0,0.592851,0.63442
+"Yin, Shanshan","Yin, Shanshan",Researcher,2024,4,2,234,234,2.95,2.95,2,0,1,1,0,0,0,1,4,4,0,0,0,1,2,2,29,0,0.275217,0.624029
+"Yip, Kevin Y","Yip, Kevin Y",Researcher,2023,10,,51,,3.17,,,,NA,0,0,0,3,5,10,10,,,,,,,25,0,0.130777,0.866481
+"Yokoda, Raquel T","Yokoda, Raquel T",Researcher,2024,2,,31,,1.48,,,,NA,0,0,0,0,1,2,2,,,,,,,17,6,0.95992,0.836293
+"Youm, Yun-Hee","Youm, Yun-Hee",Researcher,2025,2,,29,,1.72,,,,NA,0,0,0,0,0,2,2,,,,,,,2,7,0.939478,0.292812
+"Yousefzadeh, Matthew J","Yousefzadeh, Matthew J",Researcher,2022,3,2,484,8,80.04,0.71,0,2,-1,1,0,1,2,2,3,3,0,0,1,1,2,2,1,0,0.363988,0.512551
+"Yu, Grace T","Yu, Grace T",Researcher,2025,2,,20,,2.55,,,,NA,0,0,0,0,0,2,2,,,,,,,5,0,0.335966,0.694781
+"Yu, Ruihuan","Yu, Ruihuan",Researcher,2025,2,,13,,1.15,,,,NA,0,0,0,0,0,2,2,,,,,,,4,2,0.927179,0.507146
+"Yu, Yang","Yu, Yang",Researcher,2022,3,,34,,1.79,,,,NA,0,0,1,1,1,3,3,,,,,,,8,0,0.629278,0.535378
+"Yu, Zhan","Yu, Zhan",Researcher,2024,2,,33,,1.03,,,,NA,0,0,0,0,1,2,2,,,,,,,14,0,0.500174,0.286277
+"Zacharioudakis, Emmanouil","Zacharioudakis, Emmanouil",Researcher,2023,2,2,452,452,11.59,11.59,1,1,0,1,0,0,1,2,2,2,0,0,1,2,2,2,38,0,0.525889,0.938131
+"Zangger, Nathan","Zangger, Nathan",Researcher,2025,2,,3,,0.05,,,,NA,0,0,0,0,0,1,2,,,,,,,60,0,0.783273,0.213449
+"Zare, Habil","Zare, Habil",Researcher,2023,3,,0,,0,,,,NA,0,0,0,1,1,3,3,,,,,,,3,6,0.943846,0.782598
+"Zhang, Anru R","Zhang, Anru R",Researcher,2023,2,1,90,90,2,2,1,0,1,1,0,0,1,1,2,2,0,0,1,1,1,1,1,0,0.49896,0.660851
+"Zhang, Bin","Zhang, Bin",Researcher,2023,3,,33,,6.07,,,,NA,0,0,0,1,2,3,3,,,,,,,1,6,0.927782,0.790016
+"Zhang, Borui","Zhang, Borui",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,14,0,0.191731,0.685952
+"Zhang, Di","Zhang, Di",Researcher,2022,5,4,558,295,27.88,14.04,0,4,-1,1,0,1,2,4,5,5,0,0,1,3,4,4,36,0,0.226764,0.238769
+"Zhang, Dingyao","Zhang, Dingyao",Researcher,2024,2,2,54,54,2.7,2.7,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,9,0,0.394234,0.27022
+"Zhang, Feifei","Zhang, Feifei",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.358514,0.199985
+"Zhang, Hui","Zhang, Hui",Researcher,2023,3,2,34,22,1.53,1.22,0,2,-1,1,0,0,1,2,3,3,0,0,0,1,2,2,1,0,0.297202,0.009476
+"Zhang, Ke","Zhang, Ke",Researcher,2024,6,6,62,62,4.61,4.61,2,4,-0.33,1,0,0,0,1,6,6,0,0,0,1,6,6,10,4,0.952614,0.403284
+"Zhang, Lei","Zhang, Lei",Researcher,2023,6,6,52,52,9.45,9.45,0,6,-1,1,0,0,2,4,6,6,0,0,2,4,6,6,3,0,0.252243,0.717816
+"Zhang, Lei Justan","Zhang, Lei Justan",Researcher,2022,6,3,973,0,171.14,0,0,3,-1,1,0,2,3,4,6,6,0,0,0,1,3,3,19,0,0.211395,0.717736
+"Zhang, Ruochi","Zhang, Ruochi",Researcher,2023,4,4,47,47,7.5,7.5,0,4,-1,1,0,0,2,4,4,4,0,0,2,4,4,4,9,1,0.959541,0.701498
+"Zhang, Wanqiu","Zhang, Wanqiu",Researcher,2024,2,2,0,0,0,0,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,26,0,0.370188,0.19315
+"Zhang, Xu","Zhang, Xu",Researcher,2022,9,8,843,820,45.46,42.58,3,5,-0.25,1,0,2,4,5,9,9,0,2,3,4,8,8,16,0,0.466171,0.701863
+"Zhang, Yingze","Zhang, Yingze",Researcher,2023,2,,33,,3.75,,,,NA,0,0,0,1,2,2,2,,,,,,,4,0,0.550524,0.660278
+"Zhang, Yuan","Zhang, Yuan",Researcher,2025,3,,13,,1.15,,,,NA,0,0,0,0,0,3,3,,,,,,,7,2,0.928404,0.519132
+"Zhang, Zhenghao","Zhang, Zhenghao",Researcher,2023,3,,7,,0.77,,,,NA,0,0,0,1,2,3,3,,,,,,,2,0,0.108492,0.851919
+"Zhao, Hongyu","Zhao, Hongyu",Researcher,2024,2,2,2,2,0.07,0.07,0,2,-1,1,0,0,0,1,2,2,0,0,0,1,2,2,24,0,0.210275,0.164612
+"Zhao, Yanyan","Zhao, Yanyan",Researcher,2023,2,,17,,0.52,,,,NA,0,0,0,1,1,2,2,,,,,,,10,0,0.039395,0.3619
+"Zhao, Yue","Zhao, Yue",Researcher,2024,3,1,6,5,0.25,0.05,1,0,1,1,0,0,0,2,3,3,0,0,0,0,1,1,2,0,0.28045,0.447755
+"Zhavoronkov, Alex","Zhavoronkov, Alex",Researcher,2024,2,1,106,48,2.04,0.38,1,0,1,1,0,0,0,2,2,2,0,0,0,1,1,1,11,0,0.118714,0.650384
+"Zhong, Mei","Zhong, Mei",Researcher,2024,4,4,2,2,0.07,0.07,0,4,-1,1,0,0,0,2,4,4,0,0,0,2,4,4,48,0,0.300345,0.176799
+"Zhou, Hao","Zhou, Hao",Researcher,2025,2,,2,,0.25,,,,NA,0,0,0,0,0,2,2,,,,,,,6,0,0.676213,0.968986
+"Zhou, Tianming","Zhou, Tianming",Researcher,2023,4,4,98,98,19.25,19.25,0,4,-1,1,0,0,2,3,4,4,0,0,2,3,4,4,11,1,0.934206,0.677899
+"Zhou, Yang","Zhou, Yang",Researcher,2024,2,,5,,0.38,,,,NA,0,0,0,0,2,2,2,,,,,,,9,0,0.801514,0.640762
+"Zhou, Yueying","Zhou, Yueying",Researcher,2024,2,,36,,1.57,,,,NA,0,0,0,0,1,2,2,,,,,,,10,0,0.229659,0.617316
+"Zhu, Junyu","Zhu, Junyu",Researcher,2024,2,,36,,1.57,,,,NA,0,0,0,0,1,2,2,,,,,,,10,0,0.239251,0.621119
+"Zhu, Quan","Zhu, Quan",Researcher,2023,3,3,324,324,4.95,4.95,3,0,1,1,0,0,1,2,3,3,0,0,1,2,3,3,41,0,0.392538,0.614511
+"Zhu, Yi","Zhu, Yi",Researcher,2022,3,1,537,47,82.5,2.24,0,1,-1,1,0,1,2,2,3,3,0,0,1,1,1,1,2,0,0.265176,0.610363
+"Zhu, Ying","Zhu, Ying",Researcher,2023,2,,27,,2.7,,,,NA,0,0,0,2,2,2,2,,,,,,,1,10,0.929917,0.227237
+"Zhu, Yizhou","Zhu, Yizhou",Researcher,2022,4,,52,,3.45,,,,NA,0,0,1,4,4,4,4,,,,,,,6,0,0.100576,0.685895
+"Zhuang, Haotian","Zhuang, Haotian",Researcher,2024,2,,0,,0,,,,NA,0,0,0,0,2,2,2,,,,,,,1,0,0.46348,0.651407

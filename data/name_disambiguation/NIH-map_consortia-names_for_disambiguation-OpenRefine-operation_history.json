@@ -1,0 +1,8084 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Veličković, Marija",
+          "Velickovic, Marija"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Veličković, Marija"
+      },
+      {
+        "from": [
+          "Remsik, Jan",
+          "Remšík, Ján"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Remšík, Ján"
+      },
+      {
+        "from": [
+          "Mills, Gordon B",
+          "Mills, Gordon B."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mills, Gordon B."
+      },
+      {
+        "from": [
+          "Chaligné, Ronan",
+          "Chaligne, Ronan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chaligné, Ronan"
+      },
+      {
+        "from": [
+          "Vigneau, Sébastien",
+          "Vigneau, Sebastien"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vigneau, Sébastien"
+      },
+      {
+        "from": [
+          "Sesma, Ana Fernandez",
+          "Fernandez Sesma, Ana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sesma, Ana Fernandez"
+      },
+      {
+        "from": [
+          "Passos, Joao",
+          "Passos, João"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Passos, João"
+      },
+      {
+        "from": [
+          "De Boer, Ian H",
+          "de Boer, Ian H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "de Boer, Ian H"
+      },
+      {
+        "from": [
+          "Hagood, James S.",
+          "Hagood, James S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hagood, James S."
+      },
+      {
+        "from": [
+          "Camara, Pablo G",
+          "Cámara, Pablo G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cámara, Pablo G"
+      },
+      {
+        "from": [
+          "Barrutia, Arrate Muñoz",
+          "Barrutia, Arrate Munoz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barrutia, Arrate Muñoz"
+      },
+      {
+        "from": [
+          "Nixon, Andrew B.",
+          "Nixon, Andrew B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nixon, Andrew B."
+      },
+      {
+        "from": [
+          "Jané-Valbuena, Judit",
+          "Jane-Valbuena, Judit"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jané-Valbuena, Judit"
+      },
+      {
+        "from": [
+          "Monroe, T Blake",
+          "Blake Monroe, T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monroe, T Blake"
+      },
+      {
+        "from": [
+          "Matos Romero, Valentina",
+          "Romero, Valentina Matos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Matos Romero, Valentina"
+      },
+      {
+        "from": [
+          "Acosta, Juan Carlos",
+          "Carlos Acosta, Juan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Acosta, Juan Carlos"
+      },
+      {
+        "from": [
+          "Alcoforado Diniz, Juliana",
+          "Diniz, Juliana Alcoforado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alcoforado Diniz, Juliana"
+      },
+      {
+        "from": [
+          "Bosse, Marc",
+          "Bossé, Marc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bossé, Marc"
+      },
+      {
+        "from": [
+          "Mashl, R Jay",
+          "Mashl, Jay R"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mashl, R Jay"
+      },
+      {
+        "from": [
+          "Alvarez Jerez, Pilar",
+          "Jerez, Pilar Alvarez"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alvarez Jerez, Pilar"
+      },
+      {
+        "from": [
+          "Targino da Costa, André Luiz N",
+          "Targino da Costa, Andre Luiz N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Targino da Costa, André Luiz N"
+      },
+      {
+        "from": [
+          "Chuva de Sousa Lopes, Susana M",
+          "de Sousa Lopes, Susana M Chuva"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chuva de Sousa Lopes, Susana M"
+      },
+      {
+        "from": [
+          "Veličković, Dušan",
+          "Velickovic, Dusan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Veličković, Dušan"
+      },
+      {
+        "from": [
+          "Atkinson, Mark A",
+          "Atkinson, Mark A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Atkinson, Mark A."
+      },
+      {
+        "from": [
+          "Pachynski, Russell K.",
+          "Pachynski, Russell K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pachynski, Russell K."
+      },
+      {
+        "from": [
+          "Stockwell, Brent R",
+          "Stockwell, Brent R."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stockwell, Brent R."
+      },
+      {
+        "from": [
+          "Gray, Joe W",
+          "Gray, Joe W."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gray, Joe W."
+      },
+      {
+        "from": [
+          "Charles Richard, John Lalith",
+          "Richard, John Lalith Charles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Charles Richard, John Lalith"
+      },
+      {
+        "from": [
+          "Melo-Narvaéz, Maria Camila",
+          "Melo-Narváez, Maria Camila"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Melo-Narvaéz, Maria Camila"
+      },
+      {
+        "from": [
+          "Snyder, Michael P",
+          "Snyder, Michael P."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snyder, Michael P."
+      },
+      {
+        "from": [
+          "Adams, Peter D",
+          "Adams, Peter D."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Adams, Peter D."
+      },
+      {
+        "from": [
+          "Paša-Tolić, Ljiljana",
+          "Pasa-Tolic, Ljiljana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Paša-Tolić, Ljiljana"
+      },
+      {
+        "from": [
+          "Johnson, Bruce E.",
+          "Johnson, Bruce E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Johnson, Bruce E."
+      },
+      {
+        "from": [
+          "Bastian, Boris C",
+          "Bastian, Boris C."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bastian, Boris C."
+      },
+      {
+        "from": [
+          "Ford, James M",
+          "Ford, James M."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ford, James M."
+      },
+      {
+        "from": [
+          "LeBrasseur, Nathan K",
+          "Lebrasseur, Nathan K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LeBrasseur, Nathan K"
+      },
+      {
+        "from": [
+          "Aktipis, Athena C",
+          "Aktipis, C Athena"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aktipis, Athena C"
+      },
+      {
+        "from": [
+          "Xie, Yubin",
+          "Yubin, Xie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Xie, Yubin"
+      },
+      {
+        "from": [
+          "Passos, João F",
+          "Passos, Joao F"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Passos, João F"
+      },
+      {
+        "from": [
+          "DeNardo, David G",
+          "Denardo, David G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DeNardo, David G"
+      },
+      {
+        "from": [
+          "Van Ardenne, Jacqueline M",
+          "van Ardenne, Jacqueline M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Van Ardenne, Jacqueline M"
+      },
+      {
+        "from": [
+          "Aster, Jon C",
+          "Aster, Jon C."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aster, Jon C."
+      },
+      {
+        "from": [
+          "Rovira-Clavé, Xavier",
+          "Rovira-Clave, Xavier"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rovira-Clavé, Xavier"
+      },
+      {
+        "from": [
+          "van Zalm, Patrick",
+          "Van Zalm, Patrick"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "van Zalm, Patrick"
+      },
+      {
+        "from": [
+          "IMPACC Network",
+          "IMPACC Network‡"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMPACC Network"
+      },
+      {
+        "from": [
+          "De Cabo, Rafael",
+          "de Cabo, Rafael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De Cabo, Rafael"
+      },
+      {
+        "from": [
+          "Arroyo-Mejias, Armando J",
+          "Arroyo-Mejías, Armando J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arroyo-Mejias, Armando J"
+      },
+      {
+        "from": [
+          "Fillmore, Thomas L",
+          "Thomas, Fillmore L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thomas, Fillmore L"
+      },
+      {
+        "from": [
+          "DelloStritto, Laura",
+          "Dellostritto, Laura"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DelloStritto, Laura"
+      },
+      {
+        "from": [
+          "Thorsson, Vesteinn",
+          "Thorsson, Vésteinn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thorsson, Vésteinn"
+      },
+      {
+        "from": [
+          "Di Pietro, Massimiliano",
+          "di Pietro, Massimiliano"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Di Pietro, Massimiliano"
+      },
+      {
+        "from": [
+          "Börner, Katy",
+          "Borner, Katy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Börner, Katy"
+      },
+      {
+        "from": [
+          "Martini, Helene",
+          "Martini, Hélène"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Martini, Hélène"
+      },
+      {
+        "from": [
+          "De Raedt, Thomas",
+          "Raedt, Thomas De"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De Raedt, Thomas"
+      },
+      {
+        "from": [
+          "Shrubsole, Martha J",
+          "Shrubsole, Martha J."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shrubsole, Martha J."
+      },
+      {
+        "from": [
+          "Mohseni Ahooyi, Taha",
+          "Ahooyi, Taha Mohseni"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mohseni Ahooyi, Taha"
+      },
+      {
+        "from": [
+          "Karlstrom, Asa",
+          "Karlström, Åsa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Karlström, Åsa"
+      },
+      {
+        "from": [
+          "Guenther, Andreas",
+          "Güenther, Andreas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Güenther, Andreas"
+      },
+      {
+        "from": [
+          "Silverstein, Jonathan C.",
+          "Silverstein, Jonathan C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Silverstein, Jonathan C."
+      },
+      {
+        "from": [
+          "El Ouaamari, Abdelfattah",
+          "Ouaamari, Abdelfattah El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Ouaamari, Abdelfattah"
+      },
+      {
+        "from": [
+          "Sales Gomez, Lilian",
+          "Gomez, Lilian Sales"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sales Gomez, Lilian"
+      },
+      {
+        "from": [
+          "Candia, Julian",
+          "Candia, Julián"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Candia, Julián"
+      },
+      {
+        "from": [
+          "Solis Soto, Luisa Maren",
+          "Soto, Luisa Maren Solis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Solis Soto, Luisa Maren"
+      },
+      {
+        "from": [
+          "Marks, Jeffrey R",
+          "Marks, Jeffrey R."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marks, Jeffrey R."
+      },
+      {
+        "from": [
+          "Segerstolpe, Åsa",
+          "Segerstolpe, Asa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Segerstolpe, Åsa"
+      },
+      {
+        "from": [
+          "Dias Costa, Andressa",
+          "Costa, Andressa Dias"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dias Costa, Andressa"
+      },
+      {
+        "from": [
+          "Ferreira, Ricardo Melo",
+          "Melo Ferreira, Ricardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ferreira, Ricardo Melo"
+      },
+      {
+        "from": [
+          "Doni Jayavelu, Naresh",
+          "Jayavelu, Naresh Doni"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Doni Jayavelu, Naresh"
+      },
+      {
+        "from": [
+          "Robbins, Paul D",
+          "Robbins, Paul D."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Robbins, Paul D."
+      },
+      {
+        "from": [
+          "Dubinett, Steven M",
+          "Dubinett, Steven M."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dubinett, Steven M."
+      },
+      {
+        "from": [
+          "Quintanal-Villalonga, Álvaro",
+          "Quintanal-Villalonga, Alvaro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quintanal-Villalonga, Álvaro"
+      },
+      {
+        "from": [
+          "Blood, Philip D.",
+          "Blood, Philip D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blood, Philip D."
+      },
+      {
+        "from": [
+          "DeSchryver, Katherine",
+          "Deschryver, Katherine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DeSchryver, Katherine"
+      },
+      {
+        "from": [
+          "Hwang, E Shelley",
+          "Hwang, E. Shelley"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hwang, E. Shelley"
+      },
+      {
+        "from": [
+          "HuBMAP Consortium",
+          "HuBMAP consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HuBMAP Consortium"
+      },
+      {
+        "from": [
+          "Phan, Hoang Van",
+          "Van Phan, Hoang"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Phan, Hoang Van"
+      },
+      {
+        "from": [
+          "Harris, Raymond C.",
+          "Harris, Raymond C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harris, Raymond C."
+      },
+      {
+        "from": [
+          "Lemaitre, Jean-Francois",
+          "Lemaître, Jean-Francois"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lemaitre, Jean-Francois"
+      },
+      {
+        "from": [
+          "Coffey, Robert J",
+          "Coffey, Robert J."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coffey, Robert J."
+      },
+      {
+        "from": [
+          "Martins Rodrigues, Fernanda",
+          "Rodrigues, Fernanda Martins"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Martins Rodrigues, Fernanda"
+      },
+      {
+        "from": [
+          "Viode, Arthur",
+          "Viodé, Arthur"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Viode, Arthur"
+      },
+      {
+        "from": [
+          "Chang, Young Hwan",
+          "Hwan Chang, Young"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chang, Young Hwan"
+      },
+      {
+        "from": [
+          "Simmons, Alan J",
+          "Simmons, J Alan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Simmons, Alan J"
+      },
+      {
+        "from": [
+          "Kamyar, Keshavarz F",
+          "Keshavarz F, Kamyar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Keshavarz F, Kamyar"
+      },
+      {
+        "from": [
+          "Forjaz, André",
+          "Forjaz, Andre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forjaz, André"
+      },
+      {
+        "from": [
+          "Duncan, Francesca E.",
+          "Duncan, Francesca E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Duncan, Francesca E."
+      },
+      {
+        "from": [
+          "Zhou, Daniel Cui",
+          "Cui Zhou, Daniel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Zhou, Daniel Cui"
+      },
+      {
+        "from": [
+          "Machado Espindola-Netto, Jair",
+          "Espindola-Netto, Jair Machado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Machado Espindola-Netto, Jair"
+      },
+      {
+        "from": [
+          "Ye, Dong Hye",
+          "Hye Ye, Dong"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ye, Dong Hye"
+      },
+      {
+        "from": [
+          "Higuita, Nelson I Agudelo",
+          "Agudelo Higuita, Nelson I"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Higuita, Nelson I Agudelo"
+      },
+      {
+        "from": [
+          "Hao, Yuhan",
+          "Yuhan Hao"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hao, Yuhan"
+      },
+      {
+        "from": [
+          "Vanegas-Avendano, Natalia",
+          "Vanegas-Avendaño, Natalia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanegas-Avendaño, Natalia"
+      },
+      {
+        "from": [
+          "Steven Wiley, H",
+          "Wiley, H Steven"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wiley, H Steven"
+      },
+      {
+        "from": [
+          "Gillanders, William E.",
+          "Gillanders, William E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gillanders, William E."
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mudd, Jacqueline",
+          "Mudd, Jacqueline L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mudd, Jacqueline L"
+      },
+      {
+        "from": [
+          "Schupp, Jonas",
+          "Schupp, Jonas C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schupp, Jonas C"
+      },
+      {
+        "from": [
+          "Mohamed, Abdallah S R",
+          "Mohamed, Abdallah Sr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mohamed, Abdallah Sr"
+      },
+      {
+        "from": [
+          "Hafler, David A",
+          "Hafler, David"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hafler, David A"
+      },
+      {
+        "from": [
+          "Matos Romero, Valentina",
+          "Matos-Romero, Valentina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Matos Romero, Valentina"
+      },
+      {
+        "from": [
+          "Mc Cartney, Ann M",
+          "McCartney, Ann M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "McCartney, Ann M"
+      },
+      {
+        "from": [
+          "Kang, Hyun Min",
+          "Kang, Hyun-Min"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kang, Hyun Min"
+      },
+      {
+        "from": [
+          "Ramirez-Solano, Marisol A",
+          "Ramirez Solano, Marisol A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ramirez-Solano, Marisol A"
+      },
+      {
+        "from": [
+          "O'Neill, Kathleen E",
+          "O'Neill, Kathleen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Neill, Kathleen E"
+      },
+      {
+        "from": [
+          "Shipkovenska, Gergana",
+          "Shipkovenska, Gergana G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shipkovenska, Gergana G"
+      },
+      {
+        "from": [
+          "Stear, Benjamin",
+          "Stear, Benjamin J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stear, Benjamin J"
+      },
+      {
+        "from": [
+          "Villacorta Martin, Carlos",
+          "Villacorta-Martin, Carlos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Villacorta-Martin, Carlos"
+      },
+      {
+        "from": [
+          "Chan, Cliburn C",
+          "Chan, Cliburn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chan, Cliburn C"
+      },
+      {
+        "from": [
+          "da Silva, Lais",
+          "daSilva, Lais"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "da Silva, Lais"
+      },
+      {
+        "from": [
+          "Oliveria, John Paul",
+          "Oliveria, John-Paul"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oliveria, John-Paul"
+      },
+      {
+        "from": [
+          "Corless, Christopher L",
+          "Corless, Christopher"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Corless, Christopher L"
+      },
+      {
+        "from": [
+          "Juntilla, Marisa M",
+          "Juntilla, Marisa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Juntilla, Marisa M"
+      },
+      {
+        "from": [
+          "Budinger, G R Scott",
+          "Budinger, Gr Scott"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Budinger, G R Scott"
+      },
+      {
+        "from": [
+          "Ehrlich, Lauren I R",
+          "Ehrlich, Lauren Ir"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ehrlich, Lauren I R"
+      },
+      {
+        "from": [
+          "Kwon, Yumi",
+          "Kwon, Yu Mi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kwon, Yumi"
+      },
+      {
+        "from": [
+          "Longabaugh, William J R",
+          "Longabaugh, William Jr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Longabaugh, William J R"
+      },
+      {
+        "from": [
+          "Santi, Mariarita",
+          "Santi, Maria Rita"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santi, Mariarita"
+      },
+      {
+        "from": [
+          "Loth, Melanie",
+          "Loth, Melanie L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Loth, Melanie L"
+      },
+      {
+        "from": [
+          "Jen, Kuang-Yu",
+          "Jen, Kuang Yu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jen, Kuang-Yu"
+      },
+      {
+        "from": [
+          "Staab-Weijnitz, Claudia A",
+          "Staab-Weijnitz, Claudia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Staab-Weijnitz, Claudia A"
+      },
+      {
+        "from": [
+          "Schaenman, Joanna",
+          "Schaenmann, Joanna"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schaenman, Joanna"
+      },
+      {
+        "from": [
+          "de Caestecker, Mark P",
+          "deCaestecker, Mark P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "de Caestecker, Mark P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Esserman, Denise",
+          "Esserman, Denise A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Esserman, Denise"
+      },
+      {
+        "from": [
+          "Cole, Kristina Ann",
+          "Cole, Kristina A",
+          "Cole, Kristina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cole, Kristina Ann"
+      },
+      {
+        "from": [
+          "Bosinger, Steven E",
+          "Bosinger, Steve",
+          "Bosinger, Steven"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bosinger, Steven E"
+      },
+      {
+        "from": [
+          "Mazzilli, Sarah A",
+          "Mazzili, Sarah A",
+          "Mazzilli, Sarah"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mazzilli, Sarah A"
+      },
+      {
+        "from": [
+          "Smillie, Christopher",
+          "Smillie, Christopher S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smillie, Christopher S"
+      },
+      {
+        "from": [
+          "Harris, Coleman R",
+          "Harris, Coleman"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harris, Coleman R"
+      },
+      {
+        "from": [
+          "Srivatsan, Sanjay R",
+          "Srivatsan, Sanjay"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Srivatsan, Sanjay R"
+      },
+      {
+        "from": [
+          "Tideman, Leonoor E M",
+          "Tideman, Léonore",
+          "Tideman, Léonore E M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tideman, Léonore E M"
+      },
+      {
+        "from": [
+          "Doolittle, Madison L",
+          "Doolittle, Madison"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Doolittle, Madison L"
+      },
+      {
+        "from": [
+          "D'Agati, Vivette",
+          "D'Agati, Vivette D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "D'Agati, Vivette D"
+      },
+      {
+        "from": [
+          "Engelhardt, Barbara E",
+          "Engelhardt, Barbara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Engelhardt, Barbara E"
+      },
+      {
+        "from": [
+          "Pfaff, Kathleen L",
+          "Pfaff, Kathleen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pfaff, Kathleen L"
+      },
+      {
+        "from": [
+          "Macip, Carolina Cano",
+          "Macip, Carolina C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Macip, Carolina Cano"
+      },
+      {
+        "from": [
+          "Billatos, Ehab",
+          "Billatos, Ehab S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Billatos, Ehab S"
+      },
+      {
+        "from": [
+          "Gaut, Joseph P",
+          "Gaut, Joseph"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaut, Joseph P"
+      },
+      {
+        "from": [
+          "Monyak, Daniel",
+          "Monyak, Daniel L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monyak, Daniel L"
+      },
+      {
+        "from": [
+          "Niedernhofer, Laura J",
+          "Niedernhofer, Laura Jane"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Niedernhofer, Laura J"
+      },
+      {
+        "from": [
+          "Boddy, Amy M",
+          "Boddy, Amy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boddy, Amy M"
+      },
+      {
+        "from": [
+          "Maley, Carlo C",
+          "Maley, Carlo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Maley, Carlo C"
+      },
+      {
+        "from": [
+          "Attiyeh, Marc",
+          "Attiyeh, Marc A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Attiyeh, Marc A"
+      },
+      {
+        "from": [
+          "Wendl, Michael C",
+          "Wendl, Michael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wendl, Michael C"
+      },
+      {
+        "from": [
+          "Kirkland, James L",
+          "Kirkland, James"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kirkland, James L"
+      },
+      {
+        "from": [
+          "Nafikova, Radmila",
+          "Nafikova, Radmila A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nafikova, Radmila A"
+      },
+      {
+        "from": [
+          "Agudelo Garcia, Paula",
+          "Agudelo Garcia, Paula A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Agudelo Garcia, Paula A"
+      },
+      {
+        "from": [
+          "Cook, Daniel E",
+          "Cook, Daniel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cook, Daniel E"
+      },
+      {
+        "from": [
+          "Cramer, Eric",
+          "Cramer, Eric M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cramer, Eric M"
+      },
+      {
+        "from": [
+          "Betts, Courtney B",
+          "Betts, Courtney"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Betts, Courtney B"
+      },
+      {
+        "from": [
+          "Resnick, Adam C",
+          "Resnick, Adam"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Resnick, Adam C"
+      },
+      {
+        "from": [
+          "Hudgins, Adam",
+          "Hudgins, Adam D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hudgins, Adam D"
+      },
+      {
+        "from": [
+          "Barlow, Graham L",
+          "Barlow, Graham"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barlow, Graham L"
+      },
+      {
+        "from": [
+          "Gatenby, Robert",
+          "Gatenby, Robert A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gatenby, Robert A"
+      },
+      {
+        "from": [
+          "Rowe, David W.",
+          "Rowe, David"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rowe, David W."
+      },
+      {
+        "from": [
+          "Van Eyk, Jennifer",
+          "Van Eyk, Jennifer E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Van Eyk, Jennifer E"
+      },
+      {
+        "from": [
+          "Johnson, Brett E",
+          "Johnson, Brett"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Johnson, Brett E"
+      },
+      {
+        "from": [
+          "Sims, Austin",
+          "Sims, Austin A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sims, Austin A"
+      },
+      {
+        "from": [
+          "Schrag, Matthew",
+          "Schrag, Matthew S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schrag, Matthew S"
+      },
+      {
+        "from": [
+          "Jacks, Tyler",
+          "Jacks, Tyler E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jacks, Tyler E"
+      },
+      {
+        "from": [
+          "Peltekian, Alec",
+          "Peltekian, Alec K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Peltekian, Alec K"
+      },
+      {
+        "from": [
+          "Lowe, Cindy",
+          "Lowe, Cindy L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lowe, Cindy L"
+      },
+      {
+        "from": [
+          "Rahman, Adeeb",
+          "Rahman, Adeeb H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rahman, Adeeb H"
+      },
+      {
+        "from": [
+          "Kriegstein, Arnold",
+          "Kreigstein, Arnold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kriegstein, Arnold"
+      },
+      {
+        "from": [
+          "Ademuyiwa, Foluso",
+          "Ademuyiwa, Foluso O"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ademuyiwa, Foluso O"
+      },
+      {
+        "from": [
+          "Southard-Smith, Austin N",
+          "Southard-Smith, Austin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Southard-Smith, Austin N"
+      },
+      {
+        "from": [
+          "McComsey, Grace A",
+          "McComsey, Grace"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "McComsey, Grace A"
+      },
+      {
+        "from": [
+          "Schaenman, Joanna",
+          "Schaenmann, Joanna M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schaenman, Joanna"
+      },
+      {
+        "from": [
+          "Michel, John",
+          "Michel, John H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Michel, John H"
+      },
+      {
+        "from": [
+          "Marshall, Cody R",
+          "Marshall, Cody"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marshall, Cody R"
+      },
+      {
+        "from": [
+          "Creason, Allison L",
+          "Creason, Allison"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Creason, Allison L"
+      },
+      {
+        "from": [
+          "Elisseeff, Jennifer H",
+          "Elisseeff, Jeniffer H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Elisseeff, Jennifer H"
+      },
+      {
+        "from": [
+          "Rosenthal, Nadia A",
+          "Rosenthal, Nadia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rosenthal, Nadia A"
+      },
+      {
+        "from": [
+          "Iacobuzio-Donahue, Christine A",
+          "Iacobuzio-Donahue, Christine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Iacobuzio-Donahue, Christine A"
+      },
+      {
+        "from": [
+          "Martinez, Olivia",
+          "Martinez, Olivia M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Martinez, Olivia M"
+      },
+      {
+        "from": [
+          "Ashiqueali, Sarah",
+          "Ashiqueali, Sarah A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ashiqueali, Sarah A"
+      },
+      {
+        "from": [
+          "Kulkarni, Hrishikesh S",
+          "Kulkarni, Hrishikesh"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kulkarni, Hrishikesh S"
+      },
+      {
+        "from": [
+          "Luckett, Kathleen",
+          "Luckett, Kathleen A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luckett, Kathleen A"
+      },
+      {
+        "from": [
+          "Rosas, Ivan",
+          "Rosas, Ivan O"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rosas, Ivan O"
+      },
+      {
+        "from": [
+          "Morrisey, Edward",
+          "Morrisey, Edward E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Morrisey, Edward E"
+      },
+      {
+        "from": [
+          "Gundersheimer, Aaron",
+          "Gundersheimer, Aaron N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gundersheimer, Aaron N"
+      },
+      {
+        "from": [
+          "Gomez-Bolanos, Lorena I",
+          "Gomez-Bolanos, Lorena Isabel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gomez-Bolanos, Lorena Isabel"
+      },
+      {
+        "from": [
+          "Jenkins, Meagan",
+          "Jenkins, Meagan M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jenkins, Meagan M"
+      },
+      {
+        "from": [
+          "Barry, Aurelie",
+          "Barry, Aurelie E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barry, Aurelie E"
+      },
+      {
+        "from": [
+          "Sivagnanam, Shamilene",
+          "Sivagnanam, Shamaline"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sivagnanam, Shamilene"
+      },
+      {
+        "from": [
+          "Hunger, Stephen P",
+          "Hunger, Stephen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hunger, Stephen P"
+      },
+      {
+        "from": [
+          "Sussman, Jonathan H",
+          "Sussman, Jonathan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sussman, Jonathan H"
+      },
+      {
+        "from": [
+          "Tomaszewski, John E",
+          "Tomaszewski, John"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tomaszewski, John E"
+      },
+      {
+        "from": [
+          "Lanciault, Christian",
+          "Lanicault, Christian"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lanciault, Christian"
+      },
+      {
+        "from": [
+          "Kim-Schulze, Seunghee",
+          "Kim-Schulze, Seunghee Hee"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kim-Schulze, Seunghee"
+      },
+      {
+        "from": [
+          "Aliferis, Constantin F.",
+          "Aliferis, Constantin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aliferis, Constantin F."
+      },
+      {
+        "from": [
+          "Mullighan, Charles G",
+          "Mullighan, Charles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mullighan, Charles G"
+      },
+      {
+        "from": [
+          "Fernandez-Sesma, Ana",
+          "Sesma, Ana Fernandez"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fernandez-Sesma, Ana"
+      },
+      {
+        "from": [
+          "Hagood, James S.",
+          "Hagood, James"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hagood, James S."
+      },
+      {
+        "from": [
+          "Königshoff, Melanie",
+          "Koenigshoff, Melanie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Königshoff, Melanie"
+      },
+      {
+        "from": [
+          "Yip, Kevin Y",
+          "Yip, Kevin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yip, Kevin Y"
+      },
+      {
+        "from": [
+          "Veres, Tibor Z",
+          "Verse, Tibor Z"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Veres, Tibor Z"
+      },
+      {
+        "from": [
+          "Tickle, Timothy L",
+          "Tickle, Timothy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tickle, Timothy L"
+      },
+      {
+        "from": [
+          "Verheyden, Jamie",
+          "Verheyden, Jamie M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Verheyden, Jamie M"
+      },
+      {
+        "from": [
+          "Hall, Allison",
+          "Hall, Allison H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hall, Allison H"
+      },
+      {
+        "from": [
+          "McCaffrey, Erin F",
+          "McCaffrey, Erin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "McCaffrey, Erin F"
+      },
+      {
+        "from": [
+          "Atkinson, Mark A.",
+          "Atkinson, Mark"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Atkinson, Mark A."
+      },
+      {
+        "from": [
+          "Eckalbar, Walter",
+          "Eckalbar, Walter L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eckalbar, Walter L"
+      },
+      {
+        "from": [
+          "Velazquez, Jeremy J",
+          "Velazquez, Jeremy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Velazquez, Jeremy J"
+      },
+      {
+        "from": [
+          "Robinson, Peter",
+          "Robinson, Peter N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Robinson, Peter N"
+      },
+      {
+        "from": [
+          "Cornish, Toby C",
+          "Cornish, Toby"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cornish, Toby C"
+      },
+      {
+        "from": [
+          "Raetz, Elizabeth",
+          "Raetz, Elizabeth A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Raetz, Elizabeth A"
+      },
+      {
+        "from": [
+          "LaPorta, Michael A",
+          "LaPorte, Michael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LaPorta, Michael A"
+      },
+      {
+        "from": [
+          "Rojas, Mauricio",
+          "Rojas, Mauricio M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rojas, Mauricio M"
+      },
+      {
+        "from": [
+          "Bueno, Cecilia",
+          "Bueno, Cecilia E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bueno, Cecilia E"
+      },
+      {
+        "from": [
+          "Allen, Jamie L",
+          "Allen, Jamie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Allen, Jamie L"
+      },
+      {
+        "from": [
+          "McCartney, Ann M",
+          "McCartney, Ann"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "McCartney, Ann M"
+      },
+      {
+        "from": [
+          "Montgomery, Ruth R",
+          "Montgomery, Ruth"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Montgomery, Ruth R"
+      },
+      {
+        "from": [
+          "Mitri, Zahi",
+          "Mitri, Zahi I"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mitri, Zahi I"
+      },
+      {
+        "from": [
+          "Johnston, Matthew",
+          "Johnston, Matthew J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Johnston, Matthew J"
+      },
+      {
+        "from": [
+          "Leduc, Andrew",
+          "Leduc, Andrew D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Leduc, Andrew D"
+      },
+      {
+        "from": [
+          "Nadkarni, Girish",
+          "Nadkarni, Girish N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nadkarni, Girish N"
+      },
+      {
+        "from": [
+          "Selaru, Florin",
+          "Selaru, Florin A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selaru, Florin A"
+      },
+      {
+        "from": [
+          "Wyczalkowski, Matthew A",
+          "Wyczalkowski, Matthew"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wyczalkowski, Matthew A"
+      },
+      {
+        "from": [
+          "Lloyd-Jones, Cameron",
+          "Lloyd-Jones, Cameron M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lloyd-Jones, Cameron M"
+      },
+      {
+        "from": [
+          "Pruett-Miller, Shondra",
+          "Pruett-Miller, Shondra M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pruett-Miller, Shondra M"
+      },
+      {
+        "from": [
+          "Kautz, Tiffany F",
+          "Kautz, Tiffany"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kautz, Tiffany F"
+      },
+      {
+        "from": [
+          "Nasif, Lith",
+          "Nasif, Lith H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nasif, Lith H"
+      },
+      {
+        "from": [
+          "Halushka, Marc",
+          "Halushka, Marc K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Halushka, Marc K"
+      },
+      {
+        "from": [
+          "Espinoza, Sara",
+          "Espinoza, Sara E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Espinoza, Sara E"
+      },
+      {
+        "from": [
+          "Tumulty, Joseph",
+          "Tumulty, Joseph S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tumulty, Joseph S"
+      },
+      {
+        "from": [
+          "Smolen, Kinga K",
+          "Smolen, Kinga"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smolen, Kinga K"
+      },
+      {
+        "from": [
+          "Clapp, William L",
+          "Clapp, William"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clapp, William L"
+      },
+      {
+        "from": [
+          "Davies, Sherri R",
+          "Davies, Sherri"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Davies, Sherri R"
+      },
+      {
+        "from": [
+          "Davis, Mark M",
+          "Davis, Mark"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Davis, Mark M"
+      },
+      {
+        "from": [
+          "Mitchell, Jacob T",
+          "Mitchell, Jacob"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mitchell, Jacob T"
+      },
+      {
+        "from": [
+          "Knopf, Bailey A",
+          "Knopf, Bailey Anna"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Knopf, Bailey Anna"
+      },
+      {
+        "from": [
+          "Duncan, Francesca E.",
+          "Duncan, Francesca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Duncan, Francesca E."
+      },
+      {
+        "from": [
+          "Wu, David",
+          "Wu, David W"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wu, David W"
+      },
+      {
+        "from": [
+          "Yildirim, Ali Önder",
+          "Yildirim, Ali Öender"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yildirim, Ali Önder"
+      },
+      {
+        "from": [
+          "Vandekar, Simon",
+          "Vandekar, Simon N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vandekar, Simon N"
+      },
+      {
+        "from": [
+          "Eng, Jennifer",
+          "Eng, Jennifer R"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eng, Jennifer R"
+      },
+      {
+        "from": [
+          "Haist, Maximilian",
+          "Haist, Maximillian"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Haist, Maximilian"
+      },
+      {
+        "from": [
+          "Cambuli, Francesco",
+          "Cambulli, Francesco"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cambuli, Francesco"
+      },
+      {
+        "from": [
+          "Pimenta, Erica",
+          "Pimenta, Erica M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pimenta, Erica M"
+      },
+      {
+        "from": [
+          "Mullen, Katelyn",
+          "Mullen, Katelyn M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mullen, Katelyn M"
+      },
+      {
+        "from": [
+          "Peters, Samuel",
+          "Peters, Samuel T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Peters, Samuel T"
+      },
+      {
+        "from": [
+          "Brusko, Maigan",
+          "Brusko, Maigan A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brusko, Maigan A"
+      },
+      {
+        "from": [
+          "Aramandla, Radhika",
+          "Armandala, Radhika"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aramandla, Radhika"
+      },
+      {
+        "from": [
+          "Keck, Jamie",
+          "Keck, Jamie M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Keck, Jamie M"
+      },
+      {
+        "from": [
+          "Longacre, Teri",
+          "Longacre, Teri A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Longacre, Teri A"
+      },
+      {
+        "from": [
+          "Hilton, Jason",
+          "Hilton, Jason A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hilton, Jason A"
+      },
+      {
+        "from": [
+          "Muhlich, Jeremy L",
+          "Muhlich, Jeremy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Muhlich, Jeremy L"
+      },
+      {
+        "from": [
+          "Jourdan Le Saux, Claude",
+          "Le Saux, Claude Jordan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Le Saux, Claude Jordan"
+      },
+      {
+        "from": [
+          "Porritt, Rebecca A",
+          "Porritt, Rebecca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Porritt, Rebecca A"
+      },
+      {
+        "from": [
+          "Nemarich, Christopher M",
+          "Nemarich, Christopher"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nemarich, Christopher M"
+      },
+      {
+        "from": [
+          "Hsieh, James J",
+          "Hsieh, James"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hsieh, James J"
+      },
+      {
+        "from": [
+          "Chuang, Jeffrey H",
+          "Chuang, Jeffrey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chuang, Jeffrey H"
+      },
+      {
+        "from": [
+          "Brody, Jonathan",
+          "Brody, Jonathan R"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brody, Jonathan R"
+      },
+      {
+        "from": [
+          "Xu, Jessica",
+          "Xu, Jessica A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Xu, Jessica A"
+      },
+      {
+        "from": [
+          "Rivero-Gutiérrez, Belén",
+          "Gutierrez, Belén Rivero"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rivero-Gutiérrez, Belén"
+      },
+      {
+        "from": [
+          "Phillippy, Adam M",
+          "Phillippy, Adam"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Phillippy, Adam M"
+      },
+      {
+        "from": [
+          "Hinchcliff, Monique",
+          "Hinchcliff, Monique E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hinchcliff, Monique E"
+      },
+      {
+        "from": [
+          "Burlingame, Erik A",
+          "Burlingame, Erik"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Burlingame, Erik A"
+      },
+      {
+        "from": [
+          "Jurczak, Michael J",
+          "Jurczak, Michael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jurczak, Michael J"
+      },
+      {
+        "from": [
+          "Raghavan, Manisha",
+          "Raghavan, Manisha S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Raghavan, Manisha S"
+      },
+      {
+        "from": [
+          "Cherniack, Andrew D",
+          "Cherniack, Andrew"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cherniack, Andrew D"
+      },
+      {
+        "from": [
+          "Compton, Zachary T",
+          "Compton, Zachary"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Compton, Zachary T"
+      },
+      {
+        "from": [
+          "Murray, Evan",
+          "Murray, Evan M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Murray, Evan M"
+      },
+      {
+        "from": [
+          "Chang, Xian",
+          "Chang, Xian H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chang, Xian H"
+      },
+      {
+        "from": [
+          "Benz, Christopher",
+          "Benz, Christopher C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Benz, Christopher C"
+      },
+      {
+        "from": [
+          "Cotter, Daniel",
+          "Cotter, Daniel L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cotter, Daniel L"
+      },
+      {
+        "from": [
+          "Nalls, Mike",
+          "Nalls, Mike A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nalls, Mike A"
+      },
+      {
+        "from": [
+          "Sekaly, Rafick P",
+          "Sekaly, Rafick-Pierre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sekaly, Rafick-Pierre"
+      },
+      {
+        "from": [
+          "Pachynski, Russell K.",
+          "Pachynski, Russell"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pachynski, Russell K."
+      },
+      {
+        "from": [
+          "Wallace, Douglas C",
+          "Wallace, Douglas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wallace, Douglas C"
+      },
+      {
+        "from": [
+          "Teachey, David T",
+          "Teachey, David"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Teachey, David T"
+      },
+      {
+        "from": [
+          "Vasilevsky, Nicole",
+          "Vasilevsky, Nicole A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vasilevsky, Nicole A"
+      },
+      {
+        "from": [
+          "Adams, Peter D.",
+          "Adams, Peter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Adams, Peter D."
+      },
+      {
+        "from": [
+          "Loh, Mignon",
+          "Loh, Mignon L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Loh, Mignon L"
+      },
+      {
+        "from": [
+          "Clair, Geremy C",
+          "Clair, Geremy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clair, Geremy C"
+      },
+      {
+        "from": [
+          "Winer, Daniel A",
+          "Winer, Daniel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Winer, Daniel A"
+      },
+      {
+        "from": [
+          "Winter, Stuart S",
+          "Winter, Stuart"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Winter, Stuart S"
+      },
+      {
+        "from": [
+          "Ramos, Erika K",
+          "Ramos, Erika"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ramos, Erika K"
+      },
+      {
+        "from": [
+          "Petyuk, Vladislav",
+          "Petyuk, Vladislav A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Petyuk, Vladislav A"
+      },
+      {
+        "from": [
+          "Koptyra, Mateusz",
+          "Koptyra, Mateusz P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Koptyra, Mateusz P"
+      },
+      {
+        "from": [
+          "Roohani, Yusuf",
+          "Roohani, Yusuf H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Roohani, Yusuf H"
+      },
+      {
+        "from": [
+          "Parikh, Chirag R",
+          "Parikh, Chirag"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Parikh, Chirag R"
+      },
+      {
+        "from": [
+          "Colley, Madeline",
+          "Colley, Madeline E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Colley, Madeline E"
+      },
+      {
+        "from": [
+          "Wahid, Kareem",
+          "Wahid, Kareem A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wahid, Kareem A"
+      },
+      {
+        "from": [
+          "Higuita, Nelson I Agudelo",
+          "Agudelo Higuit, Nelson I"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Agudelo Higuit, Nelson I"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pryhuber, Gloria S",
+          "Pryhuber, Gloria",
+          "Pryhuber, Gloria J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pryhuber, Gloria"
+      },
+      {
+        "from": [
+          "Patterson, Nathan Heath",
+          "Patterson, Nathan",
+          "Patterson, Nathan H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Patterson, Nathan Heath"
+      },
+      {
+        "from": [
+          "Jorgensen, Marda L",
+          "Jorgensen, Marda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jorgensen, Marda L"
+      },
+      {
+        "from": [
+          "Hollmann, Travis J",
+          "Hollmann, Travis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hollmann, Travis J"
+      },
+      {
+        "from": [
+          "Serrano, Alejandra",
+          "Serrano, Alejandra G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Serrano, Alejandra G"
+      },
+      {
+        "from": [
+          "Marjanovic, Nemanja",
+          "Marjanovic, Nemanja D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marjanovic, Nemanja D"
+      },
+      {
+        "from": [
+          "Covert, Markus",
+          "Covert, Markus W"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Covert, Markus W"
+      },
+      {
+        "from": [
+          "Zhou, Felix",
+          "Zhou, Felix Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Zhou, Felix Y"
+      },
+      {
+        "from": [
+          "Webb-Robertson, Bobbie-Jo M",
+          "Webb-Robertson, Bobbie-Jo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Webb-Robertson, Bobbie-Jo M"
+      },
+      {
+        "from": [
+          "Spraggins, Jeffrey M",
+          "Spraggins, Jeffrey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spraggins, Jeffrey M"
+      },
+      {
+        "from": [
+          "Poffenberger, Greg",
+          "Poffenberger, Gregory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Poffenberger, Greg"
+      },
+      {
+        "from": [
+          "Camp, Sabrina",
+          "Camp, Sabrina Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Camp, Sabrina Y"
+      },
+      {
+        "from": [
+          "Purkerson, Jeffrey M",
+          "Purkerson, Jeffrey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Purkerson, Jeffrey M"
+      },
+      {
+        "from": [
+          "Trahearn, Nicholas",
+          "Trahearn, Nicholas A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trahearn, Nicholas A"
+      },
+      {
+        "from": [
+          "Wasserfall, Clive H",
+          "Wasserfall, Clive"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wasserfall, Clive H"
+      },
+      {
+        "from": [
+          "Kosinsky, Robyn Laura",
+          "Kosinsky, Robyn L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kosinsky, Robyn Laura"
+      },
+      {
+        "from": [
+          "Yeung, Bertrand",
+          "Yeung, Bertrand Z"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yeung, Bertrand Z"
+      },
+      {
+        "from": [
+          "Eizenga, Jordan M",
+          "Eizenga, Jordan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eizenga, Jordan M"
+      },
+      {
+        "from": [
+          "IMPACC Network",
+          "IMPACC Network Steering Committee"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMPACC Network"
+      },
+      {
+        "from": [
+          "Boland, Genevieve M",
+          "Boland, Genevieve"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boland, Genevieve M"
+      },
+      {
+        "from": [
+          "Gorzynski, John",
+          "Gorzynski, John E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gorzynski, John E"
+      },
+      {
+        "from": [
+          "Mills, Meredith A",
+          "Mills, Meredith"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mills, Meredith A"
+      },
+      {
+        "from": [
+          "DelloStritto, Laura",
+          "DelloStritto, Laura K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DelloStritto, Laura K"
+      },
+      {
+        "from": [
+          "Clancy, Thomas E",
+          "Clancy, Thomas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clancy, Thomas E"
+      },
+      {
+        "from": [
+          "Kempchen, Tim Noah",
+          "Kempchen, Tim N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kempchen, Tim Noah"
+      },
+      {
+        "from": [
+          "Makohon-Moore, Alvin",
+          "Makohon-Moore, Alvin P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Makohon-Moore, Alvin P"
+      },
+      {
+        "from": [
+          "Elisseeff, Jennifer H",
+          "Elisseeff, Jennifer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Elisseeff, Jennifer H"
+      },
+      {
+        "from": [
+          "Burnum-Johnson, Kristin E",
+          "Burnum-Johnson, Kristin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Burnum-Johnson, Kristin E"
+      },
+      {
+        "from": [
+          "Clark, Beatrice",
+          "Clark, Beatrice H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clark, Beatrice H"
+      },
+      {
+        "from": [
+          "Kleinstein, Steven H",
+          "Kleinstein, Steven"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kleinstein, Steven H"
+      },
+      {
+        "from": [
+          "Cairns, Charles B",
+          "Cairns, Charles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cairns, Charles B"
+      },
+      {
+        "from": [
+          "Wadsworth Ii, Marc H",
+          "Wadsworth, Marc H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wadsworth II, Marc H"
+      },
+      {
+        "from": [
+          "Meyer, David",
+          "Moore, David A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moore, David A"
+      },
+      {
+        "from": [
+          "Reihsmann, Conrad",
+          "Reihsmann, Conrad V"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reihsmann, Conrad V"
+      },
+      {
+        "from": [
+          "Shrubsole, Martha J.",
+          "Shrubsole, Martha"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shrubsole, Martha J."
+      },
+      {
+        "from": [
+          "Pelletier, Roxanne",
+          "Pelletier, Roxanne J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pelletier, Roxanne J"
+      },
+      {
+        "from": [
+          "Hickey, John W",
+          "Hickey, John"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hickey, John W"
+      },
+      {
+        "from": [
+          "Curtis, Christina",
+          "Curtis, Christina N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Curtis, Christina N"
+      },
+      {
+        "from": [
+          "Lenburg, Marc E",
+          "Lenburg, Marc Elliott"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lenburg, Marc Elliott"
+      },
+      {
+        "from": [
+          "Hodi, F Stephen",
+          "Hodi, F Stephan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hodi, F Stephen"
+      },
+      {
+        "from": [
+          "Solis Soto, Luisa M",
+          "Solis Soto, Luisa Maren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Solis Soto, Luisa Maren"
+      },
+      {
+        "from": [
+          "Carson, James Paul",
+          "Carson, James P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carson, James Paul"
+      },
+      {
+        "from": [
+          "Schwartz, Morgan",
+          "Schwartz, Morgan Sarah"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schwartz, Morgan Sarah"
+      },
+      {
+        "from": [
+          "Walston, Jeremy",
+          "Walston, Jeremy D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Walston, Jeremy D"
+      },
+      {
+        "from": [
+          "Buenrostro, Jason",
+          "Buenrostro, Jason D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Buenrostro, Jason D"
+      },
+      {
+        "from": [
+          "Gonçalves, Joana P",
+          "Goncalves, Joana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gonçalves, Joana P"
+      },
+      {
+        "from": [
+          "Langelier, Charles R",
+          "Langelier, Charles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Langelier, Charles R"
+      },
+      {
+        "from": [
+          "Morales-Nebreda, Luisa",
+          "Morales-Nebreda, Luisa C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Morales-Nebreda, Luisa C"
+      },
+      {
+        "from": [
+          "Anderson, David M G",
+          "Anderson, David M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Anderson, David M G"
+      },
+      {
+        "from": [
+          "Franks, Alexander",
+          "Franks, Alexander M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Franks, Alexander M"
+      },
+      {
+        "from": [
+          "Ardlie, Kristin",
+          "Ardlie, Kristin G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ardlie, Kristin G"
+      },
+      {
+        "from": [
+          "Gumbert, Graham",
+          "Gumbert, Graham J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gumbert, Graham J"
+      },
+      {
+        "from": [
+          "Metcalf, Jordan P",
+          "Metcalf, Jordan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metcalf, Jordan P"
+      },
+      {
+        "from": [
+          "Oldridge, Derek",
+          "Oldridge, Derek A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oldridge, Derek A"
+      },
+      {
+        "from": [
+          "Muzumdar, Mandar D",
+          "Muzumdar, Mandar Deepak"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Muzumdar, Mandar Deepak"
+      },
+      {
+        "from": [
+          "Engbrecht, Kristin",
+          "Engbrecht, Kristin M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Engbrecht, Kristin M"
+      },
+      {
+        "from": [
+          "Williams, April",
+          "Williams, April E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Williams, April E"
+      },
+      {
+        "from": [
+          "Van Schaik, Katherine",
+          "Van Schaik, Katherine D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Van Schaik, Katherine D"
+      },
+      {
+        "from": [
+          "Niedernhofer, Laura J",
+          "Niedernhofer, Laura"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Niedernhofer, Laura J"
+      },
+      {
+        "from": [
+          "Hinthorn, Samuel J",
+          "Hinthorn, Samuel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hinthorn, Samuel J"
+      },
+      {
+        "from": [
+          "Anthonymuthu, Tamil",
+          "Anthonymuthu, Tamil Selvan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Anthonymuthu, Tamil Selvan"
+      },
+      {
+        "from": [
+          "Sorger, Peter K",
+          "Sorger, Peter Karl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sorger, Peter Karl"
+      },
+      {
+        "from": [
+          "Vellarikkal, Shamsudheen K",
+          "Vellarikkal, Shamsudheen Karuthedath"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vellarikkal, Shamsudheen Karuthedath"
+      },
+      {
+        "from": [
+          "Daldrup-Link, Heike E",
+          "Daldrup-Link, Heike Elizabeth"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daldrup-Link, Heike Elizabeth"
+      },
+      {
+        "from": [
+          "Pounds, Stanley",
+          "Pounds, Stanley B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pounds, Stanley B"
+      },
+      {
+        "from": [
+          "Watson, Cameron",
+          "Watson, Cameron F"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Watson, Cameron F"
+      },
+      {
+        "from": [
+          "Adams, Taylor S",
+          "Adams, Taylor Sterling"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Adams, Taylor Sterling"
+      },
+      {
+        "from": [
+          "Nunes, Allancer D C",
+          "Nunes, Allancer Divino De Carvalho"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nunes, Allancer Divino De Carvalho"
+      },
+      {
+        "from": [
+          "Fishbein, Gregory",
+          "Fishbein, Gregory A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fishbein, Gregory A"
+      },
+      {
+        "from": [
+          "Salzillo, Travis",
+          "Salzillo, Travis C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salzillo, Travis C"
+      },
+      {
+        "from": [
+          "Victorelli, Stella",
+          "Victorelli, Stella G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victorelli, Stella G"
+      },
+      {
+        "from": [
+          "Ramirez, Marisol A",
+          "Ramirez, Marisol Adelina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ramirez, Marisol Adelina"
+      },
+      {
+        "from": [
+          "Lazar, Alexander",
+          "Lazar, Alexander J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lazar, Alexander J"
+      },
+      {
+        "from": [
+          "Hunger, Stephen P",
+          "Hunger, Stephen Patrick"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hunger, Stephen Patrick"
+      },
+      {
+        "from": [
+          "Whitehead, Timothy D",
+          "Whitehead, Timothy Daniel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Whitehead, Timothy Daniel"
+      },
+      {
+        "from": [
+          "Rovin, Brad",
+          "Rovin, Brad H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rovin, Brad H"
+      },
+      {
+        "from": [
+          "Pineda, Ricardo",
+          "Pineda, Ricardo H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pineda, Ricardo H"
+      },
+      {
+        "from": [
+          "Schafer, Marissa J",
+          "Schafer, Marissa Joy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schafer, Marissa Joy"
+      },
+      {
+        "from": [
+          "Plevritis, Sylvia Katina",
+          "Plevritis, Sylvia K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plevritis, Sylvia Katina"
+      },
+      {
+        "from": [
+          "Teneche, Marcos G",
+          "Teneche, Marcos Garcia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Teneche, Marcos Garcia"
+      },
+      {
+        "from": [
+          "Saunders, Lauren",
+          "Saunders, Lauren M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Saunders, Lauren M"
+      },
+      {
+        "from": [
+          "Spira, Avrum E",
+          "Spira, Avrum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spira, Avrum E"
+      },
+      {
+        "from": [
+          "Greenleaf, William J",
+          "Greenleaf, William James"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Greenleaf, William James"
+      },
+      {
+        "from": [
+          "Garcia, Benjamin A",
+          "Gross, Benjamin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Garcia, Benjamin A"
+      },
+      {
+        "from": [
+          "Venkataraaman, Vishal G",
+          "Venkataraaman, Vishal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Venkataraaman, Vishal G"
+      },
+      {
+        "from": [
+          "de Caestecker, Mark P",
+          "de Caestecker, Mark"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "de Caestecker, Mark P"
+      },
+      {
+        "from": [
+          "Dunsmore, Kimberly P",
+          "Dunsmore, Kimberly"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dunsmore, Kimberly P"
+      },
+      {
+        "from": [
+          "Bernt, Kathrin M",
+          "Bernt, Kathrin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bernt, Kathrin M"
+      },
+      {
+        "from": [
+          "Sarder, Pinaki",
+          "Sardar, Pinaki"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sarder, Pinaki"
+      },
+      {
+        "from": [
+          "Augustine, Alison D",
+          "Augustine, Alison"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Augustine, Alison D"
+      },
+      {
+        "from": [
+          "Grudzinski, Kevin",
+          "Grudzinski, Kevin M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Grudzinski, Kevin M"
+      },
+      {
+        "from": [
+          "Hoffman, Samantha E",
+          "Hoffman, Samantha"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hoffman, Samantha E"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gray, Joe W.",
+          "Gray, Joe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gray, Joe W."
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Li, Elizabeth Y",
+          "Li, Elizabeth"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Li, Elizabeth Y"
+      },
+      {
+        "from": [
+          "Steen, Judith",
+          "Steen, Judith A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Steen, Judith A"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Coffey, Robert J.",
+          "Coffey, Robert"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coffey, Robert J."
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Korstanje, Ronny",
+          "Korstanje, Ron"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Korstanje, Ronny"
+      },
+      {
+        "from": [
+          "Fertig, Elana",
+          "Fertig, Elana J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fertig, Elana J"
+      },
+      {
+        "from": [
+          "Baker, Darren J",
+          "Baker, Darren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Baker, Darren J"
+      },
+      {
+        "from": [
+          "Lagnado, Anthony B",
+          "Lagnado, Antony B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lagnado, Anthony B"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kaech, Susan M",
+          "Kaech, Susan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kaech, Susan M"
+      },
+      {
+        "from": [
+          "White, Shannon",
+          "White, Shannon M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "White, Shannon M"
+      },
+      {
+        "from": [
+          "Evensen, Garrett",
+          "Evensen, K Garrett"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Evensen, Garrett"
+      },
+      {
+        "from": [
+          "Aronow, Bruce J",
+          "Aronow, Bruce"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aronow, Bruce J"
+      },
+      {
+        "from": [
+          "Ferkowicz, Michael",
+          "Ferkowicz, Michael J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ferkowicz, Michael J"
+      },
+      {
+        "from": [
+          "Cox, Juergen",
+          "Cox, Jürgen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cox, Jürgen"
+      },
+      {
+        "from": [
+          "Schleck, Maxwell J",
+          "Schleck, Maxwell"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schleck, Maxwell J"
+      },
+      {
+        "from": [
+          "Rodig, Scott J",
+          "Rodig, Scott"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rodig, Scott J"
+      },
+      {
+        "from": [
+          "Cisneros, Luis",
+          "Cisneros, Luis H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cisneros, Luis H"
+      },
+      {
+        "from": [
+          "Schuster, Emma J",
+          "Schuster, Emma"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schuster, Emma J"
+      },
+      {
+        "from": [
+          "Schroeder, Andrew",
+          "Schroeder, Andrew J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schroeder, Andrew J"
+      },
+      {
+        "from": [
+          "Li, Thomas",
+          "Li, Thomas Z"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Li, Thomas Z"
+      },
+      {
+        "from": [
+          "Gradishar, William J",
+          "Gradishar, William"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gradishar, William J"
+      },
+      {
+        "from": [
+          "Golder, Caiden J",
+          "Golder, Caiden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Golder, Caiden J"
+      },
+      {
+        "from": [
+          "McGowan, Sara",
+          "McGowan, Sara J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "McGowan, Sara J"
+      },
+      {
+        "from": [
+          "Krull, Jordan E",
+          "Krull, Jordan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Krull, Jordan E"
+      },
+      {
+        "from": [
+          "Keith, Dove",
+          "Keith, Dove J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Keith, Dove J"
+      },
+      {
+        "from": [
+          "Haak, Andrew J",
+          "Haak, Andrew"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Haak, Andrew J"
+      },
+      {
+        "from": [
+          "Murphy, George",
+          "Murphy, George J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Murphy, George J"
+      },
+      {
+        "from": [
+          "Rupp, Shawn M",
+          "Rupp, Shawn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rupp, Shawn M"
+      },
+      {
+        "from": [
+          "Hoover, Paul",
+          "Hoover, Paul J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hoover, Paul J"
+      },
+      {
+        "from": [
+          "Weber, Griffin M",
+          "Weber, Griffin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Weber, Griffin M"
+      },
+      {
+        "from": [
+          "Chan, Sabrina",
+          "Chan, Sabrina J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chan, Sabrina J"
+      },
+      {
+        "from": [
+          "Radtke, Andrea J",
+          "Radtke, Andrea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Radtke, Andrea J"
+      },
+      {
+        "from": [
+          "Murff, Harvey",
+          "Murff, Harvey J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Murff, Harvey J"
+      },
+      {
+        "from": [
+          "Phillips, Darci",
+          "Phillips, Darci J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Phillips, Darci J"
+      },
+      {
+        "from": [
+          "Do, Tran",
+          "Do, Tran H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Do, Tran H"
+      },
+      {
+        "from": [
+          "Horning, Aaron M",
+          "Horning, Aaron"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Horning, Aaron M"
+      },
+      {
+        "from": [
+          "Hruby, Adam",
+          "Hruby, Adam J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hruby, Adam J"
+      },
+      {
+        "from": [
+          "Guest, Erin",
+          "Guest, Erin M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Guest, Erin M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Teichmann, Sarah Amalia",
+          "Teichmann, Sarah A",
+          "Teichmann, Sarah"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Teichmann, Sarah Amalia"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Todres, Ellen",
+          "Todres, Ellen Z"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Todres, Ellen Z"
+      },
+      {
+        "from": [
+          "Brusko, Todd Michael",
+          "Brusko, Todd M",
+          "Brusko, Todd"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brusko, Todd Michael"
+      },
+      {
+        "from": [
+          "Snyder, Michael P.",
+          "Snyder, Michael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snyder, Michael P."
+      },
+      {
+        "from": [
+          "Nyquist, Sarah",
+          "Nyquist, Sarah K",
+          "Nyquist, Sarah Kate"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyquist, Sarah Kate"
+      },
+      {
+        "from": [
+          "Sorger, Peter Karl",
+          "Sorger, Peter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sorger, Peter Karl"
+      },
+      {
+        "from": [
+          "Border, Samuel",
+          "Border, Samuel P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Border, Samuel P"
+      },
+      {
+        "from": [
+          "Chaisson, Mark",
+          "Chaisson, Mark J P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chaisson, Mark J P"
+      },
+      {
+        "from": [
+          "Erle, David J",
+          "Erle, David"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Erle, David J"
+      },
+      {
+        "from": [
+          "O'neill, Kathleen Elise",
+          "O'Neill, Kathleen E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Neill, Kathleen Elise"
+      },
+      {
+        "from": [
+          "Wilson, Michael",
+          "Wilson, Michael J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wilson, Michael J"
+      },
+      {
+        "from": [
+          "Rosen, Lindsey B",
+          "Rosen, Lindsey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rosen, Lindsey B"
+      },
+      {
+        "from": [
+          "Garovic, Vesna D",
+          "Garovic, Vesna"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Garovic, Vesna D"
+      },
+      {
+        "from": [
+          "Jena, Siddhartha",
+          "Jena, Siddhartha G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jena, Siddhartha G"
+      },
+      {
+        "from": [
+          "Gilkes, Daniele M",
+          "Gilkes, Danielle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gilkes, Daniele M"
+      },
+      {
+        "from": [
+          "Hadjantonakis, A-K",
+          "Hadjantonakis, Anna-Katerina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hadjantonakis, Anna-Katerina"
+      },
+      {
+        "from": [
+          "Becker, Patrice M",
+          "Becker, Patrice"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Becker, Patrice M"
+      },
+      {
+        "from": [
+          "Bayraktar, Omer",
+          "Bayraktar, Omer Ali"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bayraktar, Omer Ali"
+      },
+      {
+        "from": [
+          "Zhang, Nancy R",
+          "Zhang, Nancy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Zhang, Nancy R"
+      },
+      {
+        "from": [
+          "Mansk, Rachel",
+          "Mansk, Rachel P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mansk, Rachel P"
+      },
+      {
+        "from": [
+          "Ramirez, Lucia",
+          "Ramirez, Lucia N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ramirez, Lucia N"
+      },
+      {
+        "from": [
+          "Sicinska, Ewa",
+          "Sicinska, Ewa T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sicinska, Ewa T"
+      },
+      {
+        "from": [
+          "Horton, Wes",
+          "Horton, Wesley"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Horton, Wesley"
+      },
+      {
+        "from": [
+          "Harris, Raymond C.",
+          "Harris, Raymond"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harris, Raymond C."
+      },
+      {
+        "from": [
+          "Loftis, Kevin",
+          "Loftis, Kevin G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Loftis, Kevin G"
+      },
+      {
+        "from": [
+          "Adey, Andrew",
+          "Adey, Andrew C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Adey, Andrew C"
+      },
+      {
+        "from": [
+          "Daya, Gulzar",
+          "Daya, Gulzar N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daya, Gulzar N"
+      },
+      {
+        "from": [
+          "Kitata, Reta Birhanu",
+          "Kitata, Reta B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kitata, Reta Birhanu"
+      },
+      {
+        "from": [
+          "Harris, Valerie K",
+          "Harris, Valerie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harris, Valerie K"
+      },
+      {
+        "from": [
+          "Laurent, Louise Chang",
+          "Laurent, Louise C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Laurent, Louise Chang"
+      },
+      {
+        "from": [
+          "Teichmann, Sarah Amalia",
+          "Teichmann, Sara A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Teichmann, Sarah Amalia"
+      },
+      {
+        "from": [
+          "Patel, Dhwani",
+          "Patel, Dhwani B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Patel, Dhwani B"
+      },
+      {
+        "from": [
+          "Merrick, Daniel T",
+          "Merrick, Daniel Thomas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Merrick, Daniel Thomas"
+      },
+      {
+        "from": [
+          "Thomas, George Victor",
+          "Thomas, George"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thomas, George Victor"
+      },
+      {
+        "from": [
+          "Titchen, Breanna M",
+          "Titchen, Breanna"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Titchen, Breanna M"
+      },
+      {
+        "from": [
+          "Altman, Matthew C",
+          "Altman, Matthew"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Altman, Matthew C"
+      },
+      {
+        "from": [
+          "Spraggins, Jeffrey M",
+          "Spraggins, J M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spraggins, Jeffrey M"
+      },
+      {
+        "from": [
+          "Mills, Gordon B.",
+          "Mills, Gordon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mills, Gordon B."
+      },
+      {
+        "from": [
+          "Rowsey, Jennifer L",
+          "Rowsey, Jennifer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rowsey, Jennifer L"
+      },
+      {
+        "from": [
+          "Maecker, Holden T",
+          "Maecker, Holden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Maecker, Holden T"
+      },
+      {
+        "from": [
+          "Palevsky, Paul",
+          "Palevsky, Paul M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Palevsky, Paul M"
+      },
+      {
+        "from": [
+          "Holloway, Shannon",
+          "Holloway, Shannon T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Holloway, Shannon T"
+      },
+      {
+        "from": [
+          "Futreal, Andrew",
+          "Futreal, Andrew P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Futreal, Andrew P"
+      },
+      {
+        "from": [
+          "Baertsch, Marc-A",
+          "Baertsch, Marc-Andrea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Baertsch, Marc-Andrea"
+      },
+      {
+        "from": [
+          "Guimaraes, Alexander R",
+          "Guimaraes, Alex"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Guimaraes, Alexander R"
+      },
+      {
+        "from": [
+          "Segre, Ayellet Vered",
+          "Segrè, Ayellet V"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Segre, Ayellet Vered"
+      },
+      {
+        "from": [
+          "McDowell, Hannah",
+          "McDowell, Hannah B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "McDowell, Hannah B"
+      },
+      {
+        "from": [
+          "Geng, Linda N",
+          "Geng, Linda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Geng, Linda N"
+      },
+      {
+        "from": [
+          "Riessland, Markus",
+          "Riessland, M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Riessland, Markus"
+      },
+      {
+        "from": [
+          "Van de Plas, Raf",
+          "Van de Plas, R"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Van de Plas, Raf"
+      },
+      {
+        "from": [
+          "Wu, Christine C",
+          "Wu, Christina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wu, Christine C"
+      },
+      {
+        "from": [
+          "Van Allen, Eliezer M",
+          "Van Allen, Eliezer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Van Allen, Eliezer M"
+      },
+      {
+        "from": [
+          "Fortune, Sarah",
+          "Fortune, Sarah M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fortune, Sarah M"
+      },
+      {
+        "from": [
+          "Bendall, Sean C",
+          "Bendall, Sean Curtis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bendall, Sean Curtis"
+      },
+      {
+        "from": [
+          "Messer, William B",
+          "Messer, William"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Messer, William B"
+      },
+      {
+        "from": [
+          "Higuita, Nelson",
+          "Higuita, Nelson Iván Agudelo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Higuita, Nelson Iván Agudelo"
+      },
+      {
+        "from": [
+          "Aktipis, Athena",
+          "Aktipis, Athena C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aktipis, Athena C"
+      },
+      {
+        "from": [
+          "Denning, Sarah",
+          "Denning, Sarah L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Denning, Sarah L"
+      },
+      {
+        "from": [
+          "Hodgin, Jeffrey B",
+          "Hodgin, Jeffrey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hodgin, Jeffrey B"
+      },
+      {
+        "from": [
+          "Göttgens, B",
+          "Göttgens, Berthold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Göttgens, Berthold"
+      },
+      {
+        "from": [
+          "Tibshirani, Rob",
+          "Tibshirani, Robert"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tibshirani, Robert"
+      },
+      {
+        "from": [
+          "Dougherty, Thomas",
+          "Dougherty, Tom"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dougherty, Thomas"
+      },
+      {
+        "from": [
+          "Pouch, Alison Marie",
+          "Pouch, Alison M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pouch, Alison Marie"
+      },
+      {
+        "from": [
+          "Melenhorst, J Joseph",
+          "Melenhorst, Jan Joseph"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Melenhorst, Jan Joseph"
+      },
+      {
+        "from": [
+          "Lagnado, Anthony B",
+          "Lagnado, Anthony"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lagnado, Anthony B"
+      },
+      {
+        "from": [
+          "Chen, Gregory M",
+          "Chen, Gregory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chen, Gregory M"
+      },
+      {
+        "from": [
+          "Lotz, Martin K",
+          "Lotz, Martin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lotz, Martin K"
+      },
+      {
+        "from": [
+          "Calfee, Carolyn S",
+          "Calfee, Carolyn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calfee, Carolyn S"
+      },
+      {
+        "from": [
+          "Wood, Brent L",
+          "Wood, Brent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wood, Brent L"
+      },
+      {
+        "from": [
+          "Maier, Andrea B",
+          "Maier, Andreas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Maier, Andrea B"
+      },
+      {
+        "from": [
+          "Browne, Kristen",
+          "Browne, Kristen M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Browne, Kristen M"
+      },
+      {
+        "from": [
+          "Nguyen, Lan T",
+          "Nguyen, Lan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nguyen, Lan T"
+      },
+      {
+        "from": [
+          "Robbins, Paul D.",
+          "Robbins, Paul"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Robbins, Paul D."
+      },
+      {
+        "from": [
+          "Nunes, Allancer Divino De Carvalho",
+          "Nunes, Allancer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nunes, Allancer Divino De Carvalho"
+      },
+      {
+        "from": [
+          "Hough, Catherine L",
+          "Hough, Catherine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hough, Catherine L"
+      },
+      {
+        "from": [
+          "Shinkle, Andrew",
+          "Shinkle, Andrew T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shinkle, Andrew T"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ge, William",
+          "Ge, William H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ge, William H"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Zhang, Lei Justan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Zhang, Lei"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Xu, Mina L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Xu, Mina Luqing"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Xu, Mina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Xu, Mina Luqing"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wood, Jonathan M D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wood, Jonathan"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wood, Laura D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wood, Laura Delong"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Whitsett, Jeff"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Whitsett, Jeffrey"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Welch, Joshua"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Welch, Joshua D"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wang, Julia T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wang, Julia Tianjiao"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wang, Julia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wang, Julia Tianjiao"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Walenz, Brian"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Walenz, Brian P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wadsworth 2nd, Marc H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wadsworth II, Marc H"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vanegas, Natalia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanegas, Natalia Del Pilar"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vanegas, Natalia Del Pilar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanegas-Avendaño, Natalia Del Pilar"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vanegas-Avendaño, Natalia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanegas-Avendaño, Natalia Del Pilar"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Van Den Bossche, Tim"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Van den Bossche, Tim"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Van den Bossche, Jan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "van den Bossche, Jan"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Van den Bossche, Tim"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "van den Bossche, Tim"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Van de Plas, Raf"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "van de Plas, Raf"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Troan, Brigid"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Troan, Brigid V"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Taylor, Deanne"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Taylor, Deanne M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Taylor, Adam J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Taylor, Adam James"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Taheri, Mohammad Nasser"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Taheri, Mohammad Naser"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sunwoo, John"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sunwoo, John B"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sunshine, Joel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sunshine, Joel C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sundar, Isaac K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sundar, Isaac Kirubakaran"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Stuart, Joshua"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stuart, Joshua M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Storrs, Erik"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Storrs, Erik P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Stanley Iii, Jay S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stanley III, Jay S"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Stanley 3rd, Jay S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stanley III, Jay S"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Spira, Arum E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spira, Avrum E"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "So, Peter T C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "So, Peter T C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "So, Peter T."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "So, Peter T C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sluka, James"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sluka, James P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Shoghi, Kooresh I"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shoghi, Kooresh Isaac"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sheppard, Brett"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sheppard, Brett C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Shendure, Jay"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shendure, Jay Ashok"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Shaw, Albert"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shaw, Albert C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Shah, Ami"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shah, Ami N"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Russell, Douglas Peter William"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Russell, Douglas"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Reik, W"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reik, Wolf"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Reed, Elaine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reed, Elaine F"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ray, Jessica"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ray, Jessica M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puram, Sid"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Puram, Sidharth V"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pierson, N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pierson, Nico"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Phan, Hoang"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Phan, Hoang Van"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Patterson, N Heath"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Patterson, Nathan Heath"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Patterson, N H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Patterson, Nathan Heath"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Patel, Ravi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Patel, Ravi K"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Passos, João"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Passos, João F"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pao, Ed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pao, Edward"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Orr, M E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Orr, Miranda E"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Oliveria, J P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oliveria, John-Paul"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nolan, Garry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nolan, Garry P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "O'Kelly, Ryan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Kelly, Ryan D"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nixon, Andrew"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nixon, Andrew B."
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nick, Harry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nick, Harry S"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nichols, J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nichols, Jennifer"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Munson, Katy M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Munson, Katherine M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moser, F A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moser, Felipe A"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Morgan, Terry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Morgan, Terry K"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mora, Ana L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mora, Ana Lucia"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mora, Ana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mora, Ana Lucia"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Monte, Emma"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monte, Emma Marie"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moens, R A R"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moens, Roger A R"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Missarova, A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Missarova, Alsu"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Minn, Andy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Minn, Andy J"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mimitou, Eleni"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mimitou, Eleni P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Migas, L G"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Migas, Lukasz G"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Marioni, John C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marioni, John Carlo"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Marioni, J C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marioni, John Carlo"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Marioni, John"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marioni, John Carlo"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Maguire, Cole"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Maguire, Cole P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lydon, Emily"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lydon, Emily C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lucas, Julian"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lucas, Julian K"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lohoff, T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lohoff, Tim"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Link, Jason"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Link, Jason M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Koulena, N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Koulena, Noushin"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kohnen, Daniel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kohnen, Daniel R"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "King, Lorraine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "King, Lorraine M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kimmey, Sam C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kimmey, Samuel C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "KPMP Consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kidney Precision Medicine Project Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kidney Precision Medicine Project and HuBMAP Consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kidney Precision Medicine Project Consortium and HuBMAP Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kidney Precision Medicine Project"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kidney Precision Medicine Project Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Keskus, Ayse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Keskus, Ayse G"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jackson, Dana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jackson, Dana L"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ives, Ashley"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ives, Ashley N"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Islam, Md Torikul"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Islam, Torikul"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Iqbal, Ahamed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Iqbal, Ahamed Raffey"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "IMPACC study group members"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMPACC Network"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "IMPACC Manuscript Writing Team"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMPACC Network"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ICCARP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "International Consortium to Classify Ageing-Related Pathologies (ICCARP)"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Human Pancreas Analysis Program"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Human Pancreas Analysis Program (HPAP) Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "HPAP Consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Human Pancreas Analysis Program (HPAP) Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hertzel, Ann"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hertzel, Ann V"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Herr Ii, Bruce W"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Herr II, Bruce W"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Herr 2nd, Bruce W"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Herr II, Bruce W"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Heiser, Laura"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Heiser, Laura M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Heath, Allison"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Heath, Allison P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "He, Yongqun"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "He, Yongqun Oliver"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Havas, Aaron"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Havas, Aaron P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hardy, Ashley"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hardy, Ashley N"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hanna, Eban A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hanna, Eban Andrew"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Haddad, Elias"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Haddad, Elias K"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Guibentif, C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Guibentif, Carolina"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gross, Sean"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gross, Sean M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Griffiths, Jonathan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Griffiths, Jonathan A"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Griffiths, J A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Griffiths, Jonathan A"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Goods, Brittany A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Goods, Brittany Anne"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Goods, Britt Anne"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Goods, Brittany Anne"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Goenka, Sneha"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Goenka, Sneha D"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Goedegebuure, Simon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Goedegebuure, Simon Peter"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Goedegebuure, S Peter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Goedegebuure, Simon Peter"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gibbs, Summer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gibbs, Summer L"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ghazanfar, S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ghazanfar, Shila"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gate, David"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gate, David M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gao, Yu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gao, Yu Tom"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuller, Clifton D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuller, Clifton David"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuller, C David"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuller, Clifton David"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fortier, Julie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fortier, Julie M"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Eng, C-H L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eng, Chee-Huat Linus"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "EARLI Consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "European Association for Research on Learning and Instruction (EARLI) Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Dey, Amit"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dey, Amit K"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Desai, Tushar J"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Desai, Tushar Jasubhai"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DECAMP Investigators"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Detection of Early Lung Cancer Among Military Personnel (DECAMP) Investigators"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Croteau, Josh"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Croteau, Joshua"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Corry, David"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Corry, David B"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Connelly, Jon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Connelly, Jon P"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COMET Consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COnsortium of METabolomics Studies (COMETS) Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chen, Jiaji"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chen, Jiaji G"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chang, Young H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chang, Young Hwan"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cancer Genome Atlas Analysis Network‡"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cancer Genome Atlas Analysis Network"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cai, L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cai, Long"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CAFPINT Site investigators of the PALISI Network"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pediatric Acute Lung Injury and Sepsis Investigators (PALISI) Network "
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C Ewald, Jennifer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ewald, Jennifer C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Booth, Greg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Booth, Gregory T"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Blair, John"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blair, John D"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Banik, Grace"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banik, Grace L"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Attah, Isaac K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Attah, Isaac Kwame"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Argelaguet, R"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Argelaguet, Ricard"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Angelo, R Michael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Angelo, Robert Michael"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Angelo, Michael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Angelo, Robert Michael"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "and the Human Pangenome Reference Consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Human Pangenome Reference Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AACR Project GENIE BPC Core Team, AACR Project GENIE Consortium"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AACR Project GENIE Consortium"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "is_organization",
+          "expression": "value",
+          "columnName": "is_organization",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "FALSE",
+                "l": "FALSE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "proj",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "is_organization",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FALSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRUE"
+      }
+    ],
+    "description": "Mass edit cells in column is_organization"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Liu, Ruiyang",
+          "Ruiyang, Liu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Liu, Ruiyang"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Baden, Lindsey R",
+          "Baden, Lindsey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Baden, Lindsey R"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Brais, Lauren",
+          "Brais, Lauren K"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brais, Lauren K"
+      },
+      {
+        "from": [
+          "Salama, Sofie",
+          "Salama, Sofie R"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salama, Sofie R"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moreno, Amy",
+          "Moreno, Amy C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moreno, Amy C"
+      },
+      {
+        "from": [
+          "Judd, Audra M",
+          "Judd, Audra"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Judd, Audra M"
+      },
+      {
+        "from": [
+          "Ma, Cynthia X",
+          "Ma, Cynthia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ma, Cynthia X"
+      },
+      {
+        "from": [
+          "Lee, Brian",
+          "Lee, Brian H"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lee, Brian H"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Williams, James C",
+          "Williams Jr, James C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Williams, James C"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Clayton",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Matthews, Clayton E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mathews, Clayton E"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Bernhard",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Domoulin, Bernhard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dumoulin, Bernhard"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Andrew D",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hoffman, Andrew D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hoffmann, Andrew D"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": ", Robert",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kruger, Robert"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Krueger, Robert"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Sharon",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Philips, Sharon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Phillips, Sharon"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Andreas",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Günther, Andreas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Güenther, Andreas"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Linda N",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gen, Linda N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Geng, Linda N"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Tchkonia",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tchkonia, Tamara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tchkonia, Tamar"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Rafick",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sekaly, Rafick"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selaky, Rafick"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "disambiguated_name",
+          "columnName": "disambiguated_name",
+          "query": "Rafick",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Selaky, Rafick"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sekaly, Rafick-Pierre"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/row-duplicate-removal",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "criteria": [
+      "source",
+      "record_id",
+      "year",
+      "original_name",
+      "disambiguated_name",
+      "role",
+      "is_organization",
+      "HTAN",
+      "SenNet",
+      "HuBMAP",
+      "atlas_center",
+      "experimentalists",
+      "technology_development",
+      "data_reuse",
+      "data_administration",
+      "PCA",
+      "HTA",
+      "TMC",
+      "DEMO",
+      "TDA",
+      "TTD",
+      "RIT",
+      "DCC",
+      "CODCC",
+      "HIVE",
+      "HuBMAP_bi",
+      "SenNet_bi",
+      "HTAN_bi",
+      "multiatlas",
+      "times_cited"
+    ],
+    "description": "Remove duplicate rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "is_organization",
+          "expression": "value",
+          "columnName": "is_organization",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "FALSE",
+                "l": "FALSE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Budinger, G R Scott",
+          "Budinger, Scott"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Budinger, G R Scott"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Harbury, Pehr B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harbury, Pehr A B"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disambiguated_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Harbury, Pehr A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harbury, Pehr A B"
+      }
+    ],
+    "description": "Mass edit cells in column disambiguated_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "year",
+          "expression": "value",
+          "columnName": "year",
+          "from": 1514764800000,
+          "to": 1,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "year",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column year using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "source",
+      "record_id",
+      "year",
+      "original_name",
+      "disambiguated_name",
+      "role",
+      "is_organization"
+    ],
+    "description": "Reorder columns"
+  }
+]

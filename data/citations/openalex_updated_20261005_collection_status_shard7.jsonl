@@ -1,0 +1,59 @@
+{"pmid": "31502160", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "30567574", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "32130964", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "32763154", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "33241625", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "33981285", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "34482894", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "34722959", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "34937938", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "35245349", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "35463156", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "35835881", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "36112643", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "36307504", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "36571403", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "36833412", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "37079217", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "37292628", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "37466640", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "37679544", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "37873233", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "38045023", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "31059546", "status": "ok", "citing_works": 48}
+{"pmid": "31502160", "status": "ok", "citing_works": 38}
+{"pmid": "30567574", "status": "ok", "citing_works": 1132}
+{"pmid": "32130964", "status": "ok", "citing_works": 67}
+{"pmid": "32423648", "status": "ok", "citing_works": 25}
+{"pmid": "32763154", "status": "ok", "citing_works": 1096}
+{"pmid": "32997601", "status": "ok", "citing_works": 334}
+{"pmid": "33241625", "status": "ok", "citing_works": 60}
+{"pmid": "33685491", "status": "ok", "citing_works": 978}
+{"pmid": "33981285", "status": "ok", "citing_works": 17}
+{"pmid": "34215862", "status": "ok", "citing_works": 710}
+{"pmid": "34482894", "status": "ok", "citing_works": 52}
+{"pmid": "34625255", "status": "ok", "citing_works": 17}
+{"pmid": "34722959", "status": "ok", "citing_works": 21}
+{"pmid": "38196658", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "31870423", "status": "ok", "citing_works": 4786}
+{"pmid": "34937938", "status": "ok", "citing_works": 248}
+{"pmid": "38496512", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "34859676", "status": "ok", "citing_works": 101}
+{"pmid": "35245349", "status": "ok", "citing_works": 31}
+{"pmid": "35110735", "status": "ok", "citing_works": 945}
+{"pmid": "35361931", "status": "ok", "citing_works": 127}
+{"pmid": "38636457", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "38870523", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "39122941", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "39300183", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "39478141", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "39627588", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "39841459", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "40011560", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "40233719", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "40461388", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "40654902", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "40832351", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "40998789", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "41256547", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}
+{"pmid": "41394628", "status": "failed", "error": "HTTP Error 429: Too Many Requests"}

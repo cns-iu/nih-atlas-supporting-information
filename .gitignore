@@ -1,0 +1,78 @@
+# Obsidian notebooks
+/nih-map-obsidian/
+/nih-map-obsidian/.obsidian
+/nih-map-obsidian/Documentation
+/nih-map-obsidian/*.json
+
+# Local Data Version Archives
+/data/name_disambiguation/old
+/data/validation
+/data/networks/gephi/*.pdf
+/data/networks/gephi/*.csv
+/docs/claude_summaries
+/docs/manuscript
+
+# Log files
+logs/
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+.Rproj
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# RStudio Connect folder
+rsconnect/
+
+# macOS system and Finder files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.DocumentRevisions-V100/
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.apdisk
+Icon?
+node_modules/
+
+# Claude documentation
+CHECKLIST.md
+GETTING_STARTED.md
+PROJECT_SUMMARY.md
+QUICK_START.md
+/scripts/functions
+/scripts/testing

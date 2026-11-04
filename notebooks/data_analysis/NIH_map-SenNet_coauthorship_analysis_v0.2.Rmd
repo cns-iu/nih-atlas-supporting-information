@@ -1,0 +1,1671 @@
+---
+title: "NIH Biomedical Mapping Program Co-authorship Network Analysis"
+subtitle: "SenNet"
+author: "Michael Ginda"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 2
+    number_sections: true
+    df_print: paged
+    fig_caption: true
+    code_folding: hide
+    theme: journal
+    highlight: haddock
+---
+
+```{r consortium-info, echo=FALSE}
+# Add consortium-specific information here
+consortium_info <- list(
+  HuBMAP = "Human BioMolecular Atlas Program - mapping the human body at single-cell resolution",
+  SenNet = "Cellular Senescence Network - understanding cellular senescence across tissues",
+  HTAN = "Human Tumor Atlas Network - mapping tumor microenvironments"
+)
+
+# Set consortium name
+consortium <- "SenNet"
+```
+
+# Overview
+
+This notebook applies co-authorship network analysis methods to assess collaboration 
+between researchers using documented in the publication reported by investigators 
+from the **`r consortium`** Consortium, a biomedical mapping program funded by 
+the National Institutes of Health (NIH). Networks were generated in the R processing
+pipeline:
+- Baseline network represents collaboration using all publications with individual authors.
+- Internal collaboration network using publications documenting collaboration between multiple projects working within or between mapping program research divisions.
+
+We assess the growth and evolution of collaboration in mapping programs using
+annual, cumulative networks from using all publication author lists and 
+calculate baseline network statistical. Nodes represent authors that 
+participate in the mapping program research. For each author, we include: name,
+role within the program, the year of an author's first publication in the program, 
+the number of publications (i.e., overall, annual counts, and research division); 
+and citation measures (i.e., total citations and citations weighed by the count 
+of author per publication); centrality and prestige measures (i.e., degree,
+betweenness centrality, closeness centrality, and eigenvector centrality). 
+All analysis have applied to baseline network and internal collaboration 
+partitioned network.
+
+The layout of the network graph visualizations are generated in Gephi. Filters are described in *Load Network Data* section.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.path = here::here("outputs/figures/SenNet_"),
+	message = FALSE,
+	warning = FALSE,
+	dev = "png",
+	dpi = 300,
+	out.width = "90%"
+)
+```
+
+```{r load-libraries}
+library(here)
+library(knitr)
+library(tidyverse)
+library(stringr)
+library(data.table)
+library(ggplot2)
+library(igraph)
+library(ggnetwork)
+library(patchwork)
+library(scales)
+
+# Set theme
+theme_set(theme_minimal(base_size = 10))
+```
+
+```{r config}
+# Data paths
+metadata_dir <- file.path("data/metadata")
+data_dir <- file.path("data/networks")
+output_dir <- file.path("outputs")
+
+# Create output directory
+if (!dir.exists(here::here(output_dir))) {
+  dir.create(here::here(output_dir), recursive = TRUE)
+}
+
+# File paths
+## Baseline networks
+div_metadata_file <- 
+  file.path(metadata_dir, "NIH-map_consortia_awards-division-metadata.csv")
+nodes_file <- 
+  file.path(data_dir, paste0(consortium, "-coauthorship-baseline-nodes.csv"))
+edges_file <- 
+  file.path(data_dir, paste0(consortium, "-coauthorship-baseline-edges.csv"))
+
+## Internal Collaboration Partition
+nodes_partition_file <- 
+  file.path(data_dir, 
+            paste0(consortium, "-coauthorship-collaboration_partition-nodes.csv"))
+edges_partition_file <- 
+  file.path(data_dir, 
+            paste0(consortium, "-coauthorship-collaboration_partition-edges.csv"))
+```
+
+# Load Network Data
+
+This loads data used to generate the baseline and partitioned co-authorship networks
+for the `r consortium`. Node files provide data on authors in both networks and
+the edge files provide relationships identified from the publication data set
+and internal collaboration publication data subset.
+
+```{r load-data}
+# Load consortia division metadata
+div_metadata <- 
+  fread(here::here(div_metadata_file)) %>%
+  select(project_id, division, division_type, division_name) %>%
+  distinct() %>%
+  filter(project_id == consortium) %>%
+  rename("consortium"="project_id")
+
+# Load consortia network node and edge list files
+nodes <- 
+  fread(file=here::here(nodes_file), 
+           header=T, encoding="UTF-8") %>%
+  mutate(role = factor(role, 
+                       levels = c("Principal Investigator","Researcher")))
+edges <- fread(file=here::here(edges_file), header=T,
+                  encoding="UTF-8")
+
+# Load consortia network node and edge list files
+nodes_partition <- 
+  fread(file=here::here(nodes_partition_file), 
+           header=T, encoding="UTF-8") %>%
+  mutate(role = factor(role, 
+                       levels = c("Principal Investigator","Researcher")))
+edges_partition <- 
+  fread(file=here::here(edges_partition_file), header=T,
+                  encoding="UTF-8")
+
+# Clean up var names
+var_names <- names(nodes_partition)
+var_names <- str_replace_all(var_names,"cc_","")
+names(nodes_partition) <- str_replace_all(var_names,"ic_","")
+var_names <- names(edges_partition)
+names(edges_partition) <- str_replace_all(var_names,"ic_","")  
+rm(var_names)
+nodes_partition$label <- nodes_partition$id
+
+# Extract years from column names
+pubs_cols <- grep("^pubs_[0-9]{4}$", names(nodes), value = TRUE)
+years <- as.integer(gsub("pubs_", "", pubs_cols))
+years <- sort(years)
+
+# Add Internal Collaboration Score to node partition
+nodes_partition <-
+  nodes_partition %>%
+  mutate(ict_score = 
+           round((interdivision_collaboration/publications)-
+                 (intradivision_collaboration/publications),2)) %>%
+  select(id, label, role, publications, interdivision_collaboration,
+         intradivision_collaboration, ict_score, starts_with("pubs_"),
+         citations, weighted_citations)
+```
+
+## Overview of Baseline Data
+
+*Author Nodes in the Network*
+
+* Nodes file: `r nodes_file`
+* Node columns: `r ncol(nodes)` 
+* Total records: `r nrow(nodes)`
+
+*Relationships in the Network* 
+
+* Edges file: `r edges_file`
+* Edge columns: `r `ncol(edges)`
+* Total records: `r nrow(edges)`
+
+*Consortia Publication Period*
+
+* Available years:  `r paste(years, collapse = ", ")`
+* Analysis period: `r paste0(min(years),"-",max(years))`
+
+## Create Baseline and Partitioned Networks
+
+Both the baseline and partitioned networks includes all authors and relationship
+found across all years of the analysis. The network layout used the overall, 
+baseline network, which provides a consistent layout used in all network graph 
+visualizations.
+
+```{r baseline-network}
+# Create baseline igraph network
+baseline_network <- 
+  graph_from_data_frame(
+  d = edges[, .(from, to, weight)],
+  directed = FALSE,
+  vertices = nodes
+)
+
+# Create filtered igraph network
+partition_network <- 
+  graph_from_data_frame(
+  d = edges_partition[, .(from, to, weight)],
+  directed = FALSE,
+  vertices = nodes_partition
+)
+```
+
+## Network Summaries
+
+*Baseline Network:*
+
+* Nodes: `r vcount(baseline_network)`
+* Edges: `r ecount(baseline_network)`
+* Density: `r round(edge_density(baseline_network), 5)`
+* Components: `r components(baseline_network)$no`
+
+*Partitioned Network:*
+
+* Nodes: `r vcount(partition_network)`
+* Edges: `r ecount(partition_network)`
+* Density: `r round(edge_density(partition_network), 5)`
+* Components: `r components(partition_network)$no`
+
+*Partitions Impact on Network Size&*
+
+* Nodes removed: `r vcount(baseline_network)-vcount(partition_network)`
+* Edges removed: `r ecount(baseline_network)-ecount(partition_network)`
+* Percent of nodes retained: `r round(vcount(partition_network)/vcount(baseline_network)*100, 2)` %
+* Percent of edges retained: `r round(ecount(partition_network)/ecount(baseline_network)*100, 2)` %
+
+### Author Summary Statistics
+
+A summary of author found in the baseline and partitioned `r consortium` co-authorship 
+networks are provided in the table below; summaries are calculated for entire
+network, and by role associated with an author, which was identified based on
+the mapping program awards records. The summary includes the total number of authors,
+and the mean, standard deviation, minimum and maximum publications and citations
+identified for each author in the network.
+
+```{r node-summary, echo=FALSE}
+# Node summary - Baseline
+baseline_summary <- 
+  nodes %>%
+  summarise(
+    consortia = consortium,
+    network = "Baseline",
+    group = "All authors",
+    total_authors = n(),
+    publications_mean = mean(publications, na.rm = TRUE),
+    publications_sd = sd(publications, na.rm = TRUE),
+    publications_min = min(publications, na.rm = TRUE),
+    publications_max = max(publications, na.rm = TRUE),
+    citations_mean = mean(citations, na.rm = TRUE),
+    citations_sd = sd(citations, na.rm = TRUE),
+    citations_min = min(citations, na.rm = TRUE),
+    citations_max = max(citations, na.rm = TRUE)
+  )
+
+# Split calculations by role
+tmp_1 <- 
+  nodes %>%
+  group_by(role) %>%
+  summarise(
+    consortia = consortium,
+    network = "Baseline",
+    total_authors = n(),
+    publications_mean = mean(publications, na.rm = TRUE),
+    publications_sd = sd(publications, na.rm = TRUE),
+    publications_min = min(publications, na.rm = TRUE),
+    publications_max = max(publications, na.rm = TRUE),
+    citations_mean = mean(citations, na.rm = TRUE),
+    citations_sd = sd(citations, na.rm = TRUE),
+    citations_min = min(citations, na.rm = TRUE),
+    citations_max = max(citations, na.rm = TRUE)
+  )  %>%
+  rename("group" = "role")
+
+# Node summary - Baseline
+partition_summary <- 
+  nodes_partition %>%
+  summarise(
+    consortia = consortium,
+    network = "IC Partition",
+    group = "All authors",
+    total_authors = n(),
+    publications_mean = mean(publications, na.rm = TRUE),
+    publications_sd = sd(publications, na.rm = TRUE),
+    publications_min = min(publications, na.rm = TRUE),
+    publications_max = max(publications, na.rm = TRUE),
+    citations_mean = mean(citations, na.rm = TRUE),
+    citations_sd = sd(citations, na.rm = TRUE),
+    citations_min = min(citations, na.rm = TRUE),
+    citations_max = max(citations, na.rm = TRUE)
+  )
+
+# Split calculations by role
+tmp_2 <- 
+  nodes_partition %>%
+  group_by(role) %>%
+  summarise(
+    consortia = consortium,
+    network = "IC Partition",
+    total_authors = n(),
+    publications_mean = mean(publications, na.rm = TRUE),
+    publications_sd = sd(publications, na.rm = TRUE),
+    publications_min = min(publications, na.rm = TRUE),
+    publications_max = max(publications, na.rm = TRUE),
+    citations_mean = mean(citations, na.rm = TRUE),
+    citations_sd = sd(citations, na.rm = TRUE),
+    citations_min = min(citations, na.rm = TRUE),
+    citations_max = max(citations, na.rm = TRUE)
+  )  %>%
+  rename("group" = "role")
+
+# Combine data frames
+author_summary <- 
+  rbind(baseline_summary, tmp_1,
+        partition_summary, tmp_2) %>%
+  mutate_if(is.numeric, round, digits = 2)
+
+rm(baseline_summary, tmp_1, 
+   partition_summary, tmp_2)
+
+# Update col names to upper case without underscores.
+colnames(author_summary) <-
+  colnames(author_summary) %>%
+  str_replace_all("_"," ") %>%
+  str_replace_all("publications","pubs") %>%
+  str_replace_all("citations","cites") %>%
+  str_to_title()
+
+author_summary %>%
+  select(-Consortia) %>%
+  kable(caption = paste("Table 1. ",consortium,"author publication and citation summary."))
+```
+
+### Relationship Summary Statistics
+
+A summary of author relationships for the baseline `r consortium` co-authorship network 
+is provided in the table below. The table includes the total number of collaborations,
+and descriptive statistics for the strength (weight) of these collaborations,
+including: mean, standard deviation, median and max weight values.
+
+```{r edge-summary, echo=FALSE}
+# Edge summary - baseline
+edge_baseline <- 
+  edges %>%
+  summarise(
+    consortia = consortium,
+    network = "Baseline",
+    total_relationships = n(),
+    mean_edge_weight = mean(weight, na.rm = TRUE),
+    sd_edge_weight = sd(weight, na.rm = TRUE),
+    median_edge_weight = median(weight, na.rm = TRUE),
+    max_edge_weight = max(weight, na.rm = TRUE),
+  )
+
+# Edge summary - filtered
+edge_partition <- 
+  edges_partition %>%
+  summarise(
+    consortia = consortium,
+    network = "IC Partition",
+    total_relationships = n(),
+    mean_edge_weight = mean(weight, na.rm = TRUE),
+    sd_edge_weight = sd(weight, na.rm = TRUE),
+    median_edge_weight = median(weight, na.rm = TRUE),
+    max_edge_weight = max(weight, na.rm = TRUE),
+  )
+
+# Combine data frames
+edge_summary <- 
+  rbind(edge_baseline, edge_partition) %>%
+  mutate_if(is.numeric, round, digits = 2)
+
+# Update col names to upper case without underscores.
+colnames(edge_summary) <-
+  str_to_title(str_replace_all(colnames(edge_summary),"_"," "))
+
+# Print table
+edge_summary %>%
+  select(-Consortia) %>%
+  mutate_if(is.numeric, round, digits = 2) %>%
+  kable(caption = paste("Table 2. ",consortium, "edge list summary."))
+```
+
+# Generating Annual Co-authorship Network Sub-Graphs
+
+A temporal analysis of co-authorship networks can be achieved through segmentation
+of the publication records for a NIH mapping program by publication year to
+generate time-sliced sub-graphs, which represent a annual period (in years) between the 
+formation of a consortium and proceeding years of research and collaboration 
+(e.g., 2018, 2018-2019, etc.). 
+
+The `r consortium` baseline co-authorship network and periodic sub-graphs were 
+created at the same time using data processing scripts **30_network_generation_functions.R** 
+and **31_generate_coauthorship_networks.R**. The baseline graph captures all nodes 
+and edges found the network, which is used to generate a common network layout that aids
+comparison across periods. The analysis calculates two measures for each periodic subgraph:
+
+1. **pub_{year}**, node variables that represents the cumulative publication 
+counts associated with an author in the network during a temporal period.
+2. **weight_{year}**, edge variables that represents the cumulative collaborations 
+(i.e., edge) between two authors in the network during a temporal period.
+
+Note that cumulative citation counts are not calculated for nodes in the network, 
+because the citation variable is an aggregated count provided by a third party 
+(e.g., Web of Science or Google Scholar).
+
+### Network Filtering Function
+
+Annual co-authorship network sub-graphs are generated using the _create_annual_network()_ 
+function. The function loops through years identified in the baseline network column set, 
+where the relevant node and edge variables (i.e.,**pub_{year}** and **weight_{year}**) 
+for a given sub-graphs are used to filter baseline the node and egde lists to 
+keep nodes and edges with values greater than to zero, which indicates that 
+an author or a relationship had not yet been established in the publication record 
+during the period.
+
+```{r create-annual-network-function}
+# Create annual network by filtering baseline network
+# @param year Year to create network for
+# @param nodes Node data.table
+# @param edges Edge data.table
+# @param graph is an igraph object
+# @return List containing igraph object and metadata
+create_annual_network <- function(year, nodes, edges, graph) {
+  
+  # Column names for this year
+  pubs_col <- paste0("pubs_", year)
+  weight_col <- paste0("weight_", year)
+  
+  # Validate columns exist
+  if (!pubs_col %in% names(nodes)) {
+    warning(paste("Column", pubs_col, "not found"))
+    return(NULL)
+  }
+  if (!weight_col %in% names(edges)) {
+    warning(paste("Column", weight_col, "not found"))
+    return(NULL)
+  }
+  
+  # Filter nodes: authors with publications through this year
+  active_nodes <- nodes[get(pubs_col) > 0]
+  active_node_ids <- active_nodes$id
+  
+  # Filter edges: collaborations through this year
+  active_edges <- edges[get(weight_col) > 0]
+  
+  # Create induced subgraph
+  g_year <- induced_subgraph(
+    graph,
+    vids = V(graph)[name %in% active_node_ids]
+  )
+  
+  # Get edge list for the subgraph
+  el <- as_edgelist(g_year)
+  edge_ids <- paste(el[,1], el[,2], sep = "|")
+  
+  # Match edges and get weights
+  edge_weights <- numeric(length(edge_ids))
+  for (i in seq_along(edge_ids)) {
+    parts <- strsplit(edge_ids[i], "\\|")[[1]]
+    match_idx <- which(
+      (active_edges$from == parts[1] & active_edges$to == parts[2]) |
+      (active_edges$from == parts[2] & active_edges$to == parts[1])
+    )
+    if (length(match_idx) > 0) {
+      edge_weights[i] <- active_edges[[weight_col]][match_idx[1]]
+    }
+  }
+  
+  # Remove edges with zero weight
+  edges_to_keep <- which(edge_weights > 0)
+  if (length(edges_to_keep) < ecount(g_year)) {
+    g_year <- delete_edges(g_year, E(g_year)[-edges_to_keep])
+    edge_weights <- edge_weights[edges_to_keep]
+  }
+  
+  # Set edge weights
+  E(g_year)$weight <- edge_weights
+  
+  # Add node attributes
+  node_match <- match(V(g_year)$name, active_nodes$id)
+  V(g_year)$year <- year
+  V(g_year)$pubs_cumulative <- active_nodes[[pubs_col]][node_match]
+  
+  return(g_year)
+}
+```
+
+### Generate Annual Networks Sub-Graphs
+
+```{r generate-annual-networks, echo=TRUE}
+# Create networks for all years - baseline network data
+annual_networks <- list()
+for (year in years) {
+  cat("Creating ", year, "network\n")
+  
+  g_year <- 
+    create_annual_network(
+    year = year,
+    nodes = nodes,
+    edges = edges,
+    graph = baseline_network
+  )
+  
+  if (!is.null(g_year)) {
+    annual_networks[[as.character(year)]] <- g_year
+    cat("  Nodes:", vcount(g_year), "| Edges:", ecount(g_year), "\n")
+  }
+}  
+
+# Create annual networks for all years - partitioned network data
+annual_partition_networks <- list()
+for (year in years) {
+  cat("Creating", year, "network\n")
+  
+  g_year <- create_annual_network(
+    year = year,
+    nodes = nodes_partition,
+    edges = edges_partition,
+    graph = partition_network
+  )
+  
+  if (!is.null(g_year)) {
+    annual_partition_networks[[as.character(year)]] <- g_year
+    cat("  Nodes:", vcount(g_year), "| Edges:", ecount(g_year), "\n")
+  }
+}
+```
+
+There were `r length(annual_networks)` annual networks created for the consortium.
+
+There were `r length(annual_partition_networks)` annual partitioned networks created for the consortium.
+
+# Network Analysis
+
+## Comprehensive Metrics Function
+
+After generating the annual co-authorship sub-graphs for `r consortium`, each network is 
+analyzed to across a set of network statistical measures. The annualized measures allow 
+for temporal t
+rend analysis of the network growth over the observation period.
+
+Calculations are made with consideration that each co-authorship networks are weighed and 
+undirected, unless otherwise noted. The `calculate_comprehensive_metrics()` function is 
+used to measure the following network statistics: 
+* Network size: node and edge count.
+* Density
+* Number of Components 
+* Diameter (edge weights unused)
+* Avg. Path Length (edge weights unused)
+* Number of Triangles
+* Clustering Coefficient
+* Modularity (using Louvain community detection algorithm)
+* Avg. Degree 
+* Std. Dev. Degree
+* Max. Degree
+* Avg. Publication Count
+* Std. Dev. Publication Count
+* Avg. Citation Count
+* Std. Dev. Citation Count
+
+Note, alternative community detection and clustering algorithms may be tested. 
+The Louvain clustering algorithm is used here due to the quality of clusters 
+identification when this algorithm is applied to co-authorship networks.
+
+```{r calculate-metrics-function, include=FALSE}
+# Calculate comprehensive network metrics
+# @param g igraph object
+# @param year Year label
+# @param consortium Consortium label
+# @return Data frame with all metrics
+calculate_comprehensive_metrics <- 
+  function(g, year, consortium, net_type = c("baseline", "partition")) {
+  
+    if (is.null(g) || vcount(g) == 0) {
+      return(NULL)
+    }
+    
+    # Basic network properties
+    n_nodes <- vcount(g)
+    n_edges <- ecount(g)
+    
+    # Density
+    density <- edge_density(g)
+    
+    # Components
+    comp <- components(g)
+    n_components <- comp$no
+    
+    # Diameter and path lengths (only for connected graphs)
+    is_connected <- is.connected(g)
+    if (is_connected) {
+      diameter <- diameter(g, weights = NA, directed = FALSE,
+                           unconnected = FALSE)
+      avg_path_length <- mean_distance(g, weights = NA, directed = FALSE,
+                           unconnected = FALSE)
+    } else {
+      diameter <- diameter(g, weights = NA, directed = FALSE,
+                           unconnected = TRUE)
+      avg_path_length <- mean_distance(g, weights = NA, directed = FALSE,
+                           unconnected = TRUE)
+    }
+    
+    # Number of triangles
+    n_triangles <- sum(count_triangles(g)) / 3
+    
+    # Clustering coefficient
+    clustering_coef <- transitivity(g, type = "global")
+    
+    # Modularity (using community detection)
+    if (n_edges > 0) {
+      communities <- cluster_louvain(g, weights = E(g)$weight)
+      modularity_score <- modularity(communities)
+    } else {
+      modularity_score <- NA
+    }
+    
+    # Degree statistics
+    degree_ct <- degree(g, loops = FALSE)
+    avg_degree <- mean(degree_ct, na.rm = TRUE)
+    sd_degree <- sd(degree_ct, na.rm = TRUE)
+    
+    # Publication and citation statistics
+    avg_publications <- mean(V(g)$publications)
+    sd_publications <- sd(V(g)$publications, na.rm = TRUE)
+    
+    if ("citations" %in% vertex_attr_names(g)) {
+      avg_citations <- mean(V(g)$citations, na.rm = TRUE)
+      sd_citations <- sd(V(g)$citations, na.rm = TRUE)
+    } else {
+      avg_citations <- NA
+      sd_citations <- NA
+    }
+    
+    # Return metrics as data frame
+    data.frame(
+        consortia = consortium,
+        network = net_type,
+        year = year,
+        node_count = n_nodes,
+        edge_count = n_edges,
+        number_of_components = n_components,
+        network_density = density,
+        diameter = diameter,
+        average_path_length = avg_path_length,
+        number_of_triangles = n_triangles,
+        clustering_coefficient = clustering_coef,
+        modularity = modularity_score,
+        avg_degree = avg_degree,
+        sd_degreev = sd_degree,
+        mean_publications = avg_publications,
+        sd_publications = sd_publications,
+        mean_citations = avg_citations,
+        sd_citations = sd_citations
+      )
+  }
+```
+
+## Calculate Metrics for All Years
+
+```{r calculate-all-metrics, echo=FALSE}
+# Calculate metrics for each annual network - Baseline Data
+annual_metrics <-
+  map_dfr(names(annual_networks), function(year) {
+  calculate_comprehensive_metrics(
+    g = annual_networks[[year]],
+    year = as.integer(year),
+    consortium = consortium,
+    net_type = "baseline"
+  )
+})
+
+# Calculate metrics for each annual network - Filtered Data
+annual_partition_metrics <-
+  map_dfr(names(annual_partition_networks), function(year) {
+  calculate_comprehensive_metrics(
+    g = annual_partition_networks[[year]],
+    year = as.integer(year),
+    consortium = consortium,
+    net_type = "partition"
+  )
+})
+
+# Combine network metrics data
+network_metrics_t <- 
+  network_metrics <- 
+  rbind(annual_metrics,
+        annual_partition_metrics) %>%
+  mutate(network = factor(network, 
+                          levels=c("baseline","partition"),
+                          labels=c("Baseline Network", "IC Partition Network")))
+
+# Update col names to upper case without underscores.
+colnames(network_metrics_t) <-
+  str_to_title(str_replace_all(colnames(network_metrics_t),"_"," "))
+
+rm(annual_metrics, annual_filtered_metrics)
+
+# Display metrics table
+network_metrics_t %>% 
+  select(-Consortia) %>%
+  mutate(across(where(is.numeric) & 
+                  !c(Year, 'Node Count', 'Edge Count', 'Number Of Triangles',
+                     'Number Of Components'), 
+                ~round(., 4))) %>%
+  kable(caption = paste("Table 3. ",consortium," annual co-authorship network metrics."))
+```
+
+## Growth Rate Analysis
+
+The co-authorship networks rate of growth is calculated for the period 2019 to 
+2025. The years 2018 and 2026 are excluded due to the limited data points 
+available for these years.
+
+```{r growth-rates, echo=FALSE}
+# Calculate year-over-year growth rates (2019-2026)
+growth_stats_baseline <- 
+  network_metrics %>%
+  arrange(year) %>%
+  filter(network=="Baseline Network",
+         year>min(year),
+         year<max(year)) %>%
+  mutate(
+    node_growth_pct = (node_count / lag(node_count) - 1) * 100,
+    edge_growth_pct = (edge_count / lag(edge_count) - 1) * 100
+  ) %>%
+  select(network, year, node_count, node_growth_pct, edge_count, edge_growth_pct) %>%
+  mutate(
+    node_growth_pct = round(node_growth_pct, 2),
+    edge_growth_pct = round(edge_growth_pct, 2)
+  )
+
+growth_stats_partition <- 
+  network_metrics %>%
+  arrange(year) %>%
+  filter(network=="IC Partition Network",
+         year>min(year),
+         year<max(year)) %>%
+  mutate(
+    node_growth_pct = (node_count / lag(node_count) - 1) * 100,
+    edge_growth_pct = (edge_count / lag(edge_count) - 1) * 100
+  ) %>%
+  select(network, year, node_count, node_growth_pct, edge_count, edge_growth_pct) %>%
+  mutate(
+    node_growth_pct = round(node_growth_pct, 2),
+    edge_growth_pct = round(edge_growth_pct, 2)
+  )
+
+growth_stats <- 
+  rbind(growth_stats_baseline, growth_stats_partition)
+
+rm(growth_stats_baseline, growth_stats_partition)
+
+growth_stats %>%
+  kable(
+    caption = paste("Table 4. Co-authorshup network year-over-year growth rates."),
+    col.names = c("Network", "Year", "Nodes", "Node Growth (%)", "Edges", "Edge Growth (%)")
+  )
+```
+
+# Temporal Trends Visualization
+
+## Network Growth
+
+```{r plot-network-growth, echo=FALSE, fig.height=5, fig.width=6}
+# Prepare data for plotting
+p1 <- 
+  ggplot(network_metrics, aes(x = year, y = node_count)) +
+    geom_line(aes(color=network), size = 1) +
+    geom_point(aes(color=network), size = 2) +
+    labs(
+      tag = "A",
+      title = "Author Growth",
+      x = "Year",
+      y = "Number of Authors"
+    ) +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(labels = comma) +
+    scale_color_discrete(palette = c("#377EB8","#C0D8EC"),
+                         name = "Network") +
+    theme(base_size = 10,
+          legend.position = "none",
+          plot.title = element_text(size = 12, face = "bold")
+         )
+
+p2 <- 
+  ggplot(network_metrics, aes(x = year, y = edge_count)) +
+    geom_line(aes(color=network), size = 1) +
+    geom_point(aes(color=network), size = 2) +
+    labs(
+      tag = "B",
+      title = "Relationship Growth",
+      x = "Year",
+      y = "Number of Relationships"
+    ) +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(labels = comma) +
+    scale_color_discrete(palette = c("#377EB8","#C0D8EC"),
+                       name = "Network") +
+    theme(base_size = 10,
+          legend.position = "bottom",
+          plot.title = element_text(size = 12, face = "bold")
+         )
+
+p1 / p2
+```
+
+## Network Structure Metrics
+
+```{r plot-structure-metrics, echo=FALSE, fig.height=12, fig.width=12}
+p1 <- 
+  ggplot(network_metrics, aes(x = year, y = diameter)) +
+    geom_line(aes(color=network), size = 1.5) +
+    geom_point(aes(color=network), size = 3) +
+    labs(
+      tag = "A",
+      title = "Network Diameter",
+      x = "Year",
+      y = "Path Length"
+    ) +
+    scale_color_discrete(palette = c("#377EB8","#C0D8EC"),
+                         name = "Network") +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(breaks = seq(0,
+                                    max(network_metrics$diameter),2),
+      expand = expansion(mult=c(0.01,0.1))) +
+    expand_limits(y=0)
+
+p2 <- 
+  ggplot(network_metrics %>% filter(!is.na(average_path_length)), 
+         aes(x = year, y = average_path_length)) +
+    geom_line(aes(color=network), size = 1.5) +
+    geom_point(aes(color=network), size = 3) +
+    labs(
+      tag = "B",
+      title = "Average Path Length",
+      x = "Year",
+      y = "Average Path Length"
+    ) +
+    scale_color_discrete(palette = c("#FF7F00","#FFBB67"),
+                         name = "") +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(
+      expand = expansion(mult=c(0.01,0.1))) +
+    expand_limits(y=0)
+  
+p3 <- 
+  ggplot(network_metrics, aes(x = year, y = network_density)) +
+    geom_line(aes(color=network), size = 1.5) +
+    geom_point(aes(color=network), size = 3) +
+    labs(
+      tag = "C",
+      title = "Network Density",
+      x = "Year",
+      y = "Density"
+    ) +
+    scale_color_discrete(palette = c("#4DAF4A","#87C980"),
+                         name = "") +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(
+      expand = expansion(mult=c(0.01,0.1))) +
+    expand_limits(y=c(0,.4))
+
+p4 <- 
+  ggplot(network_metrics, aes(x = year, y = number_of_components)) +
+    geom_line(aes(color=network), size = 1.5) +
+    geom_point(aes(color=network), size = 3) +
+    labs(
+      tag = "D",
+      title = "Network Components",
+      x = "Year",
+      y = "Components"
+    ) +
+    scale_color_discrete(palette = c("#E41A1C","#FC989A"),
+                       name = "") +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(breaks = seq(0,25,5),
+      expand = expansion(mult=c(0.01,0.1))) +
+    expand_limits(y=0)
+
+p5 <-   
+  ggplot(network_metrics, aes(x = year, y = modularity)) +
+    geom_line(aes(color=network), size = 1.5) +
+    geom_point(aes(color=network), size = 3) +
+    labs(
+      tag = "E",
+      title = "Modularity",
+      x = "Year",
+      y = "Modularity Score"
+    ) +
+    scale_color_discrete(palette = c("#A65628","#DBB297"),
+                   name = "") +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(breaks=seq(0,1,.2)) +
+    expand_limits(y=c(0,1))
+
+p6 <- 
+  ggplot(network_metrics, aes(x = year, y = clustering_coefficient)) +
+    geom_line(aes(color=network), size = 1.5) +
+    geom_point(aes(color=network), size = 3) +
+    labs(
+      tag = "F",
+      title = "Clustering Coefficient",
+      x = "Year",
+      y = "Clustering Coefficient"
+    ) +
+    scale_color_discrete(palette = c("#984EA3","#D295E8"),
+                   name = "") +
+    scale_x_continuous(breaks = years) +
+    scale_y_continuous(breaks=seq(0,1,.2)) +
+    expand_limits(y=c(0,1))
+
+p7 <- 
+  ggplot(network_metrics, aes(x = year, y = avg_degree)) +
+    geom_line(aes(color=network), size = 1.5) +
+    geom_point(aes(color=network), size = 3) +
+    labs(
+      tag="G",
+      title = "Average Degree",
+      x = "Year",
+      y = "Avg Degree"
+    ) +
+    scale_x_continuous(breaks = years) + 
+    scale_color_discrete(palette = c("#F781BF","#F7BCD6"),
+                 name = "") +
+    scale_y_continuous(
+      breaks=seq(0,round(max(network_metrics$avg_degree),0),5),
+      expand = expansion(mult=c(0.0,0.1))) +
+    expand_limits(y=0)
+
+(p1 + p2 + p3 + p4 + p5 + p6 + p7) + 
+  plot_layout(ncol = 3, byrow = TRUE, guides = "collect")
+
+```
+
+# Centrality Analysis
+
+Next, network centrality measures are calculated to each `r consortium` annual 
+co-authorship sub-graphs, which are weighted and undirected. Centrality measures
+include:
+
+* Degree centrality
+* Betweenness centrality
+* Eigenvector centrality
+
+## Node-Level Centrality Measures
+
+```{r calculate-centrality}
+# Calculate node-level centrality metrics
+#' @param g igraph object
+#' @param year Year label
+#' @return Data frame with centrality metrics
+calculate_node_centrality <- 
+  function(g, year, consortia, net_type = c("baseline","partition")) {
+    if (is.null(g) || vcount(g) == 0) {
+      return(NULL)
+    }
+    
+    # Calculate centrality measures
+    deg <- degree(g)
+    
+    # Betweenness centrality (can be slow for large networks)
+    betw <- betweenness(g, weights = E(g)$weight, normalized = F)
+    
+    # Eigenvector centrality
+    eigen <- eigen_centrality(g, weights = E(g)$weight)$vector
+    
+    # Create data frame
+    data.frame(
+      consortia = consortium,
+      network = net_type,
+      year = year,
+      node_id = V(g)$name,
+      node_label = V(g)$label,
+      role = V(g)$role,
+      degree = deg,
+      betweenness_centrality = betw,
+      eigenvector_centrality = eigen,
+      publications = V(g)$pubs_cumulative,
+      citations = if("citations" %in% vertex_attr_names(g)) V(g)$citations else NA
+    )
+}
+```
+
+```{r node_centrality, echo=FALSE}
+# Calculate centrality for all years baseline network
+centrality_metrics_baseline <- 
+  map_dfr(names(annual_networks), function(year) {
+    calculate_node_centrality(
+      annual_networks[[year]], 
+      as.integer(year),
+      consortia = consortium,
+      net_type="baseline")
+  })
+
+# Calculate centrality for all years partition networks
+centrality_metrics_partition <- 
+  map_dfr(names(annual_partition_networks), function(year) {
+    calculate_node_centrality(
+      annual_partition_networks[[year]], 
+      as.integer(year), 
+      consortia = consortium,
+      net_type="partition")
+  })
+
+# Combine network metrics data
+centrality_metrics <- 
+  rbind(centrality_metrics_baseline,
+        centrality_metrics_partition) %>%
+  mutate(network = factor(network, 
+                          levels=c("baseline","partition"),
+                          labels=c("Baseline Network", "IC Partition Network"))) %>%
+  remove_rownames()
+
+rm(centrality_metrics_baseline, centrality_metrics_partition)
+
+# Display top nodes by betweenness (most recent year)
+recent_year <- max(years)-1
+
+centrality_metrics_t <- 
+  centrality_metrics %>%
+    filter(year == recent_year,
+           network== "Baseline Network") %>%
+    arrange(desc(betweenness_centrality)) %>%
+    head(10) 
+
+centrality_metrics_t %>%
+  rbind(centrality_metrics %>%
+            filter(year == recent_year,
+                   network== "IC Partition Network") %>%
+            arrange(desc(betweenness_centrality)) %>%
+            head(10)) %>%
+  select(network, node_label, role, publications, degree, 
+         betweenness_centrality, eigenvector_centrality) %>%
+  rename_with(~ str_to_title(gsub("_", " ", .x, fixed = TRUE))) %>%
+  kable(caption = paste("Table 5. Top 10 authors by betweenness centrality -", recent_year,"."),
+        row.names = FALSE)
+```
+
+## Degree Centrality
+
+### Annual Author Degree Distribtuion
+
+```{r plot-annual_dist_degree-by_role, echo=FALSE,  fig.height=6, fig.width=6}
+# Calculate degree distributions
+degree_data <- 
+  centrality_metrics %>%
+  select(network, year, node_label, role, degree, publications)
+
+# Plot degree distribution over time
+degree_data %>%
+  mutate(year = factor(year)) %>%
+  ggplot(aes(y=degree, x = year,
+             color=role, fill=role)) +
+    geom_boxplot(position = position_dodge(width = .9)) +
+    facet_wrap(~network, ncol=1) +
+    scale_y_log10(breaks = breaks_log(6, base=10)) +
+    scale_color_manual(
+      values = c("Principal Investigator" = "#F781BF", 
+                 "Researcher" = "#377EB8"),
+      name = "Role") +
+    scale_fill_manual(
+    values = c("Principal Investigator" = "#FEECF5", 
+               "Researcher" = "#C0D8EC"),
+    name = "Role") +
+    labs(y = "Degree",
+         x = "Year") +
+    theme_minimal() +
+    theme(panel.grid.major.x = element_blank(),
+          legend.position = "bottom")
+```
+
+### Median Degree
+
+```{r plot-annual_median_degree-by_role, echo=FALSE, fig.height=4, fig.width=4}
+# Mean degree by role over time
+degree_summary <- 
+  degree_data %>%
+  group_by(network, year, role) %>%
+  summarise(
+    mean_degree = mean(degree),
+    median_degree = median(degree),
+    .groups = "drop"
+  )
+
+ggplot(degree_summary, aes(x = year, y = median_degree, color = role)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  facet_wrap(~network, ncol=1) +
+  scale_x_continuous(breaks = years) +
+  scale_color_manual(
+    values = c("Principal Investigator" = "#F781BF", 
+               "Researcher" = "#377EB8"),
+    name = "Role"
+  ) +
+  labs(x = "Year",
+       y = "Median Degree") +
+  theme(base_size = 9,
+        legend.position = "bottom"
+    )
+```
+
+## Betweennness Centrality
+
+### Annual Distribution of Betweenness Centrality
+
+```{r plot-annual_dist_bewteenness-by_role, echo=FALSE, fig.height=6, fig.width=6}
+options(scipen = 999)
+
+# Annual betweenness centrality data for annual networks
+betweenness_data <- 
+  centrality_metrics %>%
+  select(network, year, node_label,role,betweenness_centrality,publications)
+
+# Box plots showing the annual distribution of betweenness centrality - by role
+betweenness_data %>%
+  mutate(year = factor(year)) %>%
+  ggplot(aes(y=betweenness_centrality, x = year,
+             color=role, fill=role)) +
+    geom_boxplot(position = position_dodge(width = .9)) +
+    facet_wrap(~network, ncol=1) +
+    scale_y_log10(breaks=scales::breaks_log(n=6)) + 
+    scale_color_manual(
+      values = c("Principal Investigator" = "#F781BF", 
+                 "Researcher" = "#377EB8"),
+      name = "Role"
+    ) +
+    scale_fill_manual(
+      values = c("Principal Investigator" = "#FEECF5", 
+                 "Researcher" = "#C0D8EC"),
+      name = "Role") +
+    labs(y = "Betweenness centrality",
+         x = "Year") +
+    theme_minimal() +
+    theme(legend.position = "bottom")
+```
+
+### Median Betweenness Centrality
+
+```{r plot-annual_median_bewteenness-by_role, echo=FALSE, fig.height=5, fig.width=5}
+# Mean betweenness over time, by role
+betweenness_summary <- 
+  betweenness_data %>%
+  group_by(network, year, role) %>%
+  summarise(
+    mean_between = mean(betweenness_centrality, na.rm = T),
+    median_between = median(betweenness_centrality, na.rm = T),
+    .groups = "drop"
+  )
+
+# Line plot
+p8 <-
+  betweenness_summary %>%
+  filter(network=="Baseline Network") %>%
+  filter(median_between > 0) %>%
+  ggplot(aes(x = year, y = median_between, color = role)) +
+    geom_line(size = 1) +
+    geom_point(size = 2) +
+    scale_color_manual(
+      values = c("Principal Investigator" = "#F781BF", 
+                 "Researcher" = "#377EB8"),
+      name = "Role"
+    ) +
+    scale_y_log10() +
+    labs(tag="A",
+         subtitle="Baseline Network",
+         x = "Year",
+         y = "Median Betweenness") +
+    theme(base_size = 10,
+          legend.position = "none",
+          plot.title = element_text(size = 12, face = "bold")
+      )
+
+p9 <-
+  betweenness_summary %>%
+  filter(network=="IC Partition Network") %>%
+  filter(median_between > 0) %>%
+  ggplot(aes(x = year, y = median_between, color = role)) +
+    geom_line(size = 1) +
+    geom_point(size = 2) +
+    scale_color_manual(
+      values = c("Principal Investigator" = "#F781BF", 
+                 "Researcher" = "#377EB8"),
+      name = "Role"
+    ) +
+    scale_y_continuous(trans = "log10") +
+    labs(tag="B",
+         subtitle="IC Partition Network",
+         x = "Year",
+         y = "Median Betweenness") +
+    theme(base_size = 10,
+          legend.position = "bottom",
+          plot.title = element_text(size = 12, face = "bold")
+      )
+
+p8 / p9
+```
+
+## Eigenvector Centrality
+
+### Distribution of Eigenvector Centrality (2026)
+
+```{r plot-overall_dist_eigenvector-by_role, echo=FALSE, fig.height=6, fig.width=6}
+# Annual eigenvector centrality data for annual networks
+eigenvector_data <- 
+  centrality_metrics %>%
+  select(network, year, node_label,role,eigenvector_centrality,publications)
+
+# Histograms of eigenvector centrality - 2026
+p10 <-
+  eigenvector_data %>%
+    filter(network=="Baseline Network",
+           year==2026, 
+           eigenvector_centrality>0.001) %>%
+    ggplot(aes(x=eigenvector_centrality, color=role, fill=role)) +
+      geom_histogram(stat="bin") +
+      facet_grid(~role, scales="fixed", margins=T) +
+      scale_color_manual(
+        values = c("Principal Investigator" = "#F781BF", 
+                   "Researcher" = "#377EB8"),
+        name = "Role"
+      ) +
+      scale_fill_manual(
+        values = c("Principal Investigator" = "#FEECF5", 
+                   "Researcher" = "#C0D8EC"),
+        name = "Role") +
+      scale_y_continuous(transform = "sqrt") +
+      labs(tag="A",
+           subtitle="Baseline Network",
+           x = "Eigenvector centrality",
+           y = "Authors"
+           ) +
+      theme_minimal() +
+      theme(legend.position = "none")
+
+p11 <-
+  eigenvector_data %>%
+    filter(network=="IC Partition Network",
+           year==2026, 
+           eigenvector_centrality>0.001) %>%
+    ggplot(aes(x=eigenvector_centrality, color=role, fill=role)) +
+      geom_histogram(stat="bin") +
+      facet_grid(~role, scales="fixed", margins=T) +
+      scale_color_manual(
+        values = c("Principal Investigator" = "#F781BF", 
+                   "Researcher" = "#377EB8"),
+        name = "Role"
+      ) +
+      scale_fill_manual(
+        values = c("Principal Investigator" = "#FEECF5", 
+                   "Researcher" = "#C0D8EC"),
+        name = "Role") +
+      scale_y_continuous(transform = "sqrt") +
+      labs(tag="B",
+           subtitle="IC Partition Network",
+           x = "Eigenvector centrality",
+           y = "Authors"
+           ) +
+      theme_minimal() +
+      theme(legend.position = "bottom")
+
+p10 / p11
+```
+
+### Median Eigenvector Centrality
+
+```{r plot-annual_mean_eigen-by_role, echo=FALSE, fig.height=5, fig.width=4}
+# Mean betweenness over time, by role
+eigen_summary <- 
+  eigenvector_data %>%
+  group_by(network, year, role) %>%
+  summarise(
+    mean_eigen = mean(eigenvector_centrality, na.rm = T),
+    median_eigen = median(eigenvector_centrality, na.rm = T),
+    .groups = "drop"
+  )
+
+# Line plot
+ggplot(eigen_summary, 
+       aes(x = year, y = mean_eigen, color = role)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  facet_wrap(~network, ncol=1) +
+  scale_color_manual(
+    values = c("Principal Investigator" = "#F781BF", 
+               "Researcher" = "#377EB8"),
+    name = "Role"
+  ) +
+  labs(x = "Year",
+       y = "Eigenvector Centrality"
+  ) +
+  scale_x_continuous(breaks = years) +
+  theme(base_size = 10,
+        legend.position = "bottom",
+        plot.title = element_text(size = 12, face = "bold")
+    )
+```
+
+## Comparison of Author Centrality Measures and Publication Metrics
+
+```{r plot-centrality-pubs_scatter, echo=FALSE, fig.height=7, fig.width=5}
+p11 <-
+  degree_data %>%
+    filter(year==2025) %>%
+    ggplot(aes(x=degree, y=publications)) +
+      geom_point(aes(color=role), size=.75) + 
+      geom_smooth(method="lm") +
+      facet_grid(network~role, scales="fixed") +
+      scale_color_manual(
+        values = c("Principal Investigator" = "#F781BF", 
+                   "Researcher" = "#377EB8"),
+        name = "Role")  +
+      labs(x="Degree Centrality",
+           y="Publications",
+           tag="A") +
+      theme(base_size = 10,
+            legend.position = "none",
+            plot.title = element_text(size = 11, face = "bold"))
+
+p12 <-
+  betweenness_data %>%
+    filter(year==2025) %>%
+    ggplot(aes(x=scale(betweenness_centrality, scale=T), y=publications)) +
+      geom_point(aes(color=role), size=.75) + 
+      geom_smooth(method="lm") +
+      facet_grid(network~role, scales="fixed") +
+      scale_color_manual(
+        values = c("Principal Investigator" = "#F781BF", 
+                   "Researcher" = "#377EB8"),
+        name = "Role"
+      ) +
+      labs(x="Betweenness Centrality",
+           y="Publications",
+           tag="B") +
+      theme(base_size = 9,
+            legend.position = "bottom",
+            plot.tag = element_text(size = 10, face = "bold")
+        )
+
+p11 / p12
+```
+
+# Relationship Analysis
+
+## Assign Relationship Type
+
+In this analysis, the types of relationships that are assigned to an edge is based
+on the identified roles of the authors in a dyad. There are three types of relationships 
+possible in the network: PI dyads & researcher dyads, where authors' share the same
+role in the network; and mixed dyads, where authors have different roles in the 
+network.
+
+```{r edge_type_analyis}
+edges$edge_type <- "Mixed Dyad"
+edges_t <-
+  edges %>%
+    select(to,from,weight,edge_type) %>%
+    left_join(nodes %>%
+                mutate(id = as.character(id)) %>%
+                select(id, role),
+              join_by("to" == "id")) %>%
+    left_join(nodes %>%
+                select(id,role),
+              join_by("from" == "id")) %>%
+    rename("to_role" = "role.x",
+           "from_role" = "role.y")
+
+# Update edge type for researchers and PIs
+edges_t[edges_t$to_role=="Researcher" & 
+        edges_t$from_role=="Researcher",]$edge_type <- "Researcher Dyad"
+edges_t[edges_t$to_role=="Principal Investigator" & 
+        edges_t$from_role=="Principal Investigator",]$edge_type <- "PI Dyad"
+
+# Convert edge_type to factor variable
+edges_t$edge_type <- factor(edges_t$edge_type, 
+                            levels=c("PI Dyad","Researcher Dyad","Mixed Dyad"))
+
+# Network IC Partition
+edges_partition $edge_type <- "Mixed Dyad"
+edges_p <-
+  edges_partition %>%
+    select(to,from,weight,edge_type) %>%
+    left_join(nodes %>%
+                mutate(id = as.character(id)) %>%
+                select(id, role),
+              join_by("to" == "id")) %>%
+    left_join(nodes %>%
+                select(id,role),
+              join_by("from" == "id")) %>%
+    rename("to_role" = "role.x",
+           "from_role" = "role.y")
+
+# Update edge type for researchers and PIs
+edges_p[edges_p$to_role=="Researcher" & 
+        edges_p$from_role=="Researcher",]$edge_type <- "Researcher Dyad"
+edges_p[edges_p$to_role=="Principal Investigator" & 
+        edges_p$from_role=="Principal Investigator",]$edge_type <- "PI Dyad"
+
+# Convert edge_type to factor variable
+edges_p$edge_type <- factor(edges_p$edge_type, 
+                            levels=c("PI Dyad","Researcher Dyad","Mixed Dyad"))
+```
+
+## Relationship Type Census and Weight Statistics
+
+```{r edge_type_census, echo=FALSE}
+edge_type <- 
+  edges_t %>%
+  group_by(edge_type) %>%
+  summarise(relationships = n(),
+            mean_weight = mean(weight),
+            sd_weight = sd(weight),
+            var_weight = var(weight),
+            min_weight = min(weight),
+            max_weight = max(weight)) %>%
+  mutate(percent_of_relationships = 
+           round(relationships/nrow(edges),2)) %>%
+  select(edge_type,relationships,percent_of_relationships,
+         mean_weight, sd_weight, var_weight, min_weight, max_weight)
+
+colnames(edge_type) <-
+  colnames(edge_type) %>%
+  str_replace_all("_"," ") %>%
+  str_to_title()
+
+edge_type %>%
+   kable(caption = paste("Table 6. ",consortium," relationship type census, all edges."))
+```
+
+```{r edge_type_census_partition, echo=FALSE}
+edge_type_p <- 
+  edges_p %>%
+  filter(weight>1) %>%
+  group_by(edge_type) %>%
+  summarise(relationships = n(),
+            mean_weight = mean(weight),
+            sd_weight = sd(weight),
+            var_weight = var(weight),
+            max_weight = max(weight)) %>%
+  select(edge_type,relationships, mean_weight, sd_weight, var_weight, max_weight)
+
+colnames(edge_type_p) <-
+  colnames(edge_type_p) %>%
+  str_replace_all("_"," ") %>%
+  str_to_title()
+
+edge_type_p <-
+  edge_type_p %>%
+  left_join(edge_type %>% select("Edge Type","Relationships"),
+            by = "Edge Type") %>%
+  mutate("Percent of Baseline Relationships"= round(Relationships.x/Relationships.y,2)) %>%
+  rename("Relationships (Partition)" = "Relationships.x",
+         "Relationships (Baseline)" = "Relationships.y") 
+
+edge_type_p[,c(1,7,2,8,3:6)] %>%  
+  kable(caption = paste("Table 8. ",consortium," principal investigator relationships with at least 10 collaborations."))
+```
+
+## Key relationships with Principal Investigators
+
+```{r edge_key_relationship, echo=FALSE}
+edges_t %>%
+  filter(edge_type!="Researcher Dyad",
+         weight>=10) %>%
+  select(from, to, weight, edge_type) %>%
+  arrange(edge_type,-weight) %>%
+  rename_with(str_to_title) %>%
+  kable(caption = paste("Table 8. ",consortium," Principal Investigators Relationship with at least 10 collaborations."))
+```
+
+# Internal Collaboration
+
+## Distribution of Collaboration Type Concentration Scores for NIH Mapping Program Authors
+
+```{r histogram-author-distribution_ict_score+role, message=FALSE, warning=FALSE, echo=FALSE, fig.cap="**Figure 8.** A histogram shows the distribution of authors' internal collaboration type (ICT) scores for NIH mapping program; bar color identifies number of the collaborative authors by role within a program. An ICT score of 1 indicates that an division only engages in inter-division research; a score of -1 indicates that an division only engages in intra-division collaboration; a score of 0 indicates that an division engages in both inter- and intra-division equally.", fig.height=3, fig.width=5}
+#### Histogram of author internal collaboration type concentration score. ####
+# A Internal Collaboration Type Score represents the concentration and type of 
+# internal collaborative research and concentration that an author engages. 
+# There are two types of internal collaboration: inter-division (between) vs. 
+# intra-division (within) collaborations.
+#
+# Interpretation: An ICT Score of 1 indicates that 
+# an author only engages in  inter-division research; a score of -1 indicates 
+# that an author only engages in intra-division collaboration; a score of 0  
+# indicates that an author engages in both inter- and intra-division equally.
+
+# geom_segment color data set.
+gradient_data <- data.frame(
+  collaboration_type_concentration = seq(-1.07,1.07,.001), 
+  color = seq(-1.07,1.07,.001) )
+
+# Plot
+p8 <- 
+  nodes_partition %>%
+    select(role, ict_score, publications) %>%
+    filter(is.na(ict_score)==FALSE) %>%
+    ggplot() +
+      geom_segment(data = gradient_data, alpha = .15,
+                   aes(x=color, xend=color,
+                       y=0, yend=Inf, color=color),
+                   show.legend = FALSE) +
+      annotate("text", x=-.85, y=1300, size=2, color="#6B6443",
+               label="Intradivision\nCollaborations") +
+      annotate("text", x=.85, y=1300, size=2, color="#3F6B40",
+               label="Interdivision\nCollaborations") +
+      annotate("text", x=0, y=1300, size=2, color="#444444",
+               label="Mixed Collaboration\nTypes") +
+      geom_histogram(aes(x = ict_score, fill = role),
+                     binwidth=.1, color="#9E9E9E1E") + 
+      scale_x_continuous(limits=c(-1.07,1.07), breaks=seq(-1,1,.1),
+                         expand=c(0,0)) +
+      scale_y_continuous(trans="sqrt", limits=c(0,1600)) +
+      scale_color_gradient2(low="#ffeda0", mid="white", high="#87C980",
+                            midpoint=0) +
+      scale_fill_manual(values = c("Principal Investigator" = "#9964A8", 
+                                   "Researcher" = "#6D99D5")) +
+      labs(x = "Internal Collaboration Type Score",
+           y = "Authors (Square Root Scale)",
+           fill = "Author Role") +
+      theme(legend.position = "bottom",
+            legend.box.just = "left",
+            panel.grid.major.y = element_line(colour = "#E0E0E0"),
+            panel.grid.minor.y = element_line(colour = "#E0E0E0"),
+            panel.grid.major.x = element_blank(),
+            panel.grid.minor.x = element_blank())
+
+ggsave(
+  filename = here::here(paste0("outputs/figures/",consortium,
+                               "-histogram_author_distribution_ict_score+role.svg")), 
+  plot = p8, 
+  width = 5, 
+  height = 3, 
+  units = "in")
+
+p8
+```
+
+# Exporting Networks and Network Measures
+
+## Save centrality measurements and network metrics
+
+```{r save-network_metrics}
+#### Combine baseline and partitioned node and edge lists for Gephi visualization ####
+# Node list
+nodes_c <- 
+  nodes %>%
+  left_join(nodes_partition %>%
+              select(-label, -role),
+            by="id")
+name_vars <- 
+  names(nodes_c) %>%
+  str_replace_all("\\.y","_ic") %>%
+  str_replace_all("\\.x","")
+names(nodes_c) <- name_vars
+
+nodes_c <-
+  nodes_c %>%
+  mutate(ic_partition = ifelse(is.na(publications_ic) == T, 0, 1)) %>%
+  select(id, label, role, first_publication_year, publications, publications_ic,
+         citations, citations_ic, weighted_citations, weighted_citations_ic, 
+         interdivision_collaboration, intradivision_collaboration, ict_score,
+         ic_partition, starts_with("pubs_", ignore.case = F))
+
+node_file <- 
+  file.path(data_dir,
+            paste0(consortium, 
+                   "_coauthorship-baseline_partition_combined-nodes.csv"))
+write.csv(nodes_c, file=here::here(node_file), row.names = F)
+
+# Edge List
+edges_c <- 
+  edges %>%
+  left_join(edges_partition %>%
+              select(normalized_edge, weight) %>%
+              rename("ic" = "weight"),
+            by="normalized_edge") %>%
+  mutate(ic_partition = ifelse(is.na(ic)==T,0,1)) %>%
+  select(normalized_edge, from, to, source, target, weight, ic, ic_partition,
+         starts_with("weight_", ignore.case = F)) %>%
+  rename("weight_ic" = "ic")
+  
+edge_file <- 
+  file.path(data_dir,
+            paste0(consortium, 
+                   "_coauthorship-baseline_partition_combined-edges.csv"))
+write.csv(edges_c, file=here::here(edge_file), row.names = F)
+rm(edge_file, node_file)
+
+# Save each annual baseline network as RDS
+for (year in names(annual_networks)) {
+  network_file <- file.path(output_dir,"rds",
+                            paste0(consortium, "_coauthorship_network-", year, ".rds"))
+  saveRDS(annual_networks[[year]], here::here(network_file))
+}
+# Save annual filtered networks as RDS
+for (year in names(annual_partition_networks)) {
+  network_file <- file.path(output_dir,"rds",
+                            paste0(consortium, "_coauthorship_network-p-", year, ".rds"))
+  saveRDS(annual_partition_networks[[year]], here::here(network_file))
+}
+
+# Save network metrics to CSV
+metrics_file <- file.path(output_dir,"tables",
+                          paste0(consortium,"-coauthorship_network_annual_metrics.csv"))
+
+write_csv(network_metrics, 
+          file=here::here(metrics_file))
+
+# Combined data set for comparative analysis
+metrics_c_file <- file.path(output_dir,"tables",
+                            paste0("NIH_map-program_coauthorship_network_annual_metrics.csv"))
+
+if(file.exists(here::here(metrics_c_file))==FALSE){
+  write_delim(network_metrics, 
+          file=here::here(metrics_c_file),
+          na = "NA", delim=",", quote="needed")
+} else {
+  write_delim(network_metrics, 
+          file=here::here(metrics_c_file),
+          append = TRUE,
+          na = "NA", delim=",", quote="needed")
+}
+
+# Save network centrality measures to CSV
+centrality_file <- 
+  file.path(output_dir,"tables",
+            paste0(consortium, "-coauthorship_node_centrality_annual_metrics.csv"))
+write_csv(centrality_metrics, 
+          file=here::here(centrality_file))
+
+# Save to a combined data set for comparative temporal analysis data set
+centrality_file_c <- 
+  file.path(output_dir,"tables",
+            paste0("NIH_map-program_coauthorship_node_centrality_annual_metrics.csv"))
+
+if(file.exists(here::here(centrality_file_c))==FALSE){
+  write_delim(centrality_metrics, 
+          file=here::here(centrality_file_c),
+          na = "NA", delim=",", quote="needed")
+} else {
+  write_delim(centrality_metrics, 
+          file=here::here(centrality_file_c),
+          append = TRUE,
+          na = "NA", delim=",", quote="needed")
+}
+```
+
+---
+
+# Session Information
+
+```{r session-info}
+sessionInfo()
+```
+
+**Analysis completed for `r consortium`**
+
+*Generated: `r Sys.time()`*
